@@ -17,12 +17,6 @@ import { LS } from 'zero-element/lib/utils/storage';
 import './index.less'
 
 
-
-function openToDoListPage() {
-  history.push('/toDoList');
-}
-
-
 export default (props) => {
 
   const [visible, useVisible] = useState(false);
@@ -85,13 +79,6 @@ export default (props) => {
     </Menu>
   );
 
-  const messageMenu = (
-    <Menu>
-      <Menu.Item key="1" onClick={_ => openToDoListPage(true)}>
-        待办事项
-      </Menu.Item>
-    </Menu>
-  )
 
   const MoreMenu = (
     <Menu>
