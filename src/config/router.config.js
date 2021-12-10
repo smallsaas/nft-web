@@ -105,6 +105,10 @@ module.exports = [
       }
     ]
   },
+  {
+    name: '动态页面',
+    path: '/dynamicPage'
+  },
 
   // {
   //   name: '系统管理',

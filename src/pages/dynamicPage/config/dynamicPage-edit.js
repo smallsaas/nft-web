@@ -1,0 +1,25 @@
+
+const formFields = require('./pageSetting.json');
+
+module.exports = {
+  layout: 'BaseTitle',
+  title: '编辑视频信息',
+  items: [
+    {
+      layout: 'Content',
+      component: 'Form',
+      config: {
+        goBack: true,
+        API: {
+          getAPI: '/api/crud/coachingAction/coachingActions/<id>',
+          updateAPI: '/api/crud/coachingAction/coachingActions/<id>',
+        },
+        layout: 'Grid',
+        layoutConfig: {
+          value: [24],
+        },
+        fields: formFields.updateFields,
+      },
+    },
+  ],
+};

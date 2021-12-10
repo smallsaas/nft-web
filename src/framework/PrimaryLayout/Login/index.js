@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import { history } from 'umi';
 import { removeToken, getUserName, getExtra, getAvatar } from 'zero-element/lib/utils/request/token';
@@ -23,7 +24,6 @@ export default (props) => {
   const [uVisible, useUVisible] = useState(false);
 
   function handleVisibleChange(visible) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     useVisible(visible);
     if (!visible) {
       useUVisible(false)
