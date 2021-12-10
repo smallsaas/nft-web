@@ -8,8 +8,18 @@ import ImgUpload from './imgupload/imgupload'
 import Img from './img/img'
 //文字组件
 import Text from './text/text'
+//确定审核通过文本组件
+import Approved from './approved/approved'
+//确定解封账号文本组件
+import Unseal from './unseal/unseal'
+//确定自动投放文本组件
+import AutomaticDelivery from './automaticdelivery/automaticdelivery'
 //输入价值区间组件
 import ValueInput from './valueinput/valueinput';
+//输入时间区间组件
+import TimeInput from './timeinput/timeinput';
+//单选radio
+import Radio from './radio/radio';
 // 未使用控件
 // 右键下拉选择时间
 import Now from './Times/now'
@@ -112,10 +122,17 @@ export const widgets = {
     NowSecond,
     NowDays,
     NowTimes,
+
+    //nft组件
     CodeBtn,
     Select,
     ImgUpload,
     Text,
     Img,
-    ValueInput
+    ValueInput,
+    Approved,
+    Unseal,
+    AutomaticDelivery,
+    TimeInput,
+    Radio
 }

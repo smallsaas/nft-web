@@ -214,6 +214,51 @@ export const elements = [{
     widget: "ValueInput"
   },
   {
+    text: 'Approved',
+    name: "approved",
+    schema: {
+      type: 'string',
+      "ui:widget": "Approved",
+    },
+    widget: "Approved"
+  },
+  {
+    text: 'Unseal',
+    name: "unseal",
+    schema: {
+      type: 'string',
+      "ui:widget": "Unseal",
+    },
+    widget: "Unseal"
+  },
+  {
+    text: 'AutomaticDelivery',
+    name: "automaticdelivery",
+    schema: {
+      type: 'string',
+      "ui:widget": "AutomaticDelivery",
+    },
+    widget: "AutomaticDelivery"
+  },
+  {
+    text: 'TimeInput',
+    name: "timeinput",
+    schema: {
+      type: 'string',
+      "ui:widget": "TimeInput",
+    },
+    widget: "TimeInput"
+  },
+  {
+    text: 'Radio',
+    name: "radio",
+    schema: {
+      type: 'string',
+      "ui:widget": "Radio",
+    },
+    widget: "Radio"
+  },
+  {
     text: '输入框',
     name: 'input',
     widget: 'input',

@@ -1,0 +1,60 @@
+{
+    "columns": 1,
+    "createFields": [{
+        "label": "卖方账号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "text",
+        "field": "name"
+      },
+      {
+        "label": "买方账号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "text",
+        "field": "name"
+      },
+      {
+        "label": "申述类型",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "text",
+        "field": "name"
+      },
+      {
+        "label": "申述内容",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "text",
+        "field": "name"
+      },
+      {
+        "label": "处理结果",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "text",
+        "field": "name"
+      }
+    ]
+  }
+  

@@ -57,17 +57,19 @@
     }
   }, {
     "title": "通用配置",
-    "type": "modal",
+    "type": "path",
     "options": {
       "outside": true,
       "style": "primary",
-      "path": "/configure/spiritconfigure/addspirit"
+      "path": "/configure/spiritconfigure/generalconfiguration"
     }
   }, {
     "title": "会员配置",
-    "type": "modal",
+    "type": "path",
     "options": {
-      "style": "primary"
+      "outside": true,
+      "style": "primary",
+      "path": "/configure/spiritconfigure/memberconfiguration"
     }
   }]
 }

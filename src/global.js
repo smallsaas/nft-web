@@ -75,12 +75,22 @@ import CSet_ChildrenFormFetch from '@/components/Container/Form/ChildrenFormFetc
 import FITSet_CustomOneMary from '@/components/FormItemType/CustomOneMary';
 import CSet_ErrorLayout from '@/components/Container/ErrorLayout';
 import FITSet_PrescriptionItemStatus from '@/components/FormItemType/PrescriptionItemStatus';
+//nft组件
 import CodeBtn from '@/components/SchemaGeneratorPage/components/btn/codebtn'
 import Select from '@/components/SchemaGeneratorPage/components/select/select'
 import ImgUpload from '@/components/SchemaGeneratorPage/components/imgupload/imgupload'
 import Text from '@/components/SchemaGeneratorPage/components/text/text'
 import Img from '@/components/SchemaGeneratorPage/components/img/img'
 import ValueInput from '@/components/SchemaGeneratorPage/components/valueinput/valueinput'
+import Approved from '@/components/SchemaGeneratorPage/components/approved/approved'
+import Unseal from '@/components/SchemaGeneratorPage/components/unseal/unseal'
+import AutomaticDelivery from '@/components/SchemaGeneratorPage/components/automaticdelivery/automaticdelivery'
+import TimeInput from '@/components/SchemaGeneratorPage/components/timeinput/timeinput'
+import Radio from '@/components/SchemaGeneratorPage/components/radio/radio'
+
+
+
+
 
 
 
@@ -214,12 +224,18 @@ FITSet({
   'plain_tag': FITSet_PlainTag,
   'time_selection_and_disaible': FITSet_TimeSelectionAndDisaible,
   'custom_one_mary': FITSet_CustomOneMary,
+  //nft
   'codebtn':CodeBtn,
   'select':Select,
   'imgupload':ImgUpload,
   'text':Text,
   'img':Img,
-  'valueinput':ValueInput
+  'valueinput':ValueInput,
+  'approved':Approved,
+  'unseal':Unseal,
+  'automaticdelivery':AutomaticDelivery,
+  'timeinput':TimeInput,
+  'radio':Radio
 });
 
 AITSet({

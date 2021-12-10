@@ -1,0 +1,197 @@
+{
+  "columns": 2,
+  "createFields": [
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "直推人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "团队人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "团队收益",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "直推人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "团队人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "团队收益",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "直推人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "团队人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "团队收益",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "直推人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "团队人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "团队收益",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    }
+  ]
+}

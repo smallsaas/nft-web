@@ -36,14 +36,15 @@ export default function () {
     getParams()
 
     useDidMount(_ => {
-      const apiUrl = `/api/config`;
+      // const apiUrl = `/api/config`;
       // const apiUrl = `https://api.mock.smallsaas.cn/data`;
-      // const apiUrl = `http://192.168.3.239:8000/api/config`;
+      const apiUrl = `http://192.168.3.239:8000/api/config`;
       const queryData = {
         id:1
       };
       promiseAjax(apiUrl, queryData)
         .then(resp => {
+          console.log(resp,111111)
           if (resp.status===1) {
             const data = resp.data;
             setPageConfig(data)

@@ -43,6 +43,61 @@
         },
         "type": "input",
         "field": "code"
+      },
+      {
+        "label": "匹配时间",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请选择"
+        },
+        "type": "timeinput",
+        "field": "code"
+      },
+      {
+        "label": "培养周期",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "培养价值",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "兑换陪伴精灵消耗精灵令",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "租用土地一天消耗精灵令",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
       }
     ]
   }

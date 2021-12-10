@@ -37,11 +37,55 @@
       "field": "note"
     }
   ],
-  "tableActions": [{
+  "tableActions": [
+    {
+      "title": "申述处理",
+      "type": "path",
+      "options":{
+        "outside": true,
+        "style": "primary",
+        "path": "/representations/representationsmanage/handlingrepresentations"
+      }
+    },
+    {
+      "title": "查看详情",
+      "type": "path",
+      "options":{
+        "outside": true,
+        "style": "primary",
+        "path": "/representations/representationsmanage/checkrepresentationsdetail"
+      }
+    },{
     "title": "添加类型",
     "type": "modal",
     "options": {
-      "style": "primary"
+      "style": "primary",
+      "modalTitle": "添加类型",
+      "modalWidth": 600,
+      "items": [{
+        "component": "Form",
+        "config": {
+          "layout": "Grid",
+          "layoutConfig": {
+            "value": [
+              24
+            ]
+          },
+          "API": {
+            "createAPI": "/api/eav/entities/[id]/attributes"
+          },
+          "fields": [{
+              "label": "",
+              "rules": [{
+                "type": "required"
+              }],
+              "type": "text-area",
+              "placeholder":"请输入",
+              "field": "attributeName"
+            }
+          ]
+        }
+      }]
     }
   }]
 }

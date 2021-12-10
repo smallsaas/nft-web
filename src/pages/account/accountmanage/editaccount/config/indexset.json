@@ -8,7 +8,7 @@
         "props": {
           "placeholder": "请输入"
         },
-        "type": "input",
+        "type": "text",
         "field": "name"
       },
       {

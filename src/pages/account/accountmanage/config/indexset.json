@@ -90,11 +90,11 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "自动投放会在匹配时间内自动投放精灵，确定要自动投放么?",
+                "label": "",
                 "rules": [{
                   "type": "required"
                 }],
-                "type": "input",
+                "type": "automaticdelivery",
                 "field": "attributeName"
               }
             ]
@@ -122,11 +122,8 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "确定要解封账号么?",
-                "rules": [{
-                  "type": "required"
-                }],
-                "type": "input",
+                "label": "",
+                "type": "unseal",
                 "field": "attributeName"
               }
             ]
@@ -224,11 +221,11 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "确定审核通过么?",
+                "label": "",
                 "rules": [{
                   "type": "required"
                 }],
-                "type": "input",
+                "type": "approved",
                 "field": "attributeName"
               }
             ]
