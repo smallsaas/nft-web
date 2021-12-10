@@ -1,0 +1,26 @@
+{
+    "tableFields": [{
+        "label": "序号",
+        "field": "name"
+      },
+      {
+        "label": "账号",
+        "field": "code"
+      },
+      {
+        "label": "上级账号",
+        "field": "sortorder"
+      },
+      {
+        "label": "精灵",
+        "width": 180,
+        "field": "note"
+      },
+      {
+        "label": "付款倒计时",
+        "width": 180,
+        "field": "note"
+      }
+    ]
+  }
+  

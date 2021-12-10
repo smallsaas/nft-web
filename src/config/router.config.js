@@ -39,14 +39,70 @@ module.exports = [
   //     },
   //   ],
   // },
+  // {
+  //   name: 'AI健身',
+  //   path: '/aiFitness',
+  //   items: [
+  //     {
+  //       path: '/aiFitness/vido',
+  //       name: '标准视频管理',
+  //     },
+  //   ]
+  // },
   {
-    name: 'AI健身',
-    path: '/aiFitness',
+    name: '账号管理',
+    path: '/account',
     items: [
       {
-        path: '/aiFitness/vido',
-        name: '标准视频管理',
+        path: '/account/accountmanage',
+        name: '账号管理',
       },
+      {
+        path: '/account/appointmentmanage',
+        name: '预约管理',
+      },
+      {
+        path: '/account/spiritmanage',
+        name: '精灵处理',
+      },
+    ]
+  },
+  {
+    name: '团队管理',
+    path: '/team',
+    items: [
+      {
+        path: '/team/teammanage',
+        name: '团队',
+      },
+      {
+        path: '/team/nopaymanage',
+        name: '未付款列表',
+      },
+      {
+        path: '/team/invitationmanage',
+        name: '直推查询列表',
+      },
+    ]
+  },
+  {
+    name: '配置中心',
+    path: '/configure',
+    items: [
+      {
+        path: '/configure/spiritconfigure',
+        name: '精灵配置',
+      }
+    ]
+  },
+  {
+    name: '申诉管理',
+    path: '/representations',
+    items: [
+      {
+        path: '/representations/representationsmanage',
+        name: '申诉管理',
+      }
     ]
   },
 

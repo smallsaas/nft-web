@@ -1,0 +1,55 @@
+{
+  "tableFields": [{
+      "label": "序号",
+      "field": "name"
+    },
+    {
+      "label": "名称",
+      "field": "code"
+    },
+    {
+      "label": "级别",
+      "field": "sortorder"
+    },
+    {
+      "label": "精灵图片",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "场次",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "预约人数",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "当前已匹配人数",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "剩余未匹配人数",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "当前精灵数",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "已处理精灵数",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "未处理精灵数",
+      "width": 180,
+      "field": "note"
+    }
+  ]
+}

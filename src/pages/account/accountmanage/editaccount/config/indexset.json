@@ -1,0 +1,215 @@
+{
+    "columns": 3,
+    "createFields": [{
+        "label": "昵称",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "邀请码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "code"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "备用手机号码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "验证码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "code"
+      },
+      {
+        "label": "",
+        "type": "codebtn",
+        "field": "identifier"
+      },
+      {
+        "label": "交易密码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "确认交易密码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "code"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "登录密码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "确认登陆密码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "code"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "所属角色",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "select",
+        "field": "code"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "支付宝账号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "code"
+      },
+      {
+        "label": "支付宝二维码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "imgupload",
+        "field": "code"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "微信账号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "code"
+      },
+      {
+        "label": "微信二维码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "imgupload",
+        "field": "code"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "户名",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "code"
+      },
+      {
+        "label": "银行卡号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "code"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      }
+    ]
+  }
+  

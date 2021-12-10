@@ -1,0 +1,30 @@
+.Box{
+    width: 261px;
+    height: 114px;
+    display: flex;
+    flex-direction: row;
+}
+.ShowImg,.ShowUpload{
+    width: 114px;
+    height: 114px;
+    border-radius: 2px;
+	border: rgba(217, 217, 217, 1) solid 1px;
+}
+
+.ShowImg{
+    margin-right: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImgBox{
+    width: 100px;
+    height: 96px;
+}
+
+.ShowUpload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

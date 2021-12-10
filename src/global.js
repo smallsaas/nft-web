@@ -75,6 +75,16 @@ import CSet_ChildrenFormFetch from '@/components/Container/Form/ChildrenFormFetc
 import FITSet_CustomOneMary from '@/components/FormItemType/CustomOneMary';
 import CSet_ErrorLayout from '@/components/Container/ErrorLayout';
 import FITSet_PrescriptionItemStatus from '@/components/FormItemType/PrescriptionItemStatus';
+import CodeBtn from '@/components/SchemaGeneratorPage/components/btn/codebtn'
+import Select from '@/components/SchemaGeneratorPage/components/select/select'
+import ImgUpload from '@/components/SchemaGeneratorPage/components/imgupload/imgupload'
+import Text from '@/components/SchemaGeneratorPage/components/text/text'
+import Img from '@/components/SchemaGeneratorPage/components/img/img'
+import ValueInput from '@/components/SchemaGeneratorPage/components/valueinput/valueinput'
+
+
+
+
 
 //AI 健身项目组件
 
@@ -203,7 +213,13 @@ FITSet({
   'plain_num_and_unit': FITSet_PlainNumAndUnit,
   'plain_tag': FITSet_PlainTag,
   'time_selection_and_disaible': FITSet_TimeSelectionAndDisaible,
-  'custom_one_mary': FITSet_CustomOneMary
+  'custom_one_mary': FITSet_CustomOneMary,
+  'codebtn':CodeBtn,
+  'select':Select,
+  'imgupload':ImgUpload,
+  'text':Text,
+  'img':Img,
+  'valueinput':ValueInput
 });
 
 AITSet({

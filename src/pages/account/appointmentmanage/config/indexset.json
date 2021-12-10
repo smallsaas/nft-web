@@ -1,0 +1,30 @@
+{
+  "tableFields": [{
+      "label": "序号",
+      "field": "name"
+    },
+    {
+      "label": "名称",
+      "field": "code"
+    },
+    {
+      "label": "当天预约数",
+      "field": "sortorder"
+    },
+    {
+      "label": "总预约数",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "当天匹配数",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "总匹配数",
+      "width": 180,
+      "field": "note"
+    }
+  ]
+}

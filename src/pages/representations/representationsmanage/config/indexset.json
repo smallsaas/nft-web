@@ -1,0 +1,47 @@
+{
+  "tableFields": [{
+      "label": "序号",
+      "field": "name"
+    },
+    {
+      "label": "卖方账号",
+      "field": "code"
+    },
+    {
+      "label": "买方账号",
+      "field": "sortorder"
+    },
+    {
+      "label": "申述类型",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "申述内容",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "申述状态",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "处理人",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "操作",
+      "width": 180,
+      "field": "note"
+    }
+  ],
+  "tableActions": [{
+    "title": "添加类型",
+    "type": "modal",
+    "options": {
+      "style": "primary"
+    }
+  }]
+}

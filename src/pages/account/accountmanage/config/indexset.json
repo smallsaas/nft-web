@@ -1,0 +1,428 @@
+{
+  "tableFields": [{
+      "label": "序号",
+      "field": "name"
+    },
+    {
+      "label": "名称",
+      "field": "code"
+    },
+    {
+      "label": "直推人数",
+      "field": "sortorder"
+    },
+    {
+      "label": "当前领养",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "总领养",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "团队人数",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "总领养",
+      "width": 180,
+      "field": "note"
+    },
+    {
+      "label": "状态",
+      "width": 180,
+      "field": "note"
+    }
+  ],
+  "tableActions": [
+    {
+      "title": "暂停自动投放",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "暂停自动投放",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "确定要暂停自动投放么?",
+                "rules": [{
+                  "type": "required"
+                }],
+                "type": "input",
+                "field": "attributeName"
+              }
+            ]
+          }
+        }]
+      }
+    },
+    {
+      "title": "自动投放",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "自动投放",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "自动投放会在匹配时间内自动投放精灵，确定要自动投放么?",
+                "rules": [{
+                  "type": "required"
+                }],
+                "type": "input",
+                "field": "attributeName"
+              }
+            ]
+          }
+        }]
+      }
+    },
+    {
+      "title": "解封账号",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "解封账号",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "确定要解封账号么?",
+                "rules": [{
+                  "type": "required"
+                }],
+                "type": "input",
+                "field": "attributeName"
+              }
+            ]
+          }
+        }]
+      }
+    },
+    {
+      "title": "冻结账号",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "冻结账号",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "",
+                "props": {
+                  "placeholder": "请输入冻结账号原因"
+                },
+                "rules": [{
+                  "type": "required"
+                }],
+                "type": "text-area",
+                "field": "attributeName"
+              }
+            ]
+          }
+        }]
+      }
+    },
+    {
+      "title": "审核不通过",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "审核不通过",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "",
+                "props": {
+                  "placeholder": "请输入审核不通过原因"
+                },
+                "rules": [{
+                  "type": "required"
+                }],
+                "type": "text-area",
+                "field": "attributeName"
+              }
+            ]
+          }
+        }]
+      }
+    },
+    {
+      "title": "审核通过",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "审核通过",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "确定审核通过么?",
+                "rules": [{
+                  "type": "required"
+                }],
+                "type": "input",
+                "field": "attributeName"
+              }
+            ]
+          }
+        }]
+      }
+    },
+    {
+      "title": "查看详情",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "primary",
+        "path": "/account/accountmanage/accountdetail"
+      }
+    },{
+    "title": "修改账号",
+    "type": "path",
+    "options": {
+      "outside": true,
+      "style": "primary",
+      "path": "/account/accountmanage/editaccount"
+    }
+  }, {
+    "title": "添加账号",
+    "type": "path",
+    "options": {
+      "outside": true,
+      "style": "primary",
+      "path": "/account/accountmanage/addaccount"
+    }
+  }, {
+    "title": "发放精灵币",
+    "type": "modal",
+    "options": {
+      "style": "primary",
+      "modalTitle": "发放精灵令",
+      "modalWidth": 600,
+      "items": [{
+        "component": "Form",
+        "config": {
+          "layout": "Grid",
+          "layoutConfig": {
+            "value": [
+              24
+            ]
+          },
+          "API": {
+            "createAPI": "/api/eav/entities/[id]/attributes"
+          },
+          "fields": [{
+              "label": "当前精灵币:",
+              "rules": [{
+                "type": "required"
+              }],
+              "props": {
+                "placeholder": "请输入"
+              },
+              "type": "text",
+              "field": "attributeName"
+            },
+            {
+              "label": "发放到账号：",
+              "rules": [{
+                "type": "required"
+              }],
+              "props": {
+                "placeholder": "请输入账号"
+              },
+              "type": "input",
+              "field": "attributeName"
+            },
+            {
+              "label": "发放数量:",
+              "rules": [{
+                "type": "required"
+              }],
+              "props": {
+                "placeholder": "请输入数量"
+              },
+              "type": "input",
+              "field": "fieldName"
+            },
+            {
+              "label": "支付密码:",
+              "rules": [{
+                "type": "required"
+              }],
+              "props": {
+                "placeholder": "请输入支付密码"
+              },
+              "type": "input",
+              "field": "fieldName"
+            }
+          ]
+        }
+      }]
+    }
+  }],
+  "tableOperation": [{
+      "title": "编辑",
+      "type": "modal",
+      "options": {
+        "modalTitle": "编辑类别",
+        "modalWidth": 600,
+        "outside": true,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "getAPI": "/api/categories/(id)",
+              "updateAPI": "/api/categories/(id)"
+            },
+            "fields": [{
+                "label": "类别名称",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入"
+                },
+                "type": "input",
+                "field": "name"
+              },
+              {
+                "label": "类别编码",
+                "rules": [{
+                  "type": "required"
+                }],
+                "type": "input",
+                "field": "code"
+              },
+              {
+                "label": "父类别",
+                "field": "pid",
+                "span": 24,
+                "type": "modal-radio",
+                "props": {},
+                "rules": [],
+                "options": {
+                  "title": "选择父类别",
+                  "label": "name",
+                  "editLabel": "pName",
+                  "value": "id",
+                  "pagination": true,
+                  "API": "/api/categories/all/tree?identifier=workflow",
+                  "fields": [{
+                      "label": "类别名称",
+                      "field": "name",
+                      "valueType": "ellipsis"
+                    },
+                    {
+                      "label": "备注",
+                      "field": "note",
+                      "valueType": "ellipsis"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "排序号",
+                "rules": [],
+                "type": "number",
+                "field": "sortorder"
+              },
+              {
+                "label": "",
+                "type": "hidden",
+                "field": "identifier",
+                "value": "workflow"
+              }
+            ]
+          }
+        }]
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "删除",
+      "type": "delete",
+      "options": {
+        "outside": false
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ]
+}

@@ -1,3 +1,15 @@
+//验证码按钮组件
+import CodeBtn from "./btn/codebtn"
+//下拉选择框组件
+import Select from './select/select'
+//图片显示个上传组件
+import ImgUpload from './imgupload/imgupload'
+//图片显示组件
+import Img from './img/img'
+//文字组件
+import Text from './text/text'
+//输入价值区间组件
+import ValueInput from './valueinput/valueinput';
 // 未使用控件
 // 右键下拉选择时间
 import Now from './Times/now'
@@ -100,4 +112,10 @@ export const widgets = {
     NowSecond,
     NowDays,
     NowTimes,
+    CodeBtn,
+    Select,
+    ImgUpload,
+    Text,
+    Img,
+    ValueInput
 }

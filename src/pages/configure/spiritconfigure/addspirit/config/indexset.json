@@ -1,0 +1,49 @@
+{
+    "columns": 1,
+    "createFields": [{
+        "label": "精灵名称",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入精灵名称"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "级别",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请选择"
+        },
+        "type": "select",
+        "field": "code"
+      },
+      {
+        "label": "价值",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请选择"
+        },
+        "type": "valueinput",
+        "field": "code"
+      },
+      {
+        "label": "预约时间",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请选择"
+        },
+        "type": "input",
+        "field": "code"
+      }
+    ]
+  }
+  

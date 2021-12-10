@@ -1,0 +1,206 @@
+{
+    "columns": 3,
+    "createFields": [{
+        "label": "昵称",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "状态",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "原因",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "直推人数",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "当前领养",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "总领养",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "团队人数",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "当前领养",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "总领养",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "角色",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "支付宝账号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "支付宝二维码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "img",
+        "field": "name"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "微信账号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "微信二维码",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "img",
+        "field": "name"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      },
+      {
+        "label": "户名",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "银行卡号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "",
+        "type": "hidden",
+        "field": "identifier"
+      }
+    ]
+  }
+  

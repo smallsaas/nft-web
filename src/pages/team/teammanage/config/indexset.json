@@ -1,0 +1,31 @@
+{
+    "tableFields": [{
+        "label": "序号",
+        "field": "name"
+      },
+      {
+        "label": "账号",
+        "field": "code"
+      },
+      {
+        "label": "领养状态",
+        "field": "sortorder"
+      },
+      {
+        "label": "直推数",
+        "width": 180,
+        "field": "note"
+      },
+      {
+        "label": "当前预约数",
+        "width": 180,
+        "field": "note"
+      },
+      {
+        "label": "总领养数",
+        "width": 180,
+        "field": "note"
+      }
+    ]
+  }
+  

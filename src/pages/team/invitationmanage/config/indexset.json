@@ -1,0 +1,16 @@
+{
+    "tableFields": [{
+        "label": "账号",
+        "field": "name"
+      },
+      {
+        "label": "昵称",
+        "field": "code"
+      },
+      {
+        "label": "备用手机号",
+        "field": "sortorder"
+      }
+    ]
+  }
+  
