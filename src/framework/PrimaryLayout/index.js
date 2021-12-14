@@ -56,7 +56,7 @@ export default function PrimaryLayout({
           
           <img src='/applogo.png' />
           <a href="/">
-          AI 科学健身
+          NFT 交易平台
           </a>
         </div>
         <TopNav

@@ -1,0 +1,309 @@
+{
+  "pageName": {
+    "table": "精灵管理",
+    "new": "添加精灵",
+    "edit": "编辑精灵"
+  },
+  "listAPI": "/api/crud/oms/wisp/wisps",
+  "createAPI": "/api/crud/oms/wisp/wisps",
+  "getAPI": "/api/crud/oms/wisp/wisps/[id]",
+  "updateAPI": "/api/crud/oms/wisp/wisps/[id]",
+  "deleteAPI": "/api/crud/oms/wisp/wisps/(id)",
+  "columns": 1,
+  "createFields": [{
+      "label": "精灵名称",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "attributeName"
+    },
+    {
+      "label": "级别",
+      "type": "select",
+      "width":180,
+      "options":[
+        {"label":"v1","value":1},
+        {"label":"v2","value":2},
+        {"label":"v3","value":3},
+        {"label":"v4","value":4},
+        {"label":"v5","value":5}
+      ],
+      "field": "level"
+    },
+    {
+      "label": "最小价值",
+      "rules": [{
+        "type": "required"
+      }],
+      "type": "input",
+      "field": "minimumValue"
+    },
+    {
+      "label": "最大价值",
+      "rules": [{
+        "type": "required"
+      }],
+      "type": "input",
+      "field": "maximumValue"
+    },
+    {
+      "label": "预约时间",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "分钟",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "appointmentMinute"
+    },
+    {
+      "label": "匹配时间开始",
+      "type": "date",
+      "field": "startMatchTime"
+    },
+    {
+      "label": "匹配时间结束",
+      "type": "date",
+      "field": "endMatchTime"
+    },
+    {
+      "label": "培养周期",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "天",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "growthDays"
+    },
+    {
+      "label": "培养价值",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "%",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "growthPercent"
+    },
+    {
+      "label": "兑换陪伴精灵消耗精灵令",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "个",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "costAccompanyWisp"
+    },
+    {
+      "label": "租用土地1天消耗精灵令",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "个",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "costWispCoin"
+    }
+  ],
+  "updateFields": [
+    {
+      "label": "级别",
+      "type": "select",
+      "width":180,
+      "options":[
+        {"label":"v1","value":1},
+        {"label":"v2","value":2},
+        {"label":"v3","value":3},
+        {"label":"v4","value":4},
+        {"label":"v5","value":5}
+      ],
+      "field": "level"
+    },
+    {
+      "label": "最小价值",
+      "rules": [{
+        "type": "required"
+      }],
+      "type": "input",
+      "field": "minimumValue"
+    },
+    {
+      "label": "最大价值",
+      "rules": [{
+        "type": "required"
+      }],
+      "type": "input",
+      "field": "maximumValue"
+    },
+    {
+      "label": "预约时间",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "分钟",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "appointmentMinute"
+    },
+    {
+      "label": "匹配时间开始",
+      "type": "timeinput",
+      "field": "startMatchTime"
+    },
+    {
+      "label": "匹配时间结束",
+      "type": "timeinput",
+      "field": "endMatchTime"
+    },
+    {
+      "label": "培养周期",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "天",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "growthDays"
+    },
+    {
+      "label": "培养价值",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "%",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "growthPercent"
+    },
+    {
+      "label": "兑换陪伴精灵消耗精灵令",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "个",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "costAccompanyWisp"
+    },
+    {
+      "label": "租用土地1天消耗精灵令",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "suffix": "个",
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "costWispCoin"
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [{
+    "title": "添加精灵",
+    "type": "path",
+    "options": {
+      "style": "primary",
+      "path": "/spirit/spirit-add"
+    }
+  }],
+  "tableOperation": [{
+      "title": "编辑",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "spirit/spirit-edit",
+        "outside": true
+      }
+    },
+    {
+      "title": "删除",
+      "type": "delete",
+      "options": {
+        "outside": false,
+        "API": "/api/crud/oms/wisp/wisps/(id)",
+        "method": "delete"
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
+  "searchFields": [{
+    "label": "名称",
+    "field": "description",
+    "type": "input",
+    "props": {
+      "placeholder": "请输入精灵名称"
+    }
+  }],
+  "tableFields": [{
+      "label": "序号",
+      "field": "id"
+    },
+    {
+      "label": "精灵名称",
+      "field": "createTime"
+    },
+    {
+      "label": "级别",
+      "field": "level"
+    },
+    {
+      "label": "最低价值",
+      "field": "minimumValue"
+    },
+    {
+      "label": "最高价值",
+      "field": "maximumValue"
+    },
+    {
+      "label": "预约时间",
+      "field": "appointmentMinute"
+    },
+    {
+      "label": "培养天数",
+      "field": "growthDays"
+    },
+    {
+      "label": "培养价值",
+      "field": "growthPercent"
+    },
+    {
+      "label": "预约消耗的精灵币",
+      "field": "costWispCoin"
+    },
+    {
+      "label": "预约消耗的陪伴精灵数量",
+      "field": "costAccompanyWisp"
+    }
+  ]
+}

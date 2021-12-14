@@ -1,0 +1,790 @@
+{
+  "pageName": {
+    "table": "账号管理",
+    "new": "添加账号",
+    "edit": "编辑账号",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/player/players",
+  "createAPI": "/api/crud/oms/player/players",
+  "getAPI": "/api/crud/oms/player/players/[id]",
+  "updateAPI": "/api/crud/oms/player/players/[id]",
+  "deleteAPI": "/api/crud/oms/player/players/(id)",
+  "columns": 1,
+  "createFields": [{
+      "label": "昵称",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "邀请码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "invitationCode"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "手机号码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "mobilePhone"
+    },
+    {
+      "label": "验证码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "suffix": "11"
+      },
+      "type": "input",
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "codebtn",
+      "field": "code"
+    },
+    {
+      "label": "备用手机号码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "验证码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "codebtn",
+      "field": "code"
+    },
+    {
+      "label": "交易密码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "paymentPassword"
+    },
+    {
+      "label": "确认交易密码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "登录密码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "确认登陆密码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "所属角色",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "select",
+      "options": [{
+          "label": "管理员",
+          "value": 1
+        },
+        {
+          "label": "小二",
+          "value": 1
+        },
+        {
+          "label": "普通用户",
+          "value": 1
+        }
+      ],
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "支付宝账号",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "alipayAccount"
+    },
+    {
+      "label": "支付宝二维码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "alipayQrCodePhotoUrl"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "微信账号",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "wechatAccount"
+    },
+    {
+      "label": "微信二维码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "wechatQrCodePhotoUrl"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "户名",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankAccountName"
+    },
+    {
+      "label": "银行卡号",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankAccountNumber"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    }
+  ],
+  "updateFields": [{
+      "label": "昵称",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "邀请码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "invitationCode"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "备用手机号码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "验证码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "codebtn",
+      "field": "code"
+    },
+    {
+      "label": "交易密码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "password",
+      "width":120,
+      "field": "paymentPassword"
+    },
+    {
+      "label": "确认交易密码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "登录密码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "password",
+      "field": "name"
+    },
+    {
+      "label": "确认登陆密码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "所属角色",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "select",
+      "options": [{
+          "label": "管理员",
+          "value": 1
+        },
+        {
+          "label": "小二",
+          "value": 1
+        },
+        {
+          "label": "普通用户",
+          "value": 1
+        }
+      ],
+      "field": "code"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "支付宝账号",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "alipayAccount"
+    },
+    {
+      "label": "支付宝二维码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "alipayQrCodePhotoUrl"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "微信账号",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "wechatAccount"
+    },
+    {
+      "label": "微信二维码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "wechatQrCodePhotoUrl"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    },
+    {
+      "label": "户名",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankAccountName"
+    },
+    {
+      "label": "银行卡号",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankAccountNumber"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "identifier"
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [{
+      "title": "添加账号",
+      "type": "path",
+      "options": {
+        "style": "primary",
+        "path": "/newaccount/newaccount-add"
+      }
+    },
+    {
+      "title": "发放精灵币",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "发放精灵币",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "当前精灵币:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入"
+                },
+                "type": "plain",
+                "field": "attributeName"
+              },
+              {
+                "label": "发放到账号：",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入账号"
+                },
+                "type": "input",
+                "field": "attributeName"
+              },
+              {
+                "label": "发放数量:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入数量"
+                },
+                "type": "input",
+                "field": "fieldName"
+              },
+              {
+                "label": "支付密码:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入支付密码"
+                },
+                "type": "input",
+                "field": "fieldName"
+              }
+            ]
+          }
+        }]
+      }
+    }
+  ],
+  "tableOperation": [
+    {
+      "title": "解封账号",
+      "type":"request",
+      "options":{
+        "tips":"确定要解封账号麽?",
+        "outside":true,
+        "API":"/api/crud/oms/player/players/(id)",
+        "method":"get"
+      }
+    },
+    {
+      "title": "审核通过",
+      "type":"request",
+      "options":{
+        "tips":"确定审核通过麽?",
+        "outside":true,
+        "API":"/api/crud/oms/player/players/(id)",
+        "method":"get"
+      }
+    },
+    {
+      "title": "暂停自动投放",
+      "type":"request",
+      "options":{
+        "tips":"确定要暂停自动投放麽?",
+        "outside":true,
+        "API":"/api/crud/oms/player/players/(id)",
+        "method":"get"
+      }
+    }, {
+      "title": "查看详情",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "newaccount/newaccount-view"
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "修改信息",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "newaccount/newaccount-edit"
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "删除",
+      "type": "delete",
+      "options": {
+        "outside": false,
+        "API": "/api/crud/oms/player/players/(id)",
+        "method": "delete"
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
+  "searchFields": [{
+      "label": "名称",
+      "field": "name",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入名称"
+      }
+    },
+    {
+      "label": "状态",
+      "field": "description",
+      "type": "select",
+      "options": [{
+          "label": "审核通过"
+        },
+        {
+          "label": "审核中"
+        },
+        {
+          "label": "审核不通过"
+        }
+      ],
+      "props": {
+        "placeholder": "请选择"
+      }
+    }
+  ],
+  "tableFields": [{
+      "label": "序号",
+      "field": "id"
+    },
+    {
+      "label": "名称",
+      "field": "name"
+    },
+    {
+      "label": "直推人数",
+      "field": "recommendCount"
+    },
+    {
+      "label": "当前领养",
+      "field": "adoptWisp"
+    },
+    {
+      "label": "总领养",
+      "field": "adoptWispCount"
+    },
+    {
+      "label": "团队人数",
+      "field": "teamSize"
+    },
+    {
+      "label": "状态",
+      "field": "status"
+    }
+  ],
+  "viewConfig": [{
+      "label": "昵称",
+      "field": "name",
+      "type": "plain",
+      "span": 8
+    }, {
+      "label": "状态",
+      "field": "status",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "原因",
+      "field": "name",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "直推人数",
+      "field": "recommendCount",
+      "type": "plain",
+      "span": 8
+    }, {
+      "label": "当前领养",
+      "field": "adoptWisp",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "总领养",
+      "field": "adoptWispCount",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "团队人数",
+      "field": "teamSize",
+      "type": "plain",
+      "span": 8
+    }, {
+      "label": "当前领养",
+      "field": "name",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "总领养",
+      "field": "name",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "角色",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "支付宝账号",
+      "field": "alipayAccount",
+      "type": "plain",
+      "span": 12
+    },
+    {
+      "label": "支付宝二维码",
+      "field": "alipayQrCodePhotoUrl",
+      "type": "image",
+      "span": 12
+    },
+    {
+      "label": "微信账号",
+      "field": "wechatAccount",
+      "type": "plain",
+      "span": 12
+    },
+    {
+      "label": "微信二维码",
+      "field": "wechatQrCodePhotoUrl",
+      "type": "image",
+      "span": 12
+    },
+    {
+      "label": "户名",
+      "field": "bankAccountName",
+      "type": "plain",
+      "span": 12
+    },
+    {
+      "label": "银行卡号",
+      "field": "bankAccountNumber",
+      "type": "plain",
+      "span": 12
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 
 // ref: https://umijs.org/config/
 export default {
-  title: 'AI 科学健身',
+  title: 'NFT 交易平台',
   links: [
     // href的图片你可以放在public里面，直接./图片名.png 就可以了，也可以是cdn链接
      { rel: 'icon', href: './applogo.png' },

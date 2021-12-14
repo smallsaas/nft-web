@@ -77,7 +77,7 @@ import CSet_ErrorLayout from '@/components/Container/ErrorLayout';
 import FITSet_PrescriptionItemStatus from '@/components/FormItemType/PrescriptionItemStatus';
 //nft组件
 import CodeBtn from '@/components/SchemaGeneratorPage/components/btn/codebtn'
-import Select from '@/components/SchemaGeneratorPage/components/select/select'
+// import Select from '@/components/SchemaGeneratorPage/components/select/select'
 import ImgUpload from '@/components/SchemaGeneratorPage/components/imgupload/imgupload'
 import Text from '@/components/SchemaGeneratorPage/components/text/text'
 import Img from '@/components/SchemaGeneratorPage/components/img/img'
@@ -87,6 +87,8 @@ import Unseal from '@/components/SchemaGeneratorPage/components/unseal/unseal'
 import AutomaticDelivery from '@/components/SchemaGeneratorPage/components/automaticdelivery/automaticdelivery'
 import TimeInput from '@/components/SchemaGeneratorPage/components/timeinput/timeinput'
 import Radio from '@/components/SchemaGeneratorPage/components/radio/radio'
+import SelectTwo from '@/components/SchemaGeneratorPage/components/selecttwo/selecttwo'
+
 
 
 
@@ -226,7 +228,7 @@ FITSet({
   'custom_one_mary': FITSet_CustomOneMary,
   //nft
   'codebtn':CodeBtn,
-  'select':Select,
+  // 'select':Select,
   'imgupload':ImgUpload,
   'text':Text,
   'img':Img,
@@ -235,7 +237,8 @@ FITSet({
   'unseal':Unseal,
   'automaticdelivery':AutomaticDelivery,
   'timeinput':TimeInput,
-  'radio':Radio
+  'radio':Radio,
+  'selecttwo':SelectTwo
 });
 
 AITSet({

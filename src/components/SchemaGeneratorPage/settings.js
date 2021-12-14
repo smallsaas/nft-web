@@ -168,15 +168,15 @@ export const elements = [{
     },
     widget: "CodeBtn"
   },
-  {
-    text: 'Select',
-    name: "select",
-    schema: {
-      type: 'string',
-      "ui:widget": "Select",
-    },
-    widget: "Select"
-  },
+  // {
+  //   text: 'Select',
+  //   name: "select",
+  //   schema: {
+  //     type: 'string',
+  //     "ui:widget": "Select",
+  //   },
+  //   widget: "Select"
+  // },
   {
     text: 'ImgUpload',
     name: "imgUpload",
@@ -257,6 +257,15 @@ export const elements = [{
       "ui:widget": "Radio",
     },
     widget: "Radio"
+  },
+  {
+    text: 'SelectTwo',
+    name: "selecttwo",
+    schema: {
+      type: 'string',
+      "ui:widget": "SelectTwo",
+    },
+    widget: "SelectTwo"
   },
   {
     text: '输入框',

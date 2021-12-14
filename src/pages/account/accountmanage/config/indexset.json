@@ -1,11 +1,22 @@
 {
+  "pageName": {
+    "table": "流程类别",
+    "new": "添加流程类别",
+    "edit": "编辑流程类别"
+  },
+  "listAPI": "/api/crud/oms/wisp/wisps",
+  "createAPI": "/api/crud/oms/wisp/wisps",
+  "getAPI": "/api/crud/oms/wisp/wisps/[id]",
+  "updateAPI": "/api/crud/oms/wisp/wisps/[id]",
+  "deleteAPI": "/api/crud/oms/wisp/wisps/(id)",
+  "columns": 1,
   "tableFields": [{
-      "label": "序号",
-      "field": "name"
+      "label": "成长天数",
+      "field": "growthDays"
     },
     {
-      "label": "名称",
-      "field": "code"
+      "label": "描述",
+      "field": "description"
     },
     {
       "label": "直推人数",
@@ -37,8 +48,7 @@
       "field": "note"
     }
   ],
-  "tableActions": [
-    {
+  "tableActions": [{
       "title": "暂停自动投放",
       "type": "modal",
       "options": {
@@ -58,14 +68,13 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "确定要暂停自动投放么?",
-                "rules": [{
-                  "type": "required"
-                }],
-                "type": "input",
-                "field": "attributeName"
-              }
-            ]
+              "label": "确定要暂停自动投放么?",
+              "rules": [{
+                "type": "required"
+              }],
+              "type": "input",
+              "field": "attributeName"
+            }]
           }
         }]
       }
@@ -90,14 +99,13 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "",
-                "rules": [{
-                  "type": "required"
-                }],
-                "type": "automaticdelivery",
-                "field": "attributeName"
-              }
-            ]
+              "label": "",
+              "rules": [{
+                "type": "required"
+              }],
+              "type": "automaticdelivery",
+              "field": "attributeName"
+            }]
           }
         }]
       }
@@ -122,11 +130,10 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "",
-                "type": "unseal",
-                "field": "attributeName"
-              }
-            ]
+              "label": "",
+              "type": "unseal",
+              "field": "attributeName"
+            }]
           }
         }]
       }
@@ -151,17 +158,16 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "",
-                "props": {
-                  "placeholder": "请输入冻结账号原因"
-                },
-                "rules": [{
-                  "type": "required"
-                }],
-                "type": "text-area",
-                "field": "attributeName"
-              }
-            ]
+              "label": "",
+              "props": {
+                "placeholder": "请输入冻结账号原因"
+              },
+              "rules": [{
+                "type": "required"
+              }],
+              "type": "text-area",
+              "field": "attributeName"
+            }]
           }
         }]
       }
@@ -186,17 +192,16 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "",
-                "props": {
-                  "placeholder": "请输入审核不通过原因"
-                },
-                "rules": [{
-                  "type": "required"
-                }],
-                "type": "text-area",
-                "field": "attributeName"
-              }
-            ]
+              "label": "",
+              "props": {
+                "placeholder": "请输入审核不通过原因"
+              },
+              "rules": [{
+                "type": "required"
+              }],
+              "type": "text-area",
+              "field": "attributeName"
+            }]
           }
         }]
       }
@@ -221,14 +226,13 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "",
-                "rules": [{
-                  "type": "required"
-                }],
-                "type": "approved",
-                "field": "attributeName"
-              }
-            ]
+              "label": "",
+              "rules": [{
+                "type": "required"
+              }],
+              "type": "approved",
+              "field": "attributeName"
+            }]
           }
         }]
       }
@@ -241,90 +245,91 @@
         "style": "primary",
         "path": "/account/accountmanage/accountdetail"
       }
-    },{
-    "title": "修改账号",
-    "type": "path",
-    "options": {
-      "outside": true,
-      "style": "primary",
-      "path": "/account/accountmanage/editaccount"
-    }
-  }, {
-    "title": "添加账号",
-    "type": "path",
-    "options": {
-      "outside": true,
-      "style": "primary",
-      "path": "/account/accountmanage/addaccount"
-    }
-  }, {
-    "title": "发放精灵币",
-    "type": "modal",
-    "options": {
-      "style": "primary",
-      "modalTitle": "发放精灵令",
-      "modalWidth": 600,
-      "items": [{
-        "component": "Form",
-        "config": {
-          "layout": "Grid",
-          "layoutConfig": {
-            "value": [
-              24
+    }, {
+      "title": "修改账号",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "primary",
+        "path": "/account/accountmanage/editaccount"
+      }
+    }, {
+      "title": "添加账号",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "primary",
+        "path": "/account/accountmanage/addaccount"
+      }
+    }, {
+      "title": "发放精灵币",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "发放精灵令",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "当前精灵币:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入"
+                },
+                "type": "text",
+                "field": "attributeName"
+              },
+              {
+                "label": "发放到账号：",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入账号"
+                },
+                "type": "input",
+                "field": "attributeName"
+              },
+              {
+                "label": "发放数量:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入数量"
+                },
+                "type": "input",
+                "field": "fieldName"
+              },
+              {
+                "label": "支付密码:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入支付密码"
+                },
+                "type": "input",
+                "field": "fieldName"
+              }
             ]
-          },
-          "API": {
-            "createAPI": "/api/eav/entities/[id]/attributes"
-          },
-          "fields": [{
-              "label": "当前精灵币:",
-              "rules": [{
-                "type": "required"
-              }],
-              "props": {
-                "placeholder": "请输入"
-              },
-              "type": "text",
-              "field": "attributeName"
-            },
-            {
-              "label": "发放到账号：",
-              "rules": [{
-                "type": "required"
-              }],
-              "props": {
-                "placeholder": "请输入账号"
-              },
-              "type": "input",
-              "field": "attributeName"
-            },
-            {
-              "label": "发放数量:",
-              "rules": [{
-                "type": "required"
-              }],
-              "props": {
-                "placeholder": "请输入数量"
-              },
-              "type": "input",
-              "field": "fieldName"
-            },
-            {
-              "label": "支付密码:",
-              "rules": [{
-                "type": "required"
-              }],
-              "props": {
-                "placeholder": "请输入支付密码"
-              },
-              "type": "input",
-              "field": "fieldName"
-            }
-          ]
-        }
-      }]
+          }
+        }]
+      }
     }
-  }],
+  ],
   "tableOperation": [{
       "title": "编辑",
       "type": "modal",

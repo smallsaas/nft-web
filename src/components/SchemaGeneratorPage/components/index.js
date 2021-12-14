@@ -1,7 +1,7 @@
 //验证码按钮组件
 import CodeBtn from "./btn/codebtn"
 //下拉选择框组件
-import Select from './select/select'
+// import Select from './select/select'
 //图片显示个上传组件
 import ImgUpload from './imgupload/imgupload'
 //图片显示组件
@@ -20,6 +20,9 @@ import ValueInput from './valueinput/valueinput';
 import TimeInput from './timeinput/timeinput';
 //单选radio
 import Radio from './radio/radio';
+//下拉框二
+import SelectTwo from './selecttwo/selecttwo';
+
 // 未使用控件
 // 右键下拉选择时间
 import Now from './Times/now'
@@ -125,7 +128,7 @@ export const widgets = {
 
     //nft组件
     CodeBtn,
-    Select,
+    // Select,
     ImgUpload,
     Text,
     Img,
@@ -134,5 +137,6 @@ export const widgets = {
     Unseal,
     AutomaticDelivery,
     TimeInput,
-    Radio
+    Radio,
+    SelectTwo
 }

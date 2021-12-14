@@ -1,0 +1,54 @@
+{
+  "pageName": {
+    "table": "预约管理",
+    "new": "添加账号",
+    "edit": "编辑账号"
+  },
+  "listAPI": "/api/crud/oms/player/players",
+  "createAPI": "/api/crud/oms/player/players",
+  "getAPI": "/api/crud/oms/player/players/[id]",
+  "updateAPI": "/api/crud/oms/player/players/[id]",
+  "deleteAPI": "/api/crud/oms/player/players/(id)",
+  "columns": 1,
+  "createFields": [
+  ],
+  "updateFields": [
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [
+  ],
+  "tableOperation": [
+  ],
+  "searchFields": [
+  ],
+  "tableFields": [{
+      "label": "序号",
+      "field": "id"
+    },
+    {
+      "label": "名称",
+      "field": "name"
+    },
+    {
+      "label": "当天预约数",
+      "field": "sortorder"
+    },
+    {
+      "label": "总预约数",
+      "field": "note"
+    },
+    {
+      "label": "当天匹配数",
+      "field": "note"
+    },
+    {
+      "label": "总匹配数",
+      "field": "note"
+    }
+  ],
+  "viewConfig": []
+}

@@ -7,7 +7,7 @@ function onChange(time, timeString) {
 export default function(){
 	return (
        <div>
-           <TimePicker onChange={onChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />——<TimePicker onChange={onChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />
+           <TimePicker onChange={onChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />
        </div>
     )
 }

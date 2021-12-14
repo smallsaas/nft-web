@@ -1,0 +1,73 @@
+{
+  "pageName": {
+    "table": "小二",
+    "new": "添加精灵",
+    "edit": "编辑精灵"
+  },
+  "listAPI": "/api/crud/oms/wisp/wisps",
+  "createAPI": "/api/crud/oms/wisp/wisps",
+  "getAPI": "/api/crud/oms/wisp/wisps/[id]",
+  "updateAPI": "/api/crud/oms/wisp/wisps/[id]",
+  "deleteAPI": "/api/crud/oms/wisp/wisps/(id)",
+  "columns": 1,
+  "createFields": [],
+  "updateFields": [],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [],
+  "tableOperation": [],
+  "searchFields": [{
+    "label": "名称",
+    "field": "actionName",
+    "type": "search",
+    "placeholder": "请输入名称"
+  }],
+  "tableFields": [{
+      "label": "序号",
+      "field": "id"
+    },
+    {
+      "label": "名称",
+      "field": "createTime"
+    },
+    {
+      "label": "精灵名称",
+      "field": "minimumValue"
+    },
+    {
+      "label": "级别",
+      "field": "level"
+    },
+    {
+      "label": "场次",
+      "field": "maximumValue"
+    },
+    {
+      "label": "预约人数",
+      "field": "appointmentMinute"
+    },
+    {
+      "label": "当前已匹配人数",
+      "field": "growthDays"
+    },
+    {
+      "label": "剩余未匹配人数",
+      "field": "growthPercent"
+    },
+    {
+      "label": "当前精灵数",
+      "field": "costWispCoin"
+    },
+    {
+      "label": "已处理精灵数",
+      "field": "costAccompanyWisp"
+    },
+    {
+      "label": "未处理精灵数",
+      "field": "costAccompanyWisp"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "pageName": {
+    "table": "场次",
+    "new": "添加精灵",
+    "edit": "编辑精灵"
+  },
+  "listAPI": "/api/crud/oms/wisp/wisps",
+  "createAPI": "/api/crud/oms/wisp/wisps",
+  "getAPI": "/api/crud/oms/wisp/wisps/[id]",
+  "updateAPI": "/api/crud/oms/wisp/wisps/[id]",
+  "deleteAPI": "/api/crud/oms/wisp/wisps/(id)",
+  "columns": 1,
+  "createFields": [
+  ],
+  "updateFields": [
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [],
+  "tableOperation": [
+  ],
+  "searchFields": [{
+    "label": "场次",
+    "type": "select",
+    "width": 180,
+    "options": [{
+        "label": "11:00~12:00",
+        "value": "11:00~12:00"
+      },
+      {
+        "label":  "13:00~14:00",
+        "value":  "13:00~14:00"
+      },
+      {
+        "label":  "15:00~16:00",
+        "value":  "15:00~16:00"
+      },
+      {
+        "label":  "17:00~18:00",
+        "value":  "17:00~18:00"
+      },
+      {
+        "label":  "19:00~20:00",
+        "value":  "19:00~20:00"
+      }
+    ],
+    "field": "level"
+  }],
+  "tableFields": [{
+      "label": "序号",
+      "field": "id"
+    },
+    {
+      "label": "名称",
+      "field": "createTime"
+    },
+    {
+      "label": "级别",
+      "field": "level"
+    },
+    {
+      "label": "精灵图片",
+      "valueType":"image",
+      "field": "minimumValue"
+    },
+    {
+      "label": "场次",
+      "field": "maximumValue"
+    },
+    {
+      "label": "预约人数",
+      "field": "appointmentMinute"
+    },
+    {
+      "label": "当前已匹配人数",
+      "field": "growthDays"
+    },
+    {
+      "label": "剩余未匹配人数",
+      "field": "growthPercent"
+    },
+    {
+      "label": "当前精灵数",
+      "field": "costWispCoin"
+    },
+    {
+      "label": "已处理精灵数",
+      "field": "costAccompanyWisp"
+    },
+    {
+      "label": "未处理精灵数",
+      "field": "costAccompanyWisp"
+    }
+  ]
+}

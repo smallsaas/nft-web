@@ -1,3 +1,4 @@
+
 import { Select } from 'antd'
 export default function(){
     function handleChange(value) {
@@ -6,11 +7,9 @@ export default function(){
 
 	return  (
         <Select defaultValue="" style={{ width: 120 }} onChange={handleChange}>
-            <Option value="1">v1</Option>
-            <Option value="2">v2</Option>
-            <Option value="3">v3</Option>
-            <Option value="4">v4</Option>
-            <Option value="5">v5</Option>
+            <Option value="审核通过">审核通过</Option>
+            <Option value="审核中">审核中</Option>
+            <Option value="审核不通过">审核不通过</Option>
         </Select>
     )
 }
