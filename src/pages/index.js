@@ -12,7 +12,7 @@ export default function () {
   if (getToken()) {
     history.push('/admin');
   } else {
-    history.push('/admin');
+    history.push('/login');
   }
 
   return (

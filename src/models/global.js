@@ -28,8 +28,6 @@ createModel({
     },
     queryPerm: async function (status) {
       
-      return;
-
       if (getToken()) {
         
         if(status){

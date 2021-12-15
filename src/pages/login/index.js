@@ -220,16 +220,16 @@ function LoginForm(props) {
 
       <div className={styles.regGuided}>
 
-        <Button type="link" size="small"
+        {/* <Button type="link" size="small"
           onClick={() => handleGithubLogin()}
-        >github登录</Button>
-        {formType == 'account' ? (
+        >github登录</Button> */}
+        {/* {formType == 'account' ? (
           <>
             <Button type="link" size="small"
               onClick={handleChangeFormType.bind(null, 'githubLogin')}
             >验证码登录</Button>
           </>
-        ) : null}
+        ) : null} */}
         {formType !== 'account' ? (
           <Button type="link" size="small"
             onClick={handleChangeFormType.bind(null, 'account')}

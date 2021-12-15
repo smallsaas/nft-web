@@ -244,48 +244,50 @@ module.exports = [
     path: '/dynamicPage'
   },
 
-  // {
-  //   name: '系统管理',
-  //   path: '/sys',
-  //   // permissions: [
-  //   //   'Org.view',
-  //   //   'sysUser.view',
-  //   //   'sysRole.view',
-  //   //   'Config.view',
-  //   //   'OperationLog.view'
-  //   // ],
-  //   items: [
-  //     {
-  //       name: '菜单管理',
-  //       path: '/sys/menuManage',
-  //     },
-  //     {
-  //       name: '组织管理',
-  //       path: '/sys/org',
-  //       permissions: ''
-  //     },
-  //     {
-  //       name: '用户管理',
-  //       path: '/sys/user',
-  //       permissions: ''
-  //     },
-  //     {
-  //       name: '角色管理',
-  //       path: '/sys/role',
-  //       permissions: ''
-  //     },
-  //     {
-  //       name: '系统配置',
-  //       path: '/sys/setting',
-  //       permissions: ''
-  //     },
-  //     {
-  //       name: '操作日志',
-  //       path: '/sys/logs',
-  //       permissions: ''
-  //     }
-  //   ]
-  // },
+  {
+    name: '系统管理',
+    path: '/sys',
+    // permissions: [
+    //   'Org.view',
+    //   'sysUser.view',
+    //   'sysRole.view',
+    //   'Config.view',
+    //   'OperationLog.view'
+    // ],
+    items: [
+      // {
+      //   name: '菜单管理',
+      //   path: '/sys/menuManage',
+      // },
+      {
+        name: '组织管理',
+        path: '/sys/org',
+        permissions: ''
+      },
+      {
+        name: '用户管理',
+        path: '/sys/user',
+        permissions: ''
+      },
+      {
+        name: '角色管理',
+        path: '/sys/role',
+        permissions: ''
+      },
+      {
+        name: '系统配置',
+        path: '/sys/setting',
+        permissions: ''
+      },
+      {
+        name: '操作日志',
+        path: '/sys/logs',
+        permissions: ''
+      }
+    ]
+  },
+
+
   // {
   //   name: '业务中台',
   //   path: '/businessCenter',
