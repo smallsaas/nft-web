@@ -267,43 +267,53 @@
   }],
   "tableFields": [{
       "label": "序号",
-      "field": "id"
+      "field": "id",
+      "align":"center"
     },
     {
       "label": "精灵名称",
-      "field": "createTime"
+      "field": "createTime",
+      "align":"center"
     },
     {
       "label": "级别",
-      "field": "level"
+      "field": "level",
+      "align":"center"
     },
     {
       "label": "最低价值",
-      "field": "minimumValue"
+      "field": "minimumValue",
+      "align":"center"
     },
     {
       "label": "最高价值",
-      "field": "maximumValue"
+      "field": "maximumValue",
+      "align":"center"
     },
     {
       "label": "预约时间",
-      "field": "appointmentMinute"
+      "field": "appointmentMinute",
+      "align":"center"
     },
     {
       "label": "培养天数",
-      "field": "growthDays"
+      "field": "growthDays",
+      "align":"center"
     },
     {
       "label": "培养价值",
-      "field": "growthPercent"
+      "field": "growthPercent",
+      "align":"center"
     },
     {
       "label": "预约消耗的精灵币",
-      "field": "costWispCoin"
+      "field": "costWispCoin",
+      "align":"center"
     },
     {
       "label": "预约消耗的陪伴精灵数量",
-      "field": "costAccompanyWisp"
+      "field": "costAccompanyWisp",
+      "align":"center"
     }
   ]
 }

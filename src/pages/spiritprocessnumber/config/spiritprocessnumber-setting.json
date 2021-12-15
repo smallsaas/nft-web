@@ -4,24 +4,21 @@
     "new": "添加精灵",
     "edit": "编辑精灵"
   },
-  "listAPI": "/api/crud/oms/wisp/wisps",
-  "createAPI": "/api/crud/oms/wisp/wisps",
-  "getAPI": "/api/crud/oms/wisp/wisps/[id]",
-  "updateAPI": "/api/crud/oms/wisp/wisps/[id]",
-  "deleteAPI": "/api/crud/oms/wisp/wisps/(id)",
+  "listAPI": "/api/crud/oms/wispMeta/wispMetas",
+  "createAPI": "/api/crud/oms/wispMeta/wispMetas",
+  "getAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
+  "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
+  "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
   "columns": 1,
-  "createFields": [
-  ],
-  "updateFields": [
-  ],
+  "createFields": [],
+  "updateFields": [],
   "map": {},
   "layout": {
     "table": "Content",
     "form": "TitleContent"
   },
   "tableActions": [],
-  "tableOperation": [
-  ],
+  "tableOperation": [],
   "searchFields": [{
     "label": "场次",
     "type": "select",
@@ -31,23 +28,23 @@
         "value": "11:00~12:00"
       },
       {
-        "label":  "13:00~14:00",
-        "value":  "13:00~14:00"
+        "label": "13:00~14:00",
+        "value": "13:00~14:00"
       },
       {
-        "label":  "15:00~16:00",
-        "value":  "15:00~16:00"
+        "label": "15:00~16:00",
+        "value": "15:00~16:00"
       },
       {
-        "label":  "17:00~18:00",
-        "value":  "17:00~18:00"
+        "label": "17:00~18:00",
+        "value": "17:00~18:00"
       },
       {
-        "label":  "19:00~20:00",
-        "value":  "19:00~20:00"
+        "label": "19:00~20:00",
+        "value": "19:00~20:00"
       }
     ],
-    "field": "level"
+    "field": "session"
   }],
   "tableFields": [{
       "label": "序号",
@@ -55,7 +52,7 @@
     },
     {
       "label": "名称",
-      "field": "createTime"
+      "field": "name"
     },
     {
       "label": "级别",
@@ -63,36 +60,36 @@
     },
     {
       "label": "精灵图片",
-      "valueType":"image",
-      "field": "minimumValue"
+      "valueType": "image",
+      "field": "photoUrl"
     },
     {
       "label": "场次",
-      "field": "maximumValue"
+      "field": "session"
     },
     {
       "label": "预约人数",
-      "field": "appointmentMinute"
+      "field": "appointment"
     },
     {
       "label": "当前已匹配人数",
-      "field": "growthDays"
+      "field": "matchedNumber"
     },
     {
       "label": "剩余未匹配人数",
-      "field": "growthPercent"
+      "field": "noMatchedNumber"
     },
     {
       "label": "当前精灵数",
-      "field": "costWispCoin"
+      "field": "currentWispNumber"
     },
     {
       "label": "已处理精灵数",
-      "field": "costAccompanyWisp"
+      "field": "disposeWisp"
     },
     {
       "label": "未处理精灵数",
-      "field": "costAccompanyWisp"
+      "field": "undisposedWisp"
     }
   ]
 }

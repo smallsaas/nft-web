@@ -88,6 +88,8 @@ import AutomaticDelivery from '@/components/SchemaGeneratorPage/components/autom
 import TimeInput from '@/components/SchemaGeneratorPage/components/timeinput/timeinput'
 import Radio from '@/components/SchemaGeneratorPage/components/radio/radio'
 import SelectTwo from '@/components/SchemaGeneratorPage/components/selecttwo/selecttwo'
+import HandApply from '@/components/SchemaGeneratorPage/components/handapply/handapply'
+
 
 
 
@@ -238,7 +240,8 @@ FITSet({
   'automaticdelivery':AutomaticDelivery,
   'timeinput':TimeInput,
   'radio':Radio,
-  'selecttwo':SelectTwo
+  'selecttwo':SelectTwo,
+  'handapply':HandApply
 });
 
 AITSet({

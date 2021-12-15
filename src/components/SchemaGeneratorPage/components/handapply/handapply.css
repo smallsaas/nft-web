@@ -1,0 +1,79 @@
+.Box {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid red;
+}
+
+.BoxChild {
+  width: 175px;
+  height: 269px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+}
+
+.CheckBox {
+  width: 15px;
+  height: 15px;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid red;
+}
+
+.ItemBox {
+  width: 147px;
+  height: 269px;
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 150%;
+  border: rgba(42, 130, 228, 1) solid 2px;
+  text-align: center;
+  margin-left: 13px;
+}
+
+.WispBox {
+  width: 144px;
+  height: 104px;
+  border-radius: 4px;
+  border: rgba(166, 166, 166, 1) solid 1px;
+}
+
+.InfoBox {
+  margin-top: 8px;
+  width: 144px;
+  height: 150px;
+  border: red solid 1px;
+}
+
+.InfoOne,.InfoFour {
+  width: 144px;
+  height: 18px;
+  border: red solid 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 4px;
+  color: rgba(42, 130, 228, 1);
+  font-size: 12px;
+}
+
+.InfoTwo,.InfoThree {
+  padding-left: 4px;
+  width: 144px;
+  height: 18px;
+  border: red solid 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(42, 130, 228, 1);
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.InfoFour{
+    margin-top: 8px;
+}

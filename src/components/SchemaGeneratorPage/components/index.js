@@ -23,6 +23,9 @@ import Radio from './radio/radio';
 //下拉框二
 import SelectTwo from './selecttwo/selecttwo';
 
+//手动投放组件页面
+import HandApply from './handapply/handapply';
+
 // 未使用控件
 // 右键下拉选择时间
 import Now from './Times/now'
@@ -138,5 +141,6 @@ export const widgets = {
     AutomaticDelivery,
     TimeInput,
     Radio,
-    SelectTwo
+    SelectTwo,
+    HandApply
 }

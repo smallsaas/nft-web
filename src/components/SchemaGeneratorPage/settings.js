@@ -168,15 +168,15 @@ export const elements = [{
     },
     widget: "CodeBtn"
   },
-  // {
-  //   text: 'Select',
-  //   name: "select",
-  //   schema: {
-  //     type: 'string',
-  //     "ui:widget": "Select",
-  //   },
-  //   widget: "Select"
-  // },
+  {
+    text: 'HandApply',
+    name: "handapply",
+    schema: {
+      type: 'string',
+      "ui:widget": "HandApply",
+    },
+    widget: "HandApply"
+  },
   {
     text: 'ImgUpload',
     name: "imgUpload",

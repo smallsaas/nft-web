@@ -49,54 +49,55 @@ module.exports = [
   //     },
   //   ]
   // },
+  // {
+  //   name: '手动投放',
+  //   path: '/handapply',
+  //   items: [{
+  //       path: '/handapply',
+  //       name: '手动投放',
+  //     }
+  //   ]
+  // },
   {
     name: '精灵管理',
     path: '/spirit',
     items: [{
         path: '/spirit',
+        name: '元精灵管理',
+      },
+      {
+        path: '/spirit',
         name: '精灵管理',
-      },
-      {
-        path: '/',
-        name: '精灵处理',
-        items: [{
-          path: '/spiritprocessnumber',
-          name: '场次',
-        },
-        {
-          path: '/spiritprocesshandle',
-          name: '小二',
-        }]
       }
     ]
   },
   {
-    name: '账号管理',
-    path: '/newaccount',
+    name: '玩家攻略',
+    path: '/spirit',
     items: [{
-        path: '/newaccount',
-        name: '账号管理',
-      },
-      {
         path: '/bookingmanagement',
-        name: '预约管理',
-      }
-    ]
-  },
-  {
-    name: '团队管理',
-    path: '/newteammanage',
-    items: [{
-        path: '/newteammanage',
-        name: '团队',
+        name: '预约',
+      },
+      {
+        path: '/spiritprocessnumber',
+        name: '场次',
       },
       {
         path: '/nopay',
         name: '未付款列表',
+      }
+    ]
+  },
+  {
+    name: '玩家管理',
+    path: '/spirit',
+    items: [{
+        path: '/newaccount',
+        name: '玩家',
       },
       {
-        path: '/directquery',
-        name: '直推查询列表',
+        path: '/newteammanage',
+        name: '团队',
       }
     ]
   },
@@ -104,11 +105,90 @@ module.exports = [
     name: '申述管理',
     path: '/representation',
     items: [{
+      path: '/representation',
+      name: '申述管理',
+    }]
+  },
+  {
+    name: '配置中心',
+    path: '/representation',
+    items: [{
         path: '/representation',
-        name: '申述管理',
+        name: '店小二',
+      }, {
+        path: '/representation',
+        name: '系统配置',
+      },
+      {
+        path: '/representation',
+        name: '场次管理',
       }
     ]
   },
+  // {
+  //       path: '/',
+  //       name: '精灵处理',
+  //       items: [{
+  //         path: '/spiritprocessnumber',
+  //         name: '场次',
+  //       },
+  //       {
+  //         path: '/spiritprocesshandle',
+  //         name: '小二',
+  //       }]
+  //     }
+  // {
+  //   name: '账号管理',
+  //   path: '/newaccount',
+  //   items: [{
+  //       path: '/newaccount',
+  //       name: '账号管理',
+  //     },
+  //     {
+  //       path: '/bookingmanagement',
+  //       name: '预约管理',
+  //     }
+  //   ]
+  // },
+  // {
+  //   name: '团队管理',
+  //   path: '/newteammanage',
+  //   items: [{
+  //       path: '/newteammanage',
+  //       name: '团队',
+  //     },
+  //     {
+  //       path: '/nopay',
+  //       name: '未付款列表',
+  //     },
+  //     {
+  //       path: '/directquery',
+  //       name: '直推查询列表',
+  //     }
+  //   ]
+  // },
+  // {
+  //   name: '申述管理',
+  //   path: '/representation',
+  //   items: [{
+  //       path: '/representation',
+  //       name: '申述管理',
+  //     }
+  //   ]
+  // },
+  // {
+  //   name: '配置中心',
+  //   path: '/',
+  //   items: [{
+  //       path: '/generalconfig',
+  //       name: '通用配置',
+  //     },
+  //     {
+  //       path: '/memberconfig',
+  //       name: '会员配置',
+  //     }
+  //   ]
+  // },
   // {
   //   name: '账号管理',
   //   path: '/account',

@@ -1,0 +1,629 @@
+{
+    "pageName": {
+      "table": "会员配置",
+      "new": "添加精灵",
+      "edit": "编辑精灵"
+    },
+    "listAPI": "/api/crud/oms/wisp/wisps",
+    "createAPI": "/api/crud/oms/wisp/wisps",
+    "getAPI": "/api/crud/oms/wisp/wisps/[id]",
+    "updateAPI": "/api/crud/oms/wisp/wisps/[id]",
+    "deleteAPI": "/api/crud/oms/wisp/wisps/(id)",
+    "columns": 1,
+    "createFields": [{
+        "label": "精灵名称",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "attributeName"
+      },
+      {
+        "label": "级别",
+        "type": "select",
+        "width":180,
+        "options":[
+          {"label":"v1","value":1},
+          {"label":"v2","value":2},
+          {"label":"v3","value":3},
+          {"label":"v4","value":4},
+          {"label":"v5","value":5}
+        ],
+        "field": "level"
+      },
+      {
+        "label": "最小价值",
+        "rules": [{
+          "type": "required"
+        }],
+        "type": "input",
+        "field": "minimumValue"
+      },
+      {
+        "label": "最大价值",
+        "rules": [{
+          "type": "required"
+        }],
+        "type": "input",
+        "field": "maximumValue"
+      },
+      {
+        "label": "预约时间",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "分钟",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "匹配时间开始",
+        "type": "date",
+        "field": "startMatchTime"
+      },
+      {
+        "label": "匹配时间结束",
+        "type": "date",
+        "field": "endMatchTime"
+      },
+      {
+        "label": "培养周期",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "天",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "growthDays"
+      },
+      {
+        "label": "培养价值",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "growthPercent"
+      },
+      {
+        "label": "兑换陪伴精灵消耗精灵令",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "个",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "costAccompanyWisp"
+      },
+      {
+        "label": "租用土地1天消耗精灵令",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "个",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "costWispCoin"
+      }
+    ],
+    "updateFields": [
+      {
+        "label": "级别",
+        "type": "select",
+        "width":180,
+        "options":[
+          {"label":"v1","value":1},
+          {"label":"v2","value":2},
+          {"label":"v3","value":3},
+          {"label":"v4","value":4},
+          {"label":"v5","value":5}
+        ],
+        "field": "level"
+      },
+      {
+        "label": "最小价值",
+        "rules": [{
+          "type": "required"
+        }],
+        "type": "input",
+        "field": "minimumValue"
+      },
+      {
+        "label": "最大价值",
+        "rules": [{
+          "type": "required"
+        }],
+        "type": "input",
+        "field": "maximumValue"
+      },
+      {
+        "label": "预约时间",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "分钟",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "匹配时间开始",
+        "type": "timeinput",
+        "field": "startMatchTime"
+      },
+      {
+        "label": "匹配时间结束",
+        "type": "timeinput",
+        "field": "endMatchTime"
+      },
+      {
+        "label": "培养周期",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "天",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "growthDays"
+      },
+      {
+        "label": "培养价值",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "growthPercent"
+      },
+      {
+        "label": "兑换陪伴精灵消耗精灵令",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "个",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "costAccompanyWisp"
+      },
+      {
+        "label": "租用土地1天消耗精灵令",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "个",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "costWispCoin"
+      }
+    ],
+    "map": {},
+    "layout": {
+      "table": "Content",
+      "form": "TitleContent"
+    },
+    "tableActions": [{
+      "title": "添加精灵",
+      "type": "path",
+      "options": {
+        "style": "primary",
+        "path": "/spirit/spirit-add"
+      }
+    }],
+    "tableOperation": [{
+        "title": "编辑",
+        "type": "path",
+        "options": {
+          "style": "path",
+          "path": "spirit/spirit-edit",
+          "outside": true
+        }
+      },
+      {
+        "title": "删除",
+        "type": "delete",
+        "options": {
+          "outside": false,
+          "API": "/api/crud/oms/wisp/wisps/(id)",
+          "method": "delete"
+        },
+        "expect": {
+          "permission": ""
+        }
+      }
+    ],
+    "searchFields": [{
+      "label": "名称",
+      "field": "description",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入精灵名称"
+      }
+    }],
+    "tableFields": [ 
+      {
+        "label": "有效会员",
+        "type": "plain",
+        "field": "",
+        "span":24
+      },
+      {
+        "label": "精灵令大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":12
+      },
+      {
+        "label": "预约时间",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "分钟",
+          "prefix":"提前",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "一级推荐收益",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "二级推荐收益",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "烧伤比例",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "奖励收益",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "解封账号",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix": "精灵令",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "保底预约次数",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute"
+      },
+      {
+        "label": "是否启用保底",
+        "rules": [{
+          "type": "required"
+        }],
+        "type": "radio",
+        "field": "appointmentMinute"
+      }
+    ],
+    "formFields":[
+      {
+        "label": "有效会员",
+        "type": "plain",
+        "field": "",
+        "span":24
+      },
+      {
+        "label": "精灵令大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":24
+      },
+      {
+        "label": "v1级会员",
+        "type": "plain",
+        "field": "",
+        "span":24
+      },
+      {
+        "label": "精灵令大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "直推人数大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"有效账号",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":16
+      },
+      {
+        "label": "团队人数大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"有效账户",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "团队收益",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "v2级会员",
+        "type": "plain",
+        "field": "",
+        "span":24
+      },
+      {
+        "label": "精灵令大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "直推人数大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"有效账号",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":16
+      },
+      {
+        "label": "团队人数大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"有效账户",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "团队收益",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "v3级会员",
+        "type": "plain",
+        "field": "",
+        "span":24
+      },
+      {
+        "label": "精灵令大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "直推人数大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"有效账号",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":16
+      },
+      {
+        "label": "团队人数大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"有效账户",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "团队收益",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "v4级会员",
+        "type": "plain",
+        "field": "",
+        "span":24
+      },
+      {
+        "label": "精灵令大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "直推人数大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"有效账号",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":16
+      },
+      {
+        "label": "团队人数大于",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"有效账户",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      },
+      {
+        "label": "团队收益",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "suffix":"%",
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "appointmentMinute",
+        "span":8
+      }
+    ]
+  }
+  
