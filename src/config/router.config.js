@@ -62,7 +62,7 @@ module.exports = [
     name: '精灵管理',
     path: '/spirit',
     items: [{
-        path: '/spirit',
+        path: '/metaspirit',
         name: '元精灵管理',
       },
       {

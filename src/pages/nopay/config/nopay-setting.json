@@ -4,11 +4,11 @@
     "new": "添加账号",
     "edit": "编辑账号"
   },
-  "listAPI": "/api/crud/oms/manager/managers",
-  "createAPI": "/api/crud/oms/manager/managers",
-  "getAPI": "/api/crud/oms/manager/managers/[id]",
-  "updateAPI": "/api/crud/oms/manager/managers/[id]",
-  "deleteAPI": "/api/crud/oms/manager/managers/(id)",
+  "listAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords",
+  "createAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords",
+  "getAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords/[id]",
+  "updateAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords/[id]",
+  "deleteAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords/(id)",
   "columns": 1,
   "createFields": [{
       "label": "昵称",
@@ -304,25 +304,28 @@
   ],
   "tableFields": [{
       "label": "序号",
-      "field": "name"
+      "field": "name",
+      "align":"center"
     },
     {
       "label": "账号",
-      "field": "code"
+      "field": "code",
+      "align":"center"
     },
     {
       "label": "上级账号",
-      "field": "sortorder"
+      "field": "sortorder",
+      "align":"center"
     },
     {
       "label": "精灵",
-      "width": 180,
-      "field": "note"
+      "field": "note",
+      "align":"center"
     },
     {
       "label": "付款倒计时",
-      "width": 180,
-      "field": "note"
+      "field": "note",
+      "align":"center"
     }
   ]
 }

@@ -6,13 +6,13 @@ import config from './config/index';
 export default function () {
 
   useBreadcrumb([
-    { title: '首页', path: '/bookingmanagement' },
-    { title: '查看预约' },
+    { title: '首页', path: '/metaspirit' },
+    { title: '元精灵管理' },
   ]);
 
   return <div>
     <ZEle
-      namespace="bookingmanagement"
+      namespace="metaspirit"
       config={config}
     />
   </div>

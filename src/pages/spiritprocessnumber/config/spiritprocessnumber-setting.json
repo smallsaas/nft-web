@@ -4,11 +4,11 @@
     "new": "添加精灵",
     "edit": "编辑精灵"
   },
-  "listAPI": "/api/crud/oms/wispMeta/wispMetas",
-  "createAPI": "/api/crud/oms/wispMeta/wispMetas",
-  "getAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
-  "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
-  "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
+  "listAPI": "/api/crud/oms/marketingSession/marketingSessions",
+  "createAPI": "/api/crud/oms/marketingSession/marketingSessions",
+  "getAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
+  "updateAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
+  "deleteAPI": "/api/crud/oms/marketingSession/marketingSessions/(id)",
   "columns": 1,
   "createFields": [],
   "updateFields": [],
@@ -48,48 +48,59 @@
   }],
   "tableFields": [{
       "label": "序号",
-      "field": "id"
+      "field": "id",
+      "align":"center"
     },
     {
-      "label": "名称",
-      "field": "name"
+      "label": "精灵名称",
+      "field": "name",
+      "align":"center"
     },
     {
       "label": "级别",
-      "field": "level"
+      "field": "level",
+      "align":"center"
     },
     {
       "label": "精灵图片",
       "valueType": "image",
-      "field": "photoUrl"
+      "field": "photoUrl",
+      "align":"center"
     },
     {
-      "label": "场次",
-      "field": "session"
+      "label": "场次时间",
+      "field": "session",
+      "align":"center"
     },
     {
       "label": "预约人数",
-      "field": "appointment"
+      "field": "appointment",
+      "align":"center"
     },
     {
       "label": "当前已匹配人数",
-      "field": "matchedNumber"
+      "field": "matchedNumber",
+      "align":"center"
     },
     {
       "label": "剩余未匹配人数",
-      "field": "noMatchedNumber"
+      "field": "noMatchedNumber",
+      "align":"center"
     },
     {
       "label": "当前精灵数",
-      "field": "currentWispNumber"
+      "field": "currentWispNumber",
+      "align":"center"
     },
     {
       "label": "已处理精灵数",
-      "field": "disposeWisp"
+      "field": "disposeWisp",
+      "align":"center"
     },
     {
       "label": "未处理精灵数",
-      "field": "undisposedWisp"
+      "field": "undisposedWisp",
+      "align":"center"
     }
   ]
 }

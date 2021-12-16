@@ -1,7 +1,7 @@
 {
   "pageName": {
     "table": "申述管理",
-    "new": "添加账号",
+    "new": "添加申述类型",
     "edit": "处理申述",
     "view": "查看详情"
   },
@@ -12,255 +12,15 @@
   "deleteAPI": "/api/crud/oms/player/players/(id)",
   "columns": 1,
   "createFields": [{
-      "label": "昵称",
+      "label": "申述类型",
       "rules": [{
         "type": "required"
       }],
       "props": {
-        "placeholder": "请输入"
+        "placeholder": "请输入申述类型"
       },
       "type": "input",
       "field": "name"
-    },
-    {
-      "label": "邀请码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "hidden",
-      "field": "identifier"
-    },
-    {
-      "label": "手机号码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "name"
-    },
-    {
-      "label": "验证码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入",
-        "suffix": "11"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "codebtn",
-      "field": "code"
-    },
-    {
-      "label": "备用手机号码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "name"
-    },
-    {
-      "label": "验证码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "codebtn",
-      "field": "code"
-    },
-    {
-      "label": "交易密码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "name"
-    },
-    {
-      "label": "确认交易密码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "hidden",
-      "field": "identifier"
-    },
-    {
-      "label": "登录密码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "name"
-    },
-    {
-      "label": "确认登陆密码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "hidden",
-      "field": "identifier"
-    },
-    {
-      "label": "所属角色",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "select",
-      "options": [{
-          "label": "管理员",
-          "value": 1
-        },
-        {
-          "label": "小二",
-          "value": 1
-        },
-        {
-          "label": "普通用户",
-          "value": 1
-        }
-      ],
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "hidden",
-      "field": "identifier"
-    },
-    {
-      "label": "",
-      "type": "hidden",
-      "field": "identifier"
-    },
-    {
-      "label": "支付宝账号",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "支付宝二维码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "upload-image",
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "hidden",
-      "field": "identifier"
-    },
-    {
-      "label": "微信账号",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "微信二维码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "upload-image",
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "hidden",
-      "field": "identifier"
-    },
-    {
-      "label": "户名",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "银行卡号",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "code"
-    },
-    {
-      "label": "",
-      "type": "hidden",
-      "field": "identifier"
     }
   ],
   "updateFields": [{
@@ -304,7 +64,7 @@
     "type": "path",
     "options": {
       "style": "primary",
-      "path": "/newaccount/newaccount-add"
+      "path": "/representation/representation-add"
     }
   }],
   "tableOperation": [{

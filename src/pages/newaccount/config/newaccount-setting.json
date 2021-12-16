@@ -152,8 +152,11 @@
       "rules": [{
         "type": "required"
       }],
-      "props": {
-        "placeholder": "请输入"
+      "props":{
+        "placeholder": "请输入精灵描述",
+        "style":{
+          "width":240
+        }
       },
       "type": "select",
       "options": [{
@@ -322,11 +325,13 @@
       "rules": [{
         "type": "required"
       }],
-      "props": {
-        "placeholder": "请输入"
+      "props":{
+        "placeholder": "请输入精灵描述",
+        "style":{
+          "width":240
+        }
       },
       "type": "password",
-      "width":120,
       "field": "paymentPassword"
     },
     {
@@ -350,8 +355,11 @@
       "rules": [{
         "type": "required"
       }],
-      "props": {
-        "placeholder": "请输入"
+      "props":{
+        "placeholder": "请输入精灵描述",
+        "style":{
+          "width":240
+        }
       },
       "type": "password",
       "field": "name"
@@ -377,8 +385,11 @@
       "rules": [{
         "type": "required"
       }],
-      "props": {
-        "placeholder": "请输入"
+      "props":{
+        "placeholder": "请输入精灵描述",
+        "style":{
+          "width":240
+        }
       },
       "type": "select",
       "options": [{
