@@ -1,14 +1,14 @@
 {
   "pageName": {
-    "table": "预约管理",
+    "table": "查看预约",
     "new": "添加账号",
     "edit": "编辑账号"
   },
-  "listAPI": "/api/crud/oms/player/players",
-  "createAPI": "/api/crud/oms/player/players",
-  "getAPI": "/api/crud/oms/player/players/[id]",
-  "updateAPI": "/api/crud/oms/player/players/[id]",
-  "deleteAPI": "/api/crud/oms/player/players/(id)",
+  "listAPI": "/api/crud/oms/wispInstance/wispInstances",
+  "createAPI": "/api/crud/oms/wispInstance/wispInstances",
+  "getAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
+  "updateAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
+  "deleteAPI": "/api/crud/oms/wispInstance/wispInstances/(id)",
   "columns": 1,
   "createFields": [
   ],
@@ -27,27 +27,38 @@
   ],
   "tableFields": [{
       "label": "序号",
-      "field": "id"
+      "field": "id",
+      "align":"center"
     },
     {
-      "label": "名称",
-      "field": "name"
+      "label": "玩家",
+      "field": "name",
+      "align":"center"
     },
     {
-      "label": "当天预约数",
-      "field": "sortorder"
+      "label": "预约精灵",
+      "field": "sortorder",
+      "align":"center"
     },
     {
-      "label": "总预约数",
-      "field": "note"
+      "label": "预约场次",
+      "field": "note",
+      "align":"center"
     },
     {
-      "label": "当天匹配数",
-      "field": "note"
+      "label": "购买的精灵",
+      "field": "note",
+      "align":"center"
     },
     {
-      "label": "总匹配数",
-      "field": "note"
+      "label": "租用的土地",
+      "field": "note",
+      "align":"center"
+    },
+    {
+      "label": "预约时间",
+      "field": "note",
+      "align":"center"
     }
   ],
   "viewConfig": []

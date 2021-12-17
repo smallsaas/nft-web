@@ -10,7 +10,7 @@ export default function () {
   // }
 
   if (getToken()) {
-    history.push('/admin');
+    history.push('/metaspirit');
   } else {
     history.push('/login');
   }

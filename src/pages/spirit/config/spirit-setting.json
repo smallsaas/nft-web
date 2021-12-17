@@ -2,7 +2,8 @@
   "pageName": {
     "table": "精灵管理",
     "new": "添加精灵",
-    "edit": "编辑精灵"
+    "edit": "编辑精灵",
+    "view": "查看详情"
   },
   "listAPI": "/api/crud/oms/wisp/wisps",
   "createAPI": "/api/crud/oms/wisp/wisps",
@@ -24,7 +25,11 @@
     {
       "label": "级别",
       "type": "select",
-      "width":180,
+      "props":{
+        "style":{
+          "width":240
+        }
+      },
       "options":[
         {"label":"v1","value":1},
         {"label":"v2","value":2},
@@ -152,25 +157,13 @@
       "field": "maximumValue"
     },
     {
-      "label": "预约时间",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "suffix": "分钟",
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "appointmentMinute"
-    },
-    {
       "label": "匹配时间开始",
-      "type": "timeinput",
+      "type": "date",
       "field": "startMatchTime"
     },
     {
       "label": "匹配时间结束",
-      "type": "timeinput",
+      "type": "date",
       "field": "endMatchTime"
     },
     {
@@ -245,6 +238,15 @@
       }
     },
     {
+      "title": "详情",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "spirit/spirit-view",
+        "outside": true
+      }
+    },
+    {
       "title": "删除",
       "type": "delete",
       "options": {
@@ -259,7 +261,7 @@
   ],
   "searchFields": [{
     "label": "名称",
-    "field": "description",
+    "field": "minimumValue",
     "type": "input",
     "props": {
       "placeholder": "请输入精灵名称"
@@ -271,14 +273,31 @@
       "align":"center"
     },
     {
+      "label": "图片",
+      "valueType":"image",
+      "field": "previewPhotoUrl",
+      "align":"center"
+    },
+    {
       "label": "精灵名称",
-      "field": "createTime",
+      "field": "name",
       "align":"center"
     },
     {
       "label": "级别",
       "field": "level",
-      "align":"center"
+      "align":"center",
+      "valueType":"tag",
+      "options":{
+        "map":{
+          "0":"v0",
+          "1":"v1",
+          "2":"v2",
+          "3":"v3",
+          "4":"v4",
+          "5":"v5"
+        }
+      }
     },
     {
       "label": "最低价值",
@@ -291,11 +310,6 @@
       "align":"center"
     },
     {
-      "label": "预约时间",
-      "field": "appointmentMinute",
-      "align":"center"
-    },
-    {
       "label": "培养天数",
       "field": "growthDays",
       "align":"center"
@@ -303,17 +317,77 @@
     {
       "label": "培养价值",
       "field": "growthPercent",
+      "valueType":"percentage",
       "align":"center"
     },
     {
-      "label": "预约消耗的精灵币",
+      "label": "消耗的精灵令",
       "field": "costWispCoin",
       "align":"center"
     },
     {
-      "label": "预约消耗的陪伴精灵数量",
+      "label": "消耗的精灵数量",
       "field": "costAccompanyWisp",
       "align":"center"
     }
-  ]
+  ],
+  "viewConfig": [{
+    "label": "精灵名称",
+    "field": "name",
+    "type": "plain",
+    "span": 24
+  },
+  {
+    "label": "精灵描述",
+    "field": "description",
+    "type": "plain",
+    "span": 24
+  },
+  {
+    "label": "精灵等级",
+    "field": "level",
+    "type": "plain",
+    "span": 24
+  },
+  {
+    "label": "精灵图片",
+    "field": "previewPhotoUrl",
+    "type": "image",
+    "span": 24
+  },
+  {
+    "label": "培养天数",
+    "field": "growthDays",
+    "type": "plain",
+    "span": 24
+  },
+  {
+    "label": "培养价值",
+    "field": "growthPercent",
+    "type": "plain",
+    "span": 24
+  },
+  {
+    "label": "最低价值",
+    "field": "minimumValue",
+    "type": "plain",
+    "span": 24
+  }, {
+    "label": "最高价值",
+    "field": "maximumValue",
+    "type": "plain",
+    "span": 24
+  },
+  {
+    "label": "消耗精灵令",
+    "field": "costWispCoin",
+    "type": "plain",
+    "span": 24
+  },
+  {
+    "label": "消耗陪伴精灵数量",
+    "field": "costAccompanyWisp",
+    "type": "plain",
+    "span": 24
+  }]
 }
