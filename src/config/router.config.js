@@ -60,13 +60,13 @@ module.exports = [
   // },
   {
     name: '精灵管理',
-    path: '/spirit',
+    path: '/spirits',
     items: [{
-        path: '/metaspirit',
+        path: '/spirits/metaspirit',
         name: '元精灵管理',
       },
       {
-        path: '/spirit',
+        path: '/spirits/spirit',
         name: '精灵管理',
       }
     ]
@@ -239,10 +239,10 @@ module.exports = [
   //     name: '申诉管理',
   //   }]
   // },
-  {
-    name: '动态页面',
-    path: '/dynamicPage'
-  },
+  // {
+  //   name: '动态页面',
+  //   path: '/dynamicPage'
+  // },
 
   {
     name: '系统管理',
