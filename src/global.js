@@ -91,6 +91,10 @@ import SelectTwo from '@/components/SchemaGeneratorPage/components/selecttwo/sel
 import HandApply from '@/components/SchemaGeneratorPage/components/handapply/handapply'
 
 
+import GetValue from '@/components/SchemaGeneratorPage/components/getvalue/getvalue'
+
+
+
 
 
 
@@ -241,7 +245,9 @@ FITSet({
   'timeinput':TimeInput,
   'radio':Radio,
   'selecttwo':SelectTwo,
-  'handapply':HandApply
+  'handapply':HandApply,
+  'getvalue':GetValue
+
 });
 
 AITSet({
@@ -261,4 +267,6 @@ VTSet({
   'plain_num_and_unit': FITSet_PlainNumAndUnit,
   'time_selection_and_disaible': FITSet_TimeSelectionAndDisaible,
   'prescription_item_status': FITSet_PrescriptionItemStatus,
+  'getvalue':GetValue,
+  'valueinput':ValueInput,
 });

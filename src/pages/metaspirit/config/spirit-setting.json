@@ -23,41 +23,6 @@
       "field": "name"
     },
     {
-      "label": "级别",
-      "type": "select",
-      "options": [{
-          "label": "v0",
-          "value": 0
-        },
-        {
-          "label": "v1",
-          "value": 1
-        },
-        {
-          "label": "v2",
-          "value": 2
-        },
-        {
-          "label": "v3",
-          "value": 3
-        },
-        {
-          "label": "v4",
-          "value": 4
-        },
-        {
-          "label": "v5",
-          "value": 5
-        }
-      ],
-      "field": "level",
-      "props": {
-        "style": {
-          "width": 240
-        }
-      }
-    },
-    {
       "label": "精灵描述",
       "rules": [{
         "type": "required"
@@ -89,17 +54,6 @@
       "field": "name"
     },
     {
-      "label": "级别",
-      "type": "input",
-      "props": {
-        "suffix": "级",
-        "style": {
-          "width": 240
-        }
-      },
-      "field": "level"
-    },
-    {
       "label": "精灵描述",
       "rules": [{
         "type": "required"
@@ -115,9 +69,6 @@
     },
     {
       "label": "精灵图片",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -194,24 +145,8 @@
       "align": "center"
     },
     {
-      "label": "级别",
-      "field": "level",
-      "align": "center",
-      "valueType": "tag",
-      "options": {
-        "map": {
-          "0": "v0",
-          "1": "v1",
-          "2": "v2",
-          "3": "v3",
-          "4": "v4",
-          "5": "v5"
-        }
-      }
-    },
-    {
       "label": "描述",
-      "field": "appointment",
+      "field": "description",
       "align": "center"
     }
   ],
@@ -224,12 +159,6 @@
   {
     "label": "精灵描述",
     "field": "description",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "精灵等级",
-    "field": "level",
     "type": "plain",
     "span": 24
   },

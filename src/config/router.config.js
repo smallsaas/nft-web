@@ -58,73 +58,73 @@ module.exports = [
   //     }
   //   ]
   // },
-  // {
-  //   name: '精灵管理',
-  //   path: '/spirit',
-  //   items: [{
-  //       path: '/spirit',
-  //       name: '元精灵管理',
-  //     },
-  //     {
-  //       path: '/spirit',
-  //       name: '精灵管理',
-  //     }
-  //   ]
-  // },
-  // {
-  //   name: '玩家攻略',
-  //   path: '/spirit',
-  //   items: [{
-  //       path: '/bookingmanagement',
-  //       name: '预约',
-  //     },
-  //     {
-  //       path: '/spiritprocessnumber',
-  //       name: '场次',
-  //     },
-  //     {
-  //       path: '/nopay',
-  //       name: '未付款列表',
-  //     }
-  //   ]
-  // },
-  // {
-  //   name: '玩家管理',
-  //   path: '/spirit',
-  //   items: [{
-  //       path: '/newaccount',
-  //       name: '玩家',
-  //     },
-  //     {
-  //       path: '/newteammanage',
-  //       name: '团队',
-  //     }
-  //   ]
-  // },
-  // {
-  //   name: '申述管理',
-  //   path: '/representation',
-  //   items: [{
-  //     path: '/representation',
-  //     name: '申述管理',
-  //   }]
-  // },
-  // {
-  //   name: '配置中心',
-  //   path: '/representation',
-  //   items: [{
-  //       path: '/representation',
-  //       name: '店小二',
-  //     }, {
-  //       path: '/representation',
-  //       name: '系统配置',
-  //     },
-  //     {
-  //       path: '/representation',
-  //       name: '场次管理',
-  //     }
-  //   ]
-  // },
+  {
+    name: '精灵管理',
+    path: '/spirit',
+    items: [{
+        path: '/metaspirit',
+        name: '元精灵管理',
+      },
+      {
+        path: '/spirit',
+        name: '精灵管理',
+      }
+    ]
+  },
+  {
+    name: '玩家攻略',
+    path: '/spirit',
+    items: [{
+        path: '/bookingmanagement',
+        name: '预约',
+      },
+      {
+        path: '/spiritprocessnumber',
+        name: '场次',
+      },
+      {
+        path: '/nopay',
+        name: '未付款列表',
+      }
+    ]
+  },
+  {
+    name: '玩家管理',
+    path: '/spirit',
+    items: [{
+        path: '/newaccount',
+        name: '玩家',
+      },
+      {
+        path: '/newteammanage',
+        name: '团队',
+      }
+    ]
+  },
+  {
+    name: '申述管理',
+    path: '/representation',
+    items: [{
+      path: '/representation',
+      name: '申述管理',
+    }]
+  },
+  {
+    name: '配置中心',
+    path: '/representation',
+    items: [{
+        path: '/storemanage',
+        name: '店小二',
+      }, {
+        path: '/representation',
+        name: '系统配置',
+      },
+      {
+        path: '/spiritprocessnumbermanage',
+        name: '场次管理',
+      }
+    ]
+  },
   // {
   //       path: '/',
   //       name: '精灵处理',
@@ -240,119 +240,52 @@ module.exports = [
   //   }]
   // },
   {
-    name: '精灵管理',
-    path: '/spirit',
-    items: [{
-        path: '/metaspirit',
-        name: '元精灵管理',
-      },
-      {
-        path: '/spirit',
-        name: '精灵管理',
-      }
-    ]
-  },
-  {
-    name: '玩家攻略',
-    path: '/spirit',
-    items: [{
-        path: '/bookingmanagement',
-        name: '预约',
-      },
-      {
-        path: '/spiritprocessnumber',
-        name: '场次',
-      },
-      {
-        path: '/nopay',
-        name: '未付款列表',
-      }
-    ]
-  },
-  {
-    name: '玩家管理',
-    path: '/spirit',
-    items: [{
-        path: '/newaccount',
-        name: '玩家',
-      },
-      {
-        path: '/newteammanage',
-        name: '团队',
-      }
-    ]
-  },
-  {
-    name: '申述管理',
-    path: '/representation',
-    items: [{
-      path: '/representation',
-      name: '申述管理',
-    }]
-  },
-  {
-    name: '配置中心',
-    path: '/representation',
-    items: [{
-        path: '/storemanage',
-        name: '店小二',
-      }, {
-        path: '/representation',
-        name: '系统配置',
-      },
-      {
-        path: '/representation',
-        name: '场次管理',
-      }
-    ]
-  },
-  {
-    name: '系统管理',
-    path: '/sys',
-    // permissions: [
-    //   'Org.view',
-    //   'sysUser.view',
-    //   'sysRole.view',
-    //   'Config.view',
-    //   'OperationLog.view'
-    // ],
-    items: [
-      // {
-      //   name: '菜单管理',
-      //   path: '/sys/menuManage',
-      // },
-      {
-        name: '组织管理',
-        path: '/sys/org',
-        permissions: ''
-      },
-      {
-        name: '用户管理',
-        path: '/sys/user',
-        permissions: ''
-      },
-      {
-        name: '角色管理',
-        path: '/sys/role',
-        permissions: ''
-      },
-      {
-        name: '系统配置',
-        path: '/sys/setting',
-        permissions: ''
-      },
-      {
-        name: '操作日志',
-        path: '/sys/logs',
-        permissions: ''
-      }
-    ]
-  },
-  {
     name: '动态页面',
     path: '/dynamicPage'
-  }
+  },
 
+  // {
+  //   name: '系统管理',
+  //   path: '/sys',
+  //   // permissions: [
+  //   //   'Org.view',
+  //   //   'sysUser.view',
+  //   //   'sysRole.view',
+  //   //   'Config.view',
+  //   //   'OperationLog.view'
+  //   // ],
+  //   items: [
+  //     {
+  //       name: '菜单管理',
+  //       path: '/sys/menuManage',
+  //     },
+  //     {
+  //       name: '组织管理',
+  //       path: '/sys/org',
+  //       permissions: ''
+  //     },
+  //     {
+  //       name: '用户管理',
+  //       path: '/sys/user',
+  //       permissions: ''
+  //     },
+  //     {
+  //       name: '角色管理',
+  //       path: '/sys/role',
+  //       permissions: ''
+  //     },
+  //     {
+  //       name: '系统配置',
+  //       path: '/sys/setting',
+  //       permissions: ''
+  //     },
+  //     {
+  //       name: '操作日志',
+  //       path: '/sys/logs',
+  //       permissions: ''
+  //     }
+  //   ]
+  // },
   // {
   //   name: '业务中台',
   //   path: '/businessCenter',

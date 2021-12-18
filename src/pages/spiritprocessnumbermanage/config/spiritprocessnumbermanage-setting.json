@@ -1,0 +1,208 @@
+{
+    "pageName": {
+      "table": "场次管理",
+      "new": "添加场次",
+      "edit": "编辑场次",
+      "view": "查看详情"
+    },
+    "listAPI": "/api/crud/oms/marketingSession/marketingSessions",
+    "createAPI": "/api/crud/oms/marketingSession/marketingSessions",
+    "getAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
+    "updateAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
+    "deleteAPI": "/api/crud/oms/marketingSession/marketingSessions/(id)",
+    "columns": 1,
+    "createFields": [{
+      "label": "场次号",
+      "props":{
+        "placeholder":"请输入场次号"
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "type":"input",
+      "field": "number",
+      "align":"center"
+    },
+    {
+      "label": "场次名称",
+      "props":{
+        "placeholder":"请输入场次名称"
+      },
+      "type":"input",
+      "field": "title",
+      "align":"center",
+      "rules": [{
+        "type": "required"
+      }]
+    },
+    {
+      "label": "开始时间",
+      "type":"timeinput",
+      "field": "startTime",
+      "align":"center",
+      "rules": [{
+        "type": "required"
+      }]
+    },
+    {
+      "label": "结束时间",
+      "field": "endTime",
+      "type":"timeinput",
+      "align":"center",
+      "rules": [{
+        "type": "required"
+      }]
+    }
+    ],
+    "updateFields": [
+      {
+        "label": "场次号",
+        "props":{
+          "placeholder":"请输入场次号"
+        },
+        "rules": [{
+          "type": "required"
+        }],
+        "type":"input",
+        "field": "number",
+        "align":"center"
+      },
+      {
+        "label": "场次名称",
+        "type":"input",
+        "field": "title",
+        "align":"center",
+        "rules": [{
+          "type": "required"
+        }],
+        "props":{
+          "placeholder":"请输入场次号"
+        }
+      },
+      {
+        "label": "开始时间",
+        "type":"timeinput",
+        "field": "startTime",
+        "align":"center",
+        "rules": [{
+          "type": "required"
+        }],
+        "options":{
+          "placeholder":"请输入场次号"
+        }
+      },
+      {
+        "label": "结束时间",
+        "field": "endTime",
+        "type":"timeinput",
+        "align":"center",
+        "rules": [{
+          "type": "required"
+        }]
+      }
+    ],
+    "map": {},
+    "layout": {
+      "table": "Content",
+      "form": "TitleContent"
+    },
+    "tableActions": [{
+      "title": "添加场次",
+      "type": "path",
+      "options": {
+        "style": "primary",
+        "path": "/spiritprocessnumbermanage/spiritprocessnumbermanage-add"
+      }
+    }],
+    "tableOperation": [{
+        "title": "编辑",
+        "type": "path",
+        "options": {
+          "style": "path",
+          "path": "spiritprocessnumbermanage/spiritprocessnumbermanage-edit",
+          "outside": true
+        }
+      },
+      {
+        "title": "详情",
+        "type": "path",
+        "options": {
+          "style": "path",
+          "path": "spiritprocessnumbermanage/spiritprocessnumbermanage-view",
+          "outside": true
+        }
+      },
+      {
+        "title": "删除",
+        "type": "delete",
+        "options": {
+          "outside": false,
+          "API": "/api/crud/oms/wisp/wisps/(id)",
+          "method": "delete"
+        },
+        "expect": {
+          "permission": ""
+        }
+      }
+    ],
+    "searchFields": [{
+      "label": "名称",
+      "field": "title",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入场次名称"
+      }
+    }],
+    "tableFields": [{
+        "label": "序号",
+        "field": "id",
+        "align":"center"
+      },
+      {
+        "label": "场次号",
+        "field": "number",
+        "align":"center"
+      },
+      {
+        "label": "场次名称",
+        "field": "title",
+        "align":"center"
+      },
+      {
+        "label": "开始时间",
+        "field": "startTime",
+        "align":"center"
+      },
+      {
+        "label": "结束时间",
+        "field": "endTime",
+        "align":"center"
+      }
+    ],
+    "viewConfig": [
+      {
+      "label": "场次号",
+      "field": "number",
+      "type":"plain",
+      "span":24
+    },
+    {
+      "label": "场次名称",
+      "field": "title",
+      "type":"plain",
+      "span":24
+    },
+    {
+      "label": "开始时间",
+      "field": "startTime",
+      "type":"timeinput",
+      "span":24
+    },
+    {
+      "label": "结束时间",
+      "field": "endTime",
+      "type":"timeinput",
+      "span":24
+    }]
+  }
+  
