@@ -159,7 +159,17 @@ export const HongConfig = [{
   },
 ]
 
-export const elements = [{
+export const elements = [
+  {
+    text: 'GetValue',
+    name: "getValue",
+    schema: {
+      type: 'string',
+      "ui:widget": "GetValue",
+    },
+    widget: "GetValue"
+  },
+  {
     text: 'CodeBtn',
     name: "codeBtn",
     schema: {

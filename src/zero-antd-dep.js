@@ -203,6 +203,8 @@ FITSet({
 'imageBox': FITSet_imageBox,
 'path': FITSet_path,
 'TimeSelect': FITSet_TimeSelect,
+'tag': VTSet_tag,
+
 
 });
 

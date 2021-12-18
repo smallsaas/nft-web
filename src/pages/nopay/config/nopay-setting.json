@@ -287,44 +287,45 @@
   ],
   "searchFields": [{
       "label": "账号",
-      "field": "descriptions",
+      "field": "account",
       "type": "input",
       "props": {
         "placeholder": "请输入账号"
-      }
-    },
-    {
-      "label": "精灵",
-      "field": "descriptions",
-      "type": "input",
-      "props": {
-        "placeholder": "请输入精灵"
       }
     }
   ],
   "tableFields": [{
       "label": "序号",
-      "field": "name",
+      "field": "id",
       "align":"center"
     },
     {
       "label": "账号",
-      "field": "code",
+      "field": "account",
       "align":"center"
     },
     {
-      "label": "上级账号",
-      "field": "sortorder",
+      "label": "订单类型",
+      "field": "orderType",
       "align":"center"
     },
     {
-      "label": "精灵",
-      "field": "note",
+      "label": "精灵令",
+      "field": "coin",
       "align":"center"
+    },
+    {
+      "label": "创建时间",
+      "field": "createTime",
+      "align":"center",
+      "valueType":"valueinput",
+      "options":{
+        "value":"createTime"
+      }
     },
     {
       "label": "付款倒计时",
-      "field": "note",
+      "field": "orderCountDown",
       "align":"center"
     }
   ]

@@ -113,14 +113,14 @@ module.exports = [
     name: '配置中心',
     path: '/representation',
     items: [{
-        path: '/representation',
+        path: '/storemanage',
         name: '店小二',
       }, {
         path: '/representation',
         name: '系统配置',
       },
       {
-        path: '/representation',
+        path: '/spiritprocessnumbermanage',
         name: '场次管理',
       }
     ]

@@ -23,48 +23,12 @@
       "field": "name"
     },
     {
-      "label": "级别",
-      "type": "select",
-      "width": 180,
-      "options": [{
-          "label": "v0",
-          "value": 0
-        },
-        {
-          "label": "v1",
-          "value": 1
-        },
-        {
-          "label": "v2",
-          "value": 2
-        },
-        {
-          "label": "v3",
-          "value": 3
-        },
-        {
-          "label": "v4",
-          "value": 4
-        },
-        {
-          "label": "v5",
-          "value": 5
-        }
-      ],
-      "field": "level",
-      "props": {
-        "style": {
-          "width": 240
-        }
-      }
-    },
-    {
       "label": "精灵描述",
       "rules": [{
         "type": "required"
       }],
       "type": "text-area",
-      "field": "name",
+      "field": "description",
       "props": {
         "placeholder": "请输入精灵描述",
         "style": {
@@ -74,14 +38,8 @@
     },
     {
       "label": "精灵图片",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
       "type": "upload-image",
-      "field": "name"
+      "field": "photoUrl"
     }
   ],
   "updateFields": [{
@@ -96,17 +54,6 @@
       "field": "name"
     },
     {
-      "label": "级别",
-      "type": "input",
-      "props": {
-        "suffix": "级",
-        "style": {
-          "width": 240
-        }
-      },
-      "field": "level"
-    },
-    {
       "label": "精灵描述",
       "rules": [{
         "type": "required"
@@ -118,18 +65,15 @@
         }
       },
       "type": "text-area",
-      "field": "name"
+      "field": "description"
     },
     {
       "label": "精灵图片",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入"
       },
       "type": "upload-image",
-      "field": "name"
+      "field": "photoUrl"
     }
   ],
   "map": {},
@@ -201,24 +145,8 @@
       "align": "center"
     },
     {
-      "label": "级别",
-      "field": "level",
-      "align": "center",
-      "valueType": "tag",
-      "options": {
-        "map": {
-          "0": "v0",
-          "1": "v1",
-          "2": "v2",
-          "3": "v3",
-          "4": "v4",
-          "5": "v5"
-        }
-      }
-    },
-    {
       "label": "描述",
-      "field": "appointment",
+      "field": "description",
       "align": "center"
     }
   ],
@@ -230,54 +158,48 @@
   },
   {
     "label": "精灵描述",
-    "field": "name",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "精灵等级",
-    "field": "name",
+    "field": "description",
     "type": "plain",
     "span": 24
   },
   {
     "label": "精灵图片",
-    "field": "name",
+    "field": "photoUrl",
     "type": "image",
     "span": 24
   },
   {
     "label": "培养天数",
-    "field": "name",
+    "field": "growthDays",
     "type": "plain",
     "span": 24
   },
   {
     "label": "培养价值",
-    "field": "name",
+    "field": "growthPercent",
     "type": "plain",
     "span": 24
   },
   {
     "label": "最低价值",
-    "field": "name",
+    "field": "minimumValue",
     "type": "plain",
     "span": 24
   }, {
     "label": "最高价值",
-    "field": "name",
+    "field": "maximumValue",
     "type": "plain",
     "span": 24
   },
   {
     "label": "消耗精灵令",
-    "field": "name",
+    "field": "costWispCoin",
     "type": "plain",
     "span": 24
   },
   {
     "label": "消耗陪伴精灵数量",
-    "field": "name",
+    "field": "costAccompanyWisp",
     "type": "plain",
     "span": 24
   }]
