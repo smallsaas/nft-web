@@ -1,0 +1,56 @@
+{
+  "pageName": {
+    "table": "场次",
+    "new": "添加精灵",
+    "edit": "编辑精灵"
+  },
+  "listAPI": "/api/crud/oms/marketingSession/marketingSessions",
+  "createAPI": "/api/crud/oms/marketingSession/marketingSessions",
+  "getAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
+  "updateAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
+  "deleteAPI": "/api/crud/oms/marketingSession/marketingSessions/(id)",
+  "columns": 1,
+  "createFields": [],
+  "updateFields": [],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [],
+  "tableOperation": [],
+  "searchFields": [{
+    "label": "名称",
+    "field": "title",
+    "type": "input",
+    "props": {
+      "placeholder": "请输入场次名称"
+    }
+  }],
+  "tableFields": [{
+    "label": "序号",
+    "field": "id",
+    "align":"center"
+  },
+  {
+    "label": "场次号",
+    "field": "number",
+    "align":"center"
+  },
+  {
+    "label": "场次名称",
+    "field": "title",
+    "align":"center"
+  },
+  {
+    "label": "开始时间",
+    "field": "startTime",
+    "align":"center"
+  },
+  {
+    "label": "结束时间",
+    "field": "endTime",
+    "align":"center"
+  }
+  ]
+}

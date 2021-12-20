@@ -1,0 +1,182 @@
+{
+  "pageName": {
+    "table": "申述管理",
+    "new": "添加申述类型",
+    "edit": "处理申述",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/player/players",
+  "createAPI": "/api/crud/oms/player/players",
+  "getAPI": "/api/crud/oms/player/players/[id]",
+  "updateAPI": "/api/crud/oms/player/players/[id]",
+  "deleteAPI": "/api/crud/oms/player/players/(id)",
+  "columns": 1,
+  "createFields": [{
+      "label": "申述类型",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入申述类型"
+      },
+      "type": "input",
+      "field": "name"
+    }
+  ],
+  "updateFields": [{
+      "label": "卖方账号",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "买方账号",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "申述类型",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "申述内容",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "处理",
+      "field": "name",
+      "type": "text-area",
+      "span": 24
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [{
+    "title": "添加类型",
+    "type": "path",
+    "options": {
+      "style": "primary",
+      "path": "/representation/representation-add"
+    }
+  }],
+  "tableOperation": [{
+      "title": "查看详情",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "representation/representation-view"
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "处理",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "representation/representation-edit"
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
+  "searchFields": [{
+      "label": "账号",
+      "field": "name",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入账号"
+      }
+    },
+    {
+      "label": "申述状态",
+      "field": "description",
+      "type": "select",
+      "options": [{
+          "label": "已处理"
+        },
+        {
+          "label": "未处理"
+        },
+        {
+          "label": "处理中"
+        }
+      ],
+      "props": {
+        "placeholder": "请选择"
+      }
+    }
+  ],
+  "tableFields": [{
+      "label": "序号",
+      "field": "id"
+    },
+    {
+      "label": "卖方账号",
+      "field": "name"
+    },
+    {
+      "label": "买方账号",
+      "field": "recommendCount"
+    },
+    {
+      "label": "申述类型",
+      "field": "adoptWisp"
+    },
+    {
+      "label": "申述内容",
+      "field": "adoptWispCount"
+    },
+    {
+      "label": "申述状态",
+      "field": "teamSize"
+    },
+    {
+      "label": "处理人",
+      "field": "status"
+    }
+  ],
+  "viewConfig": [{
+      "label": "卖方账号",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "买方账号",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "申述类型",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "申述内容",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "处理结果",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    }
+  ]
+}

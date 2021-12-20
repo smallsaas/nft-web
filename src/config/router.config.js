@@ -73,54 +73,51 @@ module.exports = [
   },
   {
     name: '玩家攻略',
-    path: '/spirit',
+    path: '/userintrodution',
     items: [{
-        path: '/bookingmanagement',
+        path: '/userintrodution/bookingmanagement',
         name: '预约',
       },
       {
-        path: '/spiritprocessnumber',
+        path: '/userintrodution/spiritprocessnumber',
         name: '场次',
       },
       {
-        path: '/nopay',
+        path: '/userintrodution/nopay',
         name: '未付款列表',
       }
     ]
   },
   {
     name: '玩家管理',
-    path: '/spirit',
+    path: '/usermanage',
     items: [{
-        path: '/newaccount',
+        path: '/usermanage/newaccount',
         name: '玩家',
       },
       {
-        path: '/newteammanage',
+        path: '/usermanage/newteammanage',
         name: '团队',
       }
     ]
   },
   {
     name: '申述管理',
-    path: '/representation',
+    path: '/representationmanage',
     items: [{
-      path: '/representation',
+      path: '/representationmanage/representation',
       name: '申述管理',
     }]
   },
   {
     name: '配置中心',
-    path: '/representation',
+    path: '/configcenter',
     items: [{
-        path: '/storemanage',
+        path: '/configcenter/storemanage',
         name: '店小二',
-      }, {
-        path: '/representation',
-        name: '系统配置',
       },
       {
-        path: '/spiritprocessnumbermanage',
+        path: '/configcenter/spiritprocessnumbermanage',
         name: '场次管理',
       }
     ]

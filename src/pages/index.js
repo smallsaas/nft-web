@@ -10,7 +10,7 @@ export default function () {
   // }
 
   if (getToken()) {
-    history.push('/metaspirit');
+    history.push('/spirits/metaspirit');
   } else {
     history.push('/login');
   }

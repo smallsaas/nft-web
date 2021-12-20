@@ -1,0 +1,226 @@
+{
+  "pageName": {
+    "table": "店小二管理",
+    "new": "添加店小二",
+    "edit": "编辑元精灵",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/manager/managers",
+  "createAPI": "/api/crud/oms/manager/managers",
+  "getAPI": "/api/crud/oms/manager/managers",
+  "updateAPI": "/api/crud/oms/manager/managers",
+  "deleteAPI": "/api/crud/oms/manager/managers",
+  "columns": 1,
+  "createFields": [{
+      "label": "名称",
+      "type":"input",
+      "field": "name",
+      "align": "center"
+    },
+    {
+      "label": "手机号码",
+      "type": "input",
+      "field": "mobilePhone",
+      "align": "center"
+    },
+    {
+      "label": "支付密码",
+      "type": "input",
+      "field": "appointment",
+      "align": "center"
+    },
+    {
+      "label": "邀请码",
+      "field": "invitationCode",
+      "align": "center",
+      "type": "input"
+    }
+  ],
+  "updateFields": [{
+      "label": "精灵名称",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "级别",
+      "type": "input",
+      "props": {
+        "suffix": "级",
+        "style": {
+          "width": 240
+        }
+      },
+      "field": "level"
+    },
+    {
+      "label": "精灵描述",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "text-area",
+      "field": "description"
+    },
+    {
+      "label": "精灵图片",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "photoUrl"
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [{
+    "title": "添加店小二",
+    "type": "path",
+    "options": {
+      "style": "primary",
+      "path": "/storemanage/storemanage-add"
+    }
+  }],
+  "tableOperation": [{
+      "title": "编辑",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "metaspirit/spirit-edit",
+        "outside": true
+      }
+    },
+    {
+      "title": "详情",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "metaspirit/spirit-view",
+        "outside": true
+      }
+    },
+    {
+      "title": "删除",
+      "type": "delete",
+      "options": {
+        "outside": false,
+        "API": "/api/crud/oms/wisp/wisps/(id)",
+        "method": "delete"
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
+  "searchFields": [{
+    "label": "名称",
+    "field": "name",
+    "type": "input",
+    "props": {
+      "placeholder": "请输入店小二名称"
+    }
+  }],
+  "tableFields": [{
+      "label": "序号",
+      "field": "id",
+      "align": "center"
+    },
+    {
+      "label": "名称",
+      "field": "name",
+      "align": "center"
+    },
+    {
+      "label": "手机号码",
+      "type": "image",
+      "field": "mobilePhone",
+      "align": "center"
+    },
+    {
+      "label": "支付密码",
+      "field": "appointment",
+      "align": "center"
+    },
+    {
+      "label": "邀请码",
+      "field": "invitationCode",
+      "align": "center"
+    }
+  ],
+  "viewConfig": [{
+      "label": "精灵名称",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵描述",
+      "field": "description",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵等级",
+      "field": "level",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵图片",
+      "field": "photoUrl",
+      "type": "image",
+      "span": 24
+    },
+    {
+      "label": "培养天数",
+      "field": "growthDays",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "培养价值",
+      "field": "growthPercent",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "最低价值",
+      "field": "minimumValue",
+      "type": "plain",
+      "span": 24
+    }, {
+      "label": "最高价值",
+      "field": "maximumValue",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "消耗精灵令",
+      "field": "costWispCoin",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "消耗陪伴精灵数量",
+      "field": "costAccompanyWisp",
+      "type": "plain",
+      "span": 24
+    }
+  ]
+}
