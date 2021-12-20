@@ -6,7 +6,8 @@
 */
 export const Config ={
     // endpoint:'http://portainer.host.smallsaas.cn:8084/',
-    endpoint:'http://192.168.3.239:8484',
+    // endpoint:'http://192.168.3.239:8484/',
+    endpoint:'http://repo.dev.smallsaas.cn:8088/',
     breadcrumbType:"header", //header,top
     theme:"LeftCover",//TopCover,LeftCover
     aloneWindow:[]  // 使用方法:在这里增加页面路径即可，如 /login

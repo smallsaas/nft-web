@@ -20,7 +20,21 @@
         "placeholder": "请输入"
       },
       "type": "input",
-      "field": "attributeName"
+      "field": "name"
+    },
+    {
+      "label": "精灵描述",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "style":{
+          "width":240
+        }
+      },
+      "type": "text-area",
+      "field": "description"
     },
     {
       "label": "精灵图片",
@@ -49,6 +63,21 @@
         {"label":"v5","value":5}
       ],
       "field": "level"
+    },
+    {
+      "label": "预约时间",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "suffix":"分钟",
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "waitingMatchMinute"
     },
     {
       "label": "最小价值",
@@ -80,19 +109,6 @@
           "width":240
         }
       }
-    },
-    {
-      "label": "预约时间",
-      "rules": [{
-        "type": "required"
-      }],
-      "props":{
-        "style":{
-          "width":240
-        }
-      },
-      "type": "number",
-      "field": "appointmentMinute"
     },
     {
       "label": "匹配时间开始",
@@ -299,7 +315,7 @@
     "type": "path",
     "options": {
       "style": "primary",
-      "path": "/spirit/spirit-add"
+      "path": "/spirits/spirit/spirit-add"
     }
   }],
   "tableOperation": [{
@@ -348,12 +364,8 @@
     },
     {
       "label": "精灵名称",
-      "field": "wispMeta",
-      "align":"center",
-      "valueType":"getvalue",
-      "options":{
-        "useField":"name"
-      }
+      "field": "name",
+      "align":"center"
     },
     {
       "label": "精灵图片",

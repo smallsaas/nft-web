@@ -39,7 +39,10 @@
     {
       "label": "精灵图片",
       "type": "upload-image",
-      "field": "photoUrl"
+      "field": "photoUrl",
+      "options":{
+        "API":"api/cloud/aliyun/oss/upload"
+      }
     }
   ],
   "updateFields": [{
@@ -86,7 +89,7 @@
     "type": "path",
     "options": {
       "style": "primary",
-      "path": "/metaspirit/spirit-add"
+      "path": "/spirits/metaspirit/spirit-add"
     }
   }],
   "tableOperation": [{
@@ -166,41 +169,6 @@
     "label": "精灵图片",
     "field": "photoUrl",
     "type": "image",
-    "span": 24
-  },
-  {
-    "label": "培养天数",
-    "field": "growthDays",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "培养价值",
-    "field": "growthPercent",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "最低价值",
-    "field": "minimumValue",
-    "type": "plain",
-    "span": 24
-  }, {
-    "label": "最高价值",
-    "field": "maximumValue",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "消耗精灵令",
-    "field": "costWispCoin",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "消耗陪伴精灵数量",
-    "field": "costAccompanyWisp",
-    "type": "plain",
     "span": 24
   }]
 }

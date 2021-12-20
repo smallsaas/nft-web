@@ -1,6 +1,6 @@
 import React from 'react';
 import ZEle from 'zero-element';
-import config from './config/storemanage_add';
+import config from './config/storemanage-edit';
 import useBreadcrumb from '@/framework/useBreadcrumb';
 
 export default function () {
@@ -8,12 +8,12 @@ export default function () {
     useBreadcrumb([
       { title: '首页' },
       { title: '配置中心' },
-      { title: '添加店小二' }
+      { title: '编辑店小二' }
     ]);
   
     return <div>
-     <ZEle namespace="storemanage_add" config={config} />
+    <ZEle namespace="storemanage-edit" config={config} />
     </div>
   }
 
-// export default () => <ZEle namespace="spirit_add" config={config} />;
+// export default () => <ZEle namespace="spirit_edit" config={config} />;

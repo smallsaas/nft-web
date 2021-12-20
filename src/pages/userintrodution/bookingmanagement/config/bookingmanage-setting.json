@@ -4,11 +4,11 @@
     "new": "添加账号",
     "edit": "编辑账号"
   },
-  "listAPI": "/api/crud/oms/wispInstance/wispInstances",
-  "createAPI": "/api/crud/oms/wispInstance/wispInstances",
-  "getAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
-  "updateAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
-  "deleteAPI": "/api/crud/oms/wispInstance/wispInstances/(id)",
+  "listAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords",
+  "createAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords",
+  "getAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/[id]",
+  "updateAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/[id]",
+  "deleteAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/(id)",
   "columns": 1,
   "createFields": [
   ],

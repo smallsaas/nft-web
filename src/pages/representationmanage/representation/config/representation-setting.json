@@ -121,31 +121,38 @@
   ],
   "tableFields": [{
       "label": "序号",
-      "field": "id"
+      "field": "id",
+      "align":"center"
     },
     {
       "label": "卖方账号",
-      "field": "name"
+      "field": "name",
+      "align":"center"
     },
     {
       "label": "买方账号",
-      "field": "recommendCount"
+      "field": "recommendCount",
+      "align":"center"
     },
     {
       "label": "申述类型",
-      "field": "adoptWisp"
+      "field": "adoptWisp",
+      "align":"center"
     },
     {
       "label": "申述内容",
-      "field": "adoptWispCount"
+      "field": "adoptWispCount",
+      "align":"center"
     },
     {
       "label": "申述状态",
-      "field": "teamSize"
+      "field": "teamSize",
+      "align":"center"
     },
     {
       "label": "处理人",
-      "field": "status"
+      "field": "status",
+      "align":"center"
     }
   ],
   "viewConfig": [{

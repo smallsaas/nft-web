@@ -2,87 +2,96 @@
   "pageName": {
     "table": "店小二管理",
     "new": "添加店小二",
-    "edit": "编辑元精灵",
+    "edit": "编辑店小二",
     "view": "查看详情"
   },
   "listAPI": "/api/crud/oms/manager/managers",
   "createAPI": "/api/crud/oms/manager/managers",
-  "getAPI": "/api/crud/oms/manager/managers",
-  "updateAPI": "/api/crud/oms/manager/managers",
-  "deleteAPI": "/api/crud/oms/manager/managers",
+  "getAPI": "/api/crud/oms/manager/managers/[id]",
+  "updateAPI": "/api/crud/oms/manager/managers/[id]",
+  "deleteAPI": "/api/crud/oms/manager/managers/(id)",
   "columns": 1,
   "createFields": [{
       "label": "名称",
       "type":"input",
       "field": "name",
+      "props": {
+        "placeholder": "请输入店小二名称"
+      },
+      "rules": [{
+        "type": "required"
+      }],
       "align": "center"
     },
     {
       "label": "手机号码",
-      "type": "input",
+      "type": "number",
+      "props": {
+        "placeholder": "请输入手机号码",
+        "style":{
+          "width":240
+        }
+      },
+      "rules": [{
+        "type": "required"
+      }],
       "field": "mobilePhone",
       "align": "center"
     },
     {
       "label": "支付密码",
       "type": "input",
-      "field": "appointment",
-      "align": "center"
+      "field": "paymentPassword",
+      "align": "center",
+      "props": {
+        "placeholder": "请输入支付密码"
+      },
+      "rules": [{
+        "type": "required"
+      }]
     },
     {
       "label": "邀请码",
       "field": "invitationCode",
       "align": "center",
-      "type": "input"
+      "type": "input",
+      "props": {
+        "placeholder": "请输入邀请码"
+      },
+      "rules": [{
+        "type": "required"
+      }]
     }
   ],
   "updateFields": [{
-      "label": "精灵名称",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "input",
-      "field": "name"
+    "label": "名称",
+    "type":"input",
+    "field": "name",
+    "align": "center"
+  },
+  {
+    "label": "手机号码",
+    "type": "number",
+    "props": {
+      "style":{
+        "width":240
+      }
     },
-    {
-      "label": "级别",
-      "type": "input",
-      "props": {
-        "suffix": "级",
-        "style": {
-          "width": 240
-        }
-      },
-      "field": "level"
-    },
-    {
-      "label": "精灵描述",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入",
-        "style": {
-          "width": 240
-        }
-      },
-      "type": "text-area",
-      "field": "description"
-    },
-    {
-      "label": "精灵图片",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "upload-image",
-      "field": "photoUrl"
-    }
+    "field": "mobilePhone",
+    "align": "center"
+  },
+  {
+    "label": "支付密码",
+    "type": "input",
+    "field": "paymentPassword",
+    "align": "center"
+  },
+  {
+    "label": "邀请码",
+    "field": "invitationCode",
+    "align": "center",
+    "type": "input"
+  }
   ],
   "map": {},
   "layout": {
@@ -94,7 +103,7 @@
     "type": "path",
     "options": {
       "style": "primary",
-      "path": "/storemanage/storemanage-add"
+      "path": "/configcenter/storemanage/storemanage-add"
     }
   }],
   "tableOperation": [{
@@ -102,7 +111,7 @@
       "type": "path",
       "options": {
         "style": "path",
-        "path": "metaspirit/spirit-edit",
+        "path": "/configcenter/storemanage/storemanage-edit",
         "outside": true
       }
     },
@@ -111,7 +120,7 @@
       "type": "path",
       "options": {
         "style": "path",
-        "path": "metaspirit/spirit-view",
+        "path": "/configcenter/storemanage/storemanage-view",
         "outside": true
       }
     },
@@ -154,7 +163,7 @@
     },
     {
       "label": "支付密码",
-      "field": "appointment",
+      "field": "paymentPassword",
       "align": "center"
     },
     {
@@ -164,61 +173,26 @@
     }
   ],
   "viewConfig": [{
-      "label": "精灵名称",
+      "label": "店小二名称",
       "field": "name",
       "type": "plain",
       "span": 24
     },
     {
-      "label": "精灵描述",
-      "field": "description",
+      "label": "店小二手机号码",
+      "field": "mobilePhone",
       "type": "plain",
       "span": 24
     },
     {
-      "label": "精灵等级",
-      "field": "level",
+      "label": "店小二邀请码",
+      "field": "invitationCode",
       "type": "plain",
       "span": 24
     },
     {
-      "label": "精灵图片",
-      "field": "photoUrl",
-      "type": "image",
-      "span": 24
-    },
-    {
-      "label": "培养天数",
-      "field": "growthDays",
-      "type": "plain",
-      "span": 24
-    },
-    {
-      "label": "培养价值",
-      "field": "growthPercent",
-      "type": "plain",
-      "span": 24
-    },
-    {
-      "label": "最低价值",
-      "field": "minimumValue",
-      "type": "plain",
-      "span": 24
-    }, {
-      "label": "最高价值",
-      "field": "maximumValue",
-      "type": "plain",
-      "span": 24
-    },
-    {
-      "label": "消耗精灵令",
-      "field": "costWispCoin",
-      "type": "plain",
-      "span": 24
-    },
-    {
-      "label": "消耗陪伴精灵数量",
-      "field": "costAccompanyWisp",
+      "label": "支付密码",
+      "field": "paymentPassword",
       "type": "plain",
       "span": 24
     }

@@ -226,24 +226,6 @@
       "span": 16
     },
     {
-      "label": "身份证正面图片",
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "upload-image",
-      "field": "frontIdCardPhotoUrl",
-      "span": 8
-    },
-    {
-      "label": "身份证反面图片",
-      "props": {
-        "placeholder": "请输入"
-      },
-      "type": "upload-image",
-      "field": "reverseSideIdCardPhotoUrl",
-      "span": 16
-    },
-    {
       "label": "户名",
       "rules": [{
         "type": "required"
@@ -489,10 +471,106 @@
         "style": "primary",
         "path": "/usermanage/newaccount/newaccount-add"
       }
+    },
+    {
+      "title": "发放精灵币",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "发放精灵币",
+        "modalWidth": 600,
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
+              ]
+            },
+            "API": {
+              "createAPI": "/api/eav/entities/[id]/attributes"
+            },
+            "fields": [{
+                "label": "当前精灵币:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入"
+                },
+                "type": "plain",
+                "field": "attributeName"
+              },
+              {
+                "label": "发放到账号：",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入账号"
+                },
+                "type": "input",
+                "field": "attributeName"
+              },
+              {
+                "label": "发放数量:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入数量"
+                },
+                "type": "input",
+                "field": "fieldName"
+              },
+              {
+                "label": "支付密码:",
+                "rules": [{
+                  "type": "required"
+                }],
+                "props": {
+                  "placeholder": "请输入支付密码"
+                },
+                "type": "input",
+                "field": "fieldName"
+              }
+            ]
+          }
+        }]
+      }
     }
   ],
-  "tableOperation": [  
+  "tableOperation": [{
+      "title": "解封账号",
+      "type": "request",
+      "options": {
+        "tips": "确定要解封账号麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/(id)",
+        "method": "get"
+      }
+    },
     {
+      "title": "审核通过",
+      "type": "request",
+      "options": {
+        "tips": "确定审核通过麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/(id)",
+        "method": "get"
+      }
+    },
+    {
+      "title": "暂停自动投放",
+      "type": "request",
+      "options": {
+        "tips": "确定要暂停自动投放麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/(id)",
+        "method": "get"
+      }
+    }, {
       "title": "查看详情",
       "type": "path",
       "options": {

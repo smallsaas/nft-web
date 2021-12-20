@@ -91,7 +91,12 @@ module.exports = [
   {
     name: '玩家管理',
     path: '/usermanage',
-    items: [{
+    items: [
+      {
+        path: '/usermanage/systemuser',
+        name: '系统用户',
+      },
+      {
         path: '/usermanage/newaccount',
         name: '玩家',
       },
