@@ -13,13 +13,20 @@
   "columns": 1,
   "createFields": [{
       "label": "精灵名称",
+      "type": "select-fetch",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
       "rules": [{
         "type": "required"
       }],
-      "props": {
-        "placeholder": "请输入"
+      "options": {
+        "API": "/api/crud/oms/wispMeta/wispMetas",
+        "label": "name",
+        "value": "name"
       },
-      "type": "input",
       "field": "name"
     },
     {
@@ -29,8 +36,8 @@
       }],
       "props": {
         "placeholder": "请输入",
-        "style":{
-          "width":240
+        "style": {
+          "width": 240
         }
       },
       "type": "text-area",
@@ -47,22 +54,37 @@
     {
       "label": "级别",
       "type": "select",
-      "props":{
-        "style":{
-          "width":240
-        }
-      },
       "rules": [{
         "type": "required"
       }],
-      "options":[
-        {"label":"v1","value":1},
-        {"label":"v2","value":2},
-        {"label":"v3","value":3},
-        {"label":"v4","value":4},
-        {"label":"v5","value":5}
+      "options": [{
+          "label": "v1",
+          "value": 1
+        },
+        {
+          "label": "v2",
+          "value": 2
+        },
+        {
+          "label": "v3",
+          "value": 3
+        },
+        {
+          "label": "v4",
+          "value": 4
+        },
+        {
+          "label": "v5",
+          "value": 5
+        }
       ],
-      "field": "level"
+      "field": "level",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      }
     },
     {
       "label": "预约时间",
@@ -71,31 +93,35 @@
       }],
       "props": {
         "placeholder": "请输入",
-        "suffix":"分钟",
-        "style":{
-          "width":240
-        }
+        "style": {
+          "width": 240
+        },
+        "min": 1
       },
       "type": "number",
-      "field": "waitingMatchMinute"
+      "field": "waitingMatchMinute",
+      "addonAfter": "分钟"
     },
     {
       "label": "最小价值",
       "rules": [{
         "type": "required"
       }],
-      "options":{
-        "map":{
-          "int":"正常整数值"
+      "options": {
+        "map": {
+          "int": "正常整数值"
         }
       },
       "type": "number",
       "field": "minimumValue",
-      "props":{
-        "style":{
-          "width":240
-        }
-      }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "placeholder":"请输入"
+      },
+      "addonAfter": "精灵令"
     },
     {
       "label": "最大价值",
@@ -104,20 +130,24 @@
       }],
       "type": "number",
       "field": "maximumValue",
-      "props":{
-        "style":{
-          "width":240
-        }
-      }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "placeholder":"请输入"
+      },
+      "addonAfter": "精灵令"
     },
     {
       "label": "匹配时间开始",
       "type": "timeinput",
       "field": "startMatchTime",
-      "props":{
-        "style":{
-          "width":240
-        }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "placeholder":"请输入"
       },
       "rules": [{
         "type": "required"
@@ -127,10 +157,11 @@
       "label": "匹配时间结束",
       "type": "timeinput",
       "field": "endMatchTime",
-      "props":{
-        "style":{
-          "width":240
-        }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "placeholder":"请输入"
       },
       "rules": [{
         "type": "required"
@@ -143,85 +174,144 @@
       }],
       "type": "number",
       "field": "growthDays",
-      "props":{
-        "style":{
-          "width":240
-        }
-      }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "placeholder":"请输入"
+      },
+      "addonAfter": "天"
     },
     {
       "label": "培养价值",
       "rules": [{
         "type": "required"
       }],
-      "props":{
-        "style":{
-          "width":240
-        }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "max": 100,
+        "placeholder":"请输入"
       },
       "type": "number",
-      "field": "growthPercent"
+      "field": "growthPercent",
+      "addonAfter": "%"
     },
     {
       "label": "兑换陪伴精灵消耗精灵令",
       "rules": [{
         "type": "required"
       }],
-      "props":{
-        "style":{
-          "width":240
-        }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "placeholder":"请输入"
       },
       "type": "number",
-      "field": "costAccompanyWisp"
+      "field": "costAccompanyWisp",
+      "addonAfter": "精灵令"
     },
     {
       "label": "租用土地1天消耗精灵令",
       "rules": [{
         "type": "required"
       }],
-      "props":{
-        "style":{
-          "width":240
-        }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "placeholder":"请输入"
       },
       "type": "number",
-      "field": "costWispCoin"
+      "field": "costWispCoin",
+      "addonAfter": "精灵令"
     }
   ],
-  "updateFields": [
+  "updateFields": [{
+      "label": "精灵名称",
+      "type": "select-fetch",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "options": {
+        "API": "/api/crud/oms/wispMeta/wispMetas",
+        "label": "name",
+        "value": "name"
+      },
+      "field": "name"
+    },
+    {
+      "label": "精灵图片",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "previewPhotoUrl"
+    },
     {
       "label": "级别",
       "type": "select",
-      "props":{
-        "style":{
-          "width":240
+      "props": {
+        "style": {
+          "width": 240
         }
       },
-      "options":[
-        {"label":"v1","value":1},
-        {"label":"v2","value":2},
-        {"label":"v3","value":3},
-        {"label":"v4","value":4},
-        {"label":"v5","value":5}
-      ],
-      "field": "level",
       "rules": [{
         "type": "required"
-      }]
+      }],
+      "options": [{
+          "label": "v1",
+          "value": 1
+        },
+        {
+          "label": "v2",
+          "value": 2
+        },
+        {
+          "label": "v3",
+          "value": 3
+        },
+        {
+          "label": "v4",
+          "value": 4
+        },
+        {
+          "label": "v5",
+          "value": 5
+        }
+      ],
+      "field": "level"
     },
     {
       "label": "最小价值",
       "rules": [{
         "type": "required"
       }],
+      "options": {
+        "map": {
+          "int": "正常整数值"
+        }
+      },
       "type": "number",
       "field": "minimumValue",
-      "props":{
-        "style":{
-          "width":240
-        }
-      }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "addonAfter": "精灵令"
     },
     {
       "label": "最大价值",
@@ -230,11 +320,13 @@
       }],
       "type": "number",
       "field": "maximumValue",
-      "props":{
-        "style":{
-          "width":240
-        }
-      }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "addonAfter": "精灵令"
     },
     {
       "label": "匹配时间开始",
@@ -257,52 +349,61 @@
       "rules": [{
         "type": "required"
       }],
-      "props":{
-        "style":{
-          "width":240
-        }
-      },
       "type": "number",
-      "field": "growthDays"
+      "field": "growthDays",
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "addonAfter": "天"
     },
     {
       "label": "培养价值",
       "rules": [{
         "type": "required"
       }],
-      "props":{
-        "style":{
-          "width":240
-        }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "max": 100
       },
       "type": "number",
-      "field": "growthPercent"
+      "field": "growthPercent",
+      "addonAfter": "%"
     },
     {
       "label": "兑换陪伴精灵消耗精灵令",
       "rules": [{
         "type": "required"
       }],
-      "props":{
-        "style":{
-          "width":240
-        }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
       },
       "type": "number",
-      "field": "costAccompanyWisp"
+      "field": "costAccompanyWisp",
+      "addonAfter": "精灵令"
     },
     {
       "label": "租用土地1天消耗精灵令",
       "rules": [{
         "type": "required"
       }],
-      "props":{
-        "style":{
-          "width":240
-        }
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
       },
       "type": "number",
-      "field": "costWispCoin"
+      "field": "costWispCoin",
+      "addonAfter": "精灵令"
     }
   ],
   "map": {},
@@ -360,135 +461,146 @@
   "tableFields": [{
       "label": "序号",
       "field": "id",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "精灵名称",
       "field": "name",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "精灵图片",
-      "type": "image",
+      "valueType": "image",
       "field": "previewPhotoUrl",
       "align": "center"
     },
     {
       "label": "级别",
       "field": "level",
-      "align":"center",
-      "valueType":"tag",
-      "options":{
-        "map":{
-          "0":"v0",
-          "1":"v1",
-          "2":"v2",
-          "3":"v3",
-          "4":"v4",
-          "5":"v5"
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "0": "v0",
+          "1": "v1",
+          "2": "v2",
+          "3": "v3",
+          "4": "v4",
+          "5": "v5"
+        },
+        "chy": {
+          "0": "blue",
+          "1": "cyan",
+          "2": "purple",
+          "3": "purple-dark",
+          "4": "orange",
+          "5": "gray"
         }
-      }
+      },
+      "theme": "option",
+      "type": "default"
     },
     {
       "label": "最低价值",
       "field": "minimumValue",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "最高价值",
       "field": "maximumValue",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "培养天数",
       "field": "growthDays",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "培养价值",
       "field": "growthPercent",
-      "valueType":"percentage",
-      "align":"center"
+      "valueType": "percentage",
+      "align": "center"
     },
     {
       "label": "消耗的精灵令",
       "field": "costWispCoin",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "消耗的精灵数量",
       "field": "costAccompanyWisp",
-      "align":"center"
+      "align": "center"
     }
   ],
   "viewConfig": [{
-    "label": "精灵名称",
-    "field": "name",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "精灵描述",
-    "field": "description",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "精灵等级",
-    "field": "level",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "精灵图片",
-    "field": "previewPhotoUrl",
-    "type": "image",
-    "span": 24
-  },
-  {
-    "label": "培养天数",
-    "field": "growthDays",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "培养价值",
-    "field": "growthPercent",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "最低价值",
-    "field": "minimumValue",
-    "type": "plain",
-    "span": 24
-  }, {
-    "label": "最高价值",
-    "field": "maximumValue",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "匹配时间开始",
-    "field": "startMatchTime",
-    "type": "plain",
-    "span": 24
-  }, {
-    "label": "匹配时间结束",
-    "field": "endMatchTime",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "消耗精灵令",
-    "field": "costWispCoin",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "消耗陪伴精灵数量",
-    "field": "costAccompanyWisp",
-    "type": "plain",
-    "span": 24
-  }]
+      "label": "精灵名称",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵描述",
+      "field": "description",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵等级",
+      "field": "level",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵图片",
+      "field": "previewPhotoUrl",
+      "type": "image",
+      "span": 24
+    },
+    {
+      "label": "培养天数",
+      "field": "growthDays",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "培养价值",
+      "field": "growthPercent",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "最低价值",
+      "field": "minimumValue",
+      "type": "plain",
+      "span": 24
+    }, {
+      "label": "最高价值",
+      "field": "maximumValue",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "匹配时间开始",
+      "field": "startMatchTime",
+      "type": "plain",
+      "span": 24
+    }, {
+      "label": "匹配时间结束",
+      "field": "endMatchTime",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "消耗精灵令",
+      "field": "costWispCoin",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "消耗陪伴精灵数量",
+      "field": "costAccompanyWisp",
+      "type": "plain",
+      "span": 24
+    }
+  ]
 }

@@ -11,7 +11,7 @@ import {
   SwapOutlined,
 } from '@ant-design/icons';
 
-// import { TestUserSelection } from 'zero-element-plugins';
+import { TestUserSelection } from 'zero-element-plugins';
 
 import { LS } from 'zero-element/lib/utils/storage';
 
@@ -88,13 +88,13 @@ export default (props) => {
     </Menu>
   )
 
-  // const userMenu = (
-  //   <Menu>
-  //     <Menu.Item style={{ padding: 0 }} key="userMenu">
-  //       <TestUserSelection onItemClickHandle={handleOnItemClickHandle} />
-  //     </Menu.Item>
-  //   </Menu>
-  // )
+  const userMenu = (
+    <Menu>
+      <Menu.Item style={{ padding: 0 }} key="userMenu">
+        <TestUserSelection onItemClickHandle={handleOnItemClickHandle} />
+      </Menu.Item>
+    </Menu>
+  )
 
   return (
     <div style={{ 'display': 'flex', 'flexDirection': 'row', 'alignItems': 'center' }}>
@@ -115,7 +115,7 @@ export default (props) => {
         <BellOutlined style={{ fontSize: 25, paddingRight: 20 }} />
       </Dropdown> */}
       
-      {/* <Dropdown
+      <Dropdown
         placement="bottomRight"
         trigger={['click']}
         visible={visible}
@@ -128,7 +128,7 @@ export default (props) => {
           <span style={{ fontSize: 0 }}>{getExtra()}</span>
           <Avatar src={getAvatar()} icon={<UserOutlined style={{ fontSize: 24 }} />} size={36} />
         </div>
-      </Dropdown> */}
+      </Dropdown>
     </div>
   )
 

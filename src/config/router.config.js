@@ -94,7 +94,7 @@ module.exports = [
     items: [
       {
         path: '/usermanage/systemuser',
-        name: '系统用户',
+        name: '系统号',
       },
       {
         path: '/usermanage/newaccount',
@@ -119,7 +119,7 @@ module.exports = [
     path: '/configcenter',
     items: [{
         path: '/configcenter/storemanage',
-        name: '店小二',
+        name: '店小二管理',
       },
       {
         path: '/configcenter/spiritprocessnumbermanage',
