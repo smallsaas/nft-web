@@ -181,7 +181,19 @@
         }
       ],
       "field": "playerRole",
-      "span": 24
+      "span": 8
+    },
+    {
+      "label": "邀请人",
+      "type":"input",
+      "props": {
+        "placeholder": "请输入邀请人"
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "field": "invitePeople",
+      "span": 16
     },
     {
       "label": "支付宝账号",
@@ -261,9 +273,13 @@
         "type": "required"
       }],
       "props": {
-        "placeholder": "请输入"
+        "placeholder": "请输入",
+        "style":{
+          "width":240
+        },
+        "min":0
       },
-      "type": "input",
+      "type": "number",
       "field": "bankAccountNumber",
       "span": 16
     }
@@ -408,7 +424,19 @@
         }
       ],
       "field": "playerRole",
-      "span": 24
+      "span": 8
+    },
+    {
+      "label": "邀请人",
+      "type":"input",
+      "props": {
+        "placeholder": "请输入邀请人"
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "field": "invitePeople",
+      "span": 16
     },
     {
       "label": "支付宝账号",
@@ -596,6 +624,11 @@
           "NORMAL": "正常"
         }
       }
+    },
+    {
+      "label": "邀请人",
+      "field": "invitePeople",
+      "align": "center"
     }
   ],
   "viewConfig": [{

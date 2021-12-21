@@ -310,30 +310,33 @@
   ],
   "tableFields": [{
       "label": "序号",
-      "field": "name"
+      "field": "id",
+      "align":"center"
     },
     {
       "label": "账号",
-      "field": "code"
+      "field": "account",
+      "align":"center"
     },
     {
       "label": "领养状态",
-      "field": "sortorder"
+      "field": "adoptStatus",
+      "align":"center"
     },
     {
       "label": "直推数",
-      "width": 180,
-      "field": "note"
+      "align":"center",
+      "field": "recommentNumber"
     },
     {
       "label": "当前预约数",
-      "width": 180,
-      "field": "note"
+      "align":"center",
+      "field": "currentAppointmentNumber"
     },
     {
       "label": "总领养数",
-      "width": 180,
-      "field": "note"
+      "align":"center",
+      "field": "allAdoptNumber"
     }
   ]
 }
