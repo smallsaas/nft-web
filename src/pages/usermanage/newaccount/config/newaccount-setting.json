@@ -686,7 +686,13 @@
       "label": "角色",
       "field": "playerRole",
       "type": "plain",
-      "span": 24
+      "span": 8
+    },
+    {
+      "label": "邀请人",
+      "field": "invitePeople",
+      "type": "plain",
+      "span": 16
     },
     {
       "label": "支付宝账号",

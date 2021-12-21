@@ -1,7 +1,7 @@
 {
   "pageName": {
     "table": "账号管理",
-    "new": "添加账号",
+    "new": "添加系统号",
     "edit": "编辑账号",
     "view": "查看详情"
   },
@@ -465,11 +465,11 @@
     "form": "TitleContent"
   },
   "tableActions": [{
-      "title": "添加账号",
+      "title": "添加系统号",
       "type": "path",
       "options": {
         "style": "primary",
-        "path": "/usermanage/newaccount/newaccount-add"
+        "path": "/usermanage/systemuser/systemuser-add"
       }
     },
     {
