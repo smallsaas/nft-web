@@ -68,6 +68,10 @@ module.exports = [
       {
         path: '/spirits/spirit',
         name: '精灵管理',
+      },
+      {
+        path: '/spirits/spiritconfig',
+        name: '精灵配置',
       }
     ]
   },
@@ -103,6 +107,10 @@ module.exports = [
       {
         path: '/usermanage/newteammanage',
         name: '团队',
+      },
+      {
+        path: '/usermanage/memberconfig',
+        name: '会员配置',
       }
     ]
   },

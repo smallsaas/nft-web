@@ -20,37 +20,40 @@
         "placeholder": "请输入申述类型"
       },
       "type": "input",
-      "field": "name"
+      "field": "representationType"
     }
   ],
   "updateFields": [{
       "label": "卖方账号",
-      "field": "name",
+      "field": "sellerAccount",
       "type": "plain",
       "span": 24
     },
     {
       "label": "买方账号",
-      "field": "name",
+      "field": "buyerAccount",
       "type": "plain",
       "span": 24
     },
     {
       "label": "申述类型",
-      "field": "name",
+      "field": "representationType",
       "type": "plain",
       "span": 24
     },
     {
       "label": "申述内容",
-      "field": "name",
+      "field": "representationInfo",
       "type": "plain",
       "span": 24
     },
     {
       "label": "处理",
-      "field": "name",
+      "field": "handleResult",
       "type": "text-area",
+      "props":{
+        "placeholder":"请输入处理内容"
+      },
       "span": 24
     }
   ],
@@ -86,6 +89,18 @@
         "outside": true,
         "style": "path",
         "path": "representation/representation-edit"
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "删除",
+      "type": "delete",
+      "options": {
+        "outside": false,
+        "API": "/api/crud/oms/wisp/wisps/(id)",
+        "method": "delete"
       },
       "expect": {
         "permission": ""
@@ -126,62 +141,62 @@
     },
     {
       "label": "卖方账号",
-      "field": "name",
+      "field": "sellerAccount",
       "align":"center"
     },
     {
       "label": "买方账号",
-      "field": "recommendCount",
+      "field": "buyerAccount",
       "align":"center"
     },
     {
       "label": "申述类型",
-      "field": "adoptWisp",
+      "field": "representationType",
       "align":"center"
     },
     {
       "label": "申述内容",
-      "field": "adoptWispCount",
+      "field": "representationInfo",
       "align":"center"
     },
     {
       "label": "申述状态",
-      "field": "teamSize",
+      "field": "representationStatus",
       "align":"center"
     },
     {
       "label": "处理人",
-      "field": "status",
+      "field": "handleUser",
       "align":"center"
     }
   ],
   "viewConfig": [{
       "label": "卖方账号",
-      "field": "name",
+      "field": "sellerAccount",
       "type": "plain",
       "span": 24
     },
     {
       "label": "买方账号",
-      "field": "name",
+      "field": "buyerAccount",
       "type": "plain",
       "span": 24
     },
     {
       "label": "申述类型",
-      "field": "name",
+      "field": "representationType",
       "type": "plain",
       "span": 24
     },
     {
       "label": "申述内容",
-      "field": "name",
+      "field": "representationInfo",
       "type": "plain",
       "span": 24
     },
     {
       "label": "处理结果",
-      "field": "name",
+      "field": "handleResult",
       "type": "plain",
       "span": 24
     }
