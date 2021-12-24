@@ -306,6 +306,17 @@
     },
     {
       "label": "订单类型",
+      "valueType":"tag",
+      "options": {
+        "map": {
+          "SYSTEM_GIVEN": "系统给予",
+          "COMPANION_WISP": "陪伴精灵",
+          "MANAGER_GIVEN": "店小二给予",
+          "3": "v3",
+          "4": "v4",
+          "5": "v5"
+        }
+      },
       "field": "orderType",
       "align":"center"
     },
