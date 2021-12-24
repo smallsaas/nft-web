@@ -98,7 +98,7 @@ module.exports = [
     items: [
       {
         path: '/usermanage/systemuser',
-        name: '系统号',
+        name: '店小二系统号',
       },
       {
         path: '/usermanage/newaccount',
@@ -106,7 +106,7 @@ module.exports = [
       },
       {
         path: '/usermanage/newteammanage',
-        name: '团队',
+        name: '玩家团队',
       },
       {
         path: '/usermanage/memberconfig',
