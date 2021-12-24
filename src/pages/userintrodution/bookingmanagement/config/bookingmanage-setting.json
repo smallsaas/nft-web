@@ -58,7 +58,11 @@
     {
       "label": "预约时间",
       "field": "appointmentTime",
-      "align":"center"
+      "align":"center",
+      "valueType":"valueinput",
+      "options":{
+        "value":"appointmentTime"
+      }
     }
   ],
   "viewConfig": []
