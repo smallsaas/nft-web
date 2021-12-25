@@ -1,6 +1,6 @@
 {
   "pageName": {
-    "table": "账号管理",
+    "table": "店小二管理",
     "new": "添加系统号",
     "edit": "编辑账号",
     "view": "查看详情"
@@ -66,7 +66,7 @@
         }
       },
       "type": "number",
-      "field": "firstMobilePhoneCode",
+      "field": "mobilePhoneCode",
       "span": 16
     },
     {
@@ -81,7 +81,7 @@
         }
       },
       "type": "number",
-      "field": "secondMobilePhone",
+      "field": "backupMobilePhone",
       "span": 8
     },
     {
@@ -96,7 +96,7 @@
         }
       },
       "type": "number",
-      "field": "secondMobilePhoneCode",
+      "field": "backupMobilePhoneCode",
       "span": 16
     },
     {
@@ -223,6 +223,24 @@
       },
       "type": "upload-image",
       "field": "wechatQrCodePhotoUrl",
+      "span": 16
+    },
+    {
+      "label": "身份证正面图片",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "frontIdCardPhotoUrl",
+      "span": 8
+    },
+    {
+      "label": "身份证反面图片",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "reverseSideIdCardPhotoUrl",
       "span": 16
     },
     {
@@ -671,9 +689,20 @@
       "valueType": "tag",
       "options": {
         "map": {
-          "NORMAL": "正常"
+          "NORMAL": "正常",
+          "FROZEN":"冻结"
+        },
+        "chy": {
+          "NORMAL": "blue",
+          "FROZEN": "cyan",
+          "MANAGER_GIVEN": "purple",
+          "3": "purple-dark",
+          "4": "orange",
+          "5": "gray"
         }
-      }
+      },
+      "theme": "option",
+      "type": "default"
     }
   ],
   "viewConfig": [{

@@ -1,6 +1,6 @@
 {
   "pageName": {
-    "table": "账号管理",
+    "table": "玩家管理",
     "new": "添加账号",
     "edit": "编辑账号",
     "view": "查看详情"
@@ -81,7 +81,7 @@
         }
       },
       "type": "number",
-      "field": "secondMobilePhone",
+      "field": "backupMobilePhone",
       "span": 8
     },
     {
@@ -621,9 +621,20 @@
       "valueType": "tag",
       "options": {
         "map": {
-          "NORMAL": "正常"
+          "NORMAL": "正常",
+          "FROZEN":"冻结"
+        },
+        "chy": {
+          "NORMAL": "blue",
+          "FROZEN": "cyan",
+          "MANAGER_GIVEN": "purple",
+          "3": "purple-dark",
+          "4": "orange",
+          "5": "gray"
         }
-      }
+      },
+      "theme": "option",
+      "type": "default"
     },
     {
       "label": "邀请人",

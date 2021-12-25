@@ -46,12 +46,17 @@
       "align":"center"
     },
     {
+      "label": "消耗的陪伴精灵数量",
+      "field": "consumeCompanionWisps",
+      "align":"center"
+    },
+    {
       "label": "消耗的精灵令",
       "field": "consumeCoins",
       "align":"center"
     },
     {
-      "label": "租用的土地",
+      "label": "所需土地租期",
       "field": "requireLandDays",
       "align":"center"
     },

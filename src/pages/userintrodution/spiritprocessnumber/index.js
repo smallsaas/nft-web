@@ -7,7 +7,6 @@ export default function () {
 
   useBreadcrumb([
     { title: '首页' },
-    { title: '精灵处理' },
     { title: '场次',  path: '/spiritprocessnumber'}
   ]);
 

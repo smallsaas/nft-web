@@ -315,10 +315,20 @@
           "3": "v3",
           "4": "v4",
           "5": "v5"
+        },
+        "chy": {
+          "SYSTEM_GIVEN": "blue",
+          "COMPANION_WISP": "cyan",
+          "MANAGER_GIVEN": "purple",
+          "3": "purple-dark",
+          "4": "orange",
+          "5": "gray"
         }
       },
       "field": "orderType",
-      "align":"center"
+      "align":"center",
+      "theme": "option",
+      "type": "default"
     },
     {
       "label": "精灵令",
@@ -336,7 +346,7 @@
     },
     {
       "label": "付款倒计时",
-      "valueType":"valueinputtwo",
+      "valueType":"valueinputfour",
       "field": "orderCountDown",
       "align":"center",
       "options":{

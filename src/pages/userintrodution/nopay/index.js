@@ -6,7 +6,7 @@ import config from './config/index';
 export default function () {
 
   useBreadcrumb([
-    { title: '首页', path: '/nopay' },
+    { title: '首页'},
     { title: '未付款列表' },
   ]);
 

@@ -7,7 +7,7 @@ export default function () {
 
   useBreadcrumb([
     { title: '首页', path: '/newaccount' },
-    { title: '账号管理' },
+    { title: '玩家管理' },
   ]);
 
   return <div>

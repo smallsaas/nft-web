@@ -6,7 +6,7 @@ import config from './config/index';
 export default function () {
 
   useBreadcrumb([
-    { title: '首页', path: '/metaspirit' },
+    { title: '首页' },
     { title: '元精灵管理' },
   ]);
 

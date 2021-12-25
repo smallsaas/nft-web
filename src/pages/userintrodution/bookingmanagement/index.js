@@ -6,7 +6,7 @@ import config from './config/index';
 export default function () {
 
   useBreadcrumb([
-    { title: '首页', path: '/bookingmanagement' },
+    { title: '首页'},
     { title: '查看预约' },
   ]);
 

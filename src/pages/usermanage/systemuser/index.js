@@ -7,7 +7,7 @@ export default function () {
 
   useBreadcrumb([
     { title: '首页', path: '' },
-    { title: '账号管理' },
+    { title: '店小二管理' },
   ]);
 
   return <div>

@@ -171,12 +171,20 @@
       {
         "label": "开始时间",
         "field": "startTime",
+        "valueType":"valueinputfour",
+        "options":{
+          "value":"startTime"
+        },
         "align":"center"
       },
       {
         "label": "结束时间",
         "field": "endTime",
-        "align":"center"
+        "align":"center",
+        "valueType":"valueinputfour",
+        "options":{
+          "value":"endTime"
+        }
       }
     ],
     "viewConfig": [
