@@ -16,6 +16,8 @@ import Unseal from './unseal/unseal'
 import AutomaticDelivery from './automaticdelivery/automaticdelivery'
 //输入价值区间组件
 import ValueInput from './valueinput/valueinput';
+//输入价值区间组件
+import ValueInputTwo from './valueinputtwo/valueinputtwo';
 //输入时间区间组件
 import TimeInput from './timeinput/timeinput';
 //单选radio
@@ -147,5 +149,6 @@ export const widgets = {
     Radio,
     SelectTwo,
     HandApply,
-    GetValue
+    GetValue,
+    ValueInputTwo
 }

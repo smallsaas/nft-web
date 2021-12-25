@@ -336,8 +336,12 @@
     },
     {
       "label": "付款倒计时",
+      "valueType":"valueinputtwo",
       "field": "orderCountDown",
-      "align":"center"
+      "align":"center",
+      "options":{
+        "value":"orderCountDown"
+      }
     }
   ]
 }

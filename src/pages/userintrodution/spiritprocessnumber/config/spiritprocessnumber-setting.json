@@ -50,7 +50,11 @@
   {
     "label": "结束时间",
     "field": "endTime",
-    "align":"center"
+    "align":"center",
+    "valueType":"valueinputtwo",
+    "options":{
+      "value":"endTime"
+    }
   }
   ]
 }

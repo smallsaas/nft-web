@@ -90,6 +90,7 @@ import Radio from '@/components/SchemaGeneratorPage/components/radio/radio'
 import SelectTwo from '@/components/SchemaGeneratorPage/components/selecttwo/selecttwo'
 import HandApply from '@/components/SchemaGeneratorPage/components/handapply/handapply'
 
+import ValueInputTwo from '@/components/SchemaGeneratorPage/components/valueinputtwo/valueinputtwo'
 
 import GetValue from '@/components/SchemaGeneratorPage/components/getvalue/getvalue'
 
@@ -246,7 +247,8 @@ FITSet({
   'radio':Radio,
   'selecttwo':SelectTwo,
   'handapply':HandApply,
-  'getvalue':GetValue
+  'getvalue':GetValue,
+  'valueinputtwo':ValueInputTwo
 
 });
 
@@ -269,4 +271,6 @@ VTSet({
   'prescription_item_status': FITSet_PrescriptionItemStatus,
   'getvalue':GetValue,
   'valueinput':ValueInput,
+  'valueinputtwo':ValueInputTwo
+
 });

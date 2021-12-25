@@ -224,6 +224,15 @@ export const elements = [
     widget: "ValueInput"
   },
   {
+    text: 'ValueInputTwo',
+    name: "valueInputTwo",
+    schema: {
+      type: 'string',
+      "ui:widget": "ValueInputTwo",
+    },
+    widget: "ValueInputTwo"
+  },
+  {
     text: 'Approved',
     name: "approved",
     schema: {

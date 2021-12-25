@@ -7,6 +7,6 @@ export default function formatTime(props){
         },
     }=props
     return <div>
-        {moment(text).format("YYYY-MM-DD hh:mm")}
+        {moment(text).format("LT")}
     </div>
 }

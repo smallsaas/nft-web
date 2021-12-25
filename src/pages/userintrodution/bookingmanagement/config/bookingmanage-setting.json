@@ -32,27 +32,27 @@
     },
     {
       "label": "玩家",
-      "field": "player",
+      "field": "playerName",
       "align":"center"
     },
     {
       "label": "预约精灵",
-      "field": "appointmentSpirit",
+      "field": "wispName",
       "align":"center"
     },
     {
       "label": "预约场次",
-      "field": "appointmentNumber",
+      "field": "marketSessionTitle",
       "align":"center"
     },
     {
-      "label": "购买的精灵",
-      "field": "buySpirit",
+      "label": "消耗的精灵令",
+      "field": "consumeCoins",
       "align":"center"
     },
     {
       "label": "租用的土地",
-      "field": "rentLand",
+      "field": "requireLandDays",
       "align":"center"
     },
     {
