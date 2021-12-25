@@ -101,9 +101,7 @@
     },
     {
       "label": "交易密码",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": ["required"],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -116,8 +114,9 @@
     },
     {
       "label": "确认交易密码",
-      "rules": [{
-        "type": "required"
+      "rules": ["required",{
+        "type": "password",
+        "field":"paymentPassword"
       }],
       "props": {
         "placeholder": "请输入",
