@@ -6,7 +6,12 @@ export default function formatTime(props){
             text="-"
         },
     }=props
+    function refact(string){
+        let stringObj = string.split(':')
+        string = stringObj.join("时")
+        return string+"分"
+      }
     return <div>
-        {moment(text).format("hh:mm")}
+        {refact(moment(text).format('YYYY-MM-DD hh:mm'))}
     </div>
 }

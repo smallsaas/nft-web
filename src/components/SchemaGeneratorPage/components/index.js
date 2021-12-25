@@ -18,6 +18,10 @@ import AutomaticDelivery from './automaticdelivery/automaticdelivery'
 import ValueInput from './valueinput/valueinput';
 //输入价值区间组件
 import ValueInputTwo from './valueinputtwo/valueinputtwo';
+//输入价值区间组件
+import ValueInputThree from './valueinputthree/valueinputthree';
+//输入价值区间组件
+import ValueInputFour from './valueinputfour/valueinputfour';
 //输入时间区间组件
 import TimeInput from './timeinput/timeinput';
 //单选radio
@@ -150,5 +154,7 @@ export const widgets = {
     SelectTwo,
     HandApply,
     GetValue,
-    ValueInputTwo
+    ValueInputTwo,
+    ValueInputThree,
+    ValueInputFour
 }

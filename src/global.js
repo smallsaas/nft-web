@@ -91,6 +91,10 @@ import SelectTwo from '@/components/SchemaGeneratorPage/components/selecttwo/sel
 import HandApply from '@/components/SchemaGeneratorPage/components/handapply/handapply'
 
 import ValueInputTwo from '@/components/SchemaGeneratorPage/components/valueinputtwo/valueinputtwo'
+import ValueInputThree from '@/components/SchemaGeneratorPage/components/valueinputthree/valueinputthree'
+import ValueInputFour from '@/components/SchemaGeneratorPage/components/valueinputfour/valueinputfour'
+
+
 
 import GetValue from '@/components/SchemaGeneratorPage/components/getvalue/getvalue'
 
@@ -271,6 +275,8 @@ VTSet({
   'prescription_item_status': FITSet_PrescriptionItemStatus,
   'getvalue':GetValue,
   'valueinput':ValueInput,
-  'valueinputtwo':ValueInputTwo
+  'valueinputtwo':ValueInputTwo,
+  'valueinputthree':ValueInputThree,
+  'valueinputfour':ValueInputFour
 
 });

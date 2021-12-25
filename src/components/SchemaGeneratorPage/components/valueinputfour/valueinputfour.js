@@ -9,9 +9,10 @@ export default function formatTime(props){
     function refact(string){
         let stringObj = string.split(':')
         string = stringObj.join("时")
+        string = string.substring(0,5)
         return string+"分"
       }
     return <div>
-        {refact(moment(text).format('LT'))}
+        {refact(text)}
     </div>
 }
