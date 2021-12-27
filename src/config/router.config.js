@@ -98,7 +98,7 @@ module.exports = [
     items: [
       {
         path: '/usermanage/systemuser',
-        name: '店小二系统号',
+        name: '系统号',
       },
       {
         path: '/usermanage/newaccount',

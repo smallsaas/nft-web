@@ -483,14 +483,7 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [{
-      "title": "添加系统号",
-      "type": "path",
-      "options": {
-        "style": "primary",
-        "path": "/usermanage/systemuser/systemuser-add"
-      }
-    },
+  "tableActions": [
     {
       "title": "发放精灵币",
       "type": "modal",
@@ -695,7 +688,7 @@
         },
         "chy": {
           "NORMAL": "blue",
-          "FROZEN": "cyan",
+          "FROZEN": "gray",
           "MANAGER_GIVEN": "purple",
           "3": "purple-dark",
           "4": "orange",

@@ -30,6 +30,24 @@
       "field": "name"
     },
     {
+      "label": "绑定场次",
+      "type": "select-fetch",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "options": {
+        "API": "/api/crud/oms/marketingSession/marketingSessions",
+        "label": "title",
+        "value": "title"
+      },
+      "field": "title"
+    },
+    {
       "label": "精灵描述",
       "rules": [{
         "type": "required"
@@ -250,6 +268,24 @@
         "value": "name"
       },
       "field": "name"
+    },
+    {
+      "label": "绑定场次",
+      "type": "select-fetch",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "options": {
+        "API": "/api/crud/oms/marketingSession/marketingSessions",
+        "label": "title",
+        "value": "title"
+      },
+      "field": "title"
     },
     {
       "label": "精灵图片",
@@ -501,6 +537,15 @@
       "type": "default"
     },
     {
+      "label": "挂售场次",
+      "field": "marketingSession",
+      "align": "center",
+      "valueType":"getvalue",
+      "options":{
+       "useField":"title"
+      }
+    },
+    {
       "label": "最低价值",
       "field": "minimumValue",
       "align": "center"
@@ -547,6 +592,12 @@
     {
       "label": "精灵等级",
       "field": "level",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "挂售场次",
+      "field": "marketingSession",
       "type": "plain",
       "span": 24
     },

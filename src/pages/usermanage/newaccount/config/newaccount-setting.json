@@ -175,7 +175,7 @@
           "value": 1
         },
         {
-          "label": "普通用户",
+          "label": "玩家",
           "value": 2
         }
       ],
@@ -625,7 +625,7 @@
         },
         "chy": {
           "NORMAL": "blue",
-          "FROZEN": "cyan",
+          "FROZEN": "gray",
           "MANAGER_GIVEN": "purple",
           "3": "purple-dark",
           "4": "orange",

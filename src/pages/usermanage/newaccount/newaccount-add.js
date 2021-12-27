@@ -19,7 +19,7 @@ export default () => {
     },
     {
       title: "账号管理",
-      path: '/newaccount'
+      path: '/usermanage/newaccount'
     },
     {
       title: "添加账号"
