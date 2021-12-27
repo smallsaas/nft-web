@@ -312,7 +312,7 @@
           "SYSTEM_GIVEN": "系统给予",
           "COMPANION_WISP": "陪伴精灵",
           "MANAGER_GIVEN": "店小二给予",
-          "3": "v3",
+          "BUY_COMPANION_WISP": "购买陪伴精灵",
           "4": "v4",
           "5": "v5"
         },
@@ -320,7 +320,7 @@
           "SYSTEM_GIVEN": "blue",
           "COMPANION_WISP": "cyan",
           "MANAGER_GIVEN": "purple",
-          "3": "purple-dark",
+          "BUY_COMPANION_WISP": "purple-dark",
           "4": "orange",
           "5": "gray"
         }

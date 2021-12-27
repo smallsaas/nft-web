@@ -637,7 +637,12 @@
     },
     {
       "label": "邀请人",
-      "field": "invitePeople",
+      "field": "inviter",
+      "align": "center"
+    },
+    {
+      "label": "邀请码",
+      "field": "invitationCode",
       "align": "center"
     }
   ],
@@ -694,13 +699,13 @@
     },
     {
       "label": "角色",
-      "field": "playerRole",
+      "field": "isManager",
       "type": "plain",
       "span": 8
     },
     {
       "label": "邀请人",
-      "field": "invitePeople",
+      "field": "inviter",
       "type": "plain",
       "span": 16
     },

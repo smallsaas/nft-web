@@ -116,8 +116,9 @@
     },
     {
       "label": "确认交易密码",
-      "rules": [{
-        "type": "required"
+      "rules": ["required",{
+        "type":"password",
+        "field":"paymentPassword"
       }],
       "props": {
         "placeholder": "请输入",
@@ -126,7 +127,7 @@
         }
       },
       "type": "password",
-      "field": "checkPaymentPassword",
+      "field": "paymentPassword",
       "span": 16
     },
     {
