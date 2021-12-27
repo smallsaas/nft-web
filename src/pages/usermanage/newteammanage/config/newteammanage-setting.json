@@ -4,11 +4,11 @@
     "new": "添加账号",
     "edit": "编辑账号"
   },
-  "listAPI": "/api/crud/oms/manager/managers",
-  "createAPI": "/api/crud/oms/manager/managers",
-  "getAPI": "/api/crud/oms/manager/managers/[id]",
-  "updateAPI": "/api/crud/oms/manager/managers/[id]",
-  "deleteAPI": "/api/crud/oms/manager/managers/(id)",
+  "listAPI": "/api/crud/oms/player/players",
+  "createAPI": "/api/crud/oms/player/players",
+  "getAPI": "/api/crud/oms/player/players/[id]",
+  "updateAPI": "/api/crud/oms/player/players/[id]",
+  "deleteAPI": "/api/crud/oms/player/players/(id)",
   "columns": 1,
   "createFields": [{
       "label": "昵称",
@@ -314,8 +314,13 @@
       "align":"center"
     },
     {
+      "label": "姓名",
+      "field": "name",
+      "align":"center"
+    },
+    {
       "label": "账号",
-      "field": "account",
+      "field": "mobilePhone",
       "align":"center"
     },
     {
@@ -326,7 +331,7 @@
     {
       "label": "直推数",
       "align":"center",
-      "field": "recommentNumber"
+      "field": "recommendCount"
     },
     {
       "label": "当前预约数",
@@ -336,7 +341,7 @@
     {
       "label": "总领养数",
       "align":"center",
-      "field": "allAdoptNumber"
+      "field": "currentAdoptWisp"
     }
   ]
 }

@@ -137,7 +137,7 @@
           "width": 240
         },
         "min": 0,
-        "placeholder":"请输入"
+        "placeholder": "请输入"
       },
       "addonAfter": "精灵令"
     },
@@ -153,7 +153,7 @@
           "width": 240
         },
         "min": 0,
-        "placeholder":"请输入"
+        "placeholder": "请输入"
       },
       "addonAfter": "精灵令"
     },
@@ -165,7 +165,7 @@
         "style": {
           "width": 240
         },
-        "placeholder":"请输入"
+        "placeholder": "请输入"
       },
       "rules": [{
         "type": "required"
@@ -179,7 +179,7 @@
         "style": {
           "width": 240
         },
-        "placeholder":"请输入"
+        "placeholder": "请输入"
       },
       "rules": [{
         "type": "required"
@@ -197,7 +197,7 @@
           "width": 240
         },
         "min": 0,
-        "placeholder":"请输入"
+        "placeholder": "请输入"
       },
       "addonAfter": "天"
     },
@@ -212,7 +212,7 @@
         },
         "min": 0,
         "max": 100,
-        "placeholder":"请输入"
+        "placeholder": "请输入"
       },
       "type": "number",
       "field": "growthPercent",
@@ -228,7 +228,7 @@
           "width": 240
         },
         "min": 0,
-        "placeholder":"请输入"
+        "placeholder": "请输入"
       },
       "type": "number",
       "field": "costAccompanyWisp",
@@ -244,7 +244,7 @@
           "width": 240
         },
         "min": 0,
-        "placeholder":"请输入"
+        "placeholder": "请输入"
       },
       "type": "number",
       "field": "costWispCoin",
@@ -252,7 +252,7 @@
     }
   ],
   "updateFields": [{
-      "label": "精灵名称",
+      "label": "元精灵选择",
       "type": "select-fetch",
       "props": {
         "style": {
@@ -268,6 +268,14 @@
         "value": "name"
       },
       "field": "name"
+    },
+    {
+      "label": "精灵名称",
+      "type": "input",
+      "field": "name",
+      "rules": [{
+        "type": "required"
+      }]
     },
     {
       "label": "绑定场次",
@@ -365,22 +373,6 @@
       "addonAfter": "精灵令"
     },
     {
-      "label": "匹配时间开始",
-      "type": "timeinput",
-      "field": "startMatchTime",
-      "rules": [{
-        "type": "required"
-      }]
-    },
-    {
-      "label": "匹配时间结束",
-      "type": "timeinput",
-      "field": "endMatchTime",
-      "rules": [{
-        "type": "required"
-      }]
-    },
-    {
       "label": "培养周期",
       "rules": [{
         "type": "required"
@@ -412,7 +404,7 @@
       "addonAfter": "%"
     },
     {
-      "label": "兑换陪伴精灵消耗精灵令",
+      "label": "预约消耗陪伴精灵数量",
       "rules": [{
         "type": "required"
       }],
@@ -424,22 +416,7 @@
       },
       "type": "number",
       "field": "costAccompanyWisp",
-      "addonAfter": "精灵令"
-    },
-    {
-      "label": "租用土地1天消耗精灵令",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "style": {
-          "width": 240
-        },
-        "min": 0
-      },
-      "type": "number",
-      "field": "costWispCoin",
-      "addonAfter": "精灵令"
+      "addonAfter": "只"
     }
   ],
   "map": {},
@@ -540,9 +517,9 @@
       "label": "挂售场次",
       "field": "marketingSession",
       "align": "center",
-      "valueType":"getvalue",
-      "options":{
-       "useField":"title"
+      "valueType": "getvalue",
+      "options": {
+        "useField": "title"
       }
     },
     {
