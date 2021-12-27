@@ -39,7 +39,7 @@ export default (props) => {
     LS.del('menuList');
     useVisible(false);
     removeToken();
-    // history.push('/admin');
+    history.push('/login');
   }
 
   function handleRouteToProfile() {
