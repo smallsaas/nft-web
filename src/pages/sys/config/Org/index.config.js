@@ -23,7 +23,8 @@ module.exports = {
         share: 'org',
         API: {
           listAPI: '/api/sys/org',
-          appendAPI: '/api/sys/org/<id>/kid',
+          // appendAPI: '/api/sys/org/<id>/kid',
+          // 这里的 appendAPI 会影响到局部刷新
           deleteAPI: '/api/sys/org/(id)'
         },
         actions: [],
@@ -42,15 +43,15 @@ module.exports = {
                 4: '部门',
                 5: '工作组',
               },
-              colorMap: {
-                0:'#3399CC',
-                1: '#08979c',
-                2: '#874d00',
-                3: '#10239e',
-                4: '#391085',
-                5: '#092b00',
+              chy: {
+                0:'P1',
+                1: 'P1',
+                2: 'P2',
+                3: 'P3',
+                4: 'P4',
+                5: 'P5',
               },
-            },
+            },type:"Dot",theme:"priority"
           },
 /*          { field: 'userName', label: '负责人' },
           { field: 'phone', label: '电话' },*/
