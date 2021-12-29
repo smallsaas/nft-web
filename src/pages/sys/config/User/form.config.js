@@ -42,7 +42,7 @@ module.exports = [
   },
   {
     field: 'phone', label: '电话', type: 'input', 
-    rules: ['required'],
+    // rules: ['required'],
   },
 
   {
