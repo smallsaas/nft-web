@@ -4,11 +4,11 @@
     "new": "添加账号",
     "edit": "编辑账号"
   },
-  "listAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords",
-  "createAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords",
-  "getAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords/[id]",
-  "updateAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords/[id]",
-  "deleteAPI": "/api/crud/oms/wispCoinRecord/wispCoinRecords/(id)",
+  "listAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList",
+  "createAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList",
+  "getAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList/[id]",
+  "updateAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList/[id]",
+  "deleteAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList/(id)",
   "columns": 1,
   "createFields": [{
       "label": "昵称",

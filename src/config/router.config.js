@@ -68,11 +68,11 @@ module.exports = [
       {
         path: '/spirits/spirit',
         name: '精灵管理',
-      },
-      {
-        path: '/spirits/spiritconfig',
-        name: '精灵配置',
       }
+      // {
+      //   path: '/spirits/spiritconfig',
+      //   name: '精灵配置',
+      // }
     ]
   },
   {
@@ -125,134 +125,17 @@ module.exports = [
   {
     name: '配置中心',
     path: '/configcenter',
-    items: [{
-        path: '/configcenter/storemanage',
-        name: '店小二管理',
-      },
+    items: [
+      // {
+      //   path: '/configcenter/storemanage',
+      //   name: '店小二管理',
+      // },
       {
         path: '/configcenter/spiritprocessnumbermanage',
         name: '场次管理',
       }
     ]
   },
-  // {
-  //       path: '/',
-  //       name: '精灵处理',
-  //       items: [{
-  //         path: '/spiritprocessnumber',
-  //         name: '场次',
-  //       },
-  //       {
-  //         path: '/spiritprocesshandle',
-  //         name: '小二',
-  //       }]
-  //     }
-  // {
-  //   name: '账号管理',
-  //   path: '/newaccount',
-  //   items: [{
-  //       path: '/newaccount',
-  //       name: '账号管理',
-  //     },
-  //     {
-  //       path: '/bookingmanagement',
-  //       name: '预约管理',
-  //     }
-  //   ]
-  // },
-  // {
-  //   name: '团队管理',
-  //   path: '/newteammanage',
-  //   items: [{
-  //       path: '/newteammanage',
-  //       name: '团队',
-  //     },
-  //     {
-  //       path: '/nopay',
-  //       name: '未付款列表',
-  //     },
-  //     {
-  //       path: '/directquery',
-  //       name: '直推查询列表',
-  //     }
-  //   ]
-  // },
-  // {
-  //   name: '申述管理',
-  //   path: '/representation',
-  //   items: [{
-  //       path: '/representation',
-  //       name: '申述管理',
-  //     }
-  //   ]
-  // },
-  // {
-  //   name: '配置中心',
-  //   path: '/',
-  //   items: [{
-  //       path: '/generalconfig',
-  //       name: '通用配置',
-  //     },
-  //     {
-  //       path: '/memberconfig',
-  //       name: '会员配置',
-  //     }
-  //   ]
-  // },
-  // {
-  //   name: '账号管理',
-  //   path: '/account',
-  //   items: [{
-  //       path: '/account/accountmanage',
-  //       name: '账号管理',
-  //     },
-  //     {
-  //       path: '/account/appointmentmanage',
-  //       name: '预约管理',
-  //     },
-  //     {
-  //       path: '/account/spiritmanage',
-  //       name: '精灵处理',
-  //     },
-  //   ]
-  // },
-  // {
-  //   name: '团队管理',
-  //   path: '/team',
-  //   items: [{
-  //       path: '/team/teammanage',
-  //       name: '团队',
-  //     },
-  //     {
-  //       path: '/team/nopaymanage',
-  //       name: '未付款列表',
-  //     },
-  //     {
-  //       path: '/team/invitationmanage',
-  //       name: '直推查询列表',
-  //     },
-  //   ]
-  // },
-  // {
-  //   name: '配置中心',
-  //   path: '/configure',
-  //   items: [{
-  //     path: '/configure/spiritconfigure',
-  //     name: '精灵配置',
-  //   }]
-  // },
-  // {
-  //   name: '申诉管理',
-  //   path: '/representations',
-  //   items: [{
-  //     path: '/representations/representationsmanage',
-  //     name: '申诉管理',
-  //   }]
-  // },
-  // {
-  //   name: '动态页面',
-  //   path: '/dynamicPage'
-  // },
 
   {
     name: '系统管理',
@@ -265,15 +148,15 @@ module.exports = [
     //   'OperationLog.view'
     // ],
     items: [
-      {
-        name: '菜单管理',
-        path: '/sys/menuManage',
-      },
-      {
-        name: '组织管理',
-        path: '/sys/org',
-        permissions: ''
-      },
+      // {
+      //   name: '菜单管理',
+      //   path: '/sys/menuManage',
+      // },
+      // {
+      //   name: '组织管理',
+      //   path: '/sys/org',
+      //   permissions: ''
+      // },
       {
         name: '用户管理',
         path: '/sys/user',
@@ -286,7 +169,7 @@ module.exports = [
       },
       {
         name: '系统配置',
-        path: '/sys/setting',
+        path: '/sys/spiritconfig',
         permissions: ''
       },
       {
