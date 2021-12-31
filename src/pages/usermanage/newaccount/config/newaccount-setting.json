@@ -24,17 +24,14 @@
       "span": 8
     },
     {
-      "label": "邀请码",
+      "label": "邀请人",
+      "type":"input",
+      "props": {
+        "placeholder": "请输入邀请人"
+      },
       "rules": [{
         "type": "required"
       }],
-      "props": {
-        "placeholder": "请输入",
-        "style": {
-          "width": 240
-        }
-      },
-      "type": "number",
       "field": "invitationCode",
       "span": 16
     },
@@ -101,7 +98,6 @@
     },
     {
       "label": "交易密码",
-      "rules": ["required"],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -130,9 +126,6 @@
     },
     {
       "label": "登录密码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -145,8 +138,9 @@
     },
     {
       "label": "确认登陆密码",
-      "rules": [{
-        "type": "required"
+      "rules": ["required",{
+        "type": "password",
+        "field":"loginPassword"
       }],
       "props": {
         "placeholder": "请输入",
@@ -176,23 +170,28 @@
         },
         {
           "label": "玩家",
-          "value": 2
+          "value": 0
         }
       ],
-      "field": "playerRole",
+      "field": "isManager",
       "span": 8
     },
     {
-      "label": "邀请人",
-      "type":"input",
+      "label": "绑定店小二",
+      "type": "select-fetch",
       "props": {
-        "placeholder": "请输入邀请人"
+        "style": {
+          "width": 240
+        },
+        "placeholder": "当用户角色为系统号需要选择绑定店小二"
       },
-      "rules": [{
-        "type": "required"
-      }],
-      "field": "invitePeople",
-      "span": 16
+      "options": {
+        "API": "api/adm/users",
+        "label": "name",
+        "value": "id"
+      },
+      "field": "sysUserId",
+      "span":16
     },
     {
       "label": "支付宝账号",

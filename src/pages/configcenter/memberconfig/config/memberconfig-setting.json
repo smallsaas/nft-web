@@ -1,0 +1,318 @@
+{
+  "columns": 1,
+  "createFields": [
+    {
+      "label": "有效会员",
+      "type": "plain",
+      "field": ""
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "addonAfter":"精灵令"
+    },
+    {
+      "label": "v1级会员",
+      "type": "plain",
+      "field": ""
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":8,
+      "addonAfter":"精灵令"
+    },
+    {
+      "label": "直推人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":16,
+      "addonAfter":"有效账号"
+    },
+    {
+      "label": "团队人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":8,
+      "addonAfter":"有效账号"
+    },
+    {
+      "label": "团队收益",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":16,
+      "addonAfter":"%"
+    },
+    {
+      "label": "v2级会员",
+      "type": "plain",
+      "field": ""
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":8,
+      "addonAfter":"精灵令"
+    },
+    {
+      "label": "直推人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":16,
+      "addonAfter":"有效账号"
+    },
+    {
+      "label": "团队人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":8,
+      "addonAfter":"有效账号"
+    },
+    {
+      "label": "团队收益",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":16,
+      "addonAfter":"%"
+    },
+    {
+      "label": "v3级会员",
+      "type": "plain",
+      "field": ""
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":8,
+      "addonAfter":"精灵令"
+    },
+    {
+      "label": "直推人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":16,
+      "addonAfter":"有效账号"
+    },
+    {
+      "label": "团队人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":8,
+      "addonAfter":"有效账号"
+    },
+    {
+      "label": "团队收益",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":16,
+      "addonAfter":"%"
+    },
+    {
+      "label": "v4级会员",
+      "type": "plain",
+      "field": ""
+    },
+    {
+      "label": "精灵令大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":8,
+      "addonAfter":"精灵令"
+    },
+    {
+      "label": "直推人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":16,
+      "addonAfter":"有效账号"
+    },
+    {
+      "label": "团队人数大于",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":8,
+      "addonAfter":"有效账号"
+    },
+    {
+      "label": "团队收益",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "min":0,
+        "style":{
+          "width":240
+        }
+      },
+      "type": "number",
+      "field": "name",
+      "span":16,
+      "addonAfter":"%"
+    }
+  ]
+}
