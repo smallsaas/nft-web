@@ -180,23 +180,23 @@
   }
   ],
   "updateFields": [{
-      "label": "元精灵选择",
-      "type": "select-fetch",
-      "props": {
-        "style": {
-          "width": 240
-        }
-      },
-      "rules": [{
-        "type": "required"
-      }],
-      "options": {
-        "API": "/api/crud/oms/wispMeta/wispMetas",
-        "label": "name",
-        "value": "name"
-      },
-      "field": "name"
+    "label": "元精灵选择",
+    "type": "select-fetch",
+    "props": {
+      "style": {
+        "width": 240
+      }
     },
+    "rules": [{
+      "type": "required"
+    }],
+    "options": {
+      "API": "/api/crud/oms/wispMeta/wispMetas",
+      "label": "name",
+      "value": "id"
+    },
+    "field": "metaId"
+  },
     {
       "label": "精灵名称",
       "type": "input",
@@ -207,7 +207,7 @@
     },
     {
       "label": "绑定场次",
-      "type": "select",
+      "type": "select-fetch",
       "props": {
         "style": {
           "width": 240
@@ -216,9 +216,11 @@
       "rules": [{
         "type": "required"
       }],
-      "options": [
-        { "label":"level1专场", "value":"1"}  
-      ],
+      "options": {
+        "API": "/api/crud/oms/marketingSession/marketingSessions",
+        "label": "title",
+        "value": "sessionId"
+      },
       "field": "sessionId"
     },
     {
@@ -511,7 +513,7 @@
       "span": 24
     },
     {
-      "label": "培养天数",
+      "label": "培养周期",
       "field": "growthDays",
       "type": "plain",
       "span": 24
@@ -523,12 +525,12 @@
       "span": 24
     },
     {
-      "label": "最低价值",
+      "label": "最小价值",
       "field": "minimumValue",
       "type": "plain",
       "span": 24
     }, {
-      "label": "最高价值",
+      "label": "最大价值",
       "field": "maximumValue",
       "type": "plain",
       "span": 24
@@ -551,7 +553,7 @@
       "span": 24
     },
     {
-      "label": "消耗陪伴精灵数量",
+      "label": "预约陪伴消耗精灵数量",
       "field": "costAccompanyWisp",
       "type": "plain",
       "span": 24

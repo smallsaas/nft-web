@@ -341,6 +341,37 @@
       "span": 16
     },
     {
+      "label": "备用手机号码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "number",
+      "field": "backupMobilePhone",
+      "span": 8
+
+    },
+    {
+      "label": "验证码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "number",
+      "field": "secondMobilePhoneCode",
+      "span": 16
+    },
+    {
       "label": "交易密码",
       "rules": [{
         "type": "required"
@@ -519,6 +550,36 @@
   ],
   "tableOperation": [  
     {
+      "title": "解封账号",
+      "type": "request",
+      "options": {
+        "tips": "确定要解封账号麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/(id)",
+        "method": "get"
+      }
+    },
+    {
+      "title": "审核通过",
+      "type": "request",
+      "options": {
+        "tips": "确定审核通过麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/(id)",
+        "method": "get"
+      }
+    },
+    {
+      "title": "暂停自动投放",
+      "type": "request",
+      "options": {
+        "tips": "确定要暂停自动投放麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/(id)",
+        "method": "get"
+      }
+    },
+    {
       "title": "查看详情",
       "type": "path",
       "options": {
@@ -556,31 +617,30 @@
     }
   ],
   "searchFields": [{
-      "label": "名称",
-      "field": "name",
-      "type": "input",
-      "props": {
-        "placeholder": "请输入名称"
-      }
-    },
-    {
-      "label": "状态",
-      "field": "description",
-      "type": "select",
-      "options": [{
-          "label": "审核通过"
-        },
-        {
-          "label": "审核中"
-        },
-        {
-          "label": "审核不通过"
-        }
-      ],
-      "props": {
-        "placeholder": "请选择"
-      }
+    "label": "名称",
+    "field": "name",
+    "type": "input",
+    "props": {
+      "placeholder": "请输入名称"
     }
+  },
+  {
+    "label": "状态",
+    "field": "status",
+    "type": "select",
+    "options": [{
+        "label": "正常",
+        "value": "NORMAL"
+      },
+      {
+        "label": "冻结",
+        "value": "FROZEN"
+      }
+    ],
+    "props": {
+      "placeholder": "请选择"
+    }
+  }
   ],
   "tableFields": [{
       "label": "序号",
@@ -636,7 +696,7 @@
     },
     {
       "label": "邀请人",
-      "field": "inviter",
+      "field": "inviterName",
       "align": "center"
     },
     {
@@ -704,7 +764,7 @@
     },
     {
       "label": "邀请人",
-      "field": "inviter",
+      "field": "inviterName",
       "type": "plain",
       "span": 16
     },

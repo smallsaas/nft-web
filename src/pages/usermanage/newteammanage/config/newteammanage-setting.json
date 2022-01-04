@@ -336,12 +336,12 @@
     {
       "label": "当前预约数",
       "align":"center",
-      "field": "currentAppointmentNumber"
+      "field": "appointmentCount"
     },
     {
       "label": "总领养数",
       "align":"center",
-      "field": "currentAdoptWisp"
+      "field": "adoptCount"
     }
   ]
 }
