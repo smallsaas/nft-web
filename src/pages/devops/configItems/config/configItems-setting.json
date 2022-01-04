@@ -15,7 +15,7 @@
     {
       "label": "配置项名",
       "props": {
-        "placeholder": "请输入配置项名"
+        "placeholder": "请输入"
       },
       "rules": [
         {
@@ -29,7 +29,7 @@
     {
       "label": "字段名",
       "props": {
-        "placeholder": "请输入字段名"
+        "placeholder": "请输入"
       },
       "type": "input",
       "field": "field",
@@ -64,9 +64,15 @@
     {
       "label": "描述",
       "props": {
-        "placeholder": "请输入描述"
+        "placeholder": "请输入",
+        "autoSize": {
+          "minRows": 3
+        },
+        "style":{
+          "width": 240
+        }
       },
-      "type": "input",
+      "type": "text-area",
       "field": "description",
       "align": "center"
     }
@@ -75,7 +81,7 @@
     {
       "label": "配置项名",
       "props": {
-        "placeholder": "请输入配置项名"
+        "placeholder": "请输入"
       },
       "rules": [
         {
@@ -89,7 +95,7 @@
     {
       "label": "字段名",
       "props": {
-        "placeholder": "请输入字段名"
+        "placeholder": "请输入"
       },
       "type": "input",
       "field": "field",
@@ -124,9 +130,15 @@
     {
       "label": "描述",
       "props": {
-        "placeholder": "请输入描述"
+        "placeholder": "请输入",
+        "autoSize": {
+          "minRows": 3
+        },
+        "style":{
+          "width": 240
+        }
       },
-      "type": "input",
+      "type": "text-area",
       "field": "description",
       "align": "center"
     }
