@@ -25,9 +25,9 @@
     "options": {
       "API": "/api/crud/oms/wispMeta/wispMetas",
       "label": "name",
-      "value": "name"
+      "value": "id"
     },
-    "field": "name"
+    "field": "metaId"
   },
   {
     "label": "精灵名称",
@@ -51,9 +51,9 @@
     "options": {
       "API": "/api/crud/oms/marketingSession/marketingSessions",
       "label": "title",
-      "value": "title"
+      "value": "id"
     },
-    "field": "title"
+    "field": "sessionId"
   },
   {
     "label": "精灵图片",
