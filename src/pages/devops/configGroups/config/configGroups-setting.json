@@ -77,14 +77,6 @@
     "form": "TitleContent"
   },
   "tableActions": [
-    {
-      "title": "添加分组",
-      "type": "path",
-      "options": {
-        "style": "primary",
-        "path": "configGroups/configGroups-add"
-      }
-    }
   ],
   "tableOperation": [
     {
@@ -104,23 +96,11 @@
         "path": "configGroups/configGroups-view",
         "outside": true
       }
-    },
-    {
-      "title": "删除",
-      "type": "delete",
-      "options": {
-        "outside": false,
-        "API": "/api/crud/oms/wisp/wisps/(id)",
-        "method": "delete"
-      },
-      "expect": {
-        "permission": ""
-      }
     }
   ],
   "searchFields": [
     {
-      "label": "查看",
+      "label": "分组名称",
       "field": "title",
       "type": "input",
       "props": {
