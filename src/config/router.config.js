@@ -179,6 +179,22 @@ module.exports = [
       }
     ]
   },
+  {
+    name: '运维管理',
+    path: '/devops',
+    items: [
+      {
+        path: '/devops/configItems',
+        name: '配置项',
+      },
+      {
+        path: '/devops/configGroups',
+        name: '配置分组',
+      },
+
+    ]
+  },
+
   // {
   //   name: '业务中台',
   //   path: '/businessCenter',
