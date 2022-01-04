@@ -15,7 +15,7 @@
     {
       "label": "分组名称",
       "props": {
-        "placeholder": "请输入分组名称"
+        "placeholder": "请输入"
       },
       "rules": [
         {
@@ -28,24 +28,30 @@
     },
     {
       "label": "类型",
+      "type": "select",
       "props": {
-        "placeholder": "请输入类型"
+        "placeholder": "请选择",
+        "style":{
+          "width": 240
+        }
       },
-      "type": "input",
-      "field": "type",
-      "align": "center",
+      "options":[
+        {"label":"OPTION","value": "OPTION"},
+        {"label":"CONFIG","value": "CONFIG"}
+      ],
       "rules": [
         {
           "type": "required"
         }
-      ]
+      ],
+      "field": "type"
     }
   ],
   "updateFields": [
     {
       "label": "分组名称",
       "props": {
-        "placeholder": "请输入分组名称"
+        "placeholder": "请输入"
       },
       "rules": [
         {
@@ -58,17 +64,23 @@
     },
     {
       "label": "类型",
-      "type": "input",
-      "field": "type",
-      "align": "center",
+      "type": "select",
+      "props": {
+        "placeholder": "请选择",
+        "style":{
+          "width": 240
+        }
+      },
+      "options":[
+        {"label":"OPTION","value": "OPTION"},
+        {"label":"CONFIG","value": "CONFIG"}
+      ],
       "rules": [
         {
           "type": "required"
         }
       ],
-      "props": {
-        "placeholder": "请输入类型"
-      }
+      "field": "type"
     }
   ],
   "map": {},

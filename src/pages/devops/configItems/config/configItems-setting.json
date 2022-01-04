@@ -42,17 +42,24 @@
     },
     {
       "label": "数据类型",
+      "type": "select",
       "props": {
-        "placeholder": "请输入数据类型"
+        "placeholder": "请选择",
+        "style":{
+          "width": 240
+        }
       },
-      "type": "input",
-      "field": "dataType",
-      "align": "center",
+      "options":[
+        {"label":"NUMBER","value": "NUMBER"},
+        {"label":"STRING","value": "STRING"},
+        {"label":"FLOAT","value": "FLOAT"}
+      ],
       "rules": [
         {
           "type": "required"
         }
-      ]
+      ],
+      "field": "dataType"
     },
     {
       "label": "描述",
@@ -61,12 +68,7 @@
       },
       "type": "input",
       "field": "description",
-      "align": "center",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ]
+      "align": "center"
     }
   ],
   "updateFields": [
@@ -100,17 +102,24 @@
     },
     {
       "label": "数据类型",
+      "type": "select",
       "props": {
-        "placeholder": "请输入数据类型"
+        "placeholder": "请选择",
+        "style":{
+          "width": 240
+        }
       },
-      "type": "input",
-      "field": "dataType",
-      "align": "center",
+      "options":[
+        {"label":"NUMBER","value": "NUMBER"},
+        {"label":"STRING","value": "STRING"},
+        {"label":"FLOAT","value": "FLOAT"}
+      ],
       "rules": [
         {
           "type": "required"
         }
-      ]
+      ],
+      "field": "dataType"
     },
     {
       "label": "描述",
@@ -119,12 +128,7 @@
       },
       "type": "input",
       "field": "description",
-      "align": "center",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ]
+      "align": "center"
     }
   ],
   "map": {},
