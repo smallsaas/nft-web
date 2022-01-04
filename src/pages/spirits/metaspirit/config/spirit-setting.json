@@ -39,10 +39,7 @@
     {
       "label": "精灵图片",
       "type": "upload-image",
-      "field": "photoUrl",
-      "options":{
-        "API":"api/cloud/aliyun/oss/upload"
-      }
+      "field": "photoUrl"
     }
   ],
   "updateFields": [{
@@ -72,9 +69,6 @@
     },
     {
       "label": "精灵图片",
-      "props": {
-        "placeholder": "请输入"
-      },
       "type": "upload-image",
       "field": "photoUrl"
     }

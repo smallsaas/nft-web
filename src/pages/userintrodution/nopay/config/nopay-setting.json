@@ -286,11 +286,19 @@
   "tableOperation": [
   ],
   "searchFields": [{
-      "label": "账号",
+      "label": "买家账号",
       "field": "account",
       "type": "input",
       "props": {
-        "placeholder": "请输入账号"
+        "placeholder": "请输入买家账号"
+      }
+    },
+    {
+      "label": "卖家账号",
+      "field": "account",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入卖家账号"
       }
     }
   ],

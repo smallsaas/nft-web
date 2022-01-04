@@ -574,6 +574,10 @@
         {
           "label": "冻结",
           "value": "FROZEN"
+        },
+        {
+          "label": "解冻中",
+          "value": "FROZEN"
         }
       ],
       "props": {

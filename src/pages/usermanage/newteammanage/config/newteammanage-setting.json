@@ -287,14 +287,14 @@
   ],
   "searchFields": [{
       "label": "账号",
-      "field": "descriptions",
+      "field": "mobilePhone",
       "type": "input",
       "props": {
         "placeholder": "请输入账号"
       }
     },
     {
-      "label": "领养状态",
+      "label": "玩家状态",
       "field": "description",
       "type": "select",
       "options": [{
@@ -324,7 +324,7 @@
       "align":"center"
     },
     {
-      "label": "领养状态",
+      "label": "玩家状态",
       "field": "adoptStatus",
       "align":"center"
     },

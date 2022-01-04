@@ -1,4 +1,9 @@
 {
+  "listAPI": "/api/crud/oms/wispMeta/wispMetas",
+  "createAPI": "/api/crud/oms/wispMeta/wispMetas",
+  "getAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
+  "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
+  "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
   "columns": 1,
   "createFields": [
     {

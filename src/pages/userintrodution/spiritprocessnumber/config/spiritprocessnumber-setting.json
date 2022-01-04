@@ -33,11 +33,6 @@
     "align":"center"
   },
   {
-    "label": "场次号",
-    "field": "number",
-    "align":"center"
-  },
-  {
     "label": "场次名称",
     "field": "title",
     "align":"center"
