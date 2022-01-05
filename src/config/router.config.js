@@ -199,6 +199,14 @@ module.exports = [
         path: '/devops/configGroups',
         name: '配置分组',
       },
+      {
+        path: '/devops/perm',
+        name: '权限管理',
+      },
+      {
+        path: '/devops/permGroups',
+        name: '权限分组管理',
+      },
 
     ]
   },

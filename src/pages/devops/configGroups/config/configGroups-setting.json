@@ -81,6 +81,53 @@
         }
       ],
       "field": "type"
+    },
+    {
+      "label": "配置项",
+      "field": "items",
+      "type": "modal-checkbox",
+      "props": {},
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "options": {
+        "title": "选择配置项",
+        "modalWidth": 1080,
+        "label": "title",
+        "editLabel": "title",
+        "value": "id",
+        "pagination": true,
+        "API": "/api/adm/config/fields",
+        "saveData": {
+          "masterRelations": "value"
+        },
+        "fields": [
+          {
+            "label": "序号",
+            "field": "id",
+            "align": "center"
+          },
+          {
+            "label": "配置项名",
+            "field": "title"
+          },
+          {
+            "label": "字段名",
+            "field": "field"
+          },
+          {
+            "label": "数据类型",
+            "field": "dataType",
+            "align": "center"
+          },
+          {
+            "label": "描述",
+            "field": "description"
+          }
+        ]
+      }
     }
   ],
   "map": {},
