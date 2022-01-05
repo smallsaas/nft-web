@@ -189,7 +189,7 @@ function LoginForm(props) {
   const MatchC = cType[formType];
 
   return <>
-    <div
+    {/* <div
       id="loginBG"
       className={styles.loginBG}
       style={{
@@ -197,7 +197,8 @@ function LoginForm(props) {
         height: '100%',
       }}
     >
-    </div>
+    </div> */}
+    {/* <div className='bigLogo'>1111111111</div> */}
     <div className={styles.formContainer}>
       
       <div className={styles.logo}>登录标题</div>

@@ -315,16 +315,11 @@
     {
       "label": "买家",
       "align":"center",
-      "options": {
-        "API": "/api/crud/oms/player/players",
-        "label": "title",
-        "value": "id"
-      },
-      "field": "account"
+      "field": "buyerName"
     },
     {
       "label": "卖家",
-      "field": "account",
+      "field": "sellerName",
       "align":"center"
     },
     {
@@ -355,12 +350,7 @@
     },
     {
       "label": "精灵令",
-      "field": "coin",
-      "align":"center"
-    },
-    {
-      "label": "土地",
-      "field": "coin",
+      "field": "transactionCoins",
       "align":"center"
     },
     {
