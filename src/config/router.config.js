@@ -133,15 +133,16 @@ module.exports = [
       {
         path: '/configcenter/spiritprocessnumbermanage',
         name: '场次管理',
-      },
-      {
-        path: '/configcenter/spiritconfig',
-        name: '精灵配置',
-      },
-      {
-        path: '/configcenter/memberconfig',
-        name: '会员配置',
       }
+      // ,
+      // {
+      //   path: '/configcenter/spiritconfig',
+      //   name: '精灵配置',
+      // },
+      // {
+      //   path: '/configcenter/memberconfig',
+      //   name: '会员配置',
+      // }
     ]
   },
 

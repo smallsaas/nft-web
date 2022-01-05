@@ -11,7 +11,13 @@
   "updateAPI": "/api/crud/oms/player/players/[id]",
   "deleteAPI": "/api/crud/oms/player/players/(id)",
   "columns": 1,
-  "createFields": [{
+  "createFields": [
+    {
+      "label": "个人信息",
+      "type": "plain",
+      "span": 24
+    },
+    {
       "label": "昵称",
       "rules": [{
         "type": "required"
@@ -24,10 +30,10 @@
       "span": 8
     },
     {
-      "label": "邀请人",
+      "label": "邀请码",
       "type":"input",
       "props": {
-        "placeholder": "请输入邀请人"
+        "placeholder": "请输入邀请码"
       },
       "rules": [{
         "type": "required"
@@ -53,9 +59,6 @@
     },
     {
       "label": "验证码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -68,9 +71,6 @@
     },
     {
       "label": "备用手机号码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -83,9 +83,6 @@
     },
     {
       "label": "验证码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -110,10 +107,6 @@
     },
     {
       "label": "确认交易密码",
-      "rules": ["required",{
-        "type": "password",
-        "field":"paymentPassword"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -138,10 +131,6 @@
     },
     {
       "label": "确认登陆密码",
-      "rules": ["required",{
-        "type": "password",
-        "field":"loginPassword"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -192,6 +181,16 @@
       },
       "field": "sysUserId",
       "span":16
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "span": 24
+    },
+    {
+      "label": "支付信息",
+      "type": "plain",
+      "span": 24
     },
     {
       "label": "支付宝账号",
@@ -282,7 +281,12 @@
       "span": 16
     }
   ],
-  "updateFields": [{
+  "updateFields": [
+    {
+      "label": "个人信息",
+      "type": "plain",
+      "span": 24
+    },{
       "label": "昵称",
       "rules": [{
         "type": "required"
@@ -326,25 +330,7 @@
 
     },
     {
-      "label": "验证码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入",
-        "style": {
-          "width": 240
-        }
-      },
-      "type": "number",
-      "field": "firstMobilePhoneCode",
-      "span": 16
-    },
-    {
       "label": "备用手机号码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -353,29 +339,11 @@
       },
       "type": "number",
       "field": "backupMobilePhone",
-      "span": 8
+      "span": 16
 
     },
     {
-      "label": "验证码",
-      "rules": [{
-        "type": "required"
-      }],
-      "props": {
-        "placeholder": "请输入",
-        "style": {
-          "width": 240
-        }
-      },
-      "type": "number",
-      "field": "secondMobilePhoneCode",
-      "span": 16
-    },
-    {
       "label": "交易密码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -388,9 +356,6 @@
     },
     {
       "label": "确认交易密码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -403,9 +368,6 @@
     },
     {
       "label": "登录密码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -418,9 +380,6 @@
     },
     {
       "label": "确认登陆密码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -448,24 +407,22 @@
           "value": 1
         },
         {
-          "label": "普通用户",
-          "value": 2
+          "label": "玩家",
+          "value": 0
         }
       ],
-      "field": "playerRole",
-      "span": 8
+      "field": "isManager",
+      "span": 24
     },
     {
-      "label": "邀请人",
-      "type":"input",
-      "props": {
-        "placeholder": "请输入邀请人"
-      },
-      "rules": [{
-        "type": "required"
-      }],
-      "field": "invitePeople",
-      "span": 16
+      "label": "",
+      "type": "hidden",
+      "span": 24
+    },
+    {
+      "label": "支付信息",
+      "type": "plain",
+      "span": 24
     },
     {
       "label": "支付宝账号",
@@ -484,7 +441,7 @@
       "props": {
         "placeholder": "请输入"
       },
-      "type": "image",
+      "type": "upload-image",
       "field": "alipayQrCodePhotoUrl",
       "span": 16
     },
@@ -505,7 +462,7 @@
       "props": {
         "placeholder": "请输入"
       },
-      "type": "image",
+      "type": "upload-image",
       "field": "wechatQrCodePhotoUrl",
       "span": 16
     },
@@ -557,26 +514,24 @@
         "outside": true,
         "API": "/api/crud/oms/player/players/(id)",
         "method": "get"
+      },
+      "expect": {
+       "field":"status",
+       "value":"FROZEN"
       }
     },
     {
-      "title": "审核通过",
+      "title": "冻结账号",
       "type": "request",
       "options": {
-        "tips": "确定审核通过麽?",
+        "tips": "确定要解封账号麽?",
         "outside": true,
         "API": "/api/crud/oms/player/players/(id)",
         "method": "get"
-      }
-    },
-    {
-      "title": "暂停自动投放",
-      "type": "request",
-      "options": {
-        "tips": "确定要暂停自动投放麽?",
-        "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
-        "method": "get"
+      },
+      "expect": {
+       "field":"status",
+       "value":"NORMAL"
       }
     },
     {
@@ -635,6 +590,10 @@
       {
         "label": "冻结",
         "value": "FROZEN"
+      },
+      {
+        "label": "解冻",
+        "value": "FROZEN"
       }
     ],
     "props": {
@@ -680,12 +639,13 @@
       "options": {
         "map": {
           "NORMAL": "正常",
-          "FROZEN":"冻结"
+          "FROZEN":"冻结",
+          "FROZENS":"解冻"
         },
         "chy": {
           "NORMAL": "blue",
           "FROZEN": "gray",
-          "MANAGER_GIVEN": "purple",
+          "FROZENS": "purple",
           "3": "purple-dark",
           "4": "orange",
           "5": "gray"
@@ -715,6 +675,32 @@
       "field": "status",
       "type": "plain",
       "span": 8
+    },
+    {
+      "label": "级别",
+      "field": "status",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "0": "v0",
+          "1": "v1",
+          "2": "v2",
+          "3": "v3",
+          "4": "v4",
+          "5": "v5"
+        },
+        "chy": {
+          "0": "blue",
+          "1": "cyan",
+          "2": "purple",
+          "3": "purple-dark",
+          "4": "orange",
+          "5": "gray"
+        }
+      },
+      "theme": "option",
+      "type": "default"
     },
     {
       "label": "原因",

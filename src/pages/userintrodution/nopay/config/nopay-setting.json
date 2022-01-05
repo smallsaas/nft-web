@@ -359,6 +359,11 @@
       "align":"center"
     },
     {
+      "label": "土地",
+      "field": "coin",
+      "align":"center"
+    },
+    {
       "label": "创建时间",
       "field": "createTime",
       "align":"center",
