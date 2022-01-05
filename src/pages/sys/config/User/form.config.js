@@ -69,7 +69,8 @@ module.exports = [
     field: 'sex', label: '性别', type: 'radio',
     options: [
       { label: '男', value: '0' },
-      { label: '女', value: '1' }
+      { label: '女', value: '1' },
+      { label:"保密",value:2 }
     ],
     
   },

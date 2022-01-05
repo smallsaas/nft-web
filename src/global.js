@@ -248,7 +248,7 @@ FITSet({
   'unseal':Unseal,
   'automaticdelivery':AutomaticDelivery,
   'timeinput':TimeInput,
-  'radio':Radio,
+  'Radio':Radio,
   'selecttwo':SelectTwo,
   'handapply':HandApply,
   'getvalue':GetValue,
