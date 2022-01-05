@@ -286,11 +286,19 @@
   "tableOperation": [
   ],
   "searchFields": [{
-      "label": "账号",
+      "label": "买家账号",
       "field": "account",
       "type": "input",
       "props": {
-        "placeholder": "请输入账号"
+        "placeholder": "请输入买家账号"
+      }
+    },
+    {
+      "label": "卖家账号",
+      "field": "account",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入卖家账号"
       }
     }
   ],
@@ -300,7 +308,22 @@
       "align":"center"
     },
     {
-      "label": "玩家",
+      "label": "精灵名称",
+      "field": "wispName",
+      "align":"center"
+    },
+    {
+      "label": "买家",
+      "align":"center",
+      "options": {
+        "API": "/api/crud/oms/player/players",
+        "label": "title",
+        "value": "id"
+      },
+      "field": "account"
+    },
+    {
+      "label": "卖家",
       "field": "account",
       "align":"center"
     },
@@ -313,7 +336,7 @@
           "COMPANION_WISP": "陪伴精灵",
           "MANAGER_GIVEN": "店小二给予",
           "BUY_COMPANION_WISP": "购买陪伴精灵",
-          "4": "v4",
+          "WAITING_PAYMENT": "等待付款",
           "5": "v5"
         },
         "chy": {
@@ -321,11 +344,11 @@
           "COMPANION_WISP": "cyan",
           "MANAGER_GIVEN": "purple",
           "BUY_COMPANION_WISP": "purple-dark",
-          "4": "orange",
+          "WAITING_PAYMENT": "orange",
           "5": "gray"
         }
       },
-      "field": "orderType",
+      "field": "status",
       "align":"center",
       "theme": "option",
       "type": "default"
@@ -347,7 +370,7 @@
     {
       "label": "付款倒计时",
       "valueType":"valueinputfour",
-      "field": "orderCountDown",
+      "field": "remainingMinutes",
       "align":"center",
       "options":{
         "value":"orderCountDown"

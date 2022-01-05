@@ -7,7 +7,7 @@ export default function () {
 
     useBreadcrumb([
       { title: '首页' },
-      { title: '精灵管理', path: '/spirit' },
+      { title: '精灵管理', path: '/spirits/spirit' },
       { title: '添加精灵' }
     ]);
   

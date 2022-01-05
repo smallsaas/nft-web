@@ -24,6 +24,22 @@
   "tableOperation": [
   ],
   "searchFields": [
+    {
+      "label": "玩家名称",
+      "field": "playerName",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入买家账号"
+      }
+    },
+    {
+      "label": "场次",
+      "field": "account",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入卖家账号"
+      }
+    }
   ],
   "tableFields": [{
       "label": "序号",

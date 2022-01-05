@@ -7,6 +7,10 @@ module.exports = {
   items: [{
     component: 'Form',
     config: {
+      API: {
+        getAPI: setting.getAPI,
+        createAPI: setting.createAPI,
+      },
       layout: 'Grid',
       layoutConfig: {
         value: Array(setting.columns).fill(~~(24 / setting.columns)),

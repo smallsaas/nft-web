@@ -553,71 +553,7 @@
       }
     }
   ],
-  "tableOperation": [{
-      "title": "解封账号",
-      "type": "request",
-      "options": {
-        "tips": "确定要解封账号麽?",
-        "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
-        "method": "get"
-      }
-    },
-    {
-      "title": "审核通过",
-      "type": "request",
-      "options": {
-        "tips": "确定审核通过麽?",
-        "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
-        "method": "get"
-      }
-    },
-    {
-      "title": "暂停自动投放",
-      "type": "request",
-      "options": {
-        "tips": "确定要暂停自动投放麽?",
-        "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
-        "method": "get"
-      }
-    }, {
-      "title": "查看详情",
-      "type": "path",
-      "options": {
-        "outside": true,
-        "style": "path",
-        "path": "newaccount/newaccount-view"
-      },
-      "expect": {
-        "permission": ""
-      }
-    },
-    {
-      "title": "修改信息",
-      "type": "path",
-      "options": {
-        "outside": true,
-        "style": "path",
-        "path": "newaccount/newaccount-edit"
-      },
-      "expect": {
-        "permission": ""
-      }
-    },
-    {
-      "title": "删除",
-      "type": "delete",
-      "options": {
-        "outside": false,
-        "API": "/api/crud/oms/player/players/(id)",
-        "method": "delete"
-      },
-      "expect": {
-        "permission": ""
-      }
-    }
+  "tableOperation": [
   ],
   "searchFields": [{
       "label": "名称",
@@ -629,16 +565,19 @@
     },
     {
       "label": "状态",
-      "field": "description",
+      "field": "status",
       "type": "select",
       "options": [{
-          "label": "审核通过"
+          "label": "正常",
+          "value": "NORMAL"
         },
         {
-          "label": "审核中"
+          "label": "冻结",
+          "value": "FROZEN"
         },
         {
-          "label": "审核不通过"
+          "label": "解冻中",
+          "value": "FROZEN"
         }
       ],
       "props": {
