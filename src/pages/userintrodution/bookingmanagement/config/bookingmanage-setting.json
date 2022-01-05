@@ -27,18 +27,26 @@
     {
       "label": "玩家名称",
       "field": "playerName",
-      "type": "input",
+      "type": "search",
       "props": {
-        "placeholder": "请输入买家账号"
+        "placeholder": "请输入玩家名称"
       }
     },
     {
       "label": "场次",
-      "field": "account",
-      "type": "input",
+      "type": "select-fetch",
       "props": {
-        "placeholder": "请输入卖家账号"
-      }
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/crud/oms/marketingSession/marketingSessions",
+        "label": "title",
+        "value": "id"
+      },
+      "field": "account"
     }
   ],
   "tableFields": [{
@@ -49,6 +57,10 @@
     {
       "label": "玩家",
       "field": "playerName",
+      "valueType": "path",
+      "options": {
+        "path": "/usermanage/newaccount/newaccount-view"
+      },
       "align":"center"
     },
     {

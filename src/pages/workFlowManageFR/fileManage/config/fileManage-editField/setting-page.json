@@ -164,7 +164,7 @@
     {
       "field": "search",
       "label": "搜索",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入..."
       }

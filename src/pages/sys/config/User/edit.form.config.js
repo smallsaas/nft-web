@@ -13,7 +13,6 @@ module.exports = [
     "type": "modal-radio",
     "props": {},
     "rules": [
-      "required"
     ],
     "options": {
       "title": "选择组织",

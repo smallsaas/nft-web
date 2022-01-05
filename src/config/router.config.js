@@ -104,10 +104,10 @@ module.exports = [
         path: '/usermanage/newaccount',
         name: '玩家',
       },
-      {
-        path: '/usermanage/newteammanage',
-        name: '玩家团队',
-      }
+      // {
+      //   path: '/usermanage/newteammanage',
+      //   name: '玩家团队',
+      // }
       // {
       //   path: '/usermanage/memberconfig',
       //   name: '会员配置',

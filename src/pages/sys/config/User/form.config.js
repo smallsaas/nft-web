@@ -8,7 +8,6 @@ module.exports = [
     "type": "modal-radio",
     "props": {},
     "rules": [
-      "required"
     ],
     "options": {
       "title": "选择组织",
@@ -41,15 +40,13 @@ module.exports = [
     field: 'name', label: '用户名', type: 'input',rules: ['required']
   },
   {
-    field: 'phone', label: '电话', type: 'input', 
-    // rules: ['required'],
-  },
-
-  {
     field: 'password', label: '密码', type: 'input', span: 12,
     rules: ['required'],
   },
- 
+  {
+    field: 'phone', label: '电话', type: 'input', 
+    // rules: ['required'],
+  },
   {
     field: 'email', label: '邮箱', type: 'input',
     // rules: ['required'],

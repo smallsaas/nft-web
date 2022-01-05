@@ -120,7 +120,7 @@
   "searchFields": [{
     "label": "名称",
     "field": "name",
-    "type": "input",
+    "type": "search",
     "props": {
       "placeholder": "请输入精灵名称"
     }

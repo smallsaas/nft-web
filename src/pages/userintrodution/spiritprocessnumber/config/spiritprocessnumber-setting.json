@@ -19,14 +19,24 @@
   },
   "tableActions": [],
   "tableOperation": [],
-  "searchFields": [{
-    "label": "名称",
-    "field": "sessionId",
-    "type": "input",
-    "props": {
-      "placeholder": "请输入场次"
+  "searchFields": [
+    {
+      "label": "场次",
+      "type": "select-fetch",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/crud/oms/marketingSession/marketingSessions",
+        "label": "title",
+        "value": "id"
+      },
+      "field": "sessionId"
     }
-  }],
+  ],
   "tableFields": [{
     "label": "序号",
     "field": "id",
@@ -72,7 +82,18 @@
   {
     "label": "场次",
     "field": "sessionId",
-    "align":"center"
+    "align":"center",
+    "valueType":"map",
+    "options":{
+      "map": {
+        "0": "LEVEL_0专场",
+        "1": "LEVEL_1专场",
+        "2": "LEVEL_2专场",
+        "3": "LEVEL_3专场",
+        "4": "LEVEL_4专场",
+        "5": "LEVEL_5专场"
+      }
+    }
   },
   {
     "label": "预约人数",

@@ -13,8 +13,8 @@
   "columns": 1,
   "createFields": [
     {
-      "label": "个人信息",
-      "type": "plain",
+      "defaultValue": "个人信息",
+      "type": "group",
       "span": 24
     },
     {
@@ -574,7 +574,7 @@
   "searchFields": [{
     "label": "名称",
     "field": "name",
-    "type": "input",
+    "type": "search",
     "props": {
       "placeholder": "请输入名称"
     }
@@ -674,13 +674,17 @@
       "label": "状态",
       "field": "status",
       "type": "plain",
+      "options":{
+        "map":{
+          "NORMAL":"正常",
+          "FROZEN":"冻结"
+        }
+      },
       "span": 8
     },
     {
       "label": "级别",
       "field": "status",
-      "align": "center",
-      "valueType": "tag",
       "options": {
         "map": {
           "0": "v0",
@@ -699,8 +703,7 @@
           "5": "gray"
         }
       },
-      "theme": "option",
-      "type": "default"
+      "type": "plain"
     },
     {
       "label": "原因",

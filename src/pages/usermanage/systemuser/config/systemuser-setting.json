@@ -1,8 +1,8 @@
 {
   "pageName": {
-    "table": "店小二管理",
+    "table": "系统号",
     "new": "添加系统号",
-    "edit": "编辑账号",
+    "edit": "编辑系统号",
     "view": "查看详情"
   },
   "listAPI": "/api/crud/oms/player/players",
@@ -485,11 +485,11 @@
   },
   "tableActions": [
     {
-      "title": "发放精灵币",
+      "title": "发放精灵令",
       "type": "modal",
       "options": {
         "style": "primary",
-        "modalTitle": "发放精灵币",
+        "modalTitle": "发放精灵令",
         "modalWidth": 600,
         "items": [{
           "component": "Form",
@@ -501,10 +501,11 @@
               ]
             },
             "API": {
+              "loadAPI":"",
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "当前精灵币:",
+                "label": "当前精灵令:",
                 "rules": [{
                   "type": "required"
                 }],
@@ -520,7 +521,7 @@
                   "type": "required"
                 }],
                 "props": {
-                  "placeholder": "请输入账号"
+                  "placeholder": "玩家手机号"
                 },
                 "type": "input",
                 "field": "attributeName"
@@ -545,7 +546,7 @@
                   "placeholder": "请输入支付密码"
                 },
                 "type": "input",
-                "field": "fieldName"
+                "field": "password"
               }
             ]
           }
@@ -558,7 +559,7 @@
   "searchFields": [{
       "label": "名称",
       "field": "name",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入名称"
       }
