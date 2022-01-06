@@ -170,7 +170,7 @@
       "type": "select-fetch",
       "rules": [{
         "type": "required",
-        "message": "请选择店小二"
+        "message": "请选择"
       }],
       "props": {
         "style": {
@@ -179,7 +179,7 @@
         "placeholder": "当用户角色为系统号需要选择绑定店小二"
       },
       "options": {
-        "API": "api/adm/users",
+        "API": "/api/adm/users",
         "label": "name",
         "value": "id"
       },
@@ -195,7 +195,7 @@
       "type": "select-fetch",
       "rules": [{
         "type": "required",
-        "message": "请选择店小二"
+        "message": "请选择"
       }],
       "props": {
         "style": {
@@ -204,7 +204,7 @@
         "placeholder": "当用户角色为玩家需要选择系统号"
       },
       "options": {
-        "API": "api/adm/users",
+        "API": "/api/adm/users",
         "label": "name",
         "value": "id"
       },
