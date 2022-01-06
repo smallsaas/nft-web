@@ -133,6 +133,10 @@ module.exports = [
       {
         path: '/configcenter/spiritprocessnumbermanage',
         name: '场次管理',
+      },
+      {
+        path: '/configcenter/guguManage',
+        name: 'GuGu令管理',
       }
       // ,
       // {

@@ -2,7 +2,7 @@
   "columns": 2,
   "createFields": [
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -18,7 +18,7 @@
       "field": "identifier"
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -62,7 +62,7 @@
       "field": "name"
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -106,7 +106,7 @@
       "field": "name"
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -150,7 +150,7 @@
       "field": "name"
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],

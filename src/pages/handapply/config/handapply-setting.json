@@ -30,7 +30,10 @@
           {"label":"v2","value":2},
           {"label":"v3","value":3},
           {"label":"v4","value":4},
-          {"label":"v5","value":5}
+          {"label":"v5","value":5},
+          {"label":"v6","value":6},
+          {"label":"v7","value":7},
+          {"label":"v8","value":8}
         ],
         "field": "level"
       },
@@ -97,19 +100,19 @@
         "field": "growthPercent"
       },
       {
-        "label": "兑换陪伴精灵消耗精灵令",
+        "label": "兑换能量晶石消耗GuGu令",
         "rules": [{
           "type": "required"
         }],
         "props": {
-          "suffix": "个",
+          "suffix": "块",
           "placeholder": "请输入"
         },
         "type": "input",
         "field": "costAccompanyWisp"
       },
       {
-        "label": "租用土地1天消耗精灵令",
+        "label": "租用土地1天消耗GuGu令",
         "rules": [{
           "type": "required"
         }],
@@ -131,7 +134,10 @@
           {"label":"v2","value":2},
           {"label":"v3","value":3},
           {"label":"v4","value":4},
-          {"label":"v5","value":5}
+          {"label":"v5","value":5},
+          {"label":"v6","value":6},
+          {"label":"v7","value":7},
+          {"label":"v8","value":8}
         ],
         "field": "level"
       },
@@ -198,19 +204,19 @@
         "field": "growthPercent"
       },
       {
-        "label": "兑换陪伴精灵消耗精灵令",
+        "label": "兑换能量晶石消耗GuGu令",
         "rules": [{
           "type": "required"
         }],
         "props": {
-          "suffix": "个",
+          "suffix": "块",
           "placeholder": "请输入"
         },
         "type": "input",
         "field": "costAccompanyWisp"
       },
       {
-        "label": "租用土地1天消耗精灵令",
+        "label": "租用土地1天消耗GuGu令",
         "rules": [{
           "type": "required"
         }],

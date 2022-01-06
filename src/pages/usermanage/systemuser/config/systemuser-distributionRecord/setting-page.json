@@ -1,0 +1,69 @@
+{
+  "pageName": "",
+  "columns": 2,
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "map": {
+    "status": {
+      "map": {
+        "PASS": "使用中",
+        "PENDING_APPROVAL": "待审核",
+        "REFUSE": "已拒绝"
+      }
+    },
+    "comeFrom": {
+      "map": {
+        "0": "系统创建",
+        "1": "用户注册"
+      }
+    }
+  },
+  "tableActions": [
+  ],
+  "tableOperation": [
+  ],
+  "createFields": [
+    {}
+  ],
+  "updateFields": [
+    {}
+  ],
+  "viewFields": [
+    {}
+  ],
+  "listAPI": "/api/wf/processes/[id]/steps",
+  "createAPI": "/api/wf/processes/[id]/steps",
+  "getAPI": "/api/wf/processes/steps/(id)",
+  "updateAPI": "/api/wf/processes/steps/(id)",
+  "deleteAPI": "/api/wf/processes/steps/(id)",
+  "searchFields": [
+    {
+      "field": "search",
+      "label": "搜索",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入..."
+      }
+    }
+  ],
+  "tableFields": [
+    {
+      "field": "name",
+      "label": "发送的玩家账号"
+    },
+    {
+      "field": "name",
+      "label": "发送数量"
+    },
+    {
+      "field": "name",
+      "label": "剩余数量"
+    },
+    {
+      "field": "name",
+      "label": "操作时间"
+    }
+  ]
+}

@@ -3,15 +3,18 @@
     "table": "系统号",
     "new": "添加系统号",
     "edit": "编辑系统号",
-    "view": "查看详情"
+    "view": "查看详情",
+    "distributionRecordView": "发放记录"
   },
   "listAPI": "/api/crud/oms/player/players",
   "createAPI": "/api/crud/oms/player/players",
   "getAPI": "/api/crud/oms/player/players/[id]",
   "updateAPI": "/api/crud/oms/player/players/[id]",
   "deleteAPI": "/api/crud/oms/player/players/(id)",
+  "getDistributionRecordAPI": "/api/wf/histories",
   "columns": 1,
-  "createFields": [{
+  "createFields": [
+    {
       "label": "昵称",
       "rules": [{
         "type": "required"
@@ -269,7 +272,8 @@
       "span": 16
     }
   ],
-  "updateFields": [{
+  "updateFields": [
+    {
       "label": "昵称",
       "rules": [{
         "type": "required"
@@ -485,11 +489,11 @@
   },
   "tableActions": [
     {
-      "title": "发放精灵令",
+      "title": "发放GuGu令",
       "type": "modal",
       "options": {
         "style": "primary",
-        "modalTitle": "发放精灵令",
+        "modalTitle": "发放GuGu令",
         "modalWidth": 600,
         "items": [{
           "component": "Form",
@@ -505,7 +509,7 @@
               "createAPI": "/api/eav/entities/[id]/attributes"
             },
             "fields": [{
-                "label": "当前精灵令:",
+                "label": "当前GuGu令:",
                 "rules": [{
                   "type": "required"
                 }],
@@ -551,6 +555,13 @@
             ]
           }
         }]
+      }
+    },
+    
+    {
+      "title":"发放记录","type":"path",
+      "options":{
+          "path":"/usermanage/systemuser/systemuser-distributionRecord"
       }
     }
   ],

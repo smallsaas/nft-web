@@ -1,0 +1,263 @@
+{
+    "pageName": {
+      "table": "GuGu令管理",
+      "new": "添加GuGu令",
+      "edit": "编辑GuGu令",
+      "view": "查看详情"
+    },
+    "listAPI": "/api/crud/oms/marketingSession/marketingSessions",
+    "createAPI": "/api/crud/oms/marketingSession/marketingSessions",
+    "getAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
+    "updateAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
+    "deleteAPI": "/api/crud/oms/marketingSession/marketingSessions/(id)",
+    "columns": 1,
+    "createFields": [
+      {
+      "label": "场次号",
+      "props":{
+        "placeholder":"请输入场次号"
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "type":"input",
+      "field": "number",
+      "align":"center"
+    },
+    {
+      "label": "场次名称",
+      "props":{
+        "placeholder":"请输入场次名称"
+      },
+      "type":"input",
+      "field": "title",
+      "align":"center",
+      "rules": [{
+        "type": "required"
+      }]
+    },
+    {
+      "label": "开始时间",
+      "type":"timeinput",
+      "field": "startTime",
+      "align":"center",
+      "rules": [{
+        "type": "required"
+      }]
+    },
+    {
+      "label": "结束时间",
+      "field": "endTime",
+      "type":"timeinput",
+      "align":"center",
+      "rules": [{
+        "type": "required"
+      }]
+    }
+    ],
+    "updateFields": [
+      {
+        "label": "场次号",
+        "props":{
+          "placeholder":"请输入场次号"
+        },
+        "rules": [{
+          "type": "required"
+        }],
+        "type":"input",
+        "field": "number",
+        "align":"center"
+      },
+      {
+        "label": "场次名称",
+        "type":"input",
+        "field": "title",
+        "align":"center",
+        "rules": [{
+          "type": "required"
+        }],
+        "props":{
+          "placeholder":"请输入场次号"
+        }
+      },
+      {
+        "label": "开始时间",
+        "type":"timeinput",
+        "field": "startTime",
+        "align":"center",
+        "rules": [{
+          "type": "required"
+        }],
+        "options":{
+          "placeholder":"请输入场次号"
+        }
+      },
+      {
+        "label": "结束时间",
+        "field": "endTime",
+        "type":"timeinput",
+        "align":"center",
+        "rules": [{
+          "type": "required"
+        }]
+      }
+    ],
+    "map": {},
+    "layout": {
+      "table": "Content",
+      "form": "TitleContent"
+    },
+    "tableActions": [
+      {
+        "title": "发放GuGu令",
+        "type": "modal",
+        "options": {
+          "style": "primary",
+          "modalTitle": "发放GuGu令",
+          "modalWidth": 600,
+          "items": [{
+            "component": "Form",
+            "config": {
+              "layout": "Grid",
+              "layoutConfig": {
+                "value": [
+                  24
+                ]
+              },
+              "API": {
+                "loadAPI":"",
+                "createAPI": "/api/eav/entities/[id]/attributes"
+              },
+              "fields": [{
+                  "label": "当前GuGu令:",
+                  "rules": [{
+                    "type": "required"
+                  }],
+                  "props": {
+                    "placeholder": "请输入"
+                  },
+                  "type": "plain",
+                  "field": "attributeName"
+                },
+                {
+                  "label": "发放到账号：",
+                  "rules": [{
+                    "type": "required"
+                  }],
+                  "props": {
+                    "placeholder": "玩家手机号"
+                  },
+                  "type": "input",
+                  "field": "attributeName"
+                },
+                {
+                  "label": "发放数量:",
+                  "rules": [{
+                    "type": "required"
+                  }],
+                  "props": {
+                    "placeholder": "请输入数量"
+                  },
+                  "type": "input",
+                  "field": "fieldName"
+                },
+                {
+                  "label": "支付密码:",
+                  "rules": [{
+                    "type": "required"
+                  }],
+                  "props": {
+                    "placeholder": "请输入支付密码"
+                  },
+                  "type": "input",
+                  "field": "password"
+                }
+              ]
+            }
+          }]
+        }
+      }
+    ],
+    "tableOperation": [
+      {
+        "title": "编辑",
+        "type": "path",
+        "options": {
+          "style": "path",
+          "path": "guguManage/guguManage-edit",
+          "outside": true
+        }
+      },
+      {
+        "title": "详情",
+        "type": "path",
+        "options": {
+          "style": "path",
+          "path": "guguManage/guguManage-view",
+          "outside": true
+        }
+      },
+      {
+        "title": "删除",
+        "type": "delete",
+        "options": {
+          "outside": false,
+          "API": "/api/crud/oms/wisp/wisps/(id)",
+          "method": "delete"
+        },
+        "expect": {
+          "permission": ""
+        }
+      }
+    ],
+    "searchFields": [{
+      "label": "名称",
+      "field": "title",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入场次名称"
+      }
+    }],
+    "tableFields": [
+      {
+        "label": "发送的系统号",
+        "field": "number",
+        "align":"center"
+      },
+      {
+        "label": "发送数量",
+        "field": "title",
+        "align":"center"
+      },
+      {
+        "label": "操作时间",
+        "field": "startTime",
+        "valueType":"valueinputfour",
+        "options":{
+          "value":"startTime"
+        },
+        "align":"center"
+      }
+    ],
+    "viewConfig": [
+      {
+      "label": "发送的系统号",
+      "field": "number",
+      "type":"plain",
+      "span":24
+    },
+    {
+      "label": "发送数量",
+      "field": "title",
+      "type":"plain",
+      "span":24
+    },
+    {
+      "label": "操作时间",
+      "field": "startTime",
+      "type":"plain",
+      "span":24
+    }
+    ]
+  }
+  

@@ -78,18 +78,19 @@
         "field": "name"
       },
       {
-        "label": "兑换陪伴精灵消耗精灵令",
+        "label": "兑换能量晶石消耗GuGu令",
         "rules": [{
           "type": "required"
         }],
         "props": {
+          "suffix": "块",
           "placeholder": "请输入"
         },
         "type": "input",
         "field": "name"
       },
       {
-        "label": "租用土地一天消耗精灵令",
+        "label": "租用土地一天消耗GuGu令",
         "rules": [{
           "type": "required"
         }],

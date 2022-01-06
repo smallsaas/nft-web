@@ -35,6 +35,14 @@
         "value": "id"
       },
       "field": "sessionId"
+    },
+    {
+      "label": "系统号",
+      "field": "sysNumber",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入玩家名称"
+      }
     }
   ],
   "tableFields": [{
@@ -54,20 +62,24 @@
     "valueType": "tag",
     "options": {
       "map": {
-        "0": "v0",
         "1": "v1",
         "2": "v2",
         "3": "v3",
         "4": "v4",
-        "5": "v5"
+        "5": "v5",
+        "6": "v6",
+        "7": "v7",
+        "8": "v8"
       },
       "chy": {
-        "0": "blue",
-        "1": "cyan",
-        "2": "purple",
-        "3": "purple-dark",
-        "4": "orange",
-        "5": "gray"
+        "1": "blue",
+        "2": "cyan",
+        "3": "purple",
+        "4": "purple-dark",
+        "5": "orange",
+        "6": "gray",
+        "7": "tomato",
+        "8": "orangered"
       }
     },
     "theme": "option",
@@ -91,7 +103,10 @@
         "2": "LEVEL_2专场",
         "3": "LEVEL_3专场",
         "4": "LEVEL_4专场",
-        "5": "LEVEL_5专场"
+        "5": "LEVEL_5专场",
+        "6": "LEVEL_6专场",
+        "7": "LEVEL_7专场",
+        "8": "LEVEL_8专场"
       }
     }
   },
@@ -121,8 +136,18 @@
     "align":"center"
   },
   {
-    "label": "未处理精灵数",
-    "field": "managerUnpaidCount",
+    "label": "未付款人数",
+    "field": "unpaidCount",
+    "align":"center"
+  },
+  {
+    "label": "已付款总金额（GuGu令）",
+    "field": "transactionCoins",
+    "align":"center"
+  },
+  {
+    "label": "缺少系统号（小二）",
+    "field": "lackSysNumber",
     "align":"center"
   }
   ]

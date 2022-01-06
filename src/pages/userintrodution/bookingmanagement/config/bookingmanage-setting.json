@@ -74,12 +74,12 @@
       "align":"center"
     },
     {
-      "label": "消耗的陪伴精灵数量",
+      "label": "消耗的能量晶石数量",
       "field": "consumeCompanionWisps",
       "align":"center"
     },
     {
-      "label": "消耗的精灵令",
+      "label": "消耗的GuGu令",
       "field": "consumeCoins",
       "align":"center"
     },

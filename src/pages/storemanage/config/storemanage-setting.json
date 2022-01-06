@@ -211,13 +211,13 @@
       "span": 24
     },
     {
-      "label": "消耗精灵令",
+      "label": "消耗GuGu令",
       "field": "costWispCoin",
       "type": "plain",
       "span": 24
     },
     {
-      "label": "消耗陪伴精灵数量",
+      "label": "消耗能量晶石数量",
       "field": "costAccompanyWisp",
       "type": "plain",
       "span": 24

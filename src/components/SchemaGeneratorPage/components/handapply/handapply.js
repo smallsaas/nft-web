@@ -22,7 +22,7 @@ export default function(){
                         <div className='WispLevel'>价值:8%</div>
                     </div>
                     <div className='InfoFive'>
-                        <div className='WispValue'>匹配精灵令:2个</div>
+                        <div className='WispValue'>匹配GuGu令:2个</div>
                     </div>
                     <div className='InfoSix'>
                         <div className='WispValue'>消耗1级精灵袋:200-300</div>

@@ -266,7 +266,7 @@
       "type": "modal",
       "options": {
         "style": "primary",
-        "modalTitle": "发放精灵令",
+        "modalTitle": "发放GuGu令",
         "modalWidth": 600,
         "items": [{
           "component": "Form",

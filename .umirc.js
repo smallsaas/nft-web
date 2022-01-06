@@ -24,4 +24,10 @@ export default {
   dva: false,
 
   ignoreMomentLocale: true, // 忽略 moment 的 locale 文件
+  proxy: {
+    'images//': {
+      target: 'http://repo.dev.smallsaas.cn:8086/',
+      changeOrigin: true
+    }
+  }
 }

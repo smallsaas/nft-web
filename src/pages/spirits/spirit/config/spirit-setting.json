@@ -106,7 +106,10 @@
       {
         "label": "v5",
         "value": 5
-      }
+      },
+      {"label":"v6","value":6},
+      {"label":"v7","value":7},
+      {"label":"v8","value":8}
     ],
     "field": "level"
   },
@@ -128,7 +131,7 @@
       },
       "min": 0
     },
-    "addonAfter": "精灵令"
+    "addonAfter": "GuGu令"
   },
   {
     "label": "最大价值",
@@ -143,7 +146,7 @@
       },
       "min": 0
     },
-    "addonAfter": "精灵令"
+    "addonAfter": "GuGu令"
   },
   {
     "label": "培养周期",
@@ -177,7 +180,7 @@
     "addonAfter": "%"
   },
   {
-    "label": "消耗精灵令",
+    "label": "消耗GuGu令",
     "rules": [{
       "type": "required"
     }],
@@ -277,41 +280,9 @@
       "options": {
         "API": "/api/crud/oms/marketingSession/marketingSessions",
         "label": "title",
-        "value": "sessionId"
+        "value": "id"
       },
       "field": "sessionId"
-    },
-    {
-      "label": "绑定场次",
-      "field": "sessionId",
-      "type": "select",
-      "options": [{
-          "label": "level1",
-          "value": 1
-        },
-        {
-          "label": "level1",
-          "value": 2
-        },
-        {
-          "label": "level3",
-          "value": 3
-        },
-        {
-          "label": "level4",
-          "value": 4
-        },
-        {
-          "label": "level5",
-          "value": 5
-        }
-      ],
-      "props": {
-        "placeholder": "请选择",
-        "style": {
-          "width": 240
-        }
-      }
     },
     {
       "label": "精灵图片",
@@ -351,7 +322,10 @@
         {
           "label": "v5",
           "value": 5
-        }
+        },
+        {"label":"v6","value":6},
+        {"label":"v7","value":7},
+        {"label":"v8","value":8}
       ],
       "field": "level"
     },
@@ -373,7 +347,7 @@
         },
         "min": 0
       },
-      "addonAfter": "精灵令"
+      "addonAfter": "GuGu令"
     },
     {
       "label": "最大价值",
@@ -388,7 +362,7 @@
         },
         "min": 0
       },
-      "addonAfter": "精灵令"
+      "addonAfter": "GuGu令"
     },
     {
       "label": "培养周期",
@@ -512,20 +486,24 @@
       "valueType": "tag",
       "options": {
         "map": {
-          "0": "v0",
           "1": "v1",
           "2": "v2",
           "3": "v3",
           "4": "v4",
-          "5": "v5"
+          "5": "v5",
+          "6": "v6",
+          "7": "v7",
+          "8": "v8"
         },
         "chy": {
-          "0": "blue",
-          "1": "cyan",
-          "2": "purple",
-          "3": "purple-dark",
-          "4": "orange",
-          "5": "gray"
+          "1": "lv1",
+          "2": "lv2",
+          "3": "lv3",
+          "4": "lv4",
+          "5": "lv5",
+          "6": "lv6",
+          "7": "lv7",
+          "8": "lv8"
         }
       },
       "theme": "option",
@@ -562,7 +540,7 @@
       "align": "center"
     },
     {
-      "label": "消耗的精灵令",
+      "label": "消耗的GuGu令",
       "field": "costWispCoin",
       "align": "center"
     },
@@ -642,7 +620,7 @@
       "span": 24
     },
     {
-      "label": "消耗精灵令",
+      "label": "消耗GuGu令",
       "field": "costWispCoin",
       "type": "plain",
       "span": 24

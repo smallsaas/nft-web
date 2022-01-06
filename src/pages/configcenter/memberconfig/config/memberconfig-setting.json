@@ -12,7 +12,7 @@
       "field": ""
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -25,7 +25,7 @@
       },
       "type": "number",
       "field": "name",
-      "addonAfter":"精灵令"
+      "addonAfter":"GuGu令"
     },
     {
       "label": "v1级会员",
@@ -33,7 +33,7 @@
       "field": ""
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -47,7 +47,7 @@
       "type": "number",
       "field": "name",
       "span":8,
-      "addonAfter":"精灵令"
+      "addonAfter":"GuGu令"
     },
     {
       "label": "直推人数大于",
@@ -106,7 +106,7 @@
       "field": ""
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -120,7 +120,7 @@
       "type": "number",
       "field": "name",
       "span":8,
-      "addonAfter":"精灵令"
+      "addonAfter":"GuGu令"
     },
     {
       "label": "直推人数大于",
@@ -179,7 +179,7 @@
       "field": ""
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -193,7 +193,7 @@
       "type": "number",
       "field": "name",
       "span":8,
-      "addonAfter":"精灵令"
+      "addonAfter":"GuGu令"
     },
     {
       "label": "直推人数大于",
@@ -252,7 +252,7 @@
       "field": ""
     },
     {
-      "label": "精灵令大于",
+      "label": "GuGu令大于",
       "rules": [{
         "type": "required"
       }],
@@ -266,7 +266,7 @@
       "type": "number",
       "field": "name",
       "span":8,
-      "addonAfter":"精灵令"
+      "addonAfter":"GuGu令"
     },
     {
       "label": "直推人数大于",

@@ -62,6 +62,7 @@ import FITSet_field_table from '@/pages/workFlowManageFR/activitiesFR/components
 import CSet_load_html_page from '@/components/LoadHtmlPage';
 import AITSet_export_file from '@/actionItemType/ExportFile';
 import FITSet_input_box from '@/components/FormItemType/InputBox';
+import FITSet_invitation_code_compx from '@/components/FormItemType/InvitationCodeCompx';
 import FITSet_link_button from '@/components/FormItemType/LinkButton';
 import VTSet_TimeConvert from '@/components/ValueType/TimeConvert';
 import VTSet_SecoundToHms from '@/components/ValueType/SecoundToHms';
@@ -227,6 +228,7 @@ FITSet({
   'download_file_btn': FITSet_download_file,
   'normal_download_file': FITSet_normal_download_file,
   'inputBox': FITSet_input_box,
+  'invitationCodeCompx': FITSet_invitation_code_compx,
   'LinkButton': FITSet_link_button,
   'inputFetch': FITSet_InputFetch,
   'secound_to_hms': VTSet_SecoundToHms,
