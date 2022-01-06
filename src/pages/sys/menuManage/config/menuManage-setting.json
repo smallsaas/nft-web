@@ -334,7 +334,7 @@
     {
       "label": "菜单名称",
       "field": "menuName",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": ""
       }

@@ -104,10 +104,10 @@ module.exports = [
         path: '/usermanage/newaccount',
         name: '玩家',
       },
-      {
-        path: '/usermanage/newteammanage',
-        name: '玩家团队',
-      }
+      // {
+      //   path: '/usermanage/newteammanage',
+      //   name: '玩家团队',
+      // }
       // {
       //   path: '/usermanage/memberconfig',
       //   name: '会员配置',
@@ -133,15 +133,16 @@ module.exports = [
       {
         path: '/configcenter/spiritprocessnumbermanage',
         name: '场次管理',
-      },
-      {
-        path: '/configcenter/spiritconfig',
-        name: '精灵配置',
-      },
-      {
-        path: '/configcenter/memberconfig',
-        name: '会员配置',
       }
+      // ,
+      // {
+      //   path: '/configcenter/spiritconfig',
+      //   name: '精灵配置',
+      // },
+      // {
+      //   path: '/configcenter/memberconfig',
+      //   name: '会员配置',
+      // }
     ]
   },
 

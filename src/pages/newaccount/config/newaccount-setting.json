@@ -508,7 +508,7 @@
                   "type": "required"
                 }],
                 "props": {
-                  "placeholder": "请输入账号"
+                  "placeholder": "玩家手机号"
                 },
                 "type": "input",
                 "field": "attributeName"
@@ -610,7 +610,7 @@
   "searchFields": [{
       "label": "名称",
       "field": "name",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入名称"
       }

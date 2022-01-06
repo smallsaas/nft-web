@@ -260,7 +260,7 @@
     "searchFields": [{
       "label": "名称",
       "field": "description",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入精灵名称"
       }
@@ -354,6 +354,10 @@
         "rules": [{
           "type": "required"
         }],
+        "options":[
+          {"label":"是","value":1},
+          {"label":"否","value":2}
+        ],
         "type": "radio",
         "field": "appointmentMinute"
       }

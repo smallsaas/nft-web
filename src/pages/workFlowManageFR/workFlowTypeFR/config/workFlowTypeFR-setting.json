@@ -289,7 +289,7 @@
     {
       "label": "类别名称",
       "field": "name",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": ""
       }

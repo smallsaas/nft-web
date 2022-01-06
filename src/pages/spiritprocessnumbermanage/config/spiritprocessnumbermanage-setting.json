@@ -14,12 +14,15 @@
     "createFields": [{
       "label": "场次号",
       "props":{
-        "placeholder":"请输入场次号"
+        "placeholder":"请输入场次号",
+        "style":{
+          "width":"240px"
+        }
       },
       "rules": [{
         "type": "required"
       }],
-      "type":"input",
+      "type":"number",
       "field": "number",
       "align":"center"
     },
@@ -148,7 +151,7 @@
     "searchFields": [{
       "label": "名称",
       "field": "title",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入场次名称"
       }
@@ -195,13 +198,13 @@
     {
       "label": "开始时间",
       "field": "startTime",
-      "type":"timeinput",
+      "type":"plain",
       "span":24
     },
     {
       "label": "结束时间",
       "field": "endTime",
-      "type":"timeinput",
+      "type":"plain",
       "span":24
     }]
   }

@@ -297,7 +297,7 @@
                   "type": "required"
                 }],
                 "props": {
-                  "placeholder": "请输入账号"
+                  "placeholder": "玩家手机号"
                 },
                 "type": "input",
                 "field": "attributeName"

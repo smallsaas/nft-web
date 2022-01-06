@@ -194,7 +194,7 @@
     {
       "label": "配置项名",
       "field": "title",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入"
       }

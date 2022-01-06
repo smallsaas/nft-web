@@ -181,7 +181,7 @@
     {
       "label": "分组名称",
       "field": "title",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入"
       }

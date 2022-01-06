@@ -110,7 +110,7 @@
   "searchFields": [{
       "label": "账号",
       "field": "name",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入账号"
       }

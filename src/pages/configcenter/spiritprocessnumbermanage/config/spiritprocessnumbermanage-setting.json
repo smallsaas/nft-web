@@ -148,16 +148,12 @@
     "searchFields": [{
       "label": "名称",
       "field": "title",
-      "type": "input",
+      "type": "search",
       "props": {
         "placeholder": "请输入场次名称"
       }
     }],
-    "tableFields": [{
-        "label": "序号",
-        "field": "id",
-        "align":"center"
-      },
+    "tableFields": [
       {
         "label": "场次号",
         "field": "number",
@@ -203,13 +199,13 @@
     {
       "label": "开始时间",
       "field": "startTime",
-      "type":"timeinput",
+      "type":"plain",
       "span":24
     },
     {
       "label": "结束时间",
       "field": "endTime",
-      "type":"timeinput",
+      "type":"plain",
       "span":24
     }]
   }

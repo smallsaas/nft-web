@@ -287,15 +287,15 @@
   ],
   "searchFields": [{
       "label": "买家账号",
-      "field": "account",
-      "type": "input",
+      "field": "buyerName",
+      "type": "search",
       "props": {
         "placeholder": "请输入买家账号"
       }
     },
     {
       "label": "卖家账号",
-      "field": "account",
+      "field": "sellerName",
       "type": "input",
       "props": {
         "placeholder": "请输入卖家账号"
@@ -315,16 +315,11 @@
     {
       "label": "买家",
       "align":"center",
-      "options": {
-        "API": "/api/crud/oms/player/players",
-        "label": "title",
-        "value": "id"
-      },
-      "field": "account"
+      "field": "buyerName"
     },
     {
       "label": "卖家",
-      "field": "account",
+      "field": "sellerName",
       "align":"center"
     },
     {
@@ -344,7 +339,7 @@
           "COMPANION_WISP": "cyan",
           "MANAGER_GIVEN": "purple",
           "BUY_COMPANION_WISP": "purple-dark",
-          "WAITING_PAYMENT": "orange",
+          "WAITING_PAYMENT": "red",
           "5": "gray"
         }
       },
@@ -355,7 +350,7 @@
     },
     {
       "label": "精灵令",
-      "field": "coin",
+      "field": "transactionCoins",
       "align":"center"
     },
     {
