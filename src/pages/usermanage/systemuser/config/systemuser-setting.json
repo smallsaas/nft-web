@@ -506,7 +506,7 @@
             },
             "API": {
               "loadAPI":"",
-              "createAPI": "/api/eav/entities/[id]/attributes"
+              "createAPI": "/api/crud/oms/manager/managers/sendCoins"
             },
             "fields": [{
                 "label": "当前GuGu令:",
