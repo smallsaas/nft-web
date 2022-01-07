@@ -254,7 +254,9 @@
     "options": {
       "API": "/api/crud/oms/wispMeta/wispMetas",
       "label": "name",
-      "value": "id"
+      "value": "id",
+      "childField":"name",
+      "groupField":"wispMeta"
     },
     "field": "metaId"
   },
@@ -504,7 +506,19 @@
           "6": "lv6",
           "7": "lv7",
           "8": "lv8"
-        }
+        },
+        "colorMap":{
+          "1":"#D5D8E0",
+          "2":"#26A1FF",
+          "3":"#31E4B9",
+          "4":"#A64CFF",
+          "5":"#FF4CA6",
+          "6":"#FFAD33",
+          "7":"#FF3344",
+          "8":"linear-gradient(to left,#E7B7FF,#81C2FE)"
+        },
+        "weight":"bolder",
+        "fontColor":"#fff"
       },
       "theme": "option",
       "type": "default"
@@ -570,7 +584,19 @@
     {
       "label": "精灵等级",
       "field": "level",
-      "type": "plain",
+      "type": "map",
+      "options":{
+        "map":{
+          "1": "v1",
+          "2": "v2",
+          "3": "v3",
+          "4": "v4",
+          "5": "v5",
+          "6": "v6",
+          "7": "v7",
+          "8": "v8"
+        }
+      },
       "span": 24
     },
     {

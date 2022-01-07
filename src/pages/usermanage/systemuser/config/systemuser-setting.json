@@ -510,9 +510,7 @@
             },
             "fields": [{
                 "label": "当前GuGu令:",
-                "rules": [{
-                  "type": "required"
-                }],
+
                 "props": {
                   "placeholder": "请输入"
                 },
@@ -522,8 +520,9 @@
               {
                 "label": "发放到账号：",
                 "rules": [{
-                  "type": "required"
-                }],
+                  "type": "required",
+                  "message":"玩家手机号不能为空"
+                },"phone"],
                 "props": {
                   "placeholder": "玩家手机号"
                 },
@@ -533,7 +532,8 @@
               {
                 "label": "发放数量:",
                 "rules": [{
-                  "type": "required"
+                  "type": "required",
+                  "message":"请设置发放数量"
                 }],
                 "props": {
                   "placeholder": "请输入数量"
@@ -544,12 +544,16 @@
               {
                 "label": "支付密码:",
                 "rules": [{
-                  "type": "required"
+                  "type": "required",
+                  "message":"支付密码不能为空"
                 }],
                 "props": {
-                  "placeholder": "请输入支付密码"
+                  "placeholder": "请输入支付密码",
+                  "style":{
+                    "width":240
+                  }
                 },
-                "type": "input",
+                "type": "password",
                 "field": "password"
               }
             ]
