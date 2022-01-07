@@ -39,7 +39,11 @@
         "type": "required"
       }],
       "field": "invitationCode",
-      "span": 16
+      "span": 16,
+      "expect":{
+        "field":"isManager",
+        "value":0
+      }
     },
     {
       "label": "手机号码",
@@ -179,7 +183,7 @@
         "placeholder": "当用户角色为系统号需要选择绑定店小二"
       },
       "options": {
-        "API": "/api/adm/users",
+        "API": "/api/adm/users?roleid=server",
         "label": "name",
         "value": "id"
       },
