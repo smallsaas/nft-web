@@ -33,11 +33,11 @@
   "viewFields": [
     {}
   ],
-  "listAPI": "/api/wf/processes/[id]/steps",
-  "createAPI": "/api/wf/processes/[id]/steps",
-  "getAPI": "/api/wf/processes/steps/(id)",
-  "updateAPI": "/api/wf/processes/steps/(id)",
-  "deleteAPI": "/api/wf/processes/steps/(id)",
+  "listAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "createAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "getAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "updateAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "deleteAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
   "searchFields": [
     {
       "field": "search",
