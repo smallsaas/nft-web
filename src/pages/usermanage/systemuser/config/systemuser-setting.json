@@ -518,19 +518,19 @@
                 "field": "attributeName"
               },
               {
-                "label": "玩家账号id",
+                "label": "玩家账号",
                 "rules": [{
                   "type": "required",
                   "message":"请设置发放数量"
                 }],
                 "props": {
-                  "placeholder": "玩家账号id",
+                  "placeholder": "玩家账号",
                   "style": {
                     "width": 240
                   }
                 },
                 "type": "number",
-                "field": "playerId"
+                "field": "targetPlayerMobilePhone"
               },
               {
                 "label": "发放数量:",
