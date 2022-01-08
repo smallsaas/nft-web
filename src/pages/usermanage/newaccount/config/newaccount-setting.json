@@ -183,7 +183,7 @@
         "placeholder": "当用户角色为系统号需要选择绑定店小二"
       },
       "options": {
-        "API": "/api/adm/users?roleid=server",
+        "API": "/api/adm/users?roleid=server&pageSize=100",
         "label": "name",
         "value": "id"
       },
