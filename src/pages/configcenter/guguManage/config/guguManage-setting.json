@@ -179,7 +179,14 @@
             }
           }]
         }
-      }
+      },
+      {
+        "title":"增配GUGU令","type":"path",
+        "options":{
+            "style":"primary",
+            "path":"/fieldTemplate/fieldTemplate-add"
+        }
+     }
     ],
     "tableOperation": [
       {
