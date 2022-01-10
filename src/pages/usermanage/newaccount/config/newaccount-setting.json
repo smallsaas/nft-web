@@ -315,16 +315,13 @@
     },
     {
       "label": "邀请码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
           "width": 240
         }
       },
-      "type": "number",
+      "type": "plain",
       "field": "invitationCode",
       "span": 16
     },
@@ -597,7 +594,7 @@
   },
   {
     "label": "状态",
-    "field": "status",
+    "field": "playerStatus",
     "type": "select",
     "options": [{
         "label": "正常",
@@ -605,10 +602,6 @@
       },
       {
         "label": "冻结",
-        "value": "FROZEN"
-      },
-      {
-        "label": "解冻",
         "value": "FROZEN"
       }
     ],
@@ -655,16 +648,11 @@
       "options": {
         "map": {
           "NORMAL": "正常",
-          "FROZEN":"冻结",
-          "FROZENS":"解冻"
+          "FROZEN":"冻结"
         },
         "chy": {
           "NORMAL": "blue",
-          "FROZEN": "gray",
-          "FROZENS": "purple",
-          "3": "purple-dark",
-          "4": "orange",
-          "5": "gray"
+          "FROZEN": "gray"
         }
       },
       "theme": "option",
