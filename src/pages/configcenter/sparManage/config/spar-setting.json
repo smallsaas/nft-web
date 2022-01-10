@@ -1,0 +1,172 @@
+{
+    "pageName": {
+      "table": "晶石管理",
+      "new": "添加元精灵",
+      "edit": "编辑晶石",
+      "view": "查看详情"
+    },
+    "listAPI": "/api/crud/oms/companionWisp/companionWisps",
+    "createAPI": "/api/crud/oms/companionWisp/companionWisps",
+    "getAPI": "/api/crud/oms/companionWisp/companionWisps/[id]",
+    "updateAPI": "/api/crud/oms/companionWisp/companionWisps/[id]",
+    "deleteAPI": "/api/crud/oms/companionWisp/companionWisps/(id)",
+    "columns": 1,
+    "createFields": [{
+        "label": "精灵名称",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "精灵描述",
+        "rules": [{
+          "type": "required"
+        }],
+        "type": "text-area",
+        "field": "description",
+        "props": {
+          "placeholder": "请输入精灵描述",
+          "style": {
+            "width": 240
+          }
+        }
+      },
+      {
+        "label": "精灵图片",
+        "type": "upload-image",
+        "field": "photoUrl"
+      }
+    ],
+    "updateFields": [
+      {
+        "label": "晶石图片",
+        "type": "upload-image",
+        "field": "previewPhotoUrl"
+      },
+      {
+        "label": "晶石描述",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入",
+          "style": {
+            "width": 240
+          }
+        },
+        "type": "text-area",
+        "field": "description"
+      },
+      {
+        "label": "晶石价值",
+        "type": "number",
+        "props": {
+          "placeholder": "请输入",
+          "style": {
+            "width": 240
+          }
+        },
+        "field": "wispCoin"
+      }
+    ],
+    "map": {},
+    "layout": {
+      "table": "Content",
+      "form": "TitleContent"
+    },
+    "tableActions": [],
+    "tableOperation": [{
+        "title": "编辑",
+        "type": "path",
+        "options": {
+          "style": "path",
+          "path": "sparManage/spar-edit",
+          "outside": true
+        }
+      },
+      {
+        "title": "详情",
+        "type": "path",
+        "options": {
+          "style": "path",
+          "path": "sparManage/spar-view",
+          "outside": true
+        }
+      },
+      {
+        "title": "删除",
+        "type": "delete",
+        "options": {
+          "outside": false,
+          "API": "/api/crud/oms/companionWisp/companionWisps/(id)",
+          "method": "delete"
+        },
+        "expect": {
+          "permission": ""
+        }
+      }
+    ],
+    "searchFields": [{
+      "label": "晶石",
+      "field": "wispCoin",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入晶石价值"
+      }
+    }],
+    "tableFields": [{
+        "label": "序号",
+        "field": "id",
+        "align": "center"
+      },
+      {
+        "label": "晶石图片",
+        "valueType":"image",
+        "field": "previewPhotoUrl",
+        "align": "center"
+      },
+      {
+        "label": "晶石描述",
+        "field": "description",
+        "align": "center"
+      },
+      {
+        "label": "晶石价值",
+        "field": "wispCoin",
+        "align": "center"
+      },
+      {
+        "label": "创建时间",
+        "field": "createTime",
+        "align":"center",
+        "valueType":"valueinputthree",
+        "options":{
+          "value":"createTime"
+        }
+      }
+    ],
+    "viewConfig": [{
+      "label": "晶石描述",
+      "field": "description",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "晶石价值",
+      "field": "wispCoin",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "晶石图片",
+      "field": "previewPhotoUrl",
+      "type": "image",
+      "span": 24
+    }]
+  }
+  

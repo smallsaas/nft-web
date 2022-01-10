@@ -203,8 +203,8 @@
       "span": 24
     },
     {
-      "label": "支付信息",
-      "type": "plain",
+      "defaultValue": "支付信息",
+      "type": "group",
       "span": 24
     },
     {
@@ -298,8 +298,8 @@
   ],
   "updateFields": [
     {
-      "label": "个人信息",
-      "type": "plain",
+      "defaultValue": "个人信息",
+      "type": "group",
       "span": 24
     },{
       "label": "昵称",
@@ -325,7 +325,7 @@
         }
       },
       "type": "number",
-      "field": "inviterCode",
+      "field": "invitationCode",
       "span": 16
     },
     {
@@ -435,8 +435,8 @@
       "span": 24
     },
     {
-      "label": "支付信息",
-      "type": "plain",
+      "defaultValue": "支付信息",
+      "type": "group",
       "span": 24
     },
     {
@@ -591,7 +591,7 @@
     "field": "name",
     "type": "search",
     "props": {
-      "placeholder": "请输入名称"
+      "placeholder": "支持手机,邀请码,名称,邀请人查询"
     }
   },
   {
