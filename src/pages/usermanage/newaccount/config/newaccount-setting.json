@@ -68,7 +68,6 @@
           "width": 240
         }
       },
-      "rules":["required"],
       "type": "number",
       "field": "backupMobilePhone",
       "span": 8
@@ -529,8 +528,8 @@
       "options": {
         "tips": "确定要解封账号麽?",
         "outside": true,
-        "API": "api/crud/oms/player/players/unlock/(id)",
-        "method": "get"
+        "API": "/api/crud/oms/player/players/unlock/(id)",
+        "method": "post"
       },
       "expect": {
        "field":"status",
@@ -541,9 +540,9 @@
       "title": "冻结账号",
       "type": "request",
       "options": {
-        "tips": "确定要解封账号麽?",
+        "tips": "确定要冻结账号麽?",
         "outside": true,
-        "API": "api/crud/oms/player/players/lock/(id)",
+        "API": "/api/crud/oms/player/players/lock/(id)",
         "method": "post"
       },
       "expect": {
