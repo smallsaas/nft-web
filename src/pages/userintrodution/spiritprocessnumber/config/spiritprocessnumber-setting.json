@@ -141,13 +141,8 @@
     "align":"center"
   },
   {
-    "label": "已付款总金额（GuGu令）",
+    "label": "已付款总金额",
     "field": "transactionCoins",
-    "align":"center"
-  },
-  {
-    "label": "缺少系统号（小二）",
-    "field": "lackSysNumber",
     "align":"center"
   }
   ]

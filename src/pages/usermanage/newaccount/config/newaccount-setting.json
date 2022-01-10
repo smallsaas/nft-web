@@ -30,22 +30,6 @@
       "span": 8
     },
     {
-      "label": "邀请码",
-      "type":"input",
-      "props": {
-        "placeholder": "请输入邀请人的邀请码"
-      },
-      "rules": [{
-        "type": "required"
-      }],
-      "field": "invitationCode",
-      "span": 16,
-      "expect":{
-        "field":"isManager",
-        "value":0
-      }
-    },
-    {
       "label": "手机号码",
       "rules": [{
         "type": "required"
@@ -170,6 +154,22 @@
       "span": 8
     },
     {
+      "label": "邀请人(邀请码)",
+      "type":"input",
+      "props": {
+        "placeholder": "请输入邀请人的邀请码"
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "field": "invitationCode",
+      "span": 16,
+      "expect":{
+        "field":"isManager",
+        "value":0
+      }
+    },
+    {
       "label": "绑定店小二",
       "type": "select-fetch",
       "rules": [{
@@ -183,7 +183,7 @@
         "placeholder": "当用户角色为系统号需要选择绑定店小二"
       },
       "options": {
-        "API": "/api/adm/users?roleid=server",
+        "API": "/api/adm/users?roleid=server&pageSize=100",
         "label": "name",
         "value": "id"
       },
@@ -192,31 +192,6 @@
       "expect": {
         "field": "isManager",
         "value": 1
-      }
-    },
-    {
-      "label": "绑定系统号",
-      "type": "select-fetch",
-      "rules": [{
-        "type": "required",
-        "message": "请选择"
-      }],
-      "props": {
-        "style": {
-          "width": 240
-        },
-        "placeholder": "当用户角色为玩家需要选择系统号"
-      },
-      "options": {
-        "API": "/api/adm/users",
-        "label": "name",
-        "value": "id"
-      },
-      "field": "sysUserId",
-      "span":16,
-      "expect": {
-        "field": "isManager",
-        "value": 0
       }
     },
     {
@@ -717,39 +692,6 @@
           "FROZEN":"冻结"
         }
       },
-      "span": 8
-    },
-    {
-      "label": "级别",
-      "field": "status",
-      "options": {
-        "map": {
-          "1": "v1",
-          "2": "v2",
-          "3": "v3",
-          "4": "v4",
-          "5": "v5",
-          "6": "v6",
-          "7": "v7",
-          "8": "v8"
-        },
-        "chy": {
-          "1": "blue",
-          "2": "cyan",
-          "3": "purple",
-          "4": "purple-dark",
-          "5": "orange",
-          "6": "gray",
-          "7": "tomato",
-          "8": "orangered"
-        }
-      },
-      "type": "plain"
-    },
-    {
-      "label": "原因",
-      "field": "reason",
-      "type": "plain",
       "span": 8
     },
     {

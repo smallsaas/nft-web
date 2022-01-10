@@ -126,13 +126,10 @@
               },
               "API": {
                 "loadAPI":"",
-                "createAPI": "/api/eav/entities/[id]/attributes"
+                "createAPI": "/api/crud/oms/manager/managers/sendCoins"
               },
               "fields": [{
                   "label": "当前GuGu令:",
-                  "rules": [{
-                    "type": "required"
-                  }],
                   "props": {
                     "placeholder": "请输入"
                   },
@@ -148,7 +145,7 @@
                     "placeholder": "玩家手机号"
                   },
                   "type": "input",
-                  "field": "attributeName"
+                  "field": "targetPlayerMobilePhone"
                 },
                 {
                   "label": "发放数量:",
@@ -156,10 +153,13 @@
                     "type": "required"
                   }],
                   "props": {
-                    "placeholder": "请输入数量"
+                    "placeholder": "请输入数量",
+                    "style":{
+                      "width":240
+                    }
                   },
-                  "type": "input",
-                  "field": "fieldName"
+                  "type": "number",
+                  "field": "number"
                 },
                 {
                   "label": "支付密码:",
@@ -167,10 +167,13 @@
                     "type": "required"
                   }],
                   "props": {
-                    "placeholder": "请输入支付密码"
+                    "placeholder": "请输入支付密码",
+                    "style":{
+                      "width":240
+                    }
                   },
-                  "type": "input",
-                  "field": "password"
+                  "type": "password",
+                  "field": "paymentPassword"
                 }
               ]
             }

@@ -23,7 +23,7 @@
       "type": "required"
     }],
     "options": {
-      "API": "/api/crud/oms/wispMeta/wispMetas",
+      "API": "/api/crud/oms/wispMeta/wispMetas?pageSize=100",
       "label": "name",
       "value": "id"
     },

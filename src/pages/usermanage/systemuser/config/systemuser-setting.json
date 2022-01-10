@@ -518,16 +518,19 @@
                 "field": "attributeName"
               },
               {
-                "label": "发放到账号：",
+                "label": "玩家账号",
                 "rules": [{
                   "type": "required",
-                  "message":"玩家手机号不能为空"
-                },"phone"],
+                  "message":"请设置发放数量"
+                }],
                 "props": {
-                  "placeholder": "玩家手机号"
+                  "placeholder": "玩家账号",
+                  "style": {
+                    "width": 240
+                  }
                 },
-                "type": "input",
-                "field": "attributeName"
+                "type": "number",
+                "field": "targetPlayerMobilePhone"
               },
               {
                 "label": "发放数量:",
@@ -536,10 +539,13 @@
                   "message":"请设置发放数量"
                 }],
                 "props": {
-                  "placeholder": "请输入数量"
+                  "placeholder": "请输入数量",
+                  "style": {
+                    "width": 240
+                  }
                 },
-                "type": "input",
-                "field": "fieldName"
+                "type": "number",
+                "field": "number"
               },
               {
                 "label": "支付密码:",
@@ -554,7 +560,7 @@
                   }
                 },
                 "type": "password",
-                "field": "password"
+                "field": "paymentPassword"
               }
             ]
           }

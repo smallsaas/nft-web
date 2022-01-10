@@ -5,7 +5,8 @@
  * @说明 此地方不设置生产环境endpoint设置 默认为public/config.js 中的 window.ZEle.endpoint 值
 */
 export const Config ={
-    endpoint:'http://repo.dev.smallsaas.cn:8086/',
+    // endpoint:'',//生产环境
+    endpoint:'http://repo.dev.smallsaas.cn:8086/',//开发环境
     // endpoint:'http://192.168.3.239:8484/',
     // endpoint:'http://repo.dev.smallsaas.cn:8088/',
     breadcrumbType:"header", //header,top
