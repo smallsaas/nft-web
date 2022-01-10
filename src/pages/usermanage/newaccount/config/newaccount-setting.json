@@ -65,6 +65,7 @@
           "width": 240
         }
       },
+      "rules":["required"],
       "type": "number",
       "field": "backupMobilePhone",
       "span": 8
@@ -295,8 +296,8 @@
   ],
   "updateFields": [
     {
-      "label": "个人信息",
-      "type": "plain",
+      "defaultValue": "个人信息",
+      "type": "group",
       "span": 24
     },{
       "label": "昵称",
@@ -349,6 +350,7 @@
           "width": 240
         }
       },
+      "rules":["required"],
       "type": "number",
       "field": "backupMobilePhone",
       "span": 16
