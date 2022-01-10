@@ -59,6 +59,9 @@
     },
     {
       "label": "备用手机号码",
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -323,7 +326,7 @@
         }
       },
       "type": "number",
-      "field": "invitationCode",
+      "field": "inviterCode",
       "span": 16
     },
     {
@@ -365,7 +368,7 @@
         }
       },
       "type": "password",
-      "field": "paymentPassword",
+      "field": "",
       "span": 8
     },
     {
@@ -377,7 +380,7 @@
         }
       },
       "type": "password",
-      "field": "checkPaymentPassword",
+      "field": "",
       "span": 16
     },
     {
@@ -389,7 +392,7 @@
         }
       },
       "type": "password",
-      "field": "loginPassword",
+      "field": "",
       "span": 8
     },
     {
@@ -401,7 +404,7 @@
         }
       },
       "type": "password",
-      "field": "checkLoginPassword",
+      "field": "",
       "span": 16
     },
     {
@@ -526,7 +529,7 @@
       "options": {
         "tips": "确定要解封账号麽?",
         "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
+        "API": "api/crud/oms/player/players/unlock/(id)",
         "method": "get"
       },
       "expect": {
@@ -540,8 +543,8 @@
       "options": {
         "tips": "确定要解封账号麽?",
         "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
-        "method": "get"
+        "API": "api/crud/oms/player/players/lock/(id)",
+        "method": "post"
       },
       "expect": {
        "field":"status",
@@ -709,7 +712,7 @@
     },
     {
       "label": "总领养",
-      "field": "adoptWispCount",
+      "field": "adoptCount",
       "type": "plain",
       "span": 8
     },
