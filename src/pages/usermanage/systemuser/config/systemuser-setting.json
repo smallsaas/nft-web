@@ -6,7 +6,7 @@
     "view": "查看详情",
     "distributionRecordView": "发放记录"
   },
-  "listAPI": "/api/crud/oms/player/players",
+  "listAPI": "/api/crud/oms/player/players?isManage=1",
   "createAPI": "/api/crud/oms/player/players",
   "getAPI": "/api/crud/oms/player/players/[id]",
   "updateAPI": "/api/crud/oms/player/players/[id]",
@@ -586,6 +586,14 @@
       }
     },
     {
+      "label": "手机号",
+      "field": "mobilePhone",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入手机号"
+      }
+    },
+    {
       "label": "状态",
       "field": "status",
       "type": "select",
@@ -599,7 +607,7 @@
         },
         {
           "label": "解冻中",
-          "value": "FROZEN"
+          "value": ""
         }
       ],
       "props": {
@@ -613,8 +621,13 @@
       "align": "center"
     },
     {
-      "label": "名称",
+      "label": "店小二名称",
       "field": "name",
+      "align": "center"
+    },
+    {
+      "label": "登录账号",
+      "field": "mobilePhone",
       "align": "center"
     },
     {

@@ -325,7 +325,7 @@
         }
       },
       "type": "number",
-      "field": "invitationCode",
+      "field": "inviterCode",
       "span": 16
     },
     {
@@ -527,7 +527,7 @@
       "options": {
         "tips": "确定要解封账号麽?",
         "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
+        "API": "api/crud/oms/player/players/unlock/(id)",
         "method": "get"
       },
       "expect": {
@@ -541,8 +541,8 @@
       "options": {
         "tips": "确定要解封账号麽?",
         "outside": true,
-        "API": "/api/crud/oms/player/players/lock/(id)",
-        "method": "POST"
+        "API": "api/crud/oms/player/players/lock/(id)",
+        "method": "post"
       },
       "expect": {
        "field":"status",
@@ -710,7 +710,7 @@
     },
     {
       "label": "总领养",
-      "field": "adoptWispCount",
+      "field": "adoptCount",
       "type": "plain",
       "span": 8
     },

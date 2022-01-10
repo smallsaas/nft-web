@@ -5,11 +5,11 @@
       "edit": "编辑GuGu令",
       "view": "查看详情"
     },
-    "listAPI": "/api/crud/oms/marketingSession/marketingSessions",
-    "createAPI": "/api/crud/oms/marketingSession/marketingSessions",
-    "getAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
-    "updateAPI": "/api/crud/oms/marketingSession/marketingSessions/[id]",
-    "deleteAPI": "/api/crud/oms/marketingSession/marketingSessions/(id)",
+    "listAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+    "createAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+    "getAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/[id]",
+    "updateAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/[id]",
+    "deleteAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/(id)",
     "columns": 1,
     "createFields": [
       {
@@ -183,29 +183,11 @@
     ],
     "tableOperation": [
       {
-        "title": "编辑",
-        "type": "path",
-        "options": {
-          "style": "path",
-          "path": "guguManage/guguManage-edit",
-          "outside": true
-        }
-      },
-      {
-        "title": "详情",
-        "type": "path",
-        "options": {
-          "style": "path",
-          "path": "guguManage/guguManage-view",
-          "outside": true
-        }
-      },
-      {
         "title": "删除",
         "type": "delete",
         "options": {
           "outside": false,
-          "API": "/api/crud/oms/wisp/wisps/(id)",
+          "API": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/(id)",
           "method": "delete"
         },
         "expect": {
@@ -223,35 +205,77 @@
     }],
     "tableFields": [
       {
-        "label": "发送的系统号",
-        "field": "number",
+        "label": "发放人",
+        "field": "targetPlayerName",
+        "align":"center"
+      },
+      {
+        "label": "接收人",
+        "field": "targetPlayerName",
+        "align":"center"
+      },
+      {
+        "label": "接收人账号",
+        "field": "targetPlayerPhone",
         "align":"center"
       },
       {
         "label": "发送数量",
-        "field": "title",
+        "field": "coin",
         "align":"center"
       },
       {
+        "label": "类型",
+        "valueType":"tag",
+        "options": {
+          "map": {
+            "SYSTEM_GIVEN": "系统给予",
+            "COMPANION_WISP": "能量晶石",
+            "MANAGER_GIVEN": "店小二给予",
+            "BUY_COMPANION_WISP": "购买能量晶石",
+            "WAITING_PAYMENT": "等待付款",
+            "5": "v5"
+          },
+          "chy": {
+            "SYSTEM_GIVEN": "blue",
+            "COMPANION_WISP": "cyan",
+            "MANAGER_GIVEN": "purple",
+            "BUY_COMPANION_WISP": "purple-dark",
+            "WAITING_PAYMENT": "red",
+            "5": "gray"
+          }
+        },
+        "field": "orderType",
+        "align":"center",
+        "theme": "option",
+        "type": "default"
+      },
+      {
         "label": "操作时间",
-        "field": "startTime",
-        "valueType":"valueinputfour",
+        "field": "createTime",
+        "valueType":"valueinputthree",
         "options":{
-          "value":"startTime"
+          "value":"createTime"
         },
         "align":"center"
       }
     ],
     "viewConfig": [
       {
-      "label": "发送的系统号",
+      "label": "接收人",
       "field": "number",
       "type":"plain",
       "span":24
     },
     {
+      "label": "发放人手机号",
+      "field": "targetPlayerPhone",
+      "type":"plain",
+      "span":24
+    },
+    {
       "label": "发送数量",
-      "field": "title",
+      "field": "number",
       "type":"plain",
       "span":24
     },
