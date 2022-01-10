@@ -9,7 +9,7 @@ export default function TimeChoose(props){
     }=props
     function handleChange(e){
         let t;
-        t = moment(e).format("hh:mm:ss")
+        t = moment(e).format("HH:mm:ss")
         console.log(e,t,'输出e')
         onChange(t)
     }
