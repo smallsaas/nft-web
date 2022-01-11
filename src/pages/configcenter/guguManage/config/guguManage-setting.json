@@ -211,19 +211,58 @@
     }],
     "tableFields": [
       {
-        "label": "发放人",
-        "field": "targetPlayerName",
-        "align":"center"
+        "label": "发放人/账号",
+        "options":{
+          "direction":"left",
+          "size":0,
+          "fields":[
+            {
+              "field":"",
+              "type":"plain",
+              "options":{
+                "style":{
+                  "font-weight":900,
+                  "color":"blue",
+                  "margin-right":10
+                }
+              }
+            },
+            {
+              "field": "",
+              "type":"plain"
+            }
+          ]
+        },
+        "field": "names",
+        "align": "center",
+        "valueType":"complex"
       },
       {
-        "label": "接收人",
-        "field": "targetPlayerName",
-        "align":"center"
-      },
-      {
-        "label": "接收人账号",
-        "field": "targetPlayerPhone",
-        "align":"center"
+        "label": "接收人/账号",
+        "options":{
+          "direction":"left",
+          "size":0,
+          "fields":[
+            {
+              "field":"targetPlayerName",
+              "type":"plain",
+              "options":{
+                "style":{
+                  "font-weight":900,
+                  "color":"blue",
+                  "margin-right":10
+                }
+              }
+            },
+            {
+              "field": "targetPlayerPhone",
+              "type":"plain"
+            }
+          ]
+        },
+        "field": "names",
+        "align": "center",
+        "valueType":"complex"
       },
       {
         "label": "发送数量",

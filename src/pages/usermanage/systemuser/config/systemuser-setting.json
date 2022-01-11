@@ -621,14 +621,31 @@
       "align": "center"
     },
     {
-      "label": "店小二名称",
-      "field": "name",
-      "align": "center"
-    },
-    {
-      "label": "登录账号",
-      "field": "mobilePhone",
-      "align": "center"
+      "label": "店小二/账号",
+      "options":{
+        "direction":"left",
+        "size":0,
+        "fields":[
+          {
+            "field":"name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":900,
+                "color":"blue",
+                "margin-right":10
+              }
+            }
+          },
+          {
+            "field": "mobilePhone",
+            "type":"plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType":"complex"
     },
     {
       "label": "直推人数",

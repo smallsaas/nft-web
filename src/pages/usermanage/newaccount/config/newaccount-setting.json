@@ -616,9 +616,31 @@
       "align": "center"
     },
     {
-      "label": "名称",
-      "field": "name",
-      "align": "center"
+      "label": "玩家/账号",
+      "options":{
+        "direction":"left",
+        "size":0,
+        "fields":[
+          {
+            "field":"name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":900,
+                "color":"blue",
+                "margin-right":10
+              }
+            }
+          },
+          {
+            "field": "mobilePhone",
+            "type":"plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType":"complex"
     },
     {
       "label": "直推人数",

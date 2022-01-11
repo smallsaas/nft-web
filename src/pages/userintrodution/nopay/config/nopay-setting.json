@@ -313,14 +313,58 @@
       "align":"center"
     },
     {
-      "label": "买家",
-      "align":"center",
-      "field": "buyerName"
+      "label": "买家/账号",
+      "options":{
+        "direction":"left",
+        "size":0,
+        "fields":[
+          {
+            "field":"buyerName",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":900,
+                "color":"blue",
+                "margin-right":10
+              }
+            }
+          },
+          {
+            "field": "buyerPhone",
+            "type":"plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType":"complex"
     },
     {
-      "label": "卖家",
-      "field": "sellerName",
-      "align":"center"
+      "label": "卖家/账号",
+      "options":{
+        "direction":"left",
+        "size":0,
+        "fields":[
+          {
+            "field":"sellerName",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":900,
+                "color":"blue",
+                "margin-right":10
+              }
+            }
+          },
+          {
+            "field": "sellerPhone",
+            "type":"plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType":"complex"
     },
     {
       "label": "订单类型",
