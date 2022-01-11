@@ -52,5 +52,15 @@ if (process.env.NODE_ENV === 'development') {
 }
 ```
 
+### antd替换源
 
+package.json 里面 找到 zero-element-antd 属性 替换 值为
+
+git+https://gitee.com/smallsaas/zero-element-antd.git
+
+重新执行 npm i zero-element-antd即可
+
+替换回来的话 更改为
+
+github:kequandian/zero-element-antd 即可
 

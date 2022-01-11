@@ -118,18 +118,6 @@
           "path": "landManage/land-view",
           "outside": true
         }
-      },
-      {
-        "title": "删除",
-        "type": "delete",
-        "options": {
-          "outside": false,
-          "API": "/api/crud/oms/land/lands/(id)",
-          "method": "delete"
-        },
-        "expect": {
-          "permission": ""
-        }
       }
     ],
     "searchFields": [{
