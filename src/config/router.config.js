@@ -165,7 +165,17 @@ module.exports = [
       // }
     ]
   },
-
+  {
+    name: '用户协议',
+    path: '/userAgreement',
+    items:[
+      {
+        name: '内容配置',
+        path: '/userAgreement/contentConfig',
+        // icon: 'cluster'
+      },
+    ]
+  },
   {
     name: '系统管理',
     path: '/sys',
