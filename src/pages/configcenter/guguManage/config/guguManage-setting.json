@@ -181,9 +181,56 @@
         }
       },
       {
-        "title":"增配GUGU令","type":"path",
-        "options":{
-            "path":"/fieldTemplate/fieldTemplate-add"
+        "title":"增配GUGU令","type": "modal",
+        "options": {
+          "style": "primary",
+          "modalTitle": "增配管理员GUGU令",
+          "modalWidth": 600,
+          "items": [{
+            "component": "Form",
+            "config": {
+              "layout": "Grid",
+              "layoutConfig": {
+                "value": [
+                  24
+                ]
+              },
+              "API": {
+                "loadAPI":"",
+                "createAPI": "/api/crud/oms/manager/managers"
+              },
+              "fields": [
+                {
+                  "label": "发放数量:",
+                  "rules": [{
+                    "type": "required"
+                  }],
+                  "props": {
+                    "placeholder": "请输入数量",
+                    "style":{
+                      "width":240
+                    }
+                  },
+                  "type": "number",
+                  "field": "number"
+                },
+                {
+                  "label": "支付密码:",
+                  "rules": [{
+                    "type": "required"
+                  }],
+                  "props": {
+                    "placeholder": "请输入支付密码",
+                    "style":{
+                      "width":240
+                    }
+                  },
+                  "type": "password",
+                  "field": "paymentPassword"
+                }
+              ]
+            }
+          }]
         }
      }
     ],
@@ -217,18 +264,18 @@
           "size":0,
           "fields":[
             {
-              "field":"",
+              "field":"sender.name",
               "type":"plain",
               "options":{
                 "style":{
-                  "font-weight":900,
+                  "font-weight":"bolder",
                   "color":"blue",
                   "margin-right":10
                 }
               }
             },
             {
-              "field": "",
+              "field": "sender.mobilePhone",
               "type":"plain"
             }
           ]
@@ -244,18 +291,18 @@
           "size":0,
           "fields":[
             {
-              "field":"targetPlayerName",
+              "field":"recipient.name",
               "type":"plain",
               "options":{
                 "style":{
-                  "font-weight":900,
+                  "font-weight":"bolder",
                   "color":"blue",
                   "margin-right":10
                 }
               }
             },
             {
-              "field": "targetPlayerPhone",
+              "field": "recipient.mobilePhone",
               "type":"plain"
             }
           ]

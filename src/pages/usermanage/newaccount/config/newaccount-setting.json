@@ -586,10 +586,10 @@
   ],
   "searchFields": [{
     "label": "名称",
-    "field": "name",
+    "field": "search",
     "type": "search",
     "props": {
-      "placeholder": "支持手机,邀请码,名称,邀请人查询"
+      "placeholder": "手机,邀请码,名称"
     }
   },
   {
@@ -626,7 +626,7 @@
             "type":"plain",
             "options":{
               "style":{
-                "font-weight":900,
+                "font-weight":"bolder",
                 "color":"blue",
                 "margin-right":10
               }
@@ -641,6 +641,11 @@
       "field": "names",
       "align": "center",
       "valueType":"complex"
+    },
+    {
+      "label": "会员级别",
+      "field": "grade",
+      "align": "center"
     },
     {
       "label": "直推人数",

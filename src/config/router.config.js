@@ -123,6 +123,14 @@ module.exports = [
     }]
   },
   {
+    name: '结算中心',
+    path: '/orderCenter',
+    items: [{
+      path: '/orderCenter/order',
+      name: '订单结算',
+    }]
+  },
+  {
     name: '配置中心',
     path: '/configcenter',
     items: [

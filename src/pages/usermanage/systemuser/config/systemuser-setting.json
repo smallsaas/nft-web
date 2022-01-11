@@ -595,7 +595,7 @@
     },
     {
       "label": "状态",
-      "field": "status",
+      "field": "playerStatus",
       "type": "select",
       "options": [{
           "label": "正常",
@@ -604,10 +604,6 @@
         {
           "label": "冻结",
           "value": "FROZEN"
-        },
-        {
-          "label": "解冻中",
-          "value": ""
         }
       ],
       "props": {
@@ -621,7 +617,7 @@
       "align": "center"
     },
     {
-      "label": "店小二/账号",
+      "label": "店小二",
       "options":{
         "direction":"left",
         "size":0,
@@ -631,7 +627,7 @@
             "type":"plain",
             "options":{
               "style":{
-                "font-weight":900,
+                "font-weight":"bolder",
                 "color":"blue",
                 "margin-right":10
               }

@@ -323,7 +323,7 @@
             "type":"plain",
             "options":{
               "style":{
-                "font-weight":900,
+                "font-weight":"bolder",
                 "color":"blue",
                 "margin-right":10
               }
@@ -350,7 +350,7 @@
             "type":"plain",
             "options":{
               "style":{
-                "font-weight":900,
+                "font-weight":"bolder",
                 "color":"blue",
                 "margin-right":10
               }
