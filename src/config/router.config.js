@@ -137,6 +137,14 @@ module.exports = [
       {
         path: '/configcenter/guguManage',
         name: 'GuGu令管理',
+      },
+      {
+        path: '/configcenter/sparManage',
+        name: '晶石管理',
+      },
+      {
+        path: '/configcenter/landManage',
+        name: '土地管理',
       }
       // ,
       // {

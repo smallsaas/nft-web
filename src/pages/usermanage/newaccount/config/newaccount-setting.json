@@ -59,6 +59,9 @@
     },
     {
       "label": "备用手机号码",
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -200,8 +203,8 @@
       "span": 24
     },
     {
-      "label": "支付信息",
-      "type": "plain",
+      "defaultValue": "支付信息",
+      "type": "group",
       "span": 24
     },
     {
@@ -295,8 +298,8 @@
   ],
   "updateFields": [
     {
-      "label": "个人信息",
-      "type": "plain",
+      "defaultValue": "个人信息",
+      "type": "group",
       "span": 24
     },{
       "label": "昵称",
@@ -312,16 +315,13 @@
     },
     {
       "label": "邀请码",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style": {
           "width": 240
         }
       },
-      "type": "number",
+      "type": "plain",
       "field": "invitationCode",
       "span": 16
     },
@@ -349,6 +349,7 @@
           "width": 240
         }
       },
+      "rules":["required"],
       "type": "number",
       "field": "backupMobilePhone",
       "span": 16
@@ -363,7 +364,7 @@
         }
       },
       "type": "password",
-      "field": "paymentPassword",
+      "field": "",
       "span": 8
     },
     {
@@ -375,7 +376,7 @@
         }
       },
       "type": "password",
-      "field": "checkPaymentPassword",
+      "field": "",
       "span": 16
     },
     {
@@ -387,7 +388,7 @@
         }
       },
       "type": "password",
-      "field": "loginPassword",
+      "field": "",
       "span": 8
     },
     {
@@ -399,7 +400,7 @@
         }
       },
       "type": "password",
-      "field": "checkLoginPassword",
+      "field": "",
       "span": 16
     },
     {
@@ -432,8 +433,8 @@
       "span": 24
     },
     {
-      "label": "支付信息",
-      "type": "plain",
+      "defaultValue": "支付信息",
+      "type": "group",
       "span": 24
     },
     {
@@ -524,8 +525,8 @@
       "options": {
         "tips": "确定要解封账号麽?",
         "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
-        "method": "get"
+        "API": "/api/crud/oms/player/players/unlock/(id)",
+        "method": "post"
       },
       "expect": {
        "field":"status",
@@ -536,10 +537,10 @@
       "title": "冻结账号",
       "type": "request",
       "options": {
-        "tips": "确定要解封账号麽?",
+        "tips": "确定要冻结账号麽?",
         "outside": true,
-        "API": "/api/crud/oms/player/players/(id)",
-        "method": "get"
+        "API": "/api/crud/oms/player/players/lock/(id)",
+        "method": "post"
       },
       "expect": {
        "field":"status",
@@ -588,12 +589,12 @@
     "field": "name",
     "type": "search",
     "props": {
-      "placeholder": "请输入名称"
+      "placeholder": "支持手机,邀请码,名称,邀请人查询"
     }
   },
   {
     "label": "状态",
-    "field": "status",
+    "field": "playerStatus",
     "type": "select",
     "options": [{
         "label": "正常",
@@ -601,10 +602,6 @@
       },
       {
         "label": "冻结",
-        "value": "FROZEN"
-      },
-      {
-        "label": "解冻",
         "value": "FROZEN"
       }
     ],
@@ -651,16 +648,11 @@
       "options": {
         "map": {
           "NORMAL": "正常",
-          "FROZEN":"冻结",
-          "FROZENS":"解冻"
+          "FROZEN":"冻结"
         },
         "chy": {
           "NORMAL": "blue",
-          "FROZEN": "gray",
-          "FROZENS": "purple",
-          "3": "purple-dark",
-          "4": "orange",
-          "5": "gray"
+          "FROZEN": "gray"
         }
       },
       "theme": "option",
@@ -707,7 +699,7 @@
     },
     {
       "label": "总领养",
-      "field": "adoptWispCount",
+      "field": "adoptCount",
       "type": "plain",
       "span": 8
     },
