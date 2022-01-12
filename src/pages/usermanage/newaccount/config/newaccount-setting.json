@@ -654,12 +654,12 @@
     },
     {
       "label": "当前领养",
-      "field": "currentAdoptWisp",
+      "field": "adoptNumber",
       "align": "center"
     },
     {
       "label": "总领养",
-      "field": "adoptWispCount",
+      "field": "adoptCount",
       "align": "center"
     },
     {

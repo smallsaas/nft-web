@@ -6,7 +6,7 @@
     "view": "查看详情",
     "distributionRecordView": "发放记录"
   },
-  "listAPI": "/api/crud/oms/player/players?isManage=1",
+  "listAPI": "/api/crud/oms/player/players?isManager=1",
   "createAPI": "/api/crud/oms/player/players",
   "getAPI": "/api/crud/oms/player/players/[id]",
   "updateAPI": "/api/crud/oms/player/players/[id]",

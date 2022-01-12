@@ -126,8 +126,15 @@ module.exports = [
     name: '结算中心',
     path: '/orderCenter',
     items: [{
-      path: '/orderCenter/order',
+      path: '/orderCenter/orderCount',
       name: '订单结算',
+    },
+    {
+      path: '/orderCenter/orderCountInfo',
+      name: '订单收益明细',
+    },{
+      path: '/orderCenter/userCountInfo',
+      name: '玩家收益明细',
     }]
   },
   {

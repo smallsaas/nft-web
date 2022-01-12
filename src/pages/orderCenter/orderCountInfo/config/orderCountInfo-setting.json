@@ -1,0 +1,142 @@
+{
+    "pageName": {
+      "table": "订单收益明细",
+      "new": "添加元精灵",
+      "edit": "编辑元精灵",
+      "view": "查看详情"
+    },
+    "listAPI": "/api/crud/oms/wispMeta/wispMetas",
+    "createAPI": "/api/crud/oms/wispMeta/wispMetas",
+    "getAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
+    "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
+    "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
+    "columns": 1,
+    "createFields": [{
+        "label": "精灵名称",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "精灵描述",
+        "rules": [{
+          "type": "required"
+        }],
+        "type": "text-area",
+        "field": "description",
+        "props": {
+          "placeholder": "请输入精灵描述",
+          "style": {
+            "width": 240
+          }
+        }
+      },
+      {
+        "label": "精灵图片",
+        "type": "upload-image",
+        "field": "photoUrl"
+      }
+    ],
+    "updateFields": [{
+        "label": "精灵名称",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入"
+        },
+        "type": "input",
+        "field": "name"
+      },
+      {
+        "label": "精灵描述",
+        "rules": [{
+          "type": "required"
+        }],
+        "props": {
+          "placeholder": "请输入",
+          "style": {
+            "width": 240
+          }
+        },
+        "type": "text-area",
+        "field": "description"
+      },
+      {
+        "label": "精灵图片",
+        "type": "upload-image",
+        "field": "photoUrl"
+      }
+    ],
+    "map": {},
+    "layout": {
+      "table": "Content",
+      "form": "TitleContent"
+    },
+    "tableActions": [],
+    "tableOperation": [
+    ],
+    "searchFields": [{
+      "label": "订单",
+      "field": "name",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入订单"
+      }
+    }],
+    "tableFields": [{
+        "label": "序号",
+        "field": "ids",
+        "align": "center"
+      },
+      {
+        "label": "买家",
+        "field": "ids",
+        "align": "center"
+      },
+      {
+        "label": "卖家",
+        "field": "ids",
+        "align": "center"
+      },
+      {
+        "label": "订单类型",
+        "field": "ids",
+        "align": "center"
+      },
+      {
+        "label": "订单价值",
+        "field": "ids",
+        "align": "center"
+      },
+      {
+        "label": "订单描述",
+        "field": "ids",
+        "align": "center"
+      }
+    ],
+    "viewConfig": [{
+      "label": "精灵名称",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵描述",
+      "field": "description",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵图片",
+      "field": "photoUrl",
+      "type": "image",
+      "span": 24
+    }]
+  }
+  
