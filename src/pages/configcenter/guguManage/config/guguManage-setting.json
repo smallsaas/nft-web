@@ -125,7 +125,7 @@
                 ]
               },
               "API": {
-                "loadAPI":"",
+                "getAPI":"/api/crud/oms/playerWallet/playerWallets/self",
                 "createAPI": "/api/crud/oms/manager/managers/sendCoins"
               },
               "fields": [{
@@ -134,7 +134,7 @@
                     "placeholder": "请输入"
                   },
                   "type": "plain",
-                  "field": "attributeName"
+                  "field": "coinsAmount"
                 },
                 {
                   "label": "发放到账号：",
@@ -197,7 +197,7 @@
               },
               "API": {
                 "loadAPI":"",
-                "createAPI": "/api/crud/oms/manager/managers"
+                "createAPI": "/api/crud/oms/manager/managers/addCoinForSelf"
               },
               "fields": [
                 {
@@ -249,11 +249,11 @@
       }
     ],
     "searchFields": [{
-      "label": "名称",
-      "field": "title",
+      "label": "账号",
+      "field": "recipient.mobilePhone",
       "type": "search",
       "props": {
-        "placeholder": "请输入场次名称"
+        "placeholder": "请输入接收人账号"
       }
     }],
     "tableFields": [

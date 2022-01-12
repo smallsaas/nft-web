@@ -50,8 +50,58 @@
   ],
   "tableFields": [
     {
-      "field": "targetPlayerName",
-      "label": "发送的玩家账号"
+      "label": "发放人/账号",
+      "options":{
+        "direction":"left",
+        "size":0,
+        "fields":[
+          {
+            "field":"sender.name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":"bolder",
+                "color":"blue",
+                "margin-right":10
+              }
+            }
+          },
+          {
+            "field": "sender.mobilePhone",
+            "type":"plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType":"complex"
+    },
+    {
+      "label": "接收人/账号",
+      "options":{
+        "direction":"left",
+        "size":0,
+        "fields":[
+          {
+            "field":"recipient.name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":"bolder",
+                "color":"blue",
+                "margin-right":10
+              }
+            }
+          },
+          {
+            "field": "recipient.mobilePhone",
+            "type":"plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType":"complex"
     },
     {
       "field": "coin",
