@@ -5,6 +5,7 @@ import ZEle from 'zero-element';
 import useBreadcrumb from '@/framework/useBreadcrumb';
 import config from './config/settingConfig.js';
 import dConfig from './config/dictionaryConfig.js';
+import ContentConfig from './contentConfig';
 
 const { TabPane } = Tabs;
 
@@ -28,6 +29,9 @@ export default function Term(props) {
       </TabPane>
       <TabPane tab="数字字典" key="dict">
         <ZEle namespace='setting_dist' config={dConfig} />
+      </TabPane>
+      <TabPane tab="会员规则" key="user_rules">
+        <ContentConfig />
       </TabPane>
     </Tabs>
   </Content>

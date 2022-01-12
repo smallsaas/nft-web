@@ -45,9 +45,9 @@ export default function Term() {
       defaultActiveKey={type}
       onChange={handleChangeTabPane}
     >
-      <TabPane tab="会员规则" key="MEMBER_RULE">
+      {/* <TabPane tab="会员规则" key="MEMBER_RULE"> */}
         <ZEle namespace='term_member' config={config} />
-      </TabPane>
+      {/* </TabPane> */}
       {/* <TabPane tab="积分规则" key="INTEGRAL_RULE">
         <ZEle namespace='term_integral' config={config} />
       </TabPane>
