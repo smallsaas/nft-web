@@ -107,10 +107,12 @@
         "placeholder": "请输入晶石价值"
       }
     }],
-    "tableFields": [{
+    "tableFields": [
+      {
         "label": "序号",
-        "field": "id",
-        "align": "center"
+        "field": "Code",
+        "align": "center",
+        "valueType":"index"
       },
       {
         "label": "晶石图片",

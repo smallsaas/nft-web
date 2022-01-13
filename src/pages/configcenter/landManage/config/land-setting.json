@@ -128,10 +128,12 @@
         "placeholder": "请输入土地名称"
       }
     }],
-    "tableFields": [{
+    "tableFields": [
+      {
         "label": "序号",
-        "field": "id",
-        "align": "center"
+        "field": "Code",
+        "align": "center",
+        "valueType":"index"
       },
       {
         "label": "土地名称",

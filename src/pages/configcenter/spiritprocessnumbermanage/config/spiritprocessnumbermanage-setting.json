@@ -155,6 +155,12 @@
     }],
     "tableFields": [
       {
+        "label": "序号",
+        "field": "Code",
+        "align": "center",
+        "valueType":"index"
+      },
+      {
         "label": "场次号",
         "field": "number",
         "align":"center"

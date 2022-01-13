@@ -134,11 +134,13 @@
       }
     }
   ],
-  "tableFields": [{
+  "tableFields": [
+    {
       "label": "序号",
-      "field": "id",
-      "align":"center"
-    },
+      "field": "Code",
+       "align": "center",
+      "valueType":"index"
+     },
     {
       "label": "卖方账号",
       "field": "sellerAccount",

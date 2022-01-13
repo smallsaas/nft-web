@@ -1,6 +1,6 @@
 {
     "pageName": {
-      "table": "订单收益明细",
+      "table": "推荐收益",
       "new": "添加元精灵",
       "edit": "编辑元精灵",
       "view": "查看详情"
@@ -89,10 +89,12 @@
         "placeholder": "请输入订单"
       }
     }],
-    "tableFields": [{
+    "tableFields": [
+      {
         "label": "序号",
-        "field": "ids",
-        "align": "center"
+        "field": "Code",
+        "align": "center",
+        "valueType":"index"
       },
       {
         "label": "买家",

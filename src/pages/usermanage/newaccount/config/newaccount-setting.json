@@ -111,7 +111,7 @@
     {
       "label": "登录密码",
       "props": {
-        "placeholder": "请输入",
+        "placeholder": "以字母开头的6-20个字母、数字、下划线",
         "style": {
           "width": 240
         }
@@ -198,8 +198,12 @@
       }
     },
     {
-      "label": "",
-      "type": "hidden",
+      "label": "邮箱",
+      "props": {
+        "placeholder": "请输入邮箱"
+      },
+      "type": "input",
+      "field": "email",
       "span": 24
     },
     {
@@ -209,9 +213,6 @@
     },
     {
       "label": "支付宝账号",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -230,9 +231,6 @@
     },
     {
       "label": "微信账号",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -268,10 +266,16 @@
       "span": 16
     },
     {
+      "label": "开户行",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankName",
+      "span": 8
+    },
+    {
       "label": "户名",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -281,9 +285,6 @@
     },
     {
       "label": "银行卡号",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入",
         "style":{
@@ -293,7 +294,38 @@
       },
       "type": "number",
       "field": "bankAccountNumber",
-      "span": 16
+      "span": 8
+    },
+    {
+      "label": "开户行",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankName2",
+      "span": 8
+    },
+    {
+      "label": "户名",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankAccountName2",
+      "span": 8
+    },
+    {
+      "label": "银行卡号",
+      "props": {
+        "placeholder": "请输入",
+        "style":{
+          "width":240
+        },
+        "min":0
+      },
+      "type": "number",
+      "field": "bankAccountNumber2",
+      "span": 8
     }
   ],
   "updateFields": [
@@ -364,7 +396,7 @@
         }
       },
       "type": "password",
-      "field": "",
+      "field": "paymentPassword",
       "span": 8
     },
     {
@@ -376,7 +408,7 @@
         }
       },
       "type": "password",
-      "field": "",
+      "field": "paymentPassword",
       "span": 16
     },
     {
@@ -388,7 +420,7 @@
         }
       },
       "type": "password",
-      "field": "",
+      "field": "loginPassword",
       "span": 8
     },
     {
@@ -400,7 +432,7 @@
         }
       },
       "type": "password",
-      "field": "",
+      "field": "loginPassword",
       "span": 16
     },
     {
@@ -425,12 +457,16 @@
         }
       ],
       "field": "isManager",
-      "span": 24
+      "span": 8
     },
     {
-      "label": "",
-      "type": "hidden",
-      "span": 24
+      "label": "邮箱",
+      "props": {
+        "placeholder": "请输入邮箱"
+      },
+      "type": "input",
+      "field": "email",
+      "span": 16
     },
     {
       "defaultValue": "支付信息",
@@ -480,10 +516,16 @@
       "span": 16
     },
     {
+      "label": "开户行",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankName",
+      "span": 8
+    },
+    {
       "label": "户名",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -493,15 +535,47 @@
     },
     {
       "label": "银行卡号",
-      "rules": [{
-        "type": "required"
-      }],
+      "props": {
+        "placeholder": "请输入",
+        "style":{
+          "width":240
+        },
+        "min":0
+      },
+      "type": "number",
+      "field": "bankAccountNumber",
+      "span": 8
+    },
+    {
+      "label": "开户行",
       "props": {
         "placeholder": "请输入"
       },
       "type": "input",
-      "field": "bankAccountNumber",
-      "span": 16
+      "field": "bankName2",
+      "span": 8
+    },
+    {
+      "label": "户名",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankAccountName2",
+      "span": 8
+    },
+    {
+      "label": "银行卡号",
+      "props": {
+        "placeholder": "请输入",
+        "style":{
+          "width":240
+        },
+        "min":0
+      },
+      "type": "number",
+      "field": "bankAccountNumber2",
+      "span": 8
     }
   ],
   "map": {},
@@ -610,15 +684,17 @@
     }
   }
   ],
-  "tableFields": [{
-      "label": "序号",
-      "field": "id",
-      "align": "center"
-    },
+  "tableFields": [
     {
-      "label": "玩家/账号",
+      "label": "序号",
+      "field": "Code",
+       "align": "center",
+      "valueType":"index"
+     },
+    {
+      "label": "玩家",
       "options":{
-        "direction":"left",
+        "direction":"vertical",
         "size":0,
         "fields":[
           {
@@ -639,7 +715,7 @@
         ]
       },
       "field": "names",
-      "align": "center",
+      "align": "left",
       "valueType":"complex"
     },
     {
@@ -714,6 +790,18 @@
       "span": 8
     },
     {
+      "label": "会员等级",
+      "field": "grade",
+      "type": "plain",
+      "span": 8,
+      "options":{
+        "map":{
+          "0":"Lv0",
+          "1":"Lv1"
+        }
+      }
+    },
+    {
       "label": "直推人数",
       "field": "recommendCount",
       "type": "plain",
@@ -751,49 +839,85 @@
       "label": "角色",
       "field": "isManager",
       "type": "plain",
-      "span": 8
+      "span": 8,
+      "options":{
+        "map":{
+          "0":"玩家",
+          "1":"系统号"
+        }
+      }
     },
     {
       "label": "邀请人",
       "field": "inviterName",
       "type": "plain",
-      "span": 16
+      "span": 8
+    },
+    {
+      "label": "邮箱",
+      "field": "email",
+      "type": "plain",
+      "span": 8
     },
     {
       "label": "支付宝账号",
       "field": "alipayAccount",
       "type": "plain",
-      "span": 12
+      "span": 8
     },
     {
       "label": "支付宝二维码",
       "field": "alipayQrCodePhotoUrl",
       "type": "image",
-      "span": 12
+      "span": 16
     },
     {
       "label": "微信账号",
       "field": "wechatAccount",
       "type": "plain",
-      "span": 12
+      "span": 8
     },
     {
       "label": "微信二维码",
       "field": "wechatQrCodePhotoUrl",
       "type": "image",
-      "span": 12
+      "span": 16
+    },
+    {
+      "label": "开户行",
+      "field": "bankName",
+      "type": "plain",
+      "span": 8
     },
     {
       "label": "户名",
       "field": "bankAccountName",
       "type": "plain",
-      "span": 12
+      "span": 8
     },
     {
-      "label": "银行卡号",
+      "label": "银行卡号1",
       "field": "bankAccountNumber",
       "type": "plain",
-      "span": 12
+      "span": 8
+    },
+    {
+      "label": "开户行",
+      "field": "bankName2",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "户名",
+      "field": "bankAccountName2",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "银行卡号1",
+      "field": "bankAccountNumber2",
+      "type": "plain",
+      "span": 8
     }
   ]
 }

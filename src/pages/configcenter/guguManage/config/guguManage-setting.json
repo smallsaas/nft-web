@@ -183,7 +183,7 @@
       {
         "title":"增配GUGU令","type": "modal",
         "options": {
-          "style": "primary",
+          "style": "",
           "modalTitle": "增配管理员GUGU令",
           "modalWidth": 600,
           "items": [{
@@ -258,9 +258,15 @@
     }],
     "tableFields": [
       {
+        "label": "序号",
+        "field": "Code",
+        "align": "center",
+        "valueType":"index"
+      },
+      {
         "label": "发放人/账号",
         "options":{
-          "direction":"left",
+          "direction":"vertical",
           "size":0,
           "fields":[
             {
@@ -281,13 +287,13 @@
           ]
         },
         "field": "names",
-        "align": "center",
+        "align": "left",
         "valueType":"complex"
       },
       {
         "label": "接收人/账号",
         "options":{
-          "direction":"left",
+          "direction":"vertical",
           "size":0,
           "fields":[
             {
@@ -308,7 +314,7 @@
           ]
         },
         "field": "names",
-        "align": "center",
+        "align": "left",
         "valueType":"complex"
       },
       {

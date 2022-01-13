@@ -45,11 +45,13 @@
       }
     }
   ],
-  "tableFields": [{
-    "label": "序号",
-    "field": "id",
-    "align":"center"
-  },
+  "tableFields": [
+    {
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType":"index"
+    },
   {
     "label": "精灵名称",
     "field": "name",

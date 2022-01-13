@@ -125,18 +125,33 @@ module.exports = [
   {
     name: '结算中心',
     path: '/orderCenter',
-    items: [{
-      path: '/orderCenter/orderCount',
-      name: '订单结算',
-    },
+    items: [
+      {
+        path: '/orderCenter/order',
+        name: '订单收益结算',
+      },
+    //   {
+    //   path: '/orderCenter/orderCount',
+    //   name: '订单收益结算',
+    // },
     {
       path: '/orderCenter/orderCountInfo',
-      name: '订单收益明细',
+      name: '推荐收益',
     },{
       path: '/orderCenter/userCountInfo',
-      name: '玩家收益明细',
+      name: '帮会收益',
     }]
   },
+  // {
+	//   path: "/agent",
+	//   name: "股东管理",
+	//   items: [
+  //     {
+  //       path: "/agent/agentReport",
+  //       name: "股东毛利净利报表",
+  //     },
+	//   ]
+	// },
   {
     name: '配置中心',
     path: '/configcenter',

@@ -1,19 +1,14 @@
-import useBreadcrumb from '@/framework/useBreadcrumb';
 import React from 'react';
 import ZEle from 'zero-element';
-import config from './config/index';
+import config from './config/orderReportBenefit';
+import useBreadcrumb from '@/framework/useBreadcrumb';
 
-export default function () {
+export default function AgentReport() {
 
   useBreadcrumb([
-    { title: '首页' },
-    { title: '订单收益明细' },
+    { title: '结算中心',path:'/orderCenter' },
+    { title: '推荐收益' },
   ]);
 
-  return <div>
-    <ZEle
-      namespace="orderCountInfo"
-      config={config}
-    />
-  </div>
+  return <ZEle namespace='orderReportBenefit' config={config} />;
 }
