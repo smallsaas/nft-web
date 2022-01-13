@@ -5,11 +5,11 @@
     "edit": "编辑分组",
     "view": "查看详情"
   },
-  "listAPI": "/api/adm/perm_groups",
-  "createAPI": "/api/adm/perm_groups",
-  "getAPI": "/api/adm/perm_groups/[id]",
-  "updateAPI": "/api/adm/perm_groups/[id]",
-  "deleteAPI": "/api/adm/perm_groups/(id)",
+  "listAPI": "/api/adm/perm/groups",
+  "createAPI": "/api/adm/perm/groups",
+  "getAPI": "/api/adm/perm/groups/[id]",
+  "updateAPI": "/api/adm/perm/groups/[id]",
+  "deleteAPI": "/api/adm/perm/groups/(id)",
   "columns": 1,
   "createFields": [
     {
@@ -149,7 +149,7 @@
       "type": "delete",
       "options": {
         "outside": false,
-        "API": "/api/adm/perm_groups/(id)",
+        "API": "/api/adm/perm/groups/(id)",
         "method": "delete"
       },
       "expect": {
