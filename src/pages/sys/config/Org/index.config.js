@@ -22,7 +22,7 @@ module.exports = {
       config: {
         share: 'org',
         API: {
-          listAPI: '/api/sys/org',
+          listAPI: '/api/crud/oms/player/players/action/queryTeamReturnTree',
           // appendAPI: '/api/sys/org/<id>/kid',
           // 这里的 appendAPI 会影响到局部刷新
           deleteAPI: '/api/sys/org/(id)'
@@ -91,8 +91,8 @@ module.exports = {
                       value: [12, 12],
                     },
                     API: {
-                      getAPI: '/api/sys/org/(id)',
-                      updateAPI: '/api/sys/org/(id)',
+                      getAPI: '/api/crud/oms/player/players/action/queryTeamReturnTreeChildren/(id)',
+                      updateAPI: '/api/crud/oms/player/players/action/queryTeamReturnTreeChildren/(id)',
                     },
                     fields: editFormFields,
                   }

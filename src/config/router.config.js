@@ -187,11 +187,11 @@ module.exports = [
       //   name: '菜单管理',
       //   path: '/sys/menuManage',
       // },
-      // {
-      //   name: '组织管理',
-      //   path: '/sys/org',
-      //   permissions: ''
-      // },
+      {
+        name: '组织管理',
+        path: '/sys/org',
+        permissions: ''
+      },
       {
         name: '用户管理',
         path: '/sys/user',
