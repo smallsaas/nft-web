@@ -315,9 +315,9 @@
       "align":"center"
     },
     {
-      "label": "买家/账号",
+      "label": "买家",
       "options":{
-        "direction":"left",
+        "direction":"vertical",
         "size":0,
         "fields":[
           {
@@ -338,13 +338,13 @@
         ]
       },
       "field": "names",
-      "align": "center",
+      "align": "left",
       "valueType":"complex"
     },
     {
-      "label": "卖家/账号",
+      "label": "卖家",
       "options":{
-        "direction":"left",
+        "direction":"vertical",
         "size":0,
         "fields":[
           {
@@ -365,7 +365,7 @@
         ]
       },
       "field": "names",
-      "align": "center",
+      "align": "left",
       "valueType":"complex"
     },
     {

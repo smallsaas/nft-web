@@ -9,7 +9,7 @@ module.exports = {
           share: 'agentReport',
           pageSize: 20,
           API: {
-            listAPI: '/api/adm/stat/meta/orderSettlement',
+            listAPI: '/api/crud/oms/player/profit/orderProfit',
           },
           actions: [
           ],

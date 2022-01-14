@@ -1,6 +1,6 @@
 module.exports = {
     layout: 'Content',
-    title: '推荐收益',
+    title: '帮会收益',
     items: [
       {
         layout: 'Empty',
@@ -9,7 +9,7 @@ module.exports = {
           share: 'agentReport',
           pageSize: 20,
           API: {
-            listAPI: '/api/adm/stat/meta/orderSettlement',
+            listAPI: '/api/adm/stat/meta/gangProfit',
           },
           actions: [
           ],

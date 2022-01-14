@@ -39,6 +39,22 @@
       }]
     },
     {
+      "label": "匹配成功率",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "max": 100
+      },
+      "type": "number",
+      "field": "matchSuccessRate",
+      "addonAfter": "%"
+    },
+    {
       "label": "开始时间",
       "type":"timeinput",
       "field": "startTime",

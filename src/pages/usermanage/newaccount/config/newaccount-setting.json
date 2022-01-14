@@ -248,6 +248,11 @@
       "span": 16
     },
     {
+      "defaultValue": "身份证信息",
+      "type": "group",
+      "span": 24
+    },
+    {
       "label": "身份证正面图片",
       "props": {
         "placeholder": "请输入"
@@ -264,6 +269,11 @@
       "type": "upload-image",
       "field": "reverseSideIdCardPhotoUrl",
       "span": 16
+    },
+    {
+      "defaultValue": "银行卡信息",
+      "type": "group",
+      "span": 24
     },
     {
       "label": "开户行",
@@ -475,9 +485,6 @@
     },
     {
       "label": "支付宝账号",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -496,9 +503,6 @@
     },
     {
       "label": "微信账号",
-      "rules": [{
-        "type": "required"
-      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -514,6 +518,34 @@
       "type": "upload-image",
       "field": "wechatQrCodePhotoUrl",
       "span": 16
+    },
+    {
+      "defaultValue": "身份证信息",
+      "type": "group",
+      "span": 24
+    },
+    {
+      "label": "身份证正面图片",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "frontIdCardPhotoUrl",
+      "span": 8
+    },
+    {
+      "label": "身份证反面图片",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "reverseSideIdCardPhotoUrl",
+      "span": 16
+    },
+    {
+      "defaultValue": "银行卡信息",
+      "type": "group",
+      "span": 24
     },
     {
       "label": "开户行",
@@ -884,6 +916,18 @@
       "span": 16
     },
     {
+      "label": "身份证正面照片",
+      "field": "frontIdCardPhotoUrl",
+      "type": "image",
+      "span": 8
+    },
+    {
+      "label": "身份证反面照片",
+      "field": "reverseSideIdCardPhotoUrl",
+      "type": "image",
+      "span": 16
+    },
+    {
       "label": "开户行",
       "field": "bankName",
       "type": "plain",
@@ -896,7 +940,7 @@
       "span": 8
     },
     {
-      "label": "银行卡号1",
+      "label": "银行卡号",
       "field": "bankAccountNumber",
       "type": "plain",
       "span": 8
@@ -914,7 +958,7 @@
       "span": 8
     },
     {
-      "label": "银行卡号1",
+      "label": "银行卡号",
       "field": "bankAccountNumber2",
       "type": "plain",
       "span": 8

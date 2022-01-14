@@ -153,6 +153,15 @@ module.exports = [
 	//   ]
 	// },
   {
+    name: '签到中心',
+    path: '/signCenter',
+    items: [
+      {
+        path: '/signCenter/signManage',
+        name: '签到管理',
+      }]
+  },
+  {
     name: '配置中心',
     path: '/configcenter',
     items: [
