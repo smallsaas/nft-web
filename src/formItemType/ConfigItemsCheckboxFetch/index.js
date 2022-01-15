@@ -16,7 +16,10 @@ export default function CustomCheckboxFetch({
   const [loading, setLoading] = useState(false);
   const [optionList, setOptionList] = useState([]);
 
-  const { onChange } = rest;
+  const { onChange, formdata } = rest;
+
+  // const { id } = formdata;
+
 
   useDidMount(getData);
 
@@ -26,7 +29,7 @@ export default function CustomCheckboxFetch({
         namespace,
       });
       setLoading(true);
-      query(fAPI)
+      query(`${fAPI}`)
         .then(data => {
           const list = Array.isArray(data) ?
             data
