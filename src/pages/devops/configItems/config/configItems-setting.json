@@ -169,15 +169,6 @@
       }
     },
     {
-      "title": "详情",
-      "type": "path",
-      "options": {
-        "style": "path",
-        "path": "configItems/configItems-view",
-        "outside": true
-      }
-    },
-    {
       "title": "删除",
       "type": "delete",
       "options": {

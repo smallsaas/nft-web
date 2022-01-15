@@ -60,3 +60,20 @@ header.ant-layout-header {
 .LeftCoverBreadcrumb > span:last-child span{
   color:#FFF8!important;
 }
+
+.ant-checkbox-wrapper {
+  /* box-sizing: border-box; */
+  width: 240px;
+  /* margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  display: inline-flex;
+  align-items: baseline;
+  line-height: unset;
+  cursor: pointer; */
+}

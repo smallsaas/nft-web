@@ -76,6 +76,7 @@ import CSet_ChildrenFormFetch from '@/components/Container/Form/ChildrenFormFetc
 import FITSet_CustomOneMary from '@/components/FormItemType/CustomOneMary';
 import CSet_ErrorLayout from '@/components/Container/ErrorLayout';
 import FITSet_PrescriptionItemStatus from '@/components/FormItemType/PrescriptionItemStatus';
+import FITSet_ConfigItemsCheckboxFetch from '@/formItemType/ConfigItemsCheckboxFetch';
 //nft组件
 import CodeBtn from '@/components/SchemaGeneratorPage/components/btn/codebtn'
 // import Select from '@/components/SchemaGeneratorPage/components/select/select'
@@ -254,7 +255,8 @@ FITSet({
   'selecttwo':SelectTwo,
   'handapply':HandApply,
   'getvalue':GetValue,
-  'valueinputtwo':ValueInputTwo
+  'valueinputtwo':ValueInputTwo,
+  'config_items_checkbox_fetch': FITSet_ConfigItemsCheckboxFetch
 
 });
 
