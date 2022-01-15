@@ -8,7 +8,7 @@
 
 import React from 'react';
 import ZEle from 'zero-element';
-import config from './config/representation-edit';
+import config from './config/shenshuumanage-edit';
 import useBreadcrumb from '@/framework/useBreadcrumb';
 
 export default function () {
@@ -20,7 +20,7 @@ export default function () {
     ]);
   
     return <div>
-     <ZEle namespace="representation-edit" config={config} />
+     <ZEle namespace="shenshuumanage-edit" config={config} />
     </div>
   }
 

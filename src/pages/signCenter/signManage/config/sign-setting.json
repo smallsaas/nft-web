@@ -5,11 +5,11 @@
       "edit": "编辑元精灵",
       "view": "查看详情"
     },
-    "listAPI": "/api/crud/oms/wispMeta/wispMetas",
-    "createAPI": "/api/crud/oms/wispMeta/wispMetas",
-    "getAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
-    "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
-    "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
+    "listAPI": "/api/crud/oms/playerSignRecord/playerSignRecords",
+    "createAPI": "/api/crud/oms/playerSignRecord/playerSignRecords",
+    "getAPI": "/api/crud/oms/playerSignRecord/playerSignRecords/[id]",
+    "updateAPI": "/api/crud/oms/playerSignRecord/playerSignRecords/[id]",
+    "deleteAPI": "/api/crud/oms/playerSignRecord/playerSignRecords/(id)",
     "columns": 1,
     "createFields": [{
         "label": "精灵名称",

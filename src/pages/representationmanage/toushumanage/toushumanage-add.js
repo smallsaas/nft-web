@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ZEle from 'zero-element';
-import config from './config/representation-add';
+import config from './config/toushuumanage-add';
 import useBreadcrumb from "@/framework/useBreadcrumb"
 
 export default () => {
@@ -15,8 +15,8 @@ export default () => {
       path: '/representation'
     },
     {
-      title: "添加申述类型"
+      title: "添加投诉类型"
     }
   ]);
-  return <ZEle namespace="representation-add" config={config} />
+  return <ZEle namespace="toushuumanage-add" config={config} />
 }
