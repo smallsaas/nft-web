@@ -70,44 +70,28 @@
         }
       ]
     },
-    
     {
       "label": "权限",
-      "field": "items",
-      "type": "modal-checkbox",
-      "props": {},
+      "props": {
+        "placeholder": "请选择权限",
+        "style":{
+          "width": 800,
+          "marginTop": "8px",
+          "textAlign": "left"
+        }
+      },
       "rules": [
         {
           "type": "required"
         }
       ],
       "options": {
-        "title": "选择权限",
-        "modalWidth": 1080,
+        "API": "/api/adm/perm/perms",
         "label": "name",
-        "editLabel": "name",
-        "value": "id",
-        "pagination": true,
-        "API": "/api/adm/perms",
-        "saveData": {
-          "masterRelations": "value"
-        },
-        "fields": [
-          {
-            "label": "序号",
-            "field": "id",
-            "align": "center"
-          },
-          {
-            "label": "权限名称",
-            "field": "name"
-          },
-          {
-            "label": "识别字符",
-            "field": "identifier"
-          }
-        ]
-      }
+        "value": "id"
+      },
+      "type": "config_items_checkbox_fetch",
+      "field": "items"
     }
   ],
   "map": {},
@@ -132,15 +116,6 @@
       "options": {
         "style": "path",
         "path": "permGroups/permGroups-edit",
-        "outside": true
-      }
-    },
-    {
-      "title": "详情",
-      "type": "path",
-      "options": {
-        "style": "path",
-        "path": "permGroups/permGroups-view",
         "outside": true
       }
     },

@@ -84,50 +84,26 @@
     },
     {
       "label": "配置项",
-      "field": "items",
-      "type": "modal-checkbox",
-      "props": {},
+      "props": {
+        "placeholder": "请选择配置项",
+        "style":{
+          "width": 800,
+          "marginTop": "8px",
+          "textAlign": "left"
+        }
+      },
       "rules": [
         {
           "type": "required"
         }
       ],
       "options": {
-        "title": "选择配置项",
-        "modalWidth": 1080,
-        "label": "title",
-        "editLabel": "title",
-        "value": "id",
-        "pagination": true,
         "API": "/api/adm/config/fields",
-        "saveData": {
-          "masterRelations": "value"
-        },
-        "fields": [
-          {
-            "label": "序号",
-            "field": "id",
-            "align": "center"
-          },
-          {
-            "label": "配置项名",
-            "field": "title"
-          },
-          {
-            "label": "字段名",
-            "field": "field"
-          },
-          {
-            "label": "数据类型",
-            "field": "dataType",
-            "align": "center"
-          },
-          {
-            "label": "描述",
-            "field": "description"
-          }
-        ]
-      }
+        "label": "name",
+        "value": "id"
+      },
+      "type": "config_items_checkbox_fetch",
+      "field": "items"
     }
   ],
   "map": {},
@@ -152,15 +128,6 @@
       "options": {
         "style": "path",
         "path": "configGroups/configGroups-edit",
-        "outside": true
-      }
-    },
-    {
-      "title": "详情",
-      "type": "path",
-      "options": {
-        "style": "path",
-        "path": "configGroups/configGroups-view",
         "outside": true
       }
     },
