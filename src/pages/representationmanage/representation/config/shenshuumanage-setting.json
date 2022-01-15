@@ -7,9 +7,9 @@
   },
   "listAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains",
   "createAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains",
-  "getAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains/[complainantId]",
-  "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains/[complainantId]",
-  "deleteAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains/(complainantId)",
+  "getAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains/[id]",
+  "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains/[id]",
+  "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
   "columns": 1,
   "createFields": [{
       "label": "申述类型",
@@ -67,7 +67,7 @@
     "type": "path",
     "options": {
       "style": "primary",
-      "path": "/representation/representation-add"
+      "path": "representation/representation-add"
     }
   }],
   "tableOperation": [{

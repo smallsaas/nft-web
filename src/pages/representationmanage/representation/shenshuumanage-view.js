@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ZEle from 'zero-element';
-import config from './config/representation-view';
+import config from './config/shenshuumanage-view';
 import useBreadcrumb from '@/framework/useBreadcrumb';
 
 
@@ -14,7 +14,7 @@ export default function () {
     ]);
   
     return <div>
-      <ZEle namespace="representation-view" config={config} />
+      <ZEle namespace="shenshuumanage-view" config={config} />
     </div>
   }
 

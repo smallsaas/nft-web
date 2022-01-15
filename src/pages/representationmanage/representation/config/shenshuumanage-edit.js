@@ -1,6 +1,6 @@
 
 
-const setting = require('./representation-setting.json');
+const setting = require('./shenshuumanage-setting.json');
 
 module.exports = {
   layout: setting.layout.form,

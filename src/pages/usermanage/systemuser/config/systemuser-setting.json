@@ -666,6 +666,16 @@
       "align": "center"
     },
     {
+      "label": "当前预约",
+      "field": "appointmentNumber",
+      "align": "center"
+    },
+    {
+      "label": "总预约",
+      "field": "appointmentCount",
+      "align": "center"
+    },
+    {
       "label": "状态",
       "field": "status",
       "align": "center",

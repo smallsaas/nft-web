@@ -300,6 +300,14 @@
       "props": {
         "placeholder": "请输入卖家账号"
       }
+    },
+    {
+      "label": "订单状态",
+      "field": "sellerName",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入卖家账号"
+      }
     }
   ],
   "tableFields": [
@@ -369,7 +377,12 @@
       "valueType":"complex"
     },
     {
-      "label": "订单类型",
+      "label": "价格",
+      "field": "transactionCoins",
+      "align":"center"
+    },
+    {
+      "label": "订单状态",
       "valueType":"tag",
       "options": {
         "map": {
@@ -395,12 +408,7 @@
       "type": "default"
     },
     {
-      "label": "GuGu令",
-      "field": "transactionCoins",
-      "align":"center"
-    },
-    {
-      "label": "创建时间",
+      "label": "预约时间",
       "field": "createTime",
       "align":"center",
       "valueType":"valueinput",

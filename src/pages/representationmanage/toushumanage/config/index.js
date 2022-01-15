@@ -1,5 +1,5 @@
 
-const setting = require('./shenshuumanage-setting.json');
+const setting = require('./toushumanage-setting.json');
 
 module.exports = {
   layout: setting.layout.table,

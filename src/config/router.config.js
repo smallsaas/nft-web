@@ -120,6 +120,10 @@ module.exports = [
     items: [{
       path: '/representationmanage/representation',
       name: '申述管理',
+    },
+    {
+      path: '/representationmanage/toushumanage',
+      name: '投诉管理',
     }]
   },
   {

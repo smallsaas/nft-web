@@ -1,4 +1,4 @@
-const setting = require('./representation-setting.json');
+const setting = require('./toushumanage-setting.json');
 
 module.exports = {
   layout: setting.layout.form,

@@ -7,12 +7,12 @@ export default function () {
 
   useBreadcrumb([
     { title: '首页', path: '/representation' },
-    { title: '申述管理' },
+    { title: '投诉管理' },
   ]);
 
   return <div>
     <ZEle
-      namespace="shenshumanage"
+      namespace="toushumanage"
       config={config}
     />
   </div>
