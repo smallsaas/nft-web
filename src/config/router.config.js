@@ -104,6 +104,10 @@ module.exports = [
         path: '/usermanage/newaccount',
         name: '玩家',
       },
+      {
+        path: '/usermanage/signCenter/signManage',
+        name: '签到管理',
+      }
       // {
       //   path: '/usermanage/newteammanage',
       //   name: '玩家团队',
@@ -156,15 +160,6 @@ module.exports = [
   //     },
 	//   ]
 	// },
-  {
-    name: '签到中心',
-    path: '/signCenter',
-    items: [
-      {
-        path: '/signCenter/signManage',
-        name: '签到管理',
-      }]
-  },
   {
     name: '配置中心',
     path: '/configcenter',
