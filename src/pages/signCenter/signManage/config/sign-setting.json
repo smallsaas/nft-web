@@ -1,121 +1,20 @@
 {
     "pageName": {
-      "table": "签到管理",
-      "new": "添加元精灵",
-      "edit": "编辑元精灵",
-      "view": "查看详情"
+      "table": "签到管理"
     },
     "listAPI": "/api/crud/oms/playerSignRecord/playerSignRecords",
-    "createAPI": "/api/crud/oms/playerSignRecord/playerSignRecords",
-    "getAPI": "/api/crud/oms/playerSignRecord/playerSignRecords/[id]",
-    "updateAPI": "/api/crud/oms/playerSignRecord/playerSignRecords/[id]",
-    "deleteAPI": "/api/crud/oms/playerSignRecord/playerSignRecords/(id)",
     "columns": 1,
-    "createFields": [{
-        "label": "精灵名称",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name"
-      },
-      {
-        "label": "精灵描述",
-        "rules": [{
-          "type": "required"
-        }],
-        "type": "text-area",
-        "field": "description",
-        "props": {
-          "placeholder": "请输入精灵描述",
-          "style": {
-            "width": 240
-          }
-        }
-      },
-      {
-        "label": "精灵图片",
-        "type": "upload-image",
-        "field": "photoUrl"
-      }
+    "createFields": [
     ],
-    "updateFields": [{
-        "label": "精灵名称",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name"
-      },
-      {
-        "label": "精灵描述",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "text-area",
-        "field": "description"
-      },
-      {
-        "label": "精灵图片",
-        "type": "upload-image",
-        "field": "photoUrl"
-      }
+    "updateFields": [
     ],
     "map": {},
     "layout": {
       "table": "Content",
       "form": "TitleContent"
     },
-    "tableActions": [{
-      "title": "添加元精灵",
-      "type": "path",
-      "options": {
-        "style": "primary",
-        "path": "/spirits/metaspirit/spirit-add"
-      }
-    }],
-    "tableOperation": [{
-        "title": "编辑",
-        "type": "path",
-        "options": {
-          "style": "path",
-          "path": "metaspirit/spirit-edit",
-          "outside": true
-        }
-      },
-      {
-        "title": "详情",
-        "type": "path",
-        "options": {
-          "style": "path",
-          "path": "metaspirit/spirit-view",
-          "outside": true
-        }
-      },
-      {
-        "title": "删除",
-        "type": "delete",
-        "options": {
-          "outside": false,
-          "API": "/api/crud/oms/wisp/wisps/(id)",
-          "method": "delete"
-        },
-        "expect": {
-          "permission": ""
-        }
-      }
+    "tableActions": [],
+    "tableOperation": [
     ],
     "searchFields": [{
       "label": "名称",
@@ -133,20 +32,37 @@
         "valueType":"index"
       },
       {
-        "label": "精灵名称",
-        "field": "name",
+        "label": "签到玩家",
+        "field": "playerName",
         "align": "center"
       },
       {
-        "label": "精灵图片",
-        "valueType": "image",
-        "field": "photoUrl",
+        "label": "签到时间",
+        "field": "createTime",
+        "valueType":"valueinput",
         "align": "center"
       },
       {
-        "label": "描述",
-        "field": "description",
+        "label": "补签时间",
+        "field": "signTime",
+        "valueType":"valueinput",
         "align": "center"
+      },
+      {
+        "label": "状态",
+        "field": "status",
+        "align": "center",
+        "valueType":"tag",
+        "options":{
+          "map":{
+            "NORMAL_SIGN":"准时",
+            "REPLENISH_SIGN":"补签"
+          },
+          "colorMap":{
+            "NORMAL_SIGN":"#368173",
+            "REPLENISH_SIGN":"#F9AE6A"
+          }
+        }
       }
     ],
     "viewConfig": [{
