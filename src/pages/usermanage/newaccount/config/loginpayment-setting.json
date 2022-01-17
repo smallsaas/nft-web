@@ -3,6 +3,7 @@
       "table": "玩家管理",
       "new": "添加账号",
       "edit": "编辑账号",
+      "editPassword":"密码管理",
       "view": "查看详情"
     },
     "listAPI": "/api/crud/oms/player/players",

@@ -11,13 +11,16 @@ module.exports = {
       config: {
         API: {
             getAPI: setting.getAPI,
-            createAPI: setting.updateAPI+'/(id)',
+            createAPI: setting.updateAPI,
         },
         layout: 'Grid',
         layoutConfig: {
           value: Array(setting.columns).fill(~~(24 / setting.columns)),
         },
         fields: setting.updateFields || setting.formFields,
+        otherProps: {
+          footerButton: false
+        }
       },
     },
   ],

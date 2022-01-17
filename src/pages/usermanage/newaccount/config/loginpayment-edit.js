@@ -2,7 +2,7 @@ const setting = require('./loginpayment-setting.json');
 
 module.exports = {
   layout: setting.layout.form,
-  title: setting.pageName.edit,
+  title: setting.pageName.editPassword,
   items: [
     {
       component: 'Form',

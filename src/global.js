@@ -51,7 +51,7 @@ import FITSet_Perm from '@/formItemType/Perm';
 
 import FITSet_UploadImageCard from '@/formItemType/UploadImageCard';
 import FITSet_Agree_Agreement from '@/formItemType/AgreeAgreement'
-
+import FITSet_Fetch_Commit from '@/components/FormItemType/fetchCommit'
 import Dictionary from '@/container/Dictionary';
 import FITSet_upload_file_single from '@/components/FormItemType/UploadFileSingle';
 import FITSet_download_file from '@/components/FormItemType/DownloadFile';
@@ -256,8 +256,8 @@ FITSet({
   'handapply':HandApply,
   'getvalue':GetValue,
   'valueinputtwo':ValueInputTwo,
-  'config_items_checkbox_fetch': FITSet_ConfigItemsCheckboxFetch
-
+  'config_items_checkbox_fetch': FITSet_ConfigItemsCheckboxFetch,
+  "fetch_commit":FITSet_Fetch_Commit
 });
 
 AITSet({

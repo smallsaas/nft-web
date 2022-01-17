@@ -49,13 +49,43 @@
       "span": 24
     },
     {
-      "label": "处理",
-      "field": "content",
-      "type": "text-area",
-      "props":{
-        "placeholder":"请输入处理内容"
-      },
+      "type":"group",
+      "defaultValue":"工单处理",
       "span": 24
+    },
+    {
+      "label":"回复内容",
+      "type":"fetch_commit",
+      "field":"id",
+      "options":{
+        "fieldName":"complainRecordId",
+        "inputField":"content",
+        "api":"/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
+        "method":"post",
+        "buttonText":"回复",
+        "placeholder":"请输入回复内容"
+      }
+    },
+    {
+      "label": "",
+      "field": "replyRecordList",
+      "type": "one-mary",
+      "span": 24,
+      "options": {
+        "actions": [
+        ],
+        "fields": [
+          {"label":"回复人","field":"isManagerReply","valueType":"map","options":{
+            "map":{
+              "0":"用户",
+              "1":"管理员"
+            }
+          }},
+          {"label":"申诉内容","field":"content","valueType":"plain"},
+          {"label":"回复时间","field":"replyTime","valueType":"plain"}
+        ],
+        "operation": [ ]
+      }
     }
   ],
   "map": {},
