@@ -1,6 +1,6 @@
 
 
-const setting = require('./shenshuumanage-setting.json');
+const setting = require('./representation-setting.json');
 
 module.exports = {
   layout: setting.layout.form,
@@ -11,7 +11,7 @@ module.exports = {
       config: {
         API: {
             getAPI: setting.getAPI,
-            updateAPI: setting.updateAPI,
+            createAPI: setting.updateAPI+'/(id)',
         },
         layout: 'Grid',
         layoutConfig: {

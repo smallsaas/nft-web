@@ -5,11 +5,11 @@
       "edit": "处理申述",
       "view": "查看详情"
     },
-    "listAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains",
-    "createAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains",
-    "getAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains/[complainantId]",
-    "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains/[complainantId]",
-    "deleteAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains/(complainantId)",
+    "listAPI": "/api/adm/feedback",
+    "createAPI": "/api/adm/feedback",
+    "getAPI": "/api/adm/feedback/[id]",
+    "updateAPI": "/api/adm/feedback/[id]",
+    "deleteAPI": "/api/adm/feedback/(id)",
     "columns": 1,
     "createFields": [{
         "label": "申述类型",
@@ -197,11 +197,24 @@
         }
       }
     ],
-    "viewConfig": [{
+    "viewConfig": [
+      {
         "label": "投诉方",
         "field": "complainantRole",
-        "type": "plain",
-        "span": 24
+        "align": "center",
+        "valueType": "tag",
+        "options": {
+          "map": {
+            "SELLER": "卖方",
+            "BUYER":"买方"
+          },
+          "chy": {
+            "PENDING_REPLY": "red",
+            "REPLIED": "blue"
+          }
+        },
+        "theme": "option",
+        "type": "default"
       },
       {
         "label": "投诉标题",
