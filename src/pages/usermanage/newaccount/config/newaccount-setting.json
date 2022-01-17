@@ -398,54 +398,6 @@
 
     },
     {
-      "label": "交易密码",
-      "props": {
-        "placeholder": "请输入",
-        "style": {
-          "width": 240
-        }
-      },
-      "type": "password",
-      "field": "paymentPassword",
-      "span": 8
-    },
-    {
-      "label": "确认交易密码",
-      "props": {
-        "placeholder": "请输入",
-        "style": {
-          "width": 240
-        }
-      },
-      "type": "password",
-      "field": "paymentPassword",
-      "span": 16
-    },
-    {
-      "label": "登录密码",
-      "props": {
-        "placeholder": "请输入",
-        "style": {
-          "width": 240
-        }
-      },
-      "type": "password",
-      "field": "loginPassword",
-      "span": 8
-    },
-    {
-      "label": "确认登陆密码",
-      "props": {
-        "placeholder": "请输入",
-        "style": {
-          "width": 240
-        }
-      },
-      "type": "password",
-      "field": "loginPassword",
-      "span": 16
-    },
-    {
       "label": "所属角色",
       "rules": [{
         "type": "required"

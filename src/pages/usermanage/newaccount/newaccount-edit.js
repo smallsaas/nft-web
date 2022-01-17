@@ -8,6 +8,7 @@
 import React from 'react';
 import ZEle from 'zero-element';
 import config from './config/newaccount-edit';
+import configTwo from './config/loginpayment-edit';
 import useBreadcrumb from "@/framework/useBreadcrumb"
 
 export default () => {
@@ -24,5 +25,10 @@ export default () => {
       title: "编辑账号"
     }
   ]);
-  return <ZEle namespace="newaccount-edit" config={config} />
+  return (
+   <div>
+      <ZEle namespace="newaccount-edit" config={config} />
+      <ZEle namespace="loginpayment-edit" config={configTwo} />
+   </div>
+  )
 }
