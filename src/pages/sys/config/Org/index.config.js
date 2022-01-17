@@ -115,10 +115,10 @@ module.exports = {
                   config: {
                     layout: 'Grid',
                     layoutConfig: {
-                      value: [12, 12],
+                      value: [24],
                     },
                     API: {
-                      createAPI: '/api/sys/org/(id)/children',
+                      createAPI: '/api/crud/oms/player/profit/queryTeamReturnTreeChildren/(id)',
                     },
                     fields: formFields,
                   },

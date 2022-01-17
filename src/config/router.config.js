@@ -241,23 +241,30 @@ module.exports = [
     name: '运维管理',
     path: '/devops',
     items: [
+      // {
+      //   path: '/devops/configItems',
+      //   name: '配置项',
+      // },
+      // {
+      //   path: '/devops/configGroups',
+      //   name: '配置分组',
+      // },
+      // {
+      //   path: '/devops/perm',
+      //   name: '权限管理',
+      // },
+      // {
+      //   path: '/devops/permGroups',
+      //   name: '权限分组管理',
+      // },
       {
-        path: '/devops/configItems',
-        name: '配置项',
+        path: '/devops/configManage',
+        name: '配置管理'
       },
       {
-        path: '/devops/configGroups',
-        name: '配置分组',
-      },
-      {
-        path: '/devops/perm',
-        name: '权限管理',
-      },
-      {
-        path: '/devops/permGroups',
-        name: '权限分组管理',
-      },
-
+        path: '/devops/permManage',
+        name: '权限管理'
+      }
     ]
   },
 
