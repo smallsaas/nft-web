@@ -50,7 +50,7 @@
     },
     {
       "type":"group",
-      "defaultValue":"工单处理",
+      "defaultValue":"申述处理",
       "span": 24
     },
     {
@@ -270,6 +270,32 @@
       "field": "createTime",
       "type": "plain",
       "span": 24
+    },
+    {
+      "type":"group",
+      "defaultValue":"处理结果",
+      "span": 24
+    },
+    {
+      "label": "",
+      "field": "replyRecordList",
+      "type": "one-mary",
+      "span": 24,
+      "options": {
+        "actions": [
+        ],
+        "fields": [
+          {"label":"回复人","field":"isManagerReply","valueType":"map","options":{
+            "map":{
+              "0":"用户",
+              "1":"管理员"
+            }
+          }},
+          {"label":"申诉内容","field":"content","valueType":"plain"},
+          {"label":"回复时间","field":"replyTime","valueType":"plain"}
+        ],
+        "operation": [ ]
+      }
     }
   ]
 }

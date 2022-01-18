@@ -24,6 +24,7 @@
       "label": "场次",
       "type": "select-fetch",
       "props": {
+        "placeholder": "场次查询",
         "style": {
           "width": 240
         }
@@ -41,7 +42,15 @@
       "field": "sysNumber",
       "type": "search",
       "props": {
-        "placeholder": "请输入玩家名称"
+        "placeholder": "查询系统号"
+      }
+    },
+    {
+      "label": "日期查询",
+      "field": "",
+      "type": "range",
+      "props": {
+        "placeholder": "日期查询"
       }
     }
   ],
@@ -88,12 +97,6 @@
     "type": "default"
   },
   {
-    "label": "精灵图片",
-    "valueType": "image",
-    "field": "previewPhotoUrl",
-    "align": "center"
-  },
-  {
     "label": "场次",
     "field": "sessionId",
     "align":"center",
@@ -118,28 +121,43 @@
     "align":"center"
   },
   {
-    "label": "当前已匹配人数",
+    "label": "匹配人数",
     "field": "matchedCount",
     "align":"center"
   },
   {
-    "label": "剩余未匹配人数",
+    "label": "挂售精灵数",
     "field": "matchFailedCount",
     "align":"center"
   },
   {
-    "label": "当前精灵数",
+    "label": "分配系统号精灵数",
     "field": "currentWispInstanceCount",
     "align":"center"
   },
   {
-    "label": "已处理精灵数",
+    "label": "分配系统号精灵总金额",
     "field": "managerPaidCount",
     "align":"center"
   },
   {
-    "label": "未付款人数",
+    "label": "系统号已处理精灵数",
     "field": "unpaidCount",
+    "align":"center"
+  },
+  {
+    "label": "系统号发放精灵数",
+    "field": "transactionCoins",
+    "align":"center"
+  },
+  {
+    "label": "系统号发放精灵总金额",
+    "field": "transactionCoins",
+    "align":"center"
+  },
+  {
+    "label": "未付款人数",
+    "field": "transactionCoins",
     "align":"center"
   },
   {
