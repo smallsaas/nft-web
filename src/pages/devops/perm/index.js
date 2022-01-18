@@ -5,10 +5,10 @@ import config from './config/index';
 
 export default function () {
 
-  useBreadcrumb([
-    { title: '首页', path: '' },
-    { title: '权限管理' },
-  ]);
+  // useBreadcrumb([
+  //   { title: '首页', path: '' },
+  //   { title: '权限管理' },
+  // ]);
 
   return <div>
     <ZEle

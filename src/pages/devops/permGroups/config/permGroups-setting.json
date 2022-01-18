@@ -1,8 +1,8 @@
 {
   "pageName": {
     "table": "权限分组",
-    "new": "添加分组",
-    "edit": "编辑分组",
+    "new": "添加权限分组",
+    "edit": "编辑权限分组",
     "view": "查看详情"
   },
   "listAPI": "/api/adm/perm/groups",
@@ -39,6 +39,28 @@
           "type": "required"
         }
       ]
+    },
+    {
+      "label": "父级权限组",
+      "type": "select-fetch",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/adm/perm/groups",
+        "label": "name",
+        "value": "id"
+      },
+      "field": "pid"
+    },
+    {
+      "type": "hidden",
+      "field": "org_id",
+      "value": 1
     }
   ],
   "updateFields": [
@@ -80,18 +102,36 @@
           "textAlign": "left"
         }
       },
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [],
       "options": {
         "API": "/api/adm/perm/perms",
         "label": "name",
         "value": "id"
       },
       "type": "config_items_checkbox_fetch",
-      "field": "items"
+      "field": "perms"
+    },
+    {
+      "label": "父级权限组",
+      "type": "select-fetch",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/adm/perm/groups",
+        "label": "name",
+        "value": "id"
+      },
+      "field": "pid"
+    },
+    {
+      "type": "hidden",
+      "field": "org_id",
+      "value": 1
     }
   ],
   "map": {},
