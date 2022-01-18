@@ -93,6 +93,15 @@ module.exports = [
     ]
   },
   {
+    name: '精灵菜单',
+    path: '/spiritmanage',
+    items: [{
+        path: '/spiritmanage/usermanageforspirit',
+        name: '精灵菜单',
+      }
+    ]
+  },
+  {
     name: '玩家管理',
     path: '/usermanage',
     items: [

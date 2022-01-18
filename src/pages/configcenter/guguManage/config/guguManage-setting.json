@@ -248,12 +248,36 @@
         }
       }
     ],
-    "searchFields": [{
+    "searchFields": [
+      {
+        "label": "管理员",
+        "type": "select-fetch",
+        "props": {
+          "style": {
+            "width": 240
+          }
+        },
+        "rules": [],
+        "options": {
+          "API": "",
+          "label": "title",
+          "value": "id"
+        },
+        "field": "account"
+      },{
       "label": "账号",
       "field": "recipient.mobilePhone",
       "type": "search",
       "props": {
         "placeholder": "请输入接收人账号"
+      }
+    },
+    {
+      "label": "日期",
+      "field": "",
+      "type": "range",
+      "props": {
+        "placeholder": "日期查询"
       }
     }],
     "tableFields": [

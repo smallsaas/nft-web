@@ -642,12 +642,33 @@
       }
     }
   ],
-  "searchFields": [{
+  "searchFields": [
+    {
+      "label": "系统号",
+      "type": "select-fetch",
+      "props": {
+        "placeholder": "系统号查询",
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "",
+        "label": "title",
+        "value": "id"
+      },
+      "field": "sessionId"
+    },
+    {
     "label": "名称",
     "field": "search",
     "type": "search",
     "props": {
-      "placeholder": "手机,邀请码,名称"
+      "placeholder": "手机,邀请码,名称",
+      "style": {
+        "width": 240
+      }
     }
   },
   {
@@ -661,10 +682,25 @@
       {
         "label": "冻结",
         "value": "FROZEN"
+      },
+      {
+        "label": "待审核",
+        "value": ""
       }
     ],
     "props": {
-      "placeholder": "请选择"
+      "placeholder": "请选择",
+      "style": {
+        "width": 240
+      }
+    }
+  },
+  {
+    "label": "日期",
+    "field": "",
+    "type": "range",
+    "props": {
+      "placeholder": "日期查询"
     }
   }
   ],
