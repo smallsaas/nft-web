@@ -100,9 +100,10 @@
       "options": {
         "API": "/api/adm/config/fields",
         "label": "name",
-        "value": "id"
+        "value": "id",
+        "formatField": "id"
       },
-      "type": "config_items_checkbox_fetch",
+      "type": "checkbox-fetch",
       "field": "items"
     }
   ],
