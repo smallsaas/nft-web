@@ -273,6 +273,10 @@ module.exports = [
       {
         path: '/devops/permManage',
         name: '权限管理'
+      },
+      {
+        path: '/devops/developerManege',
+        name: '开发人员管理'
       }
     ]
   },
