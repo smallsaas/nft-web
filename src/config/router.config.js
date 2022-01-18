@@ -115,7 +115,7 @@ module.exports = [
       },
       {
         path: '/usermanage/signCenter/signManage',
-        name: '签到管理',
+        name: '签到',
       }
       // {
       //   path: '/usermanage/newteammanage',

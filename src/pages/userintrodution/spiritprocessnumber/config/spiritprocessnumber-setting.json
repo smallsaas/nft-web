@@ -127,37 +127,37 @@
   },
   {
     "label": "挂售精灵数",
-    "field": "matchFailedCount",
-    "align":"center"
-  },
-  {
-    "label": "分配系统号精灵数",
     "field": "currentWispInstanceCount",
     "align":"center"
   },
   {
+    "label": "分配系统号精灵数",
+    "field": "toSysNumber",
+    "align":"center"
+  },
+  {
     "label": "分配系统号精灵总金额",
-    "field": "managerPaidCount",
+    "field": "ApiModelProperty",
     "align":"center"
   },
   {
     "label": "系统号已处理精灵数",
-    "field": "unpaidCount",
+    "field": "managerPaidCount",
     "align":"center"
   },
   {
     "label": "系统号发放精灵数",
-    "field": "transactionCoins",
+    "field": "ApiModelProperty",
     "align":"center"
   },
   {
     "label": "系统号发放精灵总金额",
-    "field": "transactionCoins",
+    "field": "ApiModelProperty",
     "align":"center"
   },
   {
     "label": "未付款人数",
-    "field": "transactionCoins",
+    "field": "unpaidCount",
     "align":"center"
   },
   {
