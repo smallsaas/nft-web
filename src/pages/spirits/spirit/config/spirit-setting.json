@@ -59,7 +59,7 @@
       "type": "required"
     }],
     "options": {
-      "API": "/api/crud/oms/marketingSession/marketingSessions",
+      "API": "/api/crud/oms/marketingSession/marketingSessions?pageSize=100",
       "label": "title",
       "value": "id"
     },

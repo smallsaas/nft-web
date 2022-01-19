@@ -54,6 +54,32 @@
       "span": 24
     },
     {
+      "label":"驳回",
+      "type":"fetch_commit",
+      "field":"id",
+      "options":{
+        "fieldName":"complainRecordId",
+        "inputField":"content",
+        "api":"/api/crud/oms/complain/complains/@fieldName/reject",
+        "method":"post",
+        "buttonText":"驳回",
+        "placeholder":"请输入回复内容"
+      }
+    },
+    {
+      "label":"申述",
+      "type":"fetch_commit",
+      "field":"id",
+      "options":{
+        "fieldName":"complainRecordId",
+        "inputField":"content",
+        "api":"/api/crud/oms/complain/complains/@fieldName/support",
+        "method":"post",
+        "buttonText":"申述",
+        "placeholder":"请输入回复内容"
+      }
+    },
+    {
       "label":"回复内容",
       "type":"fetch_commit",
       "field":"id",
