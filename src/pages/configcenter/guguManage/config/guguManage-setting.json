@@ -264,6 +264,21 @@
           "value": "id"
         },
         "field": "account"
+      }, {
+        "label": "系统号",
+        "type": "select-fetch",
+        "props": {
+          "style": {
+            "width": 240
+          }
+        },
+        "rules": [],
+        "options": {
+          "API": "",
+          "label": "title",
+          "value": "id"
+        },
+        "field": "account"
       },{
       "label": "账号",
       "field": "recipient.mobilePhone",

@@ -576,7 +576,35 @@
       }
     }
   ],
-  "tableOperation": [  
+  "tableOperation": [ 
+    {
+      "title": "审核通过",
+      "type": "request",
+      "options": {
+        "tips": "确定要审核通过麽?",
+        "outside": true,
+        "API": "/api/meta/(status)/status/entities/(id)/action/pass",
+        "method": "post"
+      },
+      "expect": {
+       "field":"",
+       "value":""
+      }
+    },
+    {
+      "title": "审核不通过",
+      "type": "request",
+      "options": {
+        "tips": "确定要审核不通过麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/reject/(id)",
+        "method": "post"
+      },
+      "expect": {
+       "field":"",
+       "value":""
+      }
+    }, 
     {
       "title": "解封账号",
       "type": "request",

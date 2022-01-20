@@ -5,7 +5,7 @@
     "edit": "处理申述",
     "view": "查看详情"
   },
-  "listAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains",
+  "listAPI": " /api/crud/oms/wispOrder/wispOrders/wisp/complains?requestType=FEEDBACK",
   "createAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains",
   "getAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/[id]",
   "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",

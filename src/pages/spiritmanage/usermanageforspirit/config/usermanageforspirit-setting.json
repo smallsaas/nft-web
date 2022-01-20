@@ -5,11 +5,11 @@
       "edit": "编辑元精灵",
       "view": "查看详情"
     },
-    "listAPI": "/api/crud/oms/wispMeta/wispMetas",
-    "createAPI": "/api/crud/oms/wispMeta/wispMetas",
-    "getAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
-    "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
-    "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
+    "listAPI": "/api/crud/oms/wispInstance/wispInstances",
+    "createAPI": "/api/crud/oms/wispInstance/wispInstances",
+    "getAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
+    "updateAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
+    "deleteAPI": "/api/crud/oms/wispInstance/wispInstances/(id)",
     "columns": 1,
     "createFields": [{
         "label": "精灵名称",
@@ -120,7 +120,7 @@
       },
       {
         "label": "玩家",
-        "field": "",
+        "field": "wispName",
         "type": "search",
         "props": {
           "placeholder": "请查询玩家"
@@ -136,12 +136,12 @@
       },
       {
         "label": "精灵名称",
-        "field": "namesss",
+        "field": "wispName",
         "align": "center"
       },
       {
         "label": "级别",
-        "field": "namesss",
+        "field": "wispLevel",
         "align": "center"
       },
       {
@@ -151,17 +151,17 @@
       },
       {
         "label": "当前价格",
-        "field": "namesss",
+        "field": "currentPrice",
         "align": "center"
       },
       {
         "label": "精灵编号",
-        "field": "namesss",
+        "field": "number",
         "align": "center"
       },
       {
         "label": "所属玩家",
-        "field": "namesss",
+        "field": "name",
         "align": "center"
       }
     ],
