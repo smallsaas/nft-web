@@ -96,22 +96,12 @@ import ValueInputTwo from '@/components/SchemaGeneratorPage/components/valueinpu
 import ValueInputThree from '@/components/SchemaGeneratorPage/components/valueinputthree/valueinputthree'
 import ValueInputFour from '@/components/SchemaGeneratorPage/components/valueinputfour/valueinputfour'
 
-
-
 import GetValue from '@/components/SchemaGeneratorPage/components/getvalue/getvalue'
 
+import CSet_Table_test from '@/container/List/Table';
 
 
 
-
-
-
-
-
-
-
-
-//AI 健身项目组件
 
 
 //Test
@@ -205,7 +195,8 @@ CSet({
   'LoadHtmlPage': CSet_load_html_page,
   'NewTreeList': CSet_new_tree_list,
   'children_form_fetch': CSet_ChildrenFormFetch,
-  'ErrorLayout': CSet_ErrorLayout
+  'ErrorLayout': CSet_ErrorLayout,
+  'Table_test': CSet_Table_test,
 });
 
 LASet({

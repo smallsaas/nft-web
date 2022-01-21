@@ -253,48 +253,64 @@
         "label": "管理员",
         "type": "select-fetch",
         "props": {
+          "placeholder": "请选择",
           "style": {
             "width": 240
           }
         },
         "rules": [],
         "options": {
-          "API": "",
-          "label": "title",
+          "API": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+          "dataChildField":"sender",
+          "label": "mobilePhone",
           "value": "id"
         },
-        "field": "account"
+        "field": "adminPlayerId"
       }, {
         "label": "系统号",
         "type": "select-fetch",
         "props": {
+          "placeholder": "请选择",
           "style": {
             "width": 240
           }
         },
         "rules": [],
         "options": {
-          "API": "",
-          "label": "title",
+          "API": "/api/crud/oms/player/players?isManager=1",
+          "label": "mobilePhone",
           "value": "id"
         },
-        "field": "account"
+        "field": "sysPlayerId"
       },{
       "label": "账号",
-      "field": "recipient.mobilePhone",
+      "field": "recipientHint",
       "type": "search",
       "props": {
-        "placeholder": "请输入接收人账号"
+        "placeholder": "请输入接收人/手机"
       }
     },
     {
       "label": "日期",
-      "field": "",
+      "options": {
+        "format": "YYYY-MM-DD",
+        "startDate": "startDate",
+        "endDate": "endDate"
+      },
       "type": "range",
-      "props": {
-        "placeholder": "日期查询"
-      }
-    }],
+      "field": "releaseTimes"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "startDate"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "endDate"
+    }
+  ],
     "tableFields": [
       {
         "label": "序号",

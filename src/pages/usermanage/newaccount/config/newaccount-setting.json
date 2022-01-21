@@ -682,11 +682,11 @@
       },
       "rules": [],
       "options": {
-        "API": "",
-        "label": "title",
+        "API": "/api/crud/oms/player/players?isManager=1",
+        "label": "mobilePhone",
         "value": "id"
       },
-      "field": "sessionId"
+      "field": "playerId"
     },
     {
     "label": "名称",
@@ -713,7 +713,7 @@
       },
       {
         "label": "待审核",
-        "value": ""
+        "value": "UNINSPECTED"
       }
     ],
     "props": {
@@ -723,13 +723,26 @@
       }
     }
   },
+  
   {
     "label": "日期",
-    "field": "",
+    "options": {
+      "format": "YYYY-MM-DD",
+      "startDate": "startDate",
+      "endDate": "endDate"
+    },
     "type": "range",
-    "props": {
-      "placeholder": "日期查询"
-    }
+    "field": "releaseTimes"
+  },
+  {
+    "label": "",
+    "type": "hidden",
+    "field": "startDate"
+  },
+  {
+    "label": "",
+    "type": "hidden",
+    "field": "endDate"
   }
   ],
   "tableFields": [
