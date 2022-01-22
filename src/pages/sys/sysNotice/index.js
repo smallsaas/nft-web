@@ -12,7 +12,7 @@ export default function Term() {
     { title: '系统配置' },
     { title: '系统公告' },
   ]);
-  const [type, setType] = useState('MEMBER_RULE');
+  const [type, setType] = useState('SYSTEM_NOTICE');
 
   function handleChangeTabPane(key) {
     setType(key);
@@ -46,7 +46,7 @@ export default function Term() {
       onChange={handleChangeTabPane}
     >
       {/* <TabPane tab="会员规则" key="MEMBER_RULE"> */}
-        <ZEle namespace='term_member' config={config} />
+        <ZEle namespace='sys_notice' config={config} />
       {/* </TabPane> */}
       {/* <TabPane tab="积分规则" key="INTEGRAL_RULE">
         <ZEle namespace='term_integral' config={config} />

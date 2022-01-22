@@ -813,8 +813,8 @@
         "map": {
           "NORMAL": "正常",
           "FROZEN":"冻结",
-          "UNREVIEWED":"未审批",
-          "PENDING":"待审批"
+          "UNREVIEWED":"审核不通过",
+          "PENDING":"待审核"
         },
         "chy": {
           "NORMAL": "blue",

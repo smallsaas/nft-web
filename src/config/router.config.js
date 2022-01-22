@@ -89,18 +89,22 @@ module.exports = [
       {
         path: '/userintrodution/nopay',
         name: '未付款列表',
+      },
+      {
+        path: '/userintrodution/usermanageforspirit',
+        name: '玩家精灵',
       }
     ]
   },
-  {
-    name: '精灵菜单',
-    path: '/spiritmanage',
-    items: [{
-        path: '/spiritmanage/usermanageforspirit',
-        name: '精灵菜单',
-      }
-    ]
-  },
+  // {
+  //   name: '玩家精灵',
+  //   path: '/spiritmanage',
+    // items: [{
+    //     path: '/spiritmanage/usermanageforspirit',
+    //     name: '玩家精灵',
+    //   }
+    // ]
+  // },
   {
     name: '玩家管理',
     path: '/usermanage',

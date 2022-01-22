@@ -11,262 +11,46 @@
   "updateAPI": "/api/crud/oms/wisp/wisps/[id]",
   "deleteAPI": "/api/crud/oms/wisp/wisps/(id)",
   "columns": 1,
-  "createFields": [{
-    "label": "元精灵选择",
-    "type": "select-fetch",
-    "props": {
-      "style": {
-        "width": 240
-      }
-    },
-    "rules": [{
-      "type": "required"
-    }],
-    "options": {
-      "API": "/api/crud/oms/wispMeta/wispMetas?pageSize=100",
-      "label": "name",
-      "value": "id"
-    },
-    "field": "metaId"
-  },
-  {
-    "label": "精灵名称",
-    "type": "input",
-    "field": "name",
-    "rules": [{
-      "type": "required"
-    }]
-  },
-  {
-    "label": "精灵描述",
-    "type": "text-area",
-    "field": "description",
-    "props": {
-      "style": {
-        "width": 240
-      }
-    }
-  },
-  {
-    "label": "绑定场次",
-    "type": "select-fetch",
-    "props": {
-      "style": {
-        "width": 240
-      }
-    },
-    "rules": [{
-      "type": "required"
-    }],
-    "options": {
-      "API": "/api/crud/oms/marketingSession/marketingSessions?pageSize=100",
-      "label": "title",
-      "value": "id"
-    },
-    "field": "sessionId"
-  },
-  {
-    "label": "精灵图片",
-    "props": {
-      "placeholder": "请输入"
-    },
-    "rules": [{
-      "type": "required"
-    }],
-    "type": "upload-image",
-    "field": "previewPhotoUrl"
-  },
-  {
-    "label": "级别",
-    "type": "select",
-    "props": {
-      "style": {
-        "width": 240
-      }
-    },
-    "rules": [{
-      "type": "required"
-    }],
-    "options": [{
-        "label": "v1",
-        "value": 1
+  "createFields": [
+    {
+      "label": "元精灵选择",
+      "type": "select-fetch",
+      "props": {
+        "style": {
+          "width": 240
+        }
       },
-      {
-        "label": "v2",
-        "value": 2
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "options": {
+        "API": "/api/crud/oms/wispMeta/wispMetas?pageSize=100",
+        "label": "name",
+        "value": "id"
       },
-      {
-        "label": "v3",
-        "value": 3
-      },
-      {
-        "label": "v4",
-        "value": 4
-      },
-      {
-        "label": "v5",
-        "value": 5
-      },
-      {"label":"v6","value":6},
-      {"label":"v7","value":7},
-      {"label":"v8","value":8}
-    ],
-    "field": "level"
-  },
-  {
-    "label": "最小价值",
-    "rules": [{
-      "type": "required"
-    }],
-    "options": {
-      "map": {
-        "int": "正常整数值"
-      }
+      "field": "metaId"
     },
-    "type": "number",
-    "field": "minimumValue",
-    "props": {
-      "style": {
-        "width": 240
-      },
-      "min": 0
-    },
-    "addonAfter": "GuGu令"
-  },
-  {
-    "label": "最大价值",
-    "rules": [{
-      "type": "required"
-    }],
-    "type": "number",
-    "field": "maximumValue",
-    "props": {
-      "style": {
-        "width": 240
-      },
-      "min": 0
-    },
-    "addonAfter": "GuGu令"
-  },
-  {
-    "label": "培养周期",
-    "rules": [{
-      "type": "required"
-    }],
-    "type": "number",
-    "field": "growthDays",
-    "props": {
-      "style": {
-        "width": 240
-      },
-      "min": 0
-    },
-    "addonAfter": "天"
-  },
-  {
-    "label": "培养价值",
-    "rules": [{
-      "type": "required"
-    }],
-    "props": {
-      "style": {
-        "width": 240
-      },
-      "min": 0,
-      "max": 100
-    },
-    "type": "number",
-    "field": "growthPercent",
-    "addonAfter": "%"
-  },
-  {
-    "label": "消耗GuGu令",
-    "rules": [{
-      "type": "required"
-    }],
-    "props": {
-      "style": {
-        "width": 240
-      },
-      "min": 0
-    },
-    "type": "number",
-    "field": "costWispCoin",
-    "addonAfter": "个"
-  },
-  {
-    "label": "土地消耗",
-    "rules": [{
-      "type": "required"
-    }],
-    "props": {
-      "style": {
-        "width": 240
-      },
-      "min": 0
-    },
-    "type": "number",
-    "field": "growthDays",
-    "addonAfter": "个"
-  },
-  {
-    "label": "能量晶石",
-    "rules": [{
-      "type": "required"
-    }],
-    "props": {
-      "style": {
-        "width": 240
-      },
-      "min": 0
-    },
-    "type": "number",
-    "field": "costAccompanyWisp",
-    "addonAfter": "块"
-  },
-  {
-    "label": "等待匹配时间",
-    "rules": [{
-      "type": "required"
-    }],
-    "props": {
-      "style": {
-        "width": 240
-      },
-      "min": 0
-    },
-    "type": "number",
-    "field": "waitingMatchMinute",
-    "addonAfter": "分钟"
-  }
-  ],
-  "updateFields": [{
-    "label": "元精灵选择",
-    "type": "select-fetch",
-    "props": {
-      "style": {
-        "width": 240
-      }
-    },
-    "rules": [{
-      "type": "required"
-    }],
-    "options": {
-      "API": "/api/crud/oms/wispMeta/wispMetas",
-      "label": "name",
-      "value": "id",
-      "childField":"name",
-      "groupField":"wispMeta"
-    },
-    "field": "metaId"
-  },
     {
       "label": "精灵名称",
       "type": "input",
       "field": "name",
-      "rules": [{
-        "type": "required"
-      }]
+      "rules": [
+        {
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "label": "精灵描述",
+      "type": "text-area",
+      "field": "description",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      }
     },
     {
       "label": "绑定场次",
@@ -276,9 +60,269 @@
           "width": 240
         }
       },
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "options": {
+        "API": "/api/crud/oms/marketingSession/marketingSessions?pageSize=100",
+        "label": "title",
+        "value": "id"
+      },
+      "field": "sessionId"
+    },
+    {
+      "label": "精灵图片",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "type": "upload-image",
+      "field": "previewPhotoUrl"
+    },
+    {
+      "label": "级别",
+      "type": "select",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "options": [
+        {
+          "label": "v1",
+          "value": 1
+        },
+        {
+          "label": "v2",
+          "value": 2
+        },
+        {
+          "label": "v3",
+          "value": 3
+        },
+        {
+          "label": "v4",
+          "value": 4
+        },
+        {
+          "label": "v5",
+          "value": 5
+        },
+        {
+          "label": "v6",
+          "value": 6
+        },
+        {
+          "label": "v7",
+          "value": 7
+        },
+        {
+          "label": "v8",
+          "value": 8
+        }
+      ],
+      "field": "level"
+    },
+    {
+      "label": "最小价值",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "options": {
+        "map": {
+          "int": "正常整数值"
+        }
+      },
+      "type": "number",
+      "field": "minimumValue",
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "addonAfter": "GuGu令"
+    },
+    {
+      "label": "最大价值",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "type": "number",
+      "field": "maximumValue",
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "addonAfter": "GuGu令"
+    },
+    {
+      "label": "培养周期",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "type": "number",
+      "field": "growthDays",
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "addonAfter": "天"
+    },
+    {
+      "label": "培养价值",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0,
+        "max": 100
+      },
+      "type": "number",
+      "field": "growthPercent",
+      "addonAfter": "%"
+    },
+    {
+      "label": "消耗GuGu令",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "type": "number",
+      "field": "costWispCoin",
+      "addonAfter": "个"
+    },
+    {
+      "label": "土地消耗",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "type": "number",
+      "field": "growthDays",
+      "addonAfter": "个"
+    },
+    {
+      "label": "能量晶石",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "type": "number",
+      "field": "costAccompanyWisp",
+      "addonAfter": "块"
+    },
+    {
+      "label": "等待匹配时间",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "type": "number",
+      "field": "waitingMatchMinute",
+      "addonAfter": "分钟"
+    }
+  ],
+  "updateFields": [
+    {
+      "label": "元精灵选择",
+      "type": "select-fetch",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "options": {
+        "API": "/api/crud/oms/wispMeta/wispMetas",
+        "label": "name",
+        "value": "id",
+        "childField": "name",
+        "groupField": "wispMeta"
+      },
+      "field": "metaId"
+    },
+    {
+      "label": "精灵名称",
+      "type": "input",
+      "field": "name",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "label": "绑定场次",
+      "type": "select-fetch",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "options": {
         "API": "/api/crud/oms/marketingSession/marketingSessions",
         "label": "title",
@@ -302,10 +346,13 @@
           "width": 240
         }
       },
-      "rules": [{
-        "type": "required"
-      }],
-      "options": [{
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "options": [
+        {
           "label": "v1",
           "value": 1
         },
@@ -325,17 +372,28 @@
           "label": "v5",
           "value": 5
         },
-        {"label":"v6","value":6},
-        {"label":"v7","value":7},
-        {"label":"v8","value":8}
+        {
+          "label": "v6",
+          "value": 6
+        },
+        {
+          "label": "v7",
+          "value": 7
+        },
+        {
+          "label": "v8",
+          "value": 8
+        }
       ],
       "field": "level"
     },
     {
       "label": "最小价值",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "options": {
         "map": {
           "int": "正常整数值"
@@ -353,9 +411,11 @@
     },
     {
       "label": "最大价值",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "type": "number",
       "field": "maximumValue",
       "props": {
@@ -368,9 +428,11 @@
     },
     {
       "label": "土地消耗",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "style": {
           "width": 240
@@ -383,9 +445,11 @@
     },
     {
       "label": "培养周期",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "type": "number",
       "field": "growthDays",
       "props": {
@@ -398,9 +462,11 @@
     },
     {
       "label": "培养价值",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "style": {
           "width": 240
@@ -414,9 +480,11 @@
     },
     {
       "label": "消耗GuGu令",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "style": {
           "width": 240
@@ -429,9 +497,11 @@
     },
     {
       "label": "能量晶石",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "style": {
           "width": 240
@@ -444,9 +514,11 @@
     },
     {
       "label": "等待匹配时间",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "style": {
           "width": 240
@@ -463,15 +535,18 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [{
-    "title": "添加精灵",
-    "type": "path",
-    "options": {
-      "style": "primary",
-      "path": "/spirits/spirit/spirit-add"
+  "tableActions": [
+    {
+      "title": "添加精灵",
+      "type": "path",
+      "options": {
+        "style": "primary",
+        "path": "/spirits/spirit/spirit-add"
+      }
     }
-  }],
-  "tableOperation": [{
+  ],
+  "tableOperation": [
+    {
       "title": "编辑",
       "type": "path",
       "options": {
@@ -502,25 +577,52 @@
       }
     }
   ],
-  "searchFields": [{
-    "label": "名称",
-    "field": "name",
-    "type": "search",
-    "props": {
-      "placeholder": "请输入精灵名称"
+  "searchFields": [
+    {
+      "label": "名称",
+      "field": "name",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入精灵名称"
+      }
     }
-  }],
+  ],
   "tableFields": [
     {
       "label": "序号",
       "field": "Code",
       "align": "center",
-      "valueType":"index"
+      "valueType": "index"
     },
     {
       "label": "精灵名称",
-      "field": "name",
-      "align": "center"
+      "options":{
+        "direction":"vertical",
+        "size":0,
+        "fields":[
+          {
+            "field":"name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":"bolder"
+              }
+            }
+          },
+          {
+            "field": "metaName",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-size": "12px"
+              }
+            }
+          }
+        ]
+      },
+      "field": "names",
+      "align": "left",
+      "valueType":"complex"
     },
     {
       "label": "精灵图片",
@@ -554,18 +656,18 @@
           "7": "lv7",
           "8": "lv8"
         },
-        "colorMap":{
-          "1":"#D5D8E0",
-          "2":"#26A1FF",
-          "3":"#31E4B9",
-          "4":"#A64CFF",
-          "5":"#FF4CA6",
-          "6":"#FFAD33",
-          "7":"#FF3344",
-          "8":"linear-gradient(to left,#E7B7FF,#81C2FE)"
+        "colorMap": {
+          "1": "#D5D8E0",
+          "2": "#26A1FF",
+          "3": "#31E4B9",
+          "4": "#A64CFF",
+          "5": "#FF4CA6",
+          "6": "#FFAD33",
+          "7": "#FF3344",
+          "8": "linear-gradient(to left,#E7B7FF,#81C2FE)"
         },
-        "weight":"bolder",
-        "fontColor":"#fff"
+        "weight": "bolder",
+        "fontColor": "#fff"
       },
       "theme": "option",
       "type": "default"
@@ -608,7 +710,7 @@
     {
       "label": "消耗土地",
       "field": "growthDays",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "消耗的精灵数量",
@@ -616,7 +718,8 @@
       "align": "center"
     }
   ],
-  "viewConfig": [{
+  "viewConfig": [
+    {
       "label": "精灵名称",
       "field": "name",
       "type": "plain",
@@ -632,8 +735,8 @@
       "label": "精灵等级",
       "field": "level",
       "type": "map",
-      "options":{
-        "map":{
+      "options": {
+        "map": {
           "1": "v1",
           "2": "v2",
           "3": "v3",
@@ -675,7 +778,8 @@
       "field": "minimumValue",
       "type": "plain",
       "span": 24
-    }, {
+    },
+    {
       "label": "最大价值",
       "field": "maximumValue",
       "type": "plain",
@@ -686,7 +790,8 @@
       "field": "startMatchTime",
       "type": "plain",
       "span": 24
-    }, {
+    },
+    {
       "label": "匹配时间结束",
       "field": "endMatchTime",
       "type": "plain",
