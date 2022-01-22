@@ -6,6 +6,7 @@ import useBreadcrumb from '@/framework/useBreadcrumb';
 import config from './config/settingConfig.js';
 import dConfig from './config/dictionaryConfig.js';
 import ContentConfig from './contentConfig';
+import SysNotice from './sysNotice';
 
 const { TabPane } = Tabs;
 
@@ -32,6 +33,9 @@ export default function Term(props) {
       </TabPane>
       <TabPane tab="会员规则" key="user_rules">
         <ContentConfig />
+      </TabPane>
+      <TabPane tab="系统公告" key="sys_notice">
+        <SysNotice />
       </TabPane>
     </Tabs>
   </Content>

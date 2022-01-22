@@ -10,7 +10,7 @@ export default function Term() {
   useBreadcrumb([
     { title: '主页', path: '/' },
     { title: '系统配置' },
-    { title: '会员规则' },
+    { title: '系统公告' },
   ]);
   const [type, setType] = useState('MEMBER_RULE');
 
