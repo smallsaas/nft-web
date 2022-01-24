@@ -790,16 +790,6 @@
       "align": "center"
     },
     {
-      "label": "当前领养",
-      "field": "adoptNumber",
-      "align": "center"
-    },
-    {
-      "label": "总领养",
-      "field": "adoptCount",
-      "align": "center"
-    },
-    {
       "label": "团队人数",
       "field": "teamSize",
       "align": "center"
@@ -834,6 +824,26 @@
     {
       "label": "邀请码",
       "field": "invitationCode",
+      "align": "center"
+    },
+    {
+      "label": "系统号",
+      "field": "adoptCount",
+      "align": "center"
+    },
+    {
+      "label": "店小二",
+      "field": "adoptCount",
+      "align": "center"
+    },
+    {
+      "label": "总领养",
+      "field": "adoptCount",
+      "align": "center"
+    },
+    {
+      "label": "总预约",
+      "field": "adoptCount",
       "align": "center"
     }
   ],

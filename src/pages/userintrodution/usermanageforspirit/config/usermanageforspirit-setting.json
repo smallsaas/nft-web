@@ -1,171 +1,245 @@
 {
-    "pageName": {
-      "table": "玩家精灵",
-      "new": "添加元精灵",
-      "edit": "编辑元精灵",
-      "view": "查看详情"
+  "pageName": {
+    "table": "玩家精灵",
+    "new": "添加元精灵",
+    "edit": "编辑元精灵",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/wispInstance/wispInstances",
+  "createAPI": "/api/crud/oms/wispInstance/wispInstances",
+  "getAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
+  "updateAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
+  "deleteAPI": "/api/crud/oms/wispInstance/wispInstances/(id)",
+  "columns": 1,
+  "createFields": [
+    {
+      "label": "精灵名称",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
     },
-    "listAPI": "/api/crud/oms/wispInstance/wispInstances",
-    "createAPI": "/api/crud/oms/wispInstance/wispInstances",
-    "getAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
-    "updateAPI": "/api/crud/oms/wispInstance/wispInstances/[id]",
-    "deleteAPI": "/api/crud/oms/wispInstance/wispInstances/(id)",
-    "columns": 1,
-    "createFields": [{
-        "label": "精灵名称",
-        "rules": [{
+    {
+      "label": "精灵描述",
+      "rules": [
+        {
           "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name"
-      },
-      {
-        "label": "精灵描述",
-        "rules": [{
-          "type": "required"
-        }],
-        "type": "text-area",
-        "field": "description",
-        "props": {
-          "placeholder": "请输入精灵描述",
-          "style": {
-            "width": 240
-          }
         }
-      },
-      {
-        "label": "精灵图片",
-        "type": "upload-image",
-        "field": "photoUrl"
+      ],
+      "type": "text-area",
+      "field": "description",
+      "props": {
+        "placeholder": "请输入精灵描述",
+        "style": {
+          "width": 240
+        }
       }
-    ],
-    "updateFields": [{
-        "label": "精灵名称",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name"
-      },
-      {
-        "label": "精灵描述",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "text-area",
-        "field": "description"
-      },
-      {
-        "label": "精灵图片",
-        "type": "upload-image",
-        "field": "photoUrl"
-      }
-    ],
-    "map": {},
-    "layout": {
-      "table": "Content",
-      "form": "TitleContent"
     },
-    "tableActions": [],
-    "tableOperation": [
-    ],
-    "searchFields": [{
-        "label": "精灵级别",
-        "type": "select-fetch",
-        "props": {
-          "style": {
-            "width": 240
-          }
-        },
-        "rules": [],
-        "options": {
-          "API": "",
-          "label": "title",
-          "value": "id"
-        },
-        "field": "account"
+    {
+      "label": "精灵图片",
+      "type": "upload-image",
+      "field": "photoUrl"
+    }
+  ],
+  "updateFields": [
+    {
+      "label": "精灵名称",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入"
       },
-      {
-        "label": "精灵状态",
-        "field": "",
-        "type": "select",
-        "options": [{
-            "label": "全部",
-            "value": ""
-          },
-          {
-            "label": "出售中",
-            "value": ""
-          },
-          {
-            "label": "领养中",
-            "value": ""
-          }
-        ],
-        "props": {
-          "placeholder": "请选择"
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "精灵描述",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
         }
       },
-      {
-        "label": "玩家",
-        "field": "wispName",
-        "type": "search",
-        "props": {
-          "placeholder": "请查询玩家"
+      "type": "text-area",
+      "field": "description"
+    },
+    {
+      "label": "精灵图片",
+      "type": "upload-image",
+      "field": "photoUrl"
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [
+  ],
+  "tableOperation": [
+  ],
+  "searchFields": [
+    {
+      "label": "精灵级别",
+      "field": "wispLevel",
+      "type": "select",
+      "options": [
+        {
+          "label": "lv1",
+          "value": "1"
+        },
+        {
+          "label": "lv2",
+          "value": "2"
+        },
+        {
+          "label": "lv3",
+          "value": "3"
+        },
+        {
+          "label": "lv4",
+          "value": "4"
+        },
+        {
+          "label": "lv5",
+          "value": "5"
+        },
+        {
+          "label": "lv6",
+          "value": "6"
+        },
+        {
+          "label": "lv7",
+          "value": "7"
+        },
+        {
+          "label": "lv8",
+          "value": "8"
+        }
+      ],
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
         }
       }
-     ],
-    "tableFields": [
-      {
-        "label": "序号",
-        "field": "Code",
-        "align": "center",
-        "valueType":"index"
-      },
-      {
-        "label": "精灵名称",
-        "field": "wispName",
-        "align": "center"
-      },
-      {
-        "label": "级别",
-        "field": "wispLevel",
-        "align": "center"
-      },
-      {
-        "label": "初始价格",
-        "field": "namesss",
-        "align": "center"
-      },
-      {
-        "label": "当前价格",
-        "field": "currentPrice",
-        "align": "center"
-      },
-      {
-        "label": "精灵编号",
-        "field": "number",
-        "align": "center"
-      },
-      {
-        "label": "所属玩家",
-        "field": "name",
-        "align": "center"
+    },
+    {
+      "label": "精灵状态",
+      "field": "stage",
+      "type": "select",
+      "options": [
+        {
+          "label": "领养中",
+          "value": "ADOPTED"
+        },
+        {
+          "label": "出售中",
+          "value": "SELLING"
+        },
+        {
+          "label": "冻结中",
+          "value": "FROZEN"
+        },
+        {
+          "label": "销毁",
+          "value": "DESTROYED"
+        },
+        {
+          "label": "锁定",
+          "value": "LOCKED"
+        }
+      ],
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
       }
-    ],
-    "viewConfig": [{
+    },
+    {
+      "label": "系统号",
+      "type": "select-fetch",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/crud/oms/player/players?isManager=1",
+        "label": "mobilePhone",
+        "value": "id"
+      },
+      "field": "sysPlayerId"
+    },
+    {
+      "label": "玩家号码",
+      "field": "playerHint",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      }
+    }
+  ],
+  "tableFields": [
+    {
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType": "index"
+    },
+    {
+      "label": "精灵名称",
+      "field": "wispName",
+      "align": "center"
+    },
+    {
+      "label": "级别",
+      "field": "wispLevel",
+      "align": "center"
+    },
+    {
+      "label": "初始价格",
+      "field": "namesss",
+      "align": "center"
+    },
+    {
+      "label": "当前价格",
+      "field": "currentPrice",
+      "align": "center"
+    },
+    {
+      "label": "精灵编号",
+      "field": "number",
+      "align": "center"
+    },
+    {
+      "label": "所属玩家",
+      "field": "name",
+      "align": "center"
+    }
+  ],
+  "viewConfig": [
+    {
       "label": "精灵名称",
       "field": "name",
       "type": "plain",
@@ -182,6 +256,6 @@
       "field": "photoUrl",
       "type": "image",
       "span": 24
-    }]
-  }
-  
+    }
+  ]
+}

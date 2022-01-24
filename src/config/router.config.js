@@ -93,7 +93,11 @@ module.exports = [
       {
         path: '/userintrodution/usermanageforspirit',
         name: '玩家精灵',
-      }
+      },
+      // {
+      //   path: '/userintrodution/systemuser',
+      //   name: '系统号',
+      // },
     ]
   },
   // {

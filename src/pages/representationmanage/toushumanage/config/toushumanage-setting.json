@@ -1,245 +1,254 @@
 {
-    "pageName": {
-      "table": "投诉管理",
-      "new": "添加申述类型",
-      "edit": "处理申述",
-      "view": "查看详情"
-    },
-    "listAPI": "/api/adm/feedback",
-    "createAPI": "/api/adm/feedback",
-    "getAPI": "/api/adm/feedback/[id]",
-    "updateAPI": "/api/adm/feedback/[id]",
-    "deleteAPI": "/api/adm/feedback/(id)",
-    "columns": 1,
-    "createFields": [{
-        "label": "申述类型",
-        "rules": [{
+  "pageName": {
+    "table": "投诉管理",
+    "new": "添加申述类型",
+    "edit": "处理申述",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains?requestType=FEEDBACK",
+  "createAPI": "/api/adm/feedback",
+  "getAPI": "/api/adm/feedback/[id]",
+  "updateAPI": "/api/adm/feedback/[id]",
+  "deleteAPI": "/api/adm/feedback/(id)",
+  "columns": 1,
+  "createFields": [
+    {
+      "label": "申述类型",
+      "rules": [
+        {
           "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入申述类型"
-        },
-        "type": "input",
-        "field": "representationType"
-      }
-    ],
-    "updateFields": [{
-        "label": "卖方账号",
-        "field": "sellerAccount",
-        "type": "plain",
-        "span": 24
+        }
+      ],
+      "props": {
+        "placeholder": "请输入申述类型"
       },
-      {
-        "label": "买方账号",
-        "field": "buyerAccount",
-        "type": "plain",
-        "span": 24
-      },
-      {
-        "label": "申述类型",
-        "field": "representationType",
-        "type": "plain",
-        "span": 24
-      },
-      {
-        "label": "申述内容",
-        "field": "representationInfo",
-        "type": "plain",
-        "span": 24
-      },
-      {
-        "label": "处理",
-        "field": "handleResult",
-        "type": "text-area",
-        "props":{
-          "placeholder":"请输入处理内容"
-        },
-        "span": 24
-      }
-    ],
-    "map": {},
-    "layout": {
-      "table": "Content",
-      "form": "TitleContent"
+      "type": "input",
+      "field": "representationType"
+    }
+  ],
+  "updateFields": [
+    {
+      "label": "卖方账号",
+      "field": "sellerAccount",
+      "type": "plain",
+      "span": 24
     },
-    "tableActions": [{
+    {
+      "label": "买方账号",
+      "field": "buyerAccount",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "申述类型",
+      "field": "representationType",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "申述内容",
+      "field": "representationInfo",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "处理",
+      "field": "handleResult",
+      "type": "text-area",
+      "props": {
+        "placeholder": "请输入处理内容"
+      },
+      "span": 24
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [
+    {
       "title": "添加类型",
       "type": "path",
       "options": {
         "style": "primary",
         "path": "/toushumanage/toushumanage-add"
       }
-    }],
-    "tableOperation": [{
-        "title": "查看详情",
-        "type": "path",
-        "options": {
-          "outside": true,
-          "style": "path",
-          "path": "representation/representation-view"
-        },
-        "expect": {
-          "permission": ""
-        }
+    }
+  ],
+  "tableOperation": [
+    {
+      "title": "查看详情",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "representation/representation-view"
       },
-      {
-        "title": "处理",
-        "type": "path",
-        "options": {
-          "outside": true,
-          "style": "path",
-          "path": "representation/representation-edit"
-        },
-        "expect": {
-          "permission": ""
-        }
-      },
-      {
-        "title": "删除",
-        "type": "delete",
-        "options": {
-          "outside": false,
-          "API": "/api/crud/oms/wisp/wisps/(id)",
-          "method": "delete"
-        },
-        "expect": {
-          "permission": ""
-        }
+      "expect": {
+        "permission": ""
       }
-    ],
-    "searchFields": [{
-        "label": "账号",
-        "field": "name",
-        "type": "search",
-        "props": {
-          "placeholder": "请输入账号"
+    },
+    {
+      "title": "处理",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "representation/representation-edit"
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "删除",
+      "type": "delete",
+      "options": {
+        "outside": false,
+        "API": "/api/crud/oms/wisp/wisps/(id)",
+        "method": "delete"
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
+  "searchFields": [
+    {
+      "label": "账号",
+      "field": "name",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入账号"
+      }
+    },
+    {
+      "label": "投诉状态",
+      "field": "description",
+      "type": "select",
+      "options": [
+        {
+          "label": "已处理"
+        },
+        {
+          "label": "未处理"
+        },
+        {
+          "label": "处理中"
+        }
+      ],
+      "props": {
+        "placeholder": "请选择"
+      }
+    }
+  ],
+  "tableFields": [
+    {
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType": "index"
+    },
+    {
+      "label": "投诉方",
+      "field": "complainantRole",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "SELLER": "卖方",
+          "BUYER": "买方"
+        },
+        "chy": {
+          "SELLER": "red",
+          "BUYER": "blue"
         }
       },
-      {
-        "label": "投诉状态",
-        "field": "description",
-        "type": "select",
-        "options": [{
-            "label": "已处理"
-          },
-          {
-            "label": "未处理"
-          },
-          {
-            "label": "处理中"
-          }
-        ],
-        "props": {
-          "placeholder": "请选择"
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "投诉标题",
+      "field": "title",
+      "align": "center"
+    },
+    {
+      "label": "投诉内容",
+      "field": "content",
+      "align": "center"
+    },
+    {
+      "label": "投诉状态",
+      "field": "status",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "PENDING_REPLY": "等待回复",
+          "REPLIED": "已回复",
+          "COMPLETED": "已完成"
+        },
+        "chy": {
+          "PENDING_REPLY": "red",
+          "REPLIED": "blue"
         }
+      },
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "投诉时间",
+      "field": "createTime",
+      "align": "center",
+      "valueType": "valueinputthree",
+      "options": {
+        "value": "createTime"
       }
-    ],
-    "tableFields": [
-      {
-        "label": "序号",
-        "field": "Code",
-         "align": "center",
-        "valueType":"index"
-       },
-      {
-        "label": "投诉方",
-        "field": "complainantRole",
-        "align": "center",
-        "valueType": "tag",
-        "options": {
-          "map": {
-            "SELLER": "卖方",
-            "BUYER":"买方"
-          },
-          "chy": {
-            "SELLER": "red",
-            "BUYER": "blue"
-          }
+    }
+  ],
+  "viewConfig": [
+    {
+      "label": "投诉方",
+      "field": "complainantRole",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "SELLER": "卖方",
+          "BUYER": "买方"
         },
-        "theme": "option",
-        "type": "default"
-      },
-      {
-        "label": "投诉标题",
-        "field": "title",
-        "align":"center"
-      },
-      {
-        "label": "投诉内容",
-        "field": "content",
-        "align":"center"
-      },
-      {
-        "label": "投诉状态",
-        "field": "status",
-        "align": "center",
-        "valueType": "tag",
-        "options": {
-          "map": {
-            "PENDING_REPLY": "待处理",
-            "REPLIED":"已处理"
-          },
-          "chy": {
-            "PENDING_REPLY": "red",
-            "REPLIED": "blue"
-          }
-        },
-        "theme": "option",
-        "type": "default"
-      },
-      {
-        "label": "投诉时间",
-        "field": "createTime",
-        "align":"center",
-        "valueType":"valueinputthree",
-        "options":{
-          "value":"createTime"
+        "chy": {
+          "PENDING_REPLY": "red",
+          "REPLIED": "blue"
         }
-      }
-    ],
-    "viewConfig": [
-      {
-        "label": "投诉方",
-        "field": "complainantRole",
-        "align": "center",
-        "valueType": "tag",
-        "options": {
-          "map": {
-            "SELLER": "卖方",
-            "BUYER":"买方"
-          },
-          "chy": {
-            "PENDING_REPLY": "red",
-            "REPLIED": "blue"
-          }
-        },
-        "theme": "option",
-        "type": "default"
       },
-      {
-        "label": "投诉标题",
-        "field": "title",
-        "type": "plain",
-        "span": 24
-      },
-      {
-        "label": "投诉内容",
-        "field": "content",
-        "type": "plain",
-        "span": 24
-      },
-      {
-        "label": "投诉状态",
-        "field": "status",
-        "type": "plain",
-        "span": 24
-      },
-      {
-        "label": "投诉时间",
-        "field": "createTime",
-        "type": "plain",
-        "span": 24
-      }
-    ]
-  }
-  
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "投诉标题",
+      "field": "title",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "投诉内容",
+      "field": "content",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "投诉状态",
+      "field": "status",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "投诉时间",
+      "field": "createTime",
+      "type": "plain",
+      "span": 24
+    }
+  ]
+}

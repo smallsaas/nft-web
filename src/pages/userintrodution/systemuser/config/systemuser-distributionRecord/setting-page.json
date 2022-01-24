@@ -1,0 +1,166 @@
+{
+  "pageName": "",
+  "columns": 2,
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "map": {
+    "status": {
+      "map": {
+        "PASS": "使用中",
+        "PENDING_APPROVAL": "待审核",
+        "REFUSE": "已拒绝"
+      }
+    },
+    "comeFrom": {
+      "map": {
+        "0": "系统创建",
+        "1": "用户注册"
+      }
+    }
+  },
+  "tableActions": [
+  ],
+  "tableOperation": [
+  ],
+  "createFields": [
+    {}
+  ],
+  "updateFields": [
+    {}
+  ],
+  "viewFields": [
+    {}
+  ],
+  "listAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "createAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "getAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "updateAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "deleteAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "searchFields": [
+    {
+      "field": "search",
+      "label": "搜索",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入..."
+      }
+    }
+  ],
+  "tableFields": [
+    {
+      "label": "发放人/账号",
+      "options":{
+        "direction":"left",
+        "size":0,
+        "fields":[
+          {
+            "field":"sender.name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":"bolder",
+                "color":"blue",
+                "margin-right":10
+              }
+            }
+          },
+          {
+            "field": "sender.mobilePhone",
+            "type":"plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType":"complex"
+    },
+    {
+      "label": "接收人/账号",
+      "options":{
+        "direction":"left",
+        "size":0,
+        "fields":[
+          {
+            "field":"recipient.name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":"bolder",
+                "color":"blue",
+                "margin-right":10
+              }
+            }
+          },
+          {
+            "field": "recipient.mobilePhone",
+            "type":"plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType":"complex"
+    },
+    {
+      "field": "coin",
+      "label": "发送数量"
+    },
+    {
+      "field": "surplusCoin",
+      "label": "剩余数量"
+    },
+    {
+      "label": "类别",
+      "field": "orderType",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "MANAGER_GIVEN": "管理员给予",
+          "2": "v2",
+          "3": "v3",
+          "4": "v4",
+          "5": "v5",
+          "6": "v6",
+          "7": "v7",
+          "8": "v8"
+        },
+        "chy": {
+          "MANAGER_GIVEN": "lv1",
+          "2": "lv2",
+          "3": "lv3",
+          "4": "lv4",
+          "5": "lv5",
+          "6": "lv6",
+          "7": "lv7",
+          "8": "lv8"
+        },
+        "colorMap":{
+          "1":"#D5D8E0",
+          "2":"#26A1FF",
+          "3":"#31E4B9",
+          "4":"#A64CFF",
+          "5":"#FF4CA6",
+          "6":"#FFAD33",
+          "7":"#FF3344",
+          "8":"linear-gradient(to left,#E7B7FF,#81C2FE)"
+        },
+        "weight":"bolder",
+        "fontColor":"#fff"
+      },
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "操作时间",
+      "field": "createTime",
+      "align":"center",
+      "valueType":"valueinput",
+      "options":{
+        "value":"createTime"
+      }
+    }
+  ]
+}

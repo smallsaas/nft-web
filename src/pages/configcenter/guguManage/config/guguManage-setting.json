@@ -1,121 +1,138 @@
 {
-    "pageName": {
-      "table": "GuGu令管理",
-      "new": "添加GuGu令",
-      "edit": "编辑GuGu令",
-      "view": "查看详情"
-    },
-    "listAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
-    "createAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
-    "getAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/[id]",
-    "updateAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/[id]",
-    "deleteAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/(id)",
-    "columns": 1,
-    "createFields": [
-      {
+  "pageName": {
+    "table": "GuGu令管理",
+    "new": "添加GuGu令",
+    "edit": "编辑GuGu令",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "createAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+  "getAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/[id]",
+  "updateAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/[id]",
+  "deleteAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/(id)",
+  "columns": 1,
+  "createFields": [
+    {
       "label": "场次号",
-      "props":{
-        "placeholder":"请输入场次号"
+      "props": {
+        "placeholder": "请输入场次号"
       },
-      "rules": [{
-        "type": "required"
-      }],
-      "type":"input",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "type": "input",
       "field": "number",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "场次名称",
-      "props":{
-        "placeholder":"请输入场次名称"
+      "props": {
+        "placeholder": "请输入场次名称"
       },
-      "type":"input",
+      "type": "input",
       "field": "title",
-      "align":"center",
-      "rules": [{
-        "type": "required"
-      }]
+      "align": "center",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ]
     },
     {
       "label": "开始时间",
-      "type":"timeinput",
+      "type": "timeinput",
       "field": "startTime",
-      "align":"center",
-      "rules": [{
-        "type": "required"
-      }]
+      "align": "center",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ]
     },
     {
       "label": "结束时间",
       "field": "endTime",
-      "type":"timeinput",
-      "align":"center",
-      "rules": [{
-        "type": "required"
-      }]
+      "type": "timeinput",
+      "align": "center",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ]
     }
-    ],
-    "updateFields": [
-      {
-        "label": "场次号",
-        "props":{
-          "placeholder":"请输入场次号"
-        },
-        "rules": [{
-          "type": "required"
-        }],
-        "type":"input",
-        "field": "number",
-        "align":"center"
+  ],
+  "updateFields": [
+    {
+      "label": "场次号",
+      "props": {
+        "placeholder": "请输入场次号"
       },
-      {
-        "label": "场次名称",
-        "type":"input",
-        "field": "title",
-        "align":"center",
-        "rules": [{
+      "rules": [
+        {
           "type": "required"
-        }],
-        "props":{
-          "placeholder":"请输入场次号"
         }
-      },
-      {
-        "label": "开始时间",
-        "type":"timeinput",
-        "field": "startTime",
-        "align":"center",
-        "rules": [{
-          "type": "required"
-        }],
-        "options":{
-          "placeholder":"请输入场次号"
-        }
-      },
-      {
-        "label": "结束时间",
-        "field": "endTime",
-        "type":"timeinput",
-        "align":"center",
-        "rules": [{
-          "type": "required"
-        }]
-      }
-    ],
-    "map": {},
-    "layout": {
-      "table": "Content",
-      "form": "TitleContent"
+      ],
+      "type": "input",
+      "field": "number",
+      "align": "center"
     },
-    "tableActions": [
-      {
-        "title": "发放GuGu令",
-        "type": "modal",
-        "options": {
-          "style": "primary",
-          "modalTitle": "发放GuGu令",
-          "modalWidth": 600,
-          "items": [{
+    {
+      "label": "场次名称",
+      "type": "input",
+      "field": "title",
+      "align": "center",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入场次号"
+      }
+    },
+    {
+      "label": "开始时间",
+      "type": "timeinput",
+      "field": "startTime",
+      "align": "center",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "options": {
+        "placeholder": "请输入场次号"
+      }
+    },
+    {
+      "label": "结束时间",
+      "field": "endTime",
+      "type": "timeinput",
+      "align": "center",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ]
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [
+    {
+      "title": "发放GuGu令",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "发放GuGu令",
+        "modalWidth": 600,
+        "items": [
+          {
             "component": "Form",
             "config": {
               "layout": "Grid",
@@ -125,10 +142,11 @@
                 ]
               },
               "API": {
-                "getAPI":"/api/crud/oms/playerWallet/playerWallets/self",
+                "getAPI": "/api/crud/oms/playerWallet/playerWallets/self",
                 "createAPI": "/api/crud/oms/manager/managers/sendCoins"
               },
-              "fields": [{
+              "fields": [
+                {
                   "label": "当前GuGu令:",
                   "props": {
                     "placeholder": "请输入"
@@ -138,9 +156,11 @@
                 },
                 {
                   "label": "发放到账号：",
-                  "rules": [{
-                    "type": "required"
-                  }],
+                  "rules": [
+                    {
+                      "type": "required"
+                    }
+                  ],
                   "props": {
                     "placeholder": "玩家手机号"
                   },
@@ -149,13 +169,15 @@
                 },
                 {
                   "label": "发放数量:",
-                  "rules": [{
-                    "type": "required"
-                  }],
+                  "rules": [
+                    {
+                      "type": "required"
+                    }
+                  ],
                   "props": {
                     "placeholder": "请输入数量",
-                    "style":{
-                      "width":240
+                    "style": {
+                      "width": 240
                     }
                   },
                   "type": "number",
@@ -163,13 +185,15 @@
                 },
                 {
                   "label": "支付密码:",
-                  "rules": [{
-                    "type": "required"
-                  }],
+                  "rules": [
+                    {
+                      "type": "required"
+                    }
+                  ],
                   "props": {
                     "placeholder": "请输入支付密码",
-                    "style":{
-                      "width":240
+                    "style": {
+                      "width": 240
                     }
                   },
                   "type": "password",
@@ -177,16 +201,19 @@
                 }
               ]
             }
-          }]
-        }
-      },
-      {
-        "title":"增配GUGU令","type": "modal",
-        "options": {
-          "style": "",
-          "modalTitle": "增配管理员GUGU令",
-          "modalWidth": 600,
-          "items": [{
+          }
+        ]
+      }
+    },
+    {
+      "title": "增配GUGU令",
+      "type": "modal",
+      "options": {
+        "style": "",
+        "modalTitle": "增配管理员GUGU令",
+        "modalWidth": 600,
+        "items": [
+          {
             "component": "Form",
             "config": {
               "layout": "Grid",
@@ -196,19 +223,21 @@
                 ]
               },
               "API": {
-                "loadAPI":"",
+                "loadAPI": "",
                 "createAPI": "/api/crud/oms/manager/managers/addCoinForSelf"
               },
               "fields": [
                 {
                   "label": "发放数量:",
-                  "rules": [{
-                    "type": "required"
-                  }],
+                  "rules": [
+                    {
+                      "type": "required"
+                    }
+                  ],
                   "props": {
                     "placeholder": "请输入数量",
-                    "style":{
-                      "width":240
+                    "style": {
+                      "width": 240
                     }
                   },
                   "type": "number",
@@ -216,13 +245,15 @@
                 },
                 {
                   "label": "支付密码:",
-                  "rules": [{
-                    "type": "required"
-                  }],
+                  "rules": [
+                    {
+                      "type": "required"
+                    }
+                  ],
                   "props": {
                     "placeholder": "请输入支付密码",
-                    "style":{
-                      "width":240
+                    "style": {
+                      "width": 240
                     }
                   },
                   "type": "password",
@@ -230,59 +261,62 @@
                 }
               ]
             }
-          }]
-        }
-     }
-    ],
-    "tableOperation": [
-      {
-        "title": "删除",
-        "type": "delete",
-        "options": {
-          "outside": false,
-          "API": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/(id)",
-          "method": "delete"
-        },
-        "expect": {
-          "permission": ""
-        }
+          }
+        ]
       }
-    ],
-    "searchFields": [
-      {
-        "label": "管理员",
-        "type": "select-fetch",
-        "props": {
-          "placeholder": "请选择",
-          "style": {
-            "width": 240
-          }
-        },
-        "rules": [],
-        "options": {
-          "API": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
-          "dataChildField":"sender",
-          "label": "mobilePhone",
-          "value": "id"
-        },
-        "field": "adminPlayerId"
-      }, {
-        "label": "系统号",
-        "type": "select-fetch",
-        "props": {
-          "placeholder": "请选择",
-          "style": {
-            "width": 240
-          }
-        },
-        "rules": [],
-        "options": {
-          "API": "/api/crud/oms/player/players?isManager=1",
-          "label": "mobilePhone",
-          "value": "id"
-        },
-        "field": "sysPlayerId"
-      },{
+    }
+  ],
+  "tableOperation": [
+    {
+      "title": "删除",
+      "type": "delete",
+      "options": {
+        "outside": false,
+        "API": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins/(id)",
+        "method": "delete"
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
+  "searchFields": [
+    {
+      "label": "管理员",
+      "type": "select-fetch",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
+        "dataChildField": "sender",
+        "label": "mobilePhone",
+        "value": "id"
+      },
+      "field": "adminPlayerId"
+    },
+    {
+      "label": "系统号",
+      "type": "select-fetch",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/crud/oms/player/players?isManager=1",
+        "label": "mobilePhone",
+        "value": "id"
+      },
+      "field": "sysPlayerId"
+    },
+    {
       "label": "账号",
       "field": "recipientHint",
       "type": "search",
@@ -311,133 +345,132 @@
       "field": "endDate"
     }
   ],
-    "tableFields": [
-      {
-        "label": "序号",
-        "field": "Code",
-        "align": "center",
-        "valueType":"index"
-      },
-      {
-        "label": "发放人/账号",
-        "options":{
-          "direction":"vertical",
-          "size":0,
-          "fields":[
-            {
-              "field":"sender.name",
-              "type":"plain",
-              "options":{
-                "style":{
-                  "font-weight":"bolder",
-                  "color":"blue",
-                  "margin-right":10
-                }
+  "tableFields": [
+    {
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType": "index"
+    },
+    {
+      "label": "发放人/账号",
+      "options": {
+        "direction": "vertical",
+        "size": 0,
+        "fields": [
+          {
+            "field": "sender.name",
+            "type": "plain",
+            "options": {
+              "style": {
+                "font-weight": "bolder",
+                "color": "blue",
+                "margin-right": 10
               }
-            },
-            {
-              "field": "sender.mobilePhone",
-              "type":"plain"
             }
-          ]
-        },
-        "field": "names",
-        "align": "left",
-        "valueType":"complex"
-      },
-      {
-        "label": "接收人/账号",
-        "options":{
-          "direction":"vertical",
-          "size":0,
-          "fields":[
-            {
-              "field":"recipient.name",
-              "type":"plain",
-              "options":{
-                "style":{
-                  "font-weight":"bolder",
-                  "color":"blue",
-                  "margin-right":10
-                }
-              }
-            },
-            {
-              "field": "recipient.mobilePhone",
-              "type":"plain"
-            }
-          ]
-        },
-        "field": "names",
-        "align": "left",
-        "valueType":"complex"
-      },
-      {
-        "label": "发送数量",
-        "field": "coin",
-        "align":"center"
-      },
-      {
-        "label": "类型",
-        "valueType":"tag",
-        "options": {
-          "map": {
-            "SYSTEM_GIVEN": "系统给予",
-            "COMPANION_WISP": "能量晶石",
-            "MANAGER_GIVEN": "店小二给予",
-            "BUY_COMPANION_WISP": "购买能量晶石",
-            "WAITING_PAYMENT": "等待付款",
-            "5": "v5"
           },
-          "chy": {
-            "SYSTEM_GIVEN": "blue",
-            "COMPANION_WISP": "cyan",
-            "MANAGER_GIVEN": "purple",
-            "BUY_COMPANION_WISP": "purple-dark",
-            "WAITING_PAYMENT": "red",
-            "5": "gray"
+          {
+            "field": "sender.mobilePhone",
+            "type": "plain"
           }
-        },
-        "field": "orderType",
-        "align":"center",
-        "theme": "option",
-        "type": "default"
+        ]
       },
-      {
-        "label": "操作时间",
-        "field": "createTime",
-        "valueType":"valueinputthree",
-        "options":{
-          "value":"createTime"
+      "field": "names",
+      "align": "left",
+      "valueType": "complex"
+    },
+    {
+      "label": "接收人/账号",
+      "options": {
+        "direction": "vertical",
+        "size": 0,
+        "fields": [
+          {
+            "field": "recipient.name",
+            "type": "plain",
+            "options": {
+              "style": {
+                "font-weight": "bolder",
+                "color": "blue",
+                "margin-right": 10
+              }
+            }
+          },
+          {
+            "field": "recipient.mobilePhone",
+            "type": "plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "left",
+      "valueType": "complex"
+    },
+    {
+      "label": "发送数量",
+      "field": "coin",
+      "align": "center"
+    },
+    {
+      "label": "类型",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "SYSTEM_GIVEN": "系统给予",
+          "COMPANION_WISP": "能量晶石",
+          "MANAGER_GIVEN": "店小二给予",
+          "BUY_COMPANION_WISP": "购买能量晶石",
+          "WAITING_PAYMENT": "等待付款",
+          "5": "v5"
         },
-        "align":"center"
-      }
-    ],
-    "viewConfig": [
-      {
+        "chy": {
+          "SYSTEM_GIVEN": "blue",
+          "COMPANION_WISP": "cyan",
+          "MANAGER_GIVEN": "purple",
+          "BUY_COMPANION_WISP": "purple-dark",
+          "WAITING_PAYMENT": "red",
+          "5": "gray"
+        }
+      },
+      "field": "orderType",
+      "align": "center",
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "操作时间",
+      "field": "createTime",
+      "valueType": "valueinputthree",
+      "options": {
+        "value": "createTime"
+      },
+      "align": "center"
+    }
+  ],
+  "viewConfig": [
+    {
       "label": "接收人",
       "field": "number",
-      "type":"plain",
-      "span":24
+      "type": "plain",
+      "span": 24
     },
     {
       "label": "发放人手机号",
       "field": "targetPlayerPhone",
-      "type":"plain",
-      "span":24
+      "type": "plain",
+      "span": 24
     },
     {
       "label": "发送数量",
       "field": "number",
-      "type":"plain",
-      "span":24
+      "type": "plain",
+      "span": 24
     },
     {
       "label": "操作时间",
       "field": "startTime",
-      "type":"plain",
-      "span":24
+      "type": "plain",
+      "span": 24
     }
-    ]
-  }
-  
+  ]
+}

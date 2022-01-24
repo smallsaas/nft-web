@@ -5,7 +5,7 @@
     "edit": "处理申述",
     "view": "查看详情"
   },
-  "listAPI": " /api/crud/oms/wispOrder/wispOrders/wisp/complains?requestType=FEEDBACK",
+  "listAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains?requestType=ORDER_DISPUTES",
   "createAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains",
   "getAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/[id]",
   "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
@@ -31,8 +31,9 @@
       "span": 24,
       "options":{
         "map":{
-          "REPLIED":"已处理",
-          "PENDING_REPLY":"未处理"
+          "REPLIED":"已回复",
+          "PENDING_REPLY":"等待回复",
+          "COMPLETED": "已完成"
         }
       }
     },
@@ -233,8 +234,9 @@
       "valueType": "tag",
       "options": {
         "map": {
-          "PENDING_REPLY": "待处理",
-          "REPLIED":"已处理"
+          "PENDING_REPLY": "等待回复",
+          "REPLIED":"已回复",
+          "COMPLETED": "已完成"
         },
         "chy": {
           "PENDING_REPLY": "red",

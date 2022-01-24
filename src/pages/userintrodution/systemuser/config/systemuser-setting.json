@@ -545,100 +545,6 @@
     "form": "TitleContent"
   },
   "tableActions": [
-    {
-      "title": "发放GuGu令",
-      "type": "modal",
-      "options": {
-        "style": "primary",
-        "modalTitle": "发放GuGu令",
-        "modalWidth": 600,
-        "items": [
-          {
-            "component": "Form",
-            "config": {
-              "layout": "Grid",
-              "layoutConfig": {
-                "value": [
-                  24
-                ]
-              },
-              "API": {
-                "getAPI": "/api/crud/oms/playerWallet/playerWallets/self",
-                "createAPI": "/api/crud/oms/manager/managers/sendCoins"
-              },
-              "fields": [
-                {
-                  "label": "当前GuGu令:",
-                  "props": {
-                    "placeholder": "请输入"
-                  },
-                  "type": "plain",
-                  "field": "coinsAmount"
-                },
-                {
-                  "label": "玩家账号",
-                  "rules": [
-                    {
-                      "type": "required",
-                      "message": "请设置发放数量"
-                    }
-                  ],
-                  "props": {
-                    "placeholder": "玩家账号",
-                    "style": {
-                      "width": 240
-                    }
-                  },
-                  "type": "number",
-                  "field": "targetPlayerMobilePhone"
-                },
-                {
-                  "label": "发放数量:",
-                  "rules": [
-                    {
-                      "type": "required",
-                      "message": "请设置发放数量"
-                    }
-                  ],
-                  "props": {
-                    "placeholder": "请输入数量",
-                    "style": {
-                      "width": 240
-                    }
-                  },
-                  "type": "number",
-                  "field": "number"
-                },
-                {
-                  "label": "支付密码:",
-                  "rules": [
-                    {
-                      "type": "required",
-                      "message": "支付密码不能为空"
-                    }
-                  ],
-                  "props": {
-                    "placeholder": "请输入支付密码",
-                    "style": {
-                      "width": 240
-                    }
-                  },
-                  "type": "password",
-                  "field": "paymentPassword"
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "title": "发放记录",
-      "type": "path",
-      "options": {
-        "path": "/usermanage/systemuser/systemuser-distributionRecord"
-      }
-    }
   ],
   "tableOperation": [],
   "searchFields": [
@@ -692,93 +598,113 @@
       "props": {
         "placeholder": "请选择"
       }
+    },
+    {
+      "label": "日期",
+      "options": {
+        "format": "YYYY-MM-DD",
+        "startDate": "startDate",
+        "endDate": "endDate"
+      },
+      "type": "range",
+      "field": "releaseTimes"
     }
   ],
   "tableFields": [
     {
-      "label": "序号",
-      "field": "Code",
-      "align": "center",
-      "valueType": "index"
-    },
-    {
-      "label": "店小二",
-      "options": {
-        "direction": "vertical",
-        "size": 0,
-        "fields": [
-          {
-            "field": "name",
-            "type": "plain",
-            "options": {
-              "style": {
-                "font-weight": "bolder",
-                "color": "blue",
-                "margin-right": 10
-              }
-            }
-          },
-          {
-            "field": "mobilePhone",
-            "type": "plain"
-          }
-        ]
-      },
-      "field": "names",
-      "align": "left",
-      "valueType": "complex"
-    },
-    {
-      "label": "直推人数",
-      "field": "recommendCount",
+      "label": "当前注册人数",
+      "field": "account",
       "align": "center"
     },
     {
-      "label": "当前领养",
-      "field": "currentAdoptWisp",
+      "label": "当前有效会员",
+      "field": "account",
       "align": "center"
     },
     {
-      "label": "总领养",
-      "field": "adoptWispCount",
+      "label": "会员总数",
+      "field": "account",
       "align": "center"
     },
     {
-      "label": "团队人数",
-      "field": "teamSize",
+      "label": "今天预约人数",
+      "field": "account",
       "align": "center"
     },
     {
-      "label": "当前预约",
-      "field": "appointmentNumber",
+      "label": "今天匹配人数",
+      "field": "",
       "align": "center"
     },
     {
-      "label": "总预约",
-      "field": "appointmentCount",
+      "label": "分配系统号精灵数",
+      "field": "",
       "align": "center"
     },
     {
-      "label": "状态",
-      "field": "status",
-      "align": "center",
-      "valueType": "tag",
-      "options": {
-        "map": {
-          "NORMAL": "正常",
-          "FROZEN": "冻结"
-        },
-        "chy": {
-          "NORMAL": "blue",
-          "FROZEN": "gray",
-          "MANAGER_GIVEN": "purple",
-          "3": "purple-dark",
-          "4": "orange",
-          "5": "gray"
-        }
-      },
-      "theme": "option",
-      "type": "default"
+      "label": "分配系统号精灵总金额",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "系统号发放精灵数",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "系统号发放精灵总金额",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "未付款人数",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "已付款总金额",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "今日能力总值",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "累计市场收益",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "推广收益",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "团队收益",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "推广收益转化精灵个数",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "推广收益转化精灵金额",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "帮会收益转化精灵个数",
+      "field": "",
+      "align": "center"
+    },
+    {
+      "label": "帮会收益转化精灵金额",
+      "field": "",
+      "align": "center"
     }
   ],
   "viewConfig": [
