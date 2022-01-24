@@ -563,7 +563,7 @@
         "label": "name",
         "value": "id"
       },
-      "field": "metaId"
+      "field": "sysUserId"
     },
     {
       "label": "名称",
