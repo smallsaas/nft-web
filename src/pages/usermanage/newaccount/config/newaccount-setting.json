@@ -828,12 +828,12 @@
     },
     {
       "label": "系统号",
-      "field": "adoptCount",
+      "field": "managerName",
       "align": "center"
     },
     {
       "label": "店小二",
-      "field": "adoptCount",
+      "field": "sysName",
       "align": "center"
     },
     {
@@ -843,7 +843,7 @@
     },
     {
       "label": "总预约",
-      "field": "adoptCount",
+      "field": "appointmentCount",
       "align": "center"
     }
   ],
@@ -888,8 +888,26 @@
       "span": 8
     },
     {
+      "label": "系统号",
+      "field": "managerName",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "店小二",
+      "field": "sysName",
+      "type": "plain",
+      "span": 8
+    },
+    {
       "label": "总领养",
       "field": "adoptCount",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "总预约",
+      "field": "appointmentCount",
       "type": "plain",
       "span": 8
     },
