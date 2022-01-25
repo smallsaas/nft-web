@@ -570,7 +570,10 @@
                 {
                   "label": "当前GuGu令:",
                   "props": {
-                    "placeholder": "请输入"
+                    "placeholder": "请输入",
+                    "style":{
+                      "font-size": "24px"
+                    }
                   },
                   "type": "plain",
                   "field": "coinsAmount"

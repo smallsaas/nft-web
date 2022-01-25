@@ -5,6 +5,12 @@ module.exports = {
   title: setting.pageName.table,
   items: [
     {
+      component: 'Search',
+      config: {
+        fields: setting.searchFields,
+      },
+    },
+    {
       component: 'Table',
       config: {
         API: {

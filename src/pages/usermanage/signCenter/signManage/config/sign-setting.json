@@ -43,12 +43,6 @@
         "align": "center"
       },
       {
-        "label": "补签时间",
-        "field": "signTime",
-        "valueType":"valueinput",
-        "align": "center"
-      },
-      {
         "label": "状态",
         "field": "status",
         "align": "center",

@@ -88,10 +88,8 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [
-  ],
-  "tableOperation": [
-  ],
+  "tableActions": [],
+  "tableOperation": [],
   "searchFields": [
     {
       "label": "精灵级别",
@@ -230,6 +228,16 @@
     {
       "label": "精灵编号",
       "field": "number",
+      "align": "center"
+    },
+    {
+      "label": "购买时间",
+      "field": "createTime",
+      "align": "center"
+    },
+    {
+      "label": "状态更新时间",
+      "field": "stageChangeTime",
       "align": "center"
     },
     {

@@ -19,9 +19,11 @@
     },
     {
       "label": "昵称",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入"
       },
@@ -31,9 +33,11 @@
     },
     {
       "label": "手机号码",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -43,7 +47,6 @@
       "type": "number",
       "field": "mobilePhone",
       "span": 8
-
     },
     {
       "label": "验证码",
@@ -59,9 +62,11 @@
     },
     {
       "label": "备用手机号码",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -134,9 +139,11 @@
     },
     {
       "label": "所属角色",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请选择用户角色",
         "style": {
@@ -144,7 +151,8 @@
         }
       },
       "type": "select",
-      "options": [{
+      "options": [
+        {
           "label": "系统号",
           "value": 1
         },
@@ -158,27 +166,31 @@
     },
     {
       "label": "邀请人(邀请码)",
-      "type":"input",
+      "type": "input",
       "props": {
         "placeholder": "请输入邀请人的邀请码"
       },
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "field": "invitationCode",
       "span": 16,
-      "expect":{
-        "field":"isManager",
-        "value":0
+      "expect": {
+        "field": "isManager",
+        "value": 0
       }
     },
     {
       "label": "绑定店小二",
       "type": "select-fetch",
-      "rules": [{
-        "type": "required",
-        "message": "请选择"
-      }],
+      "rules": [
+        {
+          "type": "required",
+          "message": "请选择"
+        }
+      ],
       "props": {
         "style": {
           "width": 240
@@ -191,7 +203,7 @@
         "value": "id"
       },
       "field": "sysUserId",
-      "span":16,
+      "span": 16,
       "expect": {
         "field": "isManager",
         "value": 1
@@ -297,10 +309,11 @@
       "label": "银行卡号",
       "props": {
         "placeholder": "请输入",
-        "style":{
-          "width":240
+        "style": {
+          "width": 240
         },
-        "min":0
+        "min": 0,
+        "max": 99999999999999999999
       },
       "type": "number",
       "field": "bankAccountNumber",
@@ -328,10 +341,10 @@
       "label": "银行卡号",
       "props": {
         "placeholder": "请输入",
-        "style":{
-          "width":240
+        "style": {
+          "width": 240
         },
-        "min":0
+        "min": 0
       },
       "type": "number",
       "field": "bankAccountNumber2",
@@ -343,11 +356,14 @@
       "defaultValue": "个人信息",
       "type": "group",
       "span": 24
-    },{
+    },
+    {
       "label": "昵称",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入"
       },
@@ -369,9 +385,11 @@
     },
     {
       "label": "手机号码",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -381,7 +399,6 @@
       "type": "number",
       "field": "mobilePhone",
       "span": 8
-
     },
     {
       "label": "备用手机号码",
@@ -391,17 +408,20 @@
           "width": 240
         }
       },
-      "rules":["required"],
+      "rules": [
+        "required"
+      ],
       "type": "number",
       "field": "backupMobilePhone",
       "span": 16
-
     },
     {
       "label": "所属角色",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请选择用户角色",
         "style": {
@@ -409,7 +429,8 @@
         }
       },
       "type": "select",
-      "options": [{
+      "options": [
+        {
           "label": "系统号",
           "value": 1
         },
@@ -521,10 +542,10 @@
       "label": "银行卡号",
       "props": {
         "placeholder": "请输入",
-        "style":{
-          "width":240
+        "style": {
+          "width": 240
         },
-        "min":0
+        "min": 0
       },
       "type": "number",
       "field": "bankAccountNumber",
@@ -552,10 +573,10 @@
       "label": "银行卡号",
       "props": {
         "placeholder": "请输入",
-        "style":{
-          "width":240
+        "style": {
+          "width": 240
         },
-        "min":0
+        "min": 0
       },
       "type": "number",
       "field": "bankAccountNumber2",
@@ -567,7 +588,8 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [{
+  "tableActions": [
+    {
       "title": "添加账号",
       "type": "path",
       "options": {
@@ -576,7 +598,7 @@
       }
     }
   ],
-  "tableOperation": [ 
+  "tableOperation": [
     {
       "title": "审核通过",
       "type": "request",
@@ -587,8 +609,8 @@
         "method": "post"
       },
       "expect": {
-       "field":"",
-       "value":""
+        "field": "status",
+        "value": "PENDING"
       }
     },
     {
@@ -601,10 +623,10 @@
         "method": "post"
       },
       "expect": {
-       "field":"",
-       "value":""
+        "field": "status",
+        "value": "PENDING"
       }
-    }, 
+    },
     {
       "title": "解封账号",
       "type": "request",
@@ -615,8 +637,8 @@
         "method": "post"
       },
       "expect": {
-       "field":"status",
-       "value":"FROZEN"
+        "field": "status",
+        "value": "FROZEN"
       }
     },
     {
@@ -629,8 +651,8 @@
         "method": "post"
       },
       "expect": {
-       "field":"status",
-       "value":"NORMAL"
+        "field": "status",
+        "value": "NORMAL"
       }
     },
     {
@@ -689,95 +711,95 @@
       "field": "playerId"
     },
     {
-    "label": "名称",
-    "field": "search",
-    "type": "search",
-    "props": {
-      "placeholder": "手机,邀请码,名称",
-      "style": {
-        "width": 240
+      "label": "名称",
+      "field": "search",
+      "type": "search",
+      "props": {
+        "placeholder": "手机,邀请码,名称",
+        "style": {
+          "width": 240
+        }
       }
-    }
-  },
-  {
-    "label": "状态",
-    "field": "playerStatus",
-    "type": "select",
-    "options": [{
-        "label": "正常",
-        "value": "NORMAL"
-      },
-      {
-        "label": "冻结",
-        "value": "FROZEN"
-      },
-      {
-        "label": "待审核",
-        "value": "UNINSPECTED"
-      }
-    ],
-    "props": {
-      "placeholder": "请选择",
-      "style": {
-        "width": 240
-      }
-    }
-  },
-  
-  {
-    "label": "日期",
-    "options": {
-      "format": "YYYY-MM-DD",
-      "startDate": "startDate",
-      "endDate": "endDate"
     },
-    "type": "range",
-    "field": "releaseTimes"
-  },
-  {
-    "label": "",
-    "type": "hidden",
-    "field": "startDate"
-  },
-  {
-    "label": "",
-    "type": "hidden",
-    "field": "endDate"
-  }
+    {
+      "label": "状态",
+      "field": "playerStatus",
+      "type": "select",
+      "options": [
+        {
+          "label": "正常",
+          "value": "NORMAL"
+        },
+        {
+          "label": "冻结",
+          "value": "FROZEN"
+        },
+        {
+          "label": "待审核",
+          "value": "UNINSPECTED"
+        }
+      ],
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      }
+    },
+    {
+      "label": "日期",
+      "options": {
+        "format": "YYYY-MM-DD",
+        "startDate": "startDate",
+        "endDate": "endDate"
+      },
+      "type": "range",
+      "field": "releaseTimes"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "startDate"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "endDate"
+    }
   ],
   "tableFields": [
     {
       "label": "序号",
       "field": "Code",
-       "align": "center",
-      "valueType":"index"
-     },
+      "align": "center",
+      "valueType": "index"
+    },
     {
       "label": "玩家",
-      "options":{
-        "direction":"vertical",
-        "size":0,
-        "fields":[
+      "options": {
+        "direction": "vertical",
+        "size": 0,
+        "fields": [
           {
-            "field":"name",
-            "type":"plain",
-            "options":{
-              "style":{
-                "font-weight":"bolder",
-                "color":"blue",
-                "margin-right":10
+            "field": "name",
+            "type": "plain",
+            "options": {
+              "style": {
+                "font-weight": "bolder",
+                "color": "blue",
+                "margin-right": 10
               }
             }
           },
           {
             "field": "mobilePhone",
-            "type":"plain"
+            "type": "plain"
           }
         ]
       },
       "field": "names",
       "align": "left",
-      "valueType":"complex"
+      "valueType": "complex"
     },
     {
       "label": "会员级别",
@@ -802,15 +824,15 @@
       "options": {
         "map": {
           "NORMAL": "正常",
-          "FROZEN":"冻结",
-          "UNREVIEWED":"审核不通过",
-          "PENDING":"待审核"
+          "FROZEN": "冻结",
+          "UNREVIEWED": "审核不通过",
+          "PENDING": "待审核"
         },
         "chy": {
           "NORMAL": "blue",
           "FROZEN": "gray",
-          "UNREVIEWED":"orange",
-          "PENDING":"pink"
+          "UNREVIEWED": "orange",
+          "PENDING": "pink"
         }
       },
       "theme": "option",
@@ -847,41 +869,58 @@
       "align": "center"
     }
   ],
-  "viewConfig": [{
+  "viewConfig": [
+    {
       "label": "昵称",
       "field": "name",
       "type": "plain",
       "span": 8
-    }, {
+    },
+    {
       "label": "状态",
       "field": "status",
       "type": "plain",
-      "options":{
-        "map":{
-          "NORMAL":"正常",
-          "FROZEN":"冻结"
+      "options": {
+        "map": {
+          "NORMAL": "正常",
+          "FROZEN": "冻结",
+          "UNREVIEWED": "审核不通过",
+          "PENDING": "待审核"
         }
       },
       "span": 8
     },
     {
       "label": "会员等级",
-      "field": "grade",
+      "field": "level",
       "type": "plain",
       "span": 8,
-      "options":{
-        "map":{
-          "0":"Lv0",
-          "1":"Lv1"
+      "options": {
+        "map": {
+          "-1": "注册新会员",
+          "0": "激活",
+          "10": "有效会员",
+          "20": "普通会员",
+          "1": "V1",
+          "2": "V2",
+          "3": "V3",
+          "4": "V4"
         }
       }
+    },
+    {
+      "label": "持有GuGu令",
+      "field": "coinsAmount",
+      "type": "plain",
+      "span": 8
     },
     {
       "label": "直推人数",
       "field": "recommendCount",
       "type": "plain",
       "span": 8
-    }, {
+    },
+    {
       "label": "当前领养",
       "field": "currentAdoptWisp",
       "type": "plain",
@@ -916,7 +955,8 @@
       "field": "teamSize",
       "type": "plain",
       "span": 8
-    }, {
+    },
+    {
       "label": "团队当前领养",
       "field": "teamCurrentAdoptWisp",
       "type": "plain",
@@ -933,10 +973,10 @@
       "field": "isManager",
       "type": "plain",
       "span": 8,
-      "options":{
-        "map":{
-          "0":"玩家",
-          "1":"系统号"
+      "options": {
+        "map": {
+          "0": "玩家",
+          "1": "系统号"
         }
       }
     },
