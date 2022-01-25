@@ -312,8 +312,7 @@
         "style": {
           "width": 240
         },
-        "min": 0,
-        "max": 99999999999999999999
+        "min": 0
       },
       "type": "number",
       "field": "bankAccountNumber",
@@ -344,9 +343,11 @@
         "style": {
           "width": 240
         },
-        "min": 0
+        "min": 0,
+        "main": 10,
+        "type": "number"
       },
-      "type": "number",
+      "type": "input",
       "field": "bankAccountNumber2",
       "span": 8
     }

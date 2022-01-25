@@ -3,7 +3,7 @@ const editFormFields = require('./edit.form.config');
 
 module.exports = {
   layout: 'Content',
-  title: '开发人员管理',
+  title: '开发用户',
   items: [
     {
       component: 'Search',
@@ -55,6 +55,24 @@ module.exports = {
         fields: [
           { field: 'name', label: '用户名' },
           { field: 'account', label: '登录账号' },
+          {
+            label: '状态',
+            field: 'devUserType',
+            align: 'center',
+            valueType: 'tag',
+            options: {
+              map: {
+                1: '测试',
+                2: '开发',
+                3: '运维'
+              },
+              colorMap: {
+                1: '#486D9F',
+                2: '#1E8DD0',
+                // 3: 'blue'
+              }
+            }
+          },
           { field: 'phone', label: '电话' },
           { field: 'orgName', label: '部门' },
           // { field: 'f2', label: '附属部门' },

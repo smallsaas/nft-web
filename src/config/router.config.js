@@ -284,7 +284,7 @@ module.exports = [
       },
       {
         path: '/devops/developerManege',
-        name: '开发人员管理'
+        name: '开发用户'
       }
     ]
   },
