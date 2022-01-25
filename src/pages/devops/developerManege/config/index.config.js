@@ -56,7 +56,7 @@ module.exports = {
           { field: 'name', label: '用户名' },
           { field: 'account', label: '登录账号' },
           {
-            label: '状态',
+            label: '类型',
             field: 'devUserType',
             align: 'center',
             valueType: 'tag',

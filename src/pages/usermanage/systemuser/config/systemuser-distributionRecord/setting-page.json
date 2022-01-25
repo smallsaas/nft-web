@@ -40,20 +40,30 @@
   "deleteAPI": "/api/crud/oms/manager/managers/queryManagerGivenPlayerCoins",
   "searchFields": [
     {
-      "field": "sphone",
-      "label": "发放人/账号",
+      "field": "senderHint",
+      "label": "发放人",
       "type": "input",
       "props": {
         "placeholder": "请输入..."
       }
     },
     {
-      "field": "jphone",
-      "label": "接收人/账号",
+      "field": "recipientHint",
+      "label": "接收人",
       "type": "input",
       "props": {
         "placeholder": "请输入..."
       }
+    },
+    {
+      "label": "日期",
+      "options": {
+        "format": "YYYY-MM-DD",
+        "startDate": "startDate",
+        "endDate": "endDate"
+      },
+      "type": "range",
+      "field": "releaseTimes"
     }
   ],
   "tableFields": [
