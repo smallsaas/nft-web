@@ -1,12 +1,12 @@
 import useBreadcrumb from '@/framework/useBreadcrumb';
 import React from 'react';
 import ZEle from 'zero-element';
-import config from './config/index';
+import config from './config/systemuserReport';
 
 export default function () {
 
   useBreadcrumb([
-    { title: '首页', path: '' },
+    { title: '玩家攻略', path: '/userintrodution' },
     { title: '系统号' },
   ]);
 
