@@ -288,7 +288,8 @@
       "options":{
         "map":{
           "PENDING_REPLY":"待处理",
-          "REPLIED":"已处理"
+          "REPLIED":"已处理",
+          "COMPLETED": "已完成"
         }
       },
       "span": 8

@@ -230,7 +230,7 @@
               },
               "fields": [
                 {
-                  "label": "发放数量:",
+                  "label": "增配数量:",
                   "rules": [
                     {
                       "type": "required"

@@ -314,7 +314,7 @@
         },
         "min": 0
       },
-      "type": "number",
+      "type": "input",
       "field": "bankAccountNumber",
       "span": 8
     },
@@ -343,9 +343,7 @@
         "style": {
           "width": 240
         },
-        "min": 0,
-        "main": 10,
-        "type": "number"
+        "min": 0
       },
       "type": "input",
       "field": "bankAccountNumber2",
@@ -548,7 +546,7 @@
         },
         "min": 0
       },
-      "type": "number",
+      "type": "input",
       "field": "bankAccountNumber",
       "span": 8
     },
@@ -579,7 +577,7 @@
         },
         "min": 0
       },
-      "type": "number",
+      "type": "input",
       "field": "bankAccountNumber2",
       "span": 8
     }
@@ -908,6 +906,18 @@
           "4": "V4"
         }
       }
+    },
+    {
+      "label": "手机号",
+      "field": "mobilePhone",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "备用手机号码",
+      "field": "backupMobilePhone",
+      "type": "plain",
+      "span": 8
     },
     {
       "label": "持有GuGu令",

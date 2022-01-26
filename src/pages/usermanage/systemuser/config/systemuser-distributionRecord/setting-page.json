@@ -54,81 +54,10 @@
       "props": {
         "placeholder": "请输入..."
       }
-    },
-    {
-      "label": "日期",
-      "options": {
-        "format": "YYYY-MM-DD",
-        "startDate": "startDate",
-        "endDate": "endDate"
-      },
-      "type": "range",
-      "field": "releaseTimes"
     }
   ],
   "tableFields": [
-    {
-      "label": "发放人/账号",
-      "options":{
-        "direction":"left",
-        "size":0,
-        "fields":[
-          {
-            "field":"sender.name",
-            "type":"plain",
-            "options":{
-              "style":{
-                "font-weight":"bolder",
-                "color":"blue",
-                "margin-right":10
-              }
-            }
-          },
-          {
-            "field": "sender.mobilePhone",
-            "type":"plain"
-          }
-        ]
-      },
-      "field": "names",
-      "align": "center",
-      "valueType":"complex"
-    },
-    {
-      "label": "接收人/账号",
-      "options":{
-        "direction":"left",
-        "size":0,
-        "fields":[
-          {
-            "field":"recipient.name",
-            "type":"plain",
-            "options":{
-              "style":{
-                "font-weight":"bolder",
-                "color":"blue",
-                "margin-right":10
-              }
-            }
-          },
-          {
-            "field": "recipient.mobilePhone",
-            "type":"plain"
-          }
-        ]
-      },
-      "field": "names",
-      "align": "center",
-      "valueType":"complex"
-    },
-    {
-      "field": "coin",
-      "label": "发送数量"
-    },
-    {
-      "field": "surplusCoin",
-      "label": "剩余数量"
-    },
+    
     {
       "label": "类别",
       "field": "orderType",
@@ -172,7 +101,93 @@
       "type": "default"
     },
     {
-      "label": "操作时间",
+      "label": "发放账号",
+      "options":{
+        "direction":"vertical",
+        "size":0,
+        "fields":[
+          {
+            "field":"sender.name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":"bolder",
+                "color":"blue"
+              }
+            }
+          },
+          {
+            "field": "sender.mobilePhone",
+            "type":"plain",
+            "options":{
+              "style":{
+                "text-algin": "left"
+              }
+            }
+          },
+          {
+            "field": "coinsAmount",
+            "type":"plain",
+            "options": {
+              "style":{
+                "text-algin": "left"
+              },
+              "format": [
+                "余额：<sender.coinsAmount>"
+              ]
+            }
+          }
+        ]
+      },
+      "field": "names",
+      "align": "left",
+      "valueType":"complex"
+    },
+    {
+      "label": "接收账号",
+      "options":{
+        "direction":"vertical",
+        "size":0,
+        "fields":[
+          {
+            "field":"recipient.name",
+            "type":"plain",
+            "options":{
+              "style":{
+                "font-weight":"bolder",
+                "color":"blue"
+              }
+            }
+          },
+          {
+            "field": "recipient.mobilePhone",
+            "type":"plain"
+          },
+          {
+            "field": "coinsAmount",
+            "type":"plain",
+            "options": {
+              "format": [
+                "余额：<recipient.coinsAmount>"
+              ]
+            }
+          }
+        ]
+      },
+      "field": "names",
+      "align": "left",
+      "valueType":"complex"
+    },
+    {
+      "field": "coin",
+      "label": "发送数量"
+    },
+    {
+      "field": "surplusCoin",
+      "label": "剩余数量"
+    },
+    {
+      "label": "发放时间",
       "field": "createTime",
       "align":"center",
       "valueType":"valueinput",

@@ -32,6 +32,10 @@ module.exports = [
 
   {
     field: 'roleIds', label: '角色', type: 'modal-checkbox', span: 12,
+    editLabel: "name",
+    saveData: {
+      masterRelations: "value"
+    },
     options: {
       API: '/api/adm/roles',
       title: '选择角色',
@@ -57,10 +61,10 @@ module.exports = [
     span: 12
   },
 
-/*  {
+  {
     field: 'phone', label: '电话', type: 'input',
     span: 12
-  },*/
+  },
   {
     field: 'sex', label: '性别', type: 'radio',
     options: [
