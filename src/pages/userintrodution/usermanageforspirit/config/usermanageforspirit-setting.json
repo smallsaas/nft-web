@@ -89,7 +89,167 @@
     "form": "TitleContent"
   },
   "tableActions": [],
-  "tableOperation": [],
+  "tableOperation": [
+    {
+      "title": "拆分",
+      "type": "modal",
+      "options": {
+        "outside": true,
+        "style": "primary",
+        "modalTitle": "拆分",
+        "modalWidth": 600,
+        "items": [
+          {
+            "component": "Form",
+            "config": {
+              "layout": "Grid",
+              "layoutConfig": {
+                "value": [
+                  24
+                ]
+              },
+              "API": {
+                "getAPI": "/api/crud/oms/wispInstance/wispInstances/(id)",
+                "createAPI": "/api/crud/oms/wispInstance/wispInstances/(id)/split"
+              },
+              "fields": [
+                {
+                  "label": "拆分等级",
+                  "rules": [
+                    {
+                      "type": "required"
+                    }
+                  ],
+                  "props": {
+                    "placeholder": "请选择",
+                    "style": {
+                      "width": 240
+                    }
+                  },
+                  "type": "select",
+                  "options": [
+                    {
+                      "label": "lv1",
+                      "value": 1
+                    },
+                    {
+                      "label": "lv2",
+                      "value": 2
+                    },
+                    {
+                      "label": "lv3",
+                      "value": 3
+                    },
+                    {
+                      "label": "lv4",
+                      "value": 4
+                    },
+                    {
+                      "label": "lv5",
+                      "value": 5
+                    },
+                    {
+                      "label": "lv6",
+                      "value": 6
+                    },
+                    {
+                      "label": "lv7",
+                      "value": 7
+                    },
+                    {
+                      "label": "lv8",
+                      "value": 8
+                    }
+                  ],
+                  "field": "level",
+                  "span": 24
+                },
+                {
+                  "label": "拆分个数",
+                  "rules": [
+                    {
+                      "type": "required"
+                    }
+                  ],
+                  "props": {
+                    "placeholder": "请选择",
+                    "style": {
+                      "width": 240
+                    }
+                  },
+                  "type": "select",
+                  "options": [
+                    {
+                      "label": "1",
+                      "value": 1
+                    },
+                    {
+                      "label": "2",
+                      "value": 2
+                    },
+                    {
+                      "label": "3",
+                      "value": 3
+                    },
+                    {
+                      "label": "4",
+                      "value": 4
+                    },
+                    {
+                      "label": "5",
+                      "value": 5
+                    },
+                    {
+                      "label": "6",
+                      "value": 6
+                    },
+                    {
+                      "label": "7",
+                      "value": 7
+                    },
+                    {
+                      "label": "8",
+                      "value": 8
+                    },
+                    {
+                      "label": "9",
+                      "value": 9
+                    },
+                    {
+                      "label": "10",
+                      "value": 10
+                    },
+                    {
+                      "label": "11",
+                      "value": 11
+                    },
+                    {
+                      "label": "12",
+                      "value": 12
+                    },
+                    {
+                      "label": "13",
+                      "value": 13
+                    },
+                    {
+                      "label": "14",
+                      "value": 14
+                    },
+                    {
+                      "label": "15",
+                      "value": 15
+                    }
+                  ],
+                  "field": "number",
+                  "span": 24
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
   "searchFields": [
     {
       "label": "精灵级别",
@@ -244,6 +404,24 @@
       "label": "所属玩家",
       "field": "name",
       "align": "center"
+    },
+    {
+      "label": "状态",
+      "field": "stage",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "MATCHING": "匹配中",
+          "GROWING": "成长中",
+          "SELLING": "出售中",
+          "EXPIRED": "已过期",
+          "TRADE_FAILED": "交易失败",
+          "TRADING": "交易中",
+          "DESTROYED": "已销毁",
+          "SPLIT": "已拆分"
+        }
+      }
     }
   ],
   "viewConfig": [
