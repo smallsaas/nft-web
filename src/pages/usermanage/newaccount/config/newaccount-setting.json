@@ -18,6 +18,18 @@
       "span": 24
     },
     {
+      "label": "头像",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "avatar",
+      "options": {
+        "max": 1
+      },
+      "span": 24
+    },
+    {
       "label": "昵称",
       "rules": [
         {
@@ -29,7 +41,7 @@
       },
       "type": "input",
       "field": "name",
-      "span": 8
+      "span": 24
     },
     {
       "label": "手机号码",
@@ -183,26 +195,35 @@
       }
     },
     {
-      "label": "绑定店小二",
-      "type": "select-fetch",
-      "rules": [
-        {
-          "type": "required",
-          "message": "请选择"
-        }
-      ],
+      "label": "点击选择",
+      "field": "sysUserId",
+      "type": "modal-radio",
       "props": {
         "style": {
           "width": 240
         },
-        "placeholder": "当用户角色为系统号需要选择绑定店小二"
+        "placeholder": "当用户角色为系统号需要绑定店小二"
       },
+      "rules": [
+        {
+          "type": "required",
+          "message": "请选择店小二"
+        }
+      ],
       "options": {
+        "title": "绑定店小二",
+        "value": "id",       
         "API": "/api/adm/users?roleid=server&pageSize=100",
-        "label": "name",
-        "value": "id"
+        "label": "name",       
+        "editLabel": "name",   
+        "pagination": true,
+        "fields": [
+          {
+            "label": "店小二名字",
+            "field": "name"
+          }
+        ]
       },
-      "field": "sysUserId",
       "span": 16,
       "expect": {
         "field": "isManager",
@@ -357,6 +378,18 @@
       "span": 24
     },
     {
+      "label": "头像",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "avatar",
+      "options": {
+        "max": 1
+      },
+      "span": 24
+    },
+    {
       "label": "昵称",
       "rules": [
         {
@@ -416,29 +449,14 @@
     },
     {
       "label": "所属角色",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
-      "props": {
-        "placeholder": "请选择用户角色",
-        "style": {
-          "width": 240
+      "field": "isManager",
+      "type": "plain",
+      "options":{
+        "map":{
+          "0": "玩家",
+          "1":"系统号"
         }
       },
-      "type": "select",
-      "options": [
-        {
-          "label": "系统号",
-          "value": 1
-        },
-        {
-          "label": "玩家",
-          "value": 0
-        }
-      ],
-      "field": "isManager",
       "span": 8
     },
     {
@@ -799,6 +817,11 @@
       "field": "names",
       "align": "left",
       "valueType": "complex"
+    },
+    {
+      "label": "头像",
+      "width": 120,
+      "field": "avatar"
     },
     {
       "label": "会员级别",

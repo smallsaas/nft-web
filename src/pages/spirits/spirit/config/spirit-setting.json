@@ -261,11 +261,7 @@
     },
     {
       "label": "等待匹配时间",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [],
       "props": {
         "style": {
           "width": 240
@@ -514,11 +510,7 @@
     },
     {
       "label": "等待匹配时间",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [],
       "props": {
         "style": {
           "width": 240
