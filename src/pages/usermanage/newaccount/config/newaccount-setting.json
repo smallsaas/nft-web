@@ -621,7 +621,7 @@
       "type": "request",
       "options": {
         "tips": "确定要审核通过麽?",
-        "outside": true,
+        "outside": false,
         "API": "/api/meta/entity/status/entities/(id)/action/pass",
         "method": "post"
       },
@@ -635,7 +635,7 @@
       "type": "request",
       "options": {
         "tips": "确定要审核不通过麽?",
-        "outside": true,
+        "outside": false,
         "API": "/api/crud/oms/player/reject/(id)",
         "method": "post"
       },
@@ -649,7 +649,7 @@
       "type": "request",
       "options": {
         "tips": "确定要解封账号麽?",
-        "outside": true,
+        "outside": false,
         "API": "/api/crud/oms/player/players/unlock/(id)",
         "method": "post"
       },
@@ -663,7 +663,7 @@
       "type": "request",
       "options": {
         "tips": "确定要冻结账号麽?",
-        "outside": true,
+        "outside": false,
         "API": "/api/crud/oms/player/players/lock/(id)",
         "method": "post"
       },
@@ -676,7 +676,7 @@
       "title": "查看详情",
       "type": "path",
       "options": {
-        "outside": true,
+        "outside": false,
         "style": "path",
         "path": "newaccount/newaccount-view"
       },
@@ -688,7 +688,7 @@
       "title": "修改信息",
       "type": "path",
       "options": {
-        "outside": true,
+        "outside": false,
         "style": "path",
         "path": "newaccount/newaccount-edit"
       },
@@ -892,6 +892,12 @@
     }
   ],
   "viewConfig": [
+    {
+      "label": "头像",
+      "field": "avatar",
+      "type": "image",
+      "span": 24
+    },
     {
       "label": "昵称",
       "field": "name",

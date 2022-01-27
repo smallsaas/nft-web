@@ -11,11 +11,14 @@
   "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
   "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
   "columns": 1,
-  "createFields": [{
+  "createFields": [
+    {
       "label": "精灵名称",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入"
       },
@@ -24,9 +27,11 @@
     },
     {
       "label": "精灵描述",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "type": "text-area",
       "field": "description",
       "props": {
@@ -42,11 +47,14 @@
       "field": "photoUrl"
     }
   ],
-  "updateFields": [{
+  "updateFields": [
+    {
       "label": "精灵名称",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入"
       },
@@ -55,9 +63,11 @@
     },
     {
       "label": "精灵描述",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -78,15 +88,18 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [{
-    "title": "添加元精灵",
-    "type": "path",
-    "options": {
-      "style": "primary",
-      "path": "/spirits/metaspirit/spirit-add"
+  "tableActions": [
+    {
+      "title": "添加元精灵",
+      "type": "path",
+      "options": {
+        "style": "primary",
+        "path": "/spirits/metaspirit/spirit-add"
+      }
     }
-  }],
-  "tableOperation": [{
+  ],
+  "tableOperation": [
+    {
       "title": "编辑",
       "type": "path",
       "options": {
@@ -117,20 +130,22 @@
       }
     }
   ],
-  "searchFields": [{
-    "label": "名称",
-    "field": "name",
-    "type": "search",
-    "props": {
-      "placeholder": "请输入精灵名称"
+  "searchFields": [
+    {
+      "label": "名称",
+      "field": "name",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入精灵名称"
+      }
     }
-  }],
+  ],
   "tableFields": [
     {
       "label": "序号",
       "field": "Code",
       "align": "center",
-      "valueType":"index"
+      "valueType": "index"
     },
     {
       "label": "精灵名称",
@@ -149,22 +164,24 @@
       "align": "center"
     }
   ],
-  "viewConfig": [{
-    "label": "精灵名称",
-    "field": "name",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "精灵描述",
-    "field": "description",
-    "type": "plain",
-    "span": 24
-  },
-  {
-    "label": "精灵图片",
-    "field": "photoUrl",
-    "type": "image",
-    "span": 24
-  }]
+  "viewConfig": [
+    {
+      "label": "精灵名称",
+      "field": "name",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵描述",
+      "field": "description",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵图片",
+      "field": "photoUrl",
+      "type": "image",
+      "span": 24
+    }
+  ]
 }
