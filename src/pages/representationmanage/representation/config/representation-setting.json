@@ -65,7 +65,8 @@
         "method":"post",
         "buttonText":"驳回",
         "placeholder":"请输入回复内容"
-      }
+      },
+      "isGoBack": true
     },
     {
       "label":"申述",
@@ -78,7 +79,8 @@
         "method":"post",
         "buttonText":"申述",
         "placeholder":"请输入回复内容"
-      }
+      },
+      "isGoBack": true
     },
     {
       "label":"回复内容",

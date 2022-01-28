@@ -69,6 +69,7 @@ export default function FetchCommit(props){
     const {
         value,
         options,
+        isGoBack = false
     }=props
     const {
         fieldName,
@@ -98,7 +99,6 @@ export default function FetchCommit(props){
             [fieldName]:value
         }
         let token = getToken()
-        console.log(newAPI,'---------------------------------')
         const requestData = new Request(endpoint+newAPI,{
             method:method,
             body:JSON.stringify(theData),
@@ -111,7 +111,12 @@ export default function FetchCommit(props){
             // res.json()
             if(res.status === 200){
                 message.success("更改成功")
-                window.location.reload()
+                if(isGoBack){
+                    //返回上一页
+                    window.history.back();
+                }else{
+                    window.location.reload()
+                }
             }
         }).catch(err=>{
             message.error(err.msg)
