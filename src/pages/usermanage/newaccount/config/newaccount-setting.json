@@ -819,11 +819,6 @@
       "valueType": "complex"
     },
     {
-      "label": "头像",
-      "width": 120,
-      "field": "avatar"
-    },
-    {
       "label": "会员级别",
       "field": "grade",
       "align": "center"
