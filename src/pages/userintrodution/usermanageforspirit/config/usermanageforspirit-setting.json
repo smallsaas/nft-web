@@ -248,6 +248,70 @@
           }
         ]
       }
+    },
+    {
+      "title": "锁定",
+      "type": "modal",
+      "options": {
+        "outside": true,
+        "style": "primary",
+        "modalTitle": "锁定精靈",
+        "modalWidth": 600,
+        "items": [
+          {
+            "component": "Form",
+            "config": {
+              "layout": "Grid",
+              "layoutConfig": {
+                "value": [
+                  24
+                ]
+              },
+              "API": {
+                "createAPI": "/api/crud/oms/wispInstance/wispInstances/(id)/lock"
+              },
+              "fields": [
+                {
+                  "label": "锁定天数:",
+                  "rules": [
+                    {
+                      "type": "required",
+                      "message": "请輸入锁定天数"
+                    }
+                  ],
+                  "props": {
+                    "placeholder": "请输入",
+                    "min":0,
+                    "style": {
+                      "width": 240
+                    }
+                  },
+                  "type": "number",
+                  "field": "lockDays"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expect": {
+        "field": "stage",
+        "value": "GROWING"
+      }
+    },
+    {
+      "title": "解鎖",
+      "type": "request",
+      "options": {
+        "tips": "確定要解鎖該精靈麽?",
+        "outside": true,
+        "API": "/api/crud/oms/wispInstance/wispInstances/(id)/unlock",
+        "method": "post"
+      },
+      "expect": {
+        "field": "stage",
+        "value": "LOCKED"
+      }
     }
   ],
   "searchFields": [
