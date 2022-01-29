@@ -309,8 +309,6 @@
         "method": "post"
       },
       "expect": {
-        "field": "stage",
-        "value": "LOCKED"
       }
     }
   ],
@@ -483,9 +481,12 @@
           "TRADE_FAILED": "交易失败",
           "TRADING": "交易中",
           "DESTROYED": "已销毁",
-          "SPLIT": "已拆分"
+          "SPLIT": "已拆分",
+          "LOCKED": "已锁定"
         }
-      }
+      },
+      "theme": "option",
+      "type": "default"
     }
   ],
   "viewConfig": [
