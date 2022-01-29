@@ -406,7 +406,7 @@
         "label": "mobilePhone",
         "value": "id"
       },
-      "field": "sysPlayerId"
+      "field": "sysNumber"
     },
     {
       "label": "玩家号码",
@@ -439,7 +439,7 @@
     },
     {
       "label": "初始价格",
-      "field": "namesss",
+      "field": "coinsPrice",
       "align": "center"
     },
     {
@@ -449,7 +449,7 @@
     },
     {
       "label": "精灵编号",
-      "field": "number",
+      "field": "wispNumber",
       "align": "center"
     },
     {

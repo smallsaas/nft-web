@@ -737,12 +737,12 @@
     },
     {
       "label": "当前领养",
-      "field": "currentAdoptWisp",
+      "field": "adoptNumber",
       "align": "center"
     },
     {
       "label": "总领养",
-      "field": "adoptWispCount",
+      "field": "adoptCount",
       "align": "center"
     },
     {
@@ -810,13 +810,13 @@
     },
     {
       "label": "当前领养",
-      "field": "currentAdoptWisp",
+      "field": "adoptNumber",
       "type": "plain",
       "span": 8
     },
     {
       "label": "总领养",
-      "field": "adoptWispCount",
+      "field": "adoptCount",
       "type": "plain",
       "span": 8
     },
