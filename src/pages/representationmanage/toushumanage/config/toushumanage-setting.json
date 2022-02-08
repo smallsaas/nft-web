@@ -169,6 +169,39 @@
       "type": "default"
     },
     {
+      "label": "投诉玩家",
+      "options": {
+        "direction": "vertical",
+        "size": 0,
+        "fields": [
+          {
+            "field": "player.name",
+            "type": "plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "center",
+      "valueType": "complex"
+    },
+    {
+      "label": "投诉玩家手机号",
+      "options": {
+        "direction": "vertical",
+        "size": 0,
+        "fields": [
+          {
+            "field": "player.mobilePhone",
+            "type": "plain"
+          }
+        ]
+      },
+      "field": "phones",
+      "align": "center",
+      "valueType": "complex"
+    },
+
+    {
       "label": "投诉标题",
       "field": "title",
       "align": "center"
