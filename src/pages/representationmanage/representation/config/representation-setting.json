@@ -11,11 +11,14 @@
   "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
   "deleteAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/(id)",
   "columns": 1,
-  "createFields": [{
+  "createFields": [
+    {
       "label": "申述类型",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入申述类型"
       },
@@ -29,10 +32,10 @@
       "field": "status",
       "type": "plain",
       "span": 24,
-      "options":{
-        "map":{
-          "REPLIED":"已回复",
-          "PENDING_REPLY":"等待回复",
+      "options": {
+        "map": {
+          "REPLIED": "已回复",
+          "PENDING_REPLY": "等待回复",
           "COMPLETED": "已完成"
         }
       }
@@ -50,49 +53,49 @@
       "span": 24
     },
     {
-      "type":"group",
-      "defaultValue":"申述处理",
+      "type": "group",
+      "defaultValue": "申述处理",
       "span": 24
     },
     {
-      "label":"驳回",
-      "type":"fetch_commit",
-      "field":"id",
-      "options":{
-        "fieldName":"complainRecordId",
-        "inputField":"content",
-        "api":"/api/crud/oms/complain/complains/@fieldName/reject",
-        "method":"post",
-        "buttonText":"驳回",
-        "placeholder":"请输入回复内容"
+      "label": "驳回",
+      "type": "fetch_commit",
+      "field": "id",
+      "options": {
+        "fieldName": "complainRecordId",
+        "inputField": "content",
+        "api": "/api/crud/oms/complain/complains/@fieldName/reject",
+        "method": "post",
+        "buttonText": "驳回",
+        "placeholder": "请输入回复内容"
       },
       "isGoBack": true
     },
     {
-      "label":"申述",
-      "type":"fetch_commit",
-      "field":"id",
-      "options":{
-        "fieldName":"complainRecordId",
-        "inputField":"content",
-        "api":"/api/crud/oms/complain/complains/@fieldName/support",
-        "method":"post",
-        "buttonText":"申述",
-        "placeholder":"请输入回复内容"
+      "label": "申述",
+      "type": "fetch_commit",
+      "field": "id",
+      "options": {
+        "fieldName": "complainRecordId",
+        "inputField": "content",
+        "api": "/api/crud/oms/complain/complains/@fieldName/support",
+        "method": "post",
+        "buttonText": "申述",
+        "placeholder": "请输入回复内容"
       },
       "isGoBack": true
     },
     {
-      "label":"回复内容",
-      "type":"fetch_commit",
-      "field":"id",
-      "options":{
-        "fieldName":"complainRecordId",
-        "inputField":"content",
-        "api":"/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
-        "method":"post",
-        "buttonText":"回复",
-        "placeholder":"请输入回复内容"
+      "label": "回复内容",
+      "type": "fetch_commit",
+      "field": "id",
+      "options": {
+        "fieldName": "complainRecordId",
+        "inputField": "content",
+        "api": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
+        "method": "post",
+        "buttonText": "回复",
+        "placeholder": "请输入回复内容"
       }
     },
     {
@@ -101,19 +104,31 @@
       "type": "one-mary",
       "span": 24,
       "options": {
-        "actions": [
-        ],
+        "actions": [],
         "fields": [
-          {"label":"回复人","field":"isManagerReply","valueType":"map","options":{
-            "map":{
-              "0":"用户",
-              "1":"管理员"
+          {
+            "label": "回复人",
+            "field": "isManagerReply",
+            "valueType": "map",
+            "options": {
+              "map": {
+                "0": "用户",
+                "1": "管理员"
+              }
             }
-          }},
-          {"label":"申诉内容","field":"content","valueType":"plain"},
-          {"label":"回复时间","field":"replyTime","valueType":"plain"}
+          },
+          {
+            "label": "申诉内容",
+            "field": "content",
+            "valueType": "plain"
+          },
+          {
+            "label": "回复时间",
+            "field": "replyTime",
+            "valueType": "plain"
+          }
         ],
-        "operation": [ ]
+        "operation": []
       }
     }
   ],
@@ -122,15 +137,18 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [{
-    "title": "添加类型",
-    "type": "path",
-    "options": {
-      "style": "primary",
-      "path": "representation/representation-add"
+  "tableActions": [
+    {
+      "title": "添加类型",
+      "type": "path",
+      "options": {
+        "style": "primary",
+        "path": "representation/representation-add"
+      }
     }
-  }],
-  "tableOperation": [{
+  ],
+  "tableOperation": [
+    {
       "title": "查看详情",
       "type": "path",
       "options": {
@@ -167,7 +185,8 @@
       }
     }
   ],
-  "searchFields": [{
+  "searchFields": [
+    {
       "label": "账号",
       "field": "name",
       "type": "search",
@@ -179,7 +198,8 @@
       "label": "申述状态",
       "field": "description",
       "type": "select",
-      "options": [{
+      "options": [
+        {
           "label": "已处理"
         },
         {
@@ -198,13 +218,26 @@
     {
       "label": "序号",
       "field": "Code",
-       "align": "center",
-      "valueType":"index"
-     },
+      "align": "center",
+      "valueType": "index"
+    },
     {
       "label": "投诉方",
       "field": "complainantRole",
-      "align": "center"
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "SELLER": "卖方",
+          "BUYER": "买方"
+        },
+        "chy": {
+          "SELLER": "red",
+          "BUYER": "blue"
+        }
+      },
+      "theme": "option",
+      "type": "default"
     },
     {
       "label": "投诉玩家名称",
@@ -241,12 +274,12 @@
     {
       "label": "投诉标题",
       "field": "title",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "投诉内容",
       "field": "content",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "投诉状态",
@@ -256,7 +289,7 @@
       "options": {
         "map": {
           "PENDING_REPLY": "等待回复",
-          "REPLIED":"已回复",
+          "REPLIED": "已回复",
           "COMPLETED": "已完成"
         },
         "chy": {
@@ -270,10 +303,10 @@
     {
       "label": "投诉时间",
       "field": "createTime",
-      "align":"center",
-      "valueType":"valueinputthree",
-      "options":{
-        "value":"createTime"
+      "align": "center",
+      "valueType": "valueinputthree",
+      "options": {
+        "value": "createTime"
       }
     }
   ],
@@ -282,10 +315,10 @@
       "label": "投诉方",
       "field": "complainantRole",
       "type": "plain",
-      "options":{
-        "map":{
-          "BUYER":"买方",
-          "SELLER":"卖方"
+      "options": {
+        "map": {
+          "BUYER": "买方",
+          "SELLER": "卖方"
         }
       },
       "span": 8
@@ -306,10 +339,10 @@
       "label": "投诉状态",
       "field": "status",
       "type": "plain",
-      "options":{
-        "map":{
-          "PENDING_REPLY":"待处理",
-          "REPLIED":"已处理",
+      "options": {
+        "map": {
+          "PENDING_REPLY": "待处理",
+          "REPLIED": "已处理",
           "COMPLETED": "已完成"
         }
       },
@@ -322,8 +355,8 @@
       "span": 24
     },
     {
-      "type":"group",
-      "defaultValue":"处理结果",
+      "type": "group",
+      "defaultValue": "处理结果",
       "span": 24
     },
     {
@@ -332,19 +365,31 @@
       "type": "one-mary",
       "span": 24,
       "options": {
-        "actions": [
-        ],
+        "actions": [],
         "fields": [
-          {"label":"回复人","field":"isManagerReply","valueType":"map","options":{
-            "map":{
-              "0":"用户",
-              "1":"管理员"
+          {
+            "label": "回复人",
+            "field": "isManagerReply",
+            "valueType": "map",
+            "options": {
+              "map": {
+                "0": "用户",
+                "1": "管理员"
+              }
             }
-          }},
-          {"label":"申诉内容","field":"content","valueType":"plain"},
-          {"label":"回复时间","field":"replyTime","valueType":"plain"}
+          },
+          {
+            "label": "申诉内容",
+            "field": "content",
+            "valueType": "plain"
+          },
+          {
+            "label": "回复时间",
+            "field": "replyTime",
+            "valueType": "plain"
+          }
         ],
-        "operation": [ ]
+        "operation": []
       }
     }
   ]
