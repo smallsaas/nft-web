@@ -2,13 +2,13 @@
   "pageName": {
     "table": "投诉管理",
     "new": "添加申述类型",
-    "edit": "处理申述",
+    "edit": "处理投诉",
     "view": "查看详情"
   },
   "listAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains?requestType=FEEDBACK",
   "createAPI": "/api/adm/feedback",
-  "getAPI": "/api/adm/feedback/[id]",
-  "updateAPI": "/api/adm/feedback/[id]",
+  "getAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/[id]",
+  "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
   "deleteAPI": "/api/adm/feedback/(id)",
   "columns": 1,
   "createFields": [
@@ -28,37 +28,80 @@
   ],
   "updateFields": [
     {
-      "label": "卖方账号",
-      "field": "sellerAccount",
+      "label": "申述状态",
+      "field": "status",
       "type": "plain",
-      "span": 24
+      "span": 24,
+      "options": {
+        "map": {
+          "REPLIED": "已回复",
+          "PENDING_REPLY": "等待回复",
+          "COMPLETED": "已完成"
+        }
+      }
     },
     {
-      "label": "买方账号",
-      "field": "buyerAccount",
-      "type": "plain",
-      "span": 24
-    },
-    {
-      "label": "申述类型",
-      "field": "representationType",
+      "label": "申述标题",
+      "field": "title",
       "type": "plain",
       "span": 24
     },
     {
       "label": "申述内容",
-      "field": "representationInfo",
+      "field": "content",
       "type": "plain",
       "span": 24
     },
     {
-      "label": "处理",
-      "field": "handleResult",
-      "type": "text-area",
-      "props": {
-        "placeholder": "请输入处理内容"
-      },
+      "type": "group",
+      "defaultValue": "申述处理",
       "span": 24
+    },
+    {
+      "label": "回复内容",
+      "type": "fetch_commit",
+      "field": "id",
+      "options": {
+        "fieldName": "complainRecordId",
+        "inputField": "content",
+        "api": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
+        "method": "post",
+        "buttonText": "回复",
+        "placeholder": "请输入回复内容"
+      }
+    },
+    {
+      "label": "",
+      "field": "replyRecordList",
+      "type": "one-mary",
+      "span": 24,
+      "options": {
+        "actions": [],
+        "fields": [
+          {
+            "label": "回复人",
+            "field": "isManagerReply",
+            "valueType": "map",
+            "options": {
+              "map": {
+                "0": "用户",
+                "1": "管理员"
+              }
+            }
+          },
+          {
+            "label": "申诉内容",
+            "field": "content",
+            "valueType": "plain"
+          },
+          {
+            "label": "回复时间",
+            "field": "replyTime",
+            "valueType": "plain"
+          }
+        ],
+        "operation": []
+      }
     }
   ],
   "map": {},
@@ -95,10 +138,11 @@
       "options": {
         "outside": true,
         "style": "path",
-        "path": "representation/representation-edit"
+        "path": "toushumanage/toushumanage-edit"
       },
       "expect": {
-        "permission": ""
+        "field": "",
+        "value": ""
       }
     },
     {
@@ -149,24 +193,6 @@
       "field": "Code",
       "align": "center",
       "valueType": "index"
-    },
-    {
-      "label": "投诉方",
-      "field": "complainantRole",
-      "align": "center",
-      "valueType": "tag",
-      "options": {
-        "map": {
-          "SELLER": "卖方",
-          "BUYER": "买方"
-        },
-        "chy": {
-          "SELLER": "red",
-          "BUYER": "blue"
-        }
-      },
-      "theme": "option",
-      "type": "default"
     },
     {
       "label": "投诉玩家",
