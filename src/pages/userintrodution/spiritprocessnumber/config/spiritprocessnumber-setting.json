@@ -50,17 +50,29 @@
       "options": {
         "API": "/api/crud/oms/player/players?isManager=1",
         "label": "mobilePhone",
-        "value": "id"
+        "value": "sysNumber"
       },
-      "field": "sysPlayerId"
+      "field": "sysNumber"
     },
     {
-      "label": "日期查询",
-      "field": "",
+      "label": "日期",
+      "options": {
+        "format": "YYYY-MM-DD",
+        "startDate": "startDate",
+        "endDate": "endDate"
+      },
       "type": "range",
-      "props": {
-        "placeholder": "日期查询"
-      }
+      "field": "releaseTimes"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "startDate"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "endDate"
     }
   ],
   "tableFields": [
@@ -68,106 +80,106 @@
       "label": "序号",
       "field": "Code",
       "align": "center",
-      "valueType":"index"
+      "valueType": "index"
     },
-  {
-    "label": "精灵名称",
-    "field": "name",
-    "align":"center"
-  },
-  {
-    "label": "级别",
-    "field": "level",
-    "align": "center",
-    "valueType": "tag",
-    "options": {
-      "map": {
-        "1": "v1",
-        "2": "v2",
-        "3": "v3",
-        "4": "v4",
-        "5": "v5",
-        "6": "v6",
-        "7": "v7",
-        "8": "v8"
+    {
+      "label": "精灵名称",
+      "field": "name",
+      "align": "center"
+    },
+    {
+      "label": "级别",
+      "field": "level",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "1": "v1",
+          "2": "v2",
+          "3": "v3",
+          "4": "v4",
+          "5": "v5",
+          "6": "v6",
+          "7": "v7",
+          "8": "v8"
+        },
+        "chy": {
+          "1": "blue",
+          "2": "cyan",
+          "3": "purple",
+          "4": "purple-dark",
+          "5": "orange",
+          "6": "gray",
+          "7": "tomato",
+          "8": "orangered"
+        }
       },
-      "chy": {
-        "1": "blue",
-        "2": "cyan",
-        "3": "purple",
-        "4": "purple-dark",
-        "5": "orange",
-        "6": "gray",
-        "7": "tomato",
-        "8": "orangered"
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "场次",
+      "field": "sessionId",
+      "align": "center",
+      "valueType": "map",
+      "options": {
+        "map": {
+          "0": "LEVEL_0专场",
+          "1": "LEVEL_1专场",
+          "2": "LEVEL_2专场",
+          "3": "LEVEL_3专场",
+          "4": "LEVEL_4专场",
+          "5": "LEVEL_5专场",
+          "6": "LEVEL_6专场",
+          "7": "LEVEL_7专场",
+          "8": "LEVEL_8专场"
+        }
       }
     },
-    "theme": "option",
-    "type": "default"
-  },
-  {
-    "label": "场次",
-    "field": "sessionId",
-    "align":"center",
-    "valueType":"map",
-    "options":{
-      "map": {
-        "0": "LEVEL_0专场",
-        "1": "LEVEL_1专场",
-        "2": "LEVEL_2专场",
-        "3": "LEVEL_3专场",
-        "4": "LEVEL_4专场",
-        "5": "LEVEL_5专场",
-        "6": "LEVEL_6专场",
-        "7": "LEVEL_7专场",
-        "8": "LEVEL_8专场"
-      }
+    {
+      "label": "预约人数",
+      "field": "bookedCount",
+      "align": "center"
+    },
+    {
+      "label": "匹配人数",
+      "field": "matchedCount",
+      "align": "center"
+    },
+    {
+      "label": "挂售精灵数",
+      "field": "currentWispInstanceCount",
+      "align": "center"
+    },
+    {
+      "label": "分配系统号精灵数",
+      "field": "toSysNumber",
+      "align": "center"
+    },
+    {
+      "label": "分配系统号精灵总金额",
+      "field": "sysUsePrice",
+      "align": "center"
+    },
+    {
+      "label": "系统号发放精灵数",
+      "field": "fromSysNumber",
+      "align": "center"
+    },
+    {
+      "label": "系统号发放精灵总金额",
+      "field": "sysGetPrice",
+      "align": "center"
+    },
+    {
+      "label": "未付款人数",
+      "field": "unpaidCount",
+      "align": "center"
+    },
+    {
+      "label": "已付款总金额",
+      "field": "transactionCoins",
+      "align": "center"
     }
-  },
-  {
-    "label": "预约人数",
-    "field": "bookedCount",
-    "align":"center"
-  },
-  {
-    "label": "匹配人数",
-    "field": "matchedCount",
-    "align":"center"
-  },
-  {
-    "label": "挂售精灵数",
-    "field": "currentWispInstanceCount",
-    "align":"center"
-  },
-  {
-    "label": "分配系统号精灵数",
-    "field": "toSysNumber",
-    "align":"center"
-  },
-  {
-    "label": "分配系统号精灵总金额",
-    "field": "sysUsePrice",
-    "align":"center"
-  },
-  {
-    "label": "系统号发放精灵数",
-    "field": "fromSysNumber",
-    "align":"center"
-  },
-  {
-    "label": "系统号发放精灵总金额",
-    "field": "sysGetPrice",
-    "align":"center"
-  },
-  {
-    "label": "未付款人数",
-    "field": "unpaidCount",
-    "align":"center"
-  },
-  {
-    "label": "已付款总金额",
-    "field": "transactionCoins",
-    "align":"center"
-  }
   ]
 }
