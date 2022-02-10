@@ -1,200 +1,266 @@
 {
-    "pageName": {
-      "table": "订单收益结算",
-      "new": "添加元精灵",
-      "edit": "编辑元精灵",
-      "view": "查看详情"
-    },
-    "listAPI": "/api/crud/oms/player/profit/orderProfit",
-    "createAPI": "/api/crud/oms/wispMeta/wispMetas",
-    "getAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
-    "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
-    "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
-    "columns": 1,
-    "createFields": [{
-        "label": "精灵名称",
-        "rules": [{
+  "pageName": {
+    "table": "订单收益结算",
+    "new": "添加元精灵",
+    "edit": "编辑元精灵",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/player/profit/orderProfit",
+  "createAPI": "/api/crud/oms/wispMeta/wispMetas",
+  "getAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
+  "updateAPI": "/api/crud/oms/wispMeta/wispMetas/[id]",
+  "deleteAPI": "/api/crud/oms/wispMeta/wispMetas/(id)",
+  "columns": 1,
+  "createFields": [
+    {
+      "label": "精灵名称",
+      "rules": [
+        {
           "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入"
       },
-      {
-        "label": "精灵描述",
-        "rules": [{
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "精灵描述",
+      "rules": [
+        {
           "type": "required"
-        }],
-        "type": "text-area",
-        "field": "description",
-        "props": {
-          "placeholder": "请输入精灵描述",
-          "style": {
-            "width": 240
-          }
+        }
+      ],
+      "type": "text-area",
+      "field": "description",
+      "props": {
+        "placeholder": "请输入精灵描述",
+        "style": {
+          "width": 240
+        }
+      }
+    },
+    {
+      "label": "精灵图片",
+      "type": "upload-image",
+      "field": "photoUrl"
+    }
+  ],
+  "updateFields": [
+    {
+      "label": "精灵名称",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "精灵描述",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
         }
       },
-      {
-        "label": "精灵图片",
-        "type": "upload-image",
-        "field": "photoUrl"
-      }
-    ],
-    "updateFields": [{
-        "label": "精灵名称",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name"
-      },
-      {
-        "label": "精灵描述",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "text-area",
-        "field": "description"
-      },
-      {
-        "label": "精灵图片",
-        "type": "upload-image",
-        "field": "photoUrl"
-      }
-    ],
-    "map": {},
-    "layout": {
-      "table": "Content",
-      "form": "TitleContent"
+      "type": "text-area",
+      "field": "description"
     },
-    "tableActions": [],
-    "tableOperation": [
-    ],
-    "searchFields": [{
+    {
+      "label": "精灵图片",
+      "type": "upload-image",
+      "field": "photoUrl"
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [],
+  "tableOperation": [],
+  "searchFields": [
+    {
       "label": "玩家",
-      "field": "profitName",
+      "field": "playerName",
       "type": "search",
       "props": {
         "placeholder": "请输入玩家"
       }
-    }],
-    "tableFields": [
-      {
-        "label": "序号",
-        "field": "Code",
-        "align": "center",
-        "valueType":"index"
-      },
-      {
-        "label": "订单号",
-        "field": "orderNumber",
-        "align": "center"
-      },
-      {
-        "label": "收益人",
-        "options":{
-          "direction":"vertical",
-          "size":0,
-          "fields":[
-            {
-              "field":"profitName",
-              "type":"plain",
-              "options":{
-                "style":{
-                  "font-weight":"bolder",
-                  "color":"blue",
-                  "margin-right":10
-                }
-              }
-            },
-            {
-              "field": "profitPeoplePhone",
-              "type":"plain"
-            }
-          ]
-        },
-        "field": "names",
-        "align": "left",
-        "valueType":"complex"
-      },
-      {
-        "label": "收益分红",
-        "field": "profitMoney",
-        "align": "center"
-      },
-      {
-        "label": "分享比例",
-        "field": "sharePercent",
-        "valueType": "percentage",
-        "align": "center"
-      },
-      {
-        "label": "收入类型",
-        "field": "incomeType",
-        "align": "center",
-        "valueType": "tag",
-        "options": {
-          "map": {
-            "levelOneShare": "一级收益",
-            "levelTwoShare":"二级收益",
-            "teamBenefits": "团队收益",
-            "signINProfit":"签到收益"
-          },
-          "chy": {
-            "levelOneShare": "blue",
-            "levelTwoShare":"grey",
-            "teamBenefits": "cyan",
-            "signINProfit":"orange"
-          }
-        },
-        "theme": "option",
-        "type": "default"
-      },
-      {
-        "label": "领取状态",
-        "field": "status",
-        "align": "center",
-        "valueType": "tag",
-        "options": {
-          "map": {
-            "Unsettled": "未领取",
-            "settlement":"已领取"
-          },
-          "chy": {
-            "Unsettled": "purple_dark",
-            "settlement":"cyan"
-          }
-        },
-        "theme": "option",
-        "type": "default"
-      },
-      {
-        "label": "订单价值",
-        "field": "orderPrice",
-        "align": "center"
-      },
-      {
-        "label": "订单时间",
-        "field": "orderTime",
-        "align":"center",
-        "valueType":"valueinput",
-        "options":{
-          "value":"orderTime"
+    },
+    {
+      "label": "系统号",
+      "type": "select-fetch",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
         }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/crud/oms/player/players?isManager=1",
+        "label": "mobilePhone",
+        "value": "id"
+      },
+      "field": "playerId"
+    },
+    {
+      "label": "类型",
+      "type": "select",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "options":[
+        {"label":"团队","value":"teamBenefits"},
+        {"label":"推荐","value":"recommend"},
+        {"label":"市场","value":"marketPoints"}
+      ],
+      "field": "incomeType"
+    },
+    {
+      "label": "日期",
+      "options": {
+        "format": "YYYY-MM-DD",
+        "startDate": "startDate",
+        "endDate": "endDate"
+      },
+      "type": "range",
+      "field": "releaseTimes"
+    },
+
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "startDate"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "endDate"
+    }
+  ],
+  "tableFields": [
+    {
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType": "index"
+    },
+    {
+      "label": "订单号",
+      "field": "orderNumber",
+      "align": "center"
+    },
+    {
+      "label": "收益人",
+      "options": {
+        "direction": "vertical",
+        "size": 0,
+        "fields": [
+          {
+            "field": "profitName",
+            "type": "plain",
+            "options": {
+              "style": {
+                "font-weight": "bolder",
+                "color": "blue",
+                "margin-right": 10
+              }
+            }
+          },
+          {
+            "field": "profitPeoplePhone",
+            "type": "plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "left",
+      "valueType": "complex"
+    },
+    {
+      "label": "收益分红",
+      "field": "profitMoney",
+      "align": "center"
+    },
+    {
+      "label": "分享比例",
+      "field": "sharePercent",
+      "valueType": "percentage",
+      "align": "center"
+    },
+    {
+      "label": "收入类型",
+      "field": "incomeType",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "levelOneShare": "一级收益",
+          "levelTwoShare": "二级收益",
+          "teamBenefits": "团队收益",
+          "signINProfit": "签到收益"
+        },
+        "chy": {
+          "levelOneShare": "blue",
+          "levelTwoShare": "grey",
+          "teamBenefits": "cyan",
+          "signINProfit": "orange"
+        }
+      },
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "领取状态",
+      "field": "status",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "Unsettled": "未领取",
+          "settlement": "已领取"
+        },
+        "chy": {
+          "Unsettled": "purple_dark",
+          "settlement": "cyan"
+        }
+      },
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "订单价值",
+      "field": "orderPrice",
+      "align": "center"
+    },
+    {
+      "label": "订单时间",
+      "field": "orderTime",
+      "align": "center",
+      "valueType": "valueinput",
+      "options": {
+        "value": "orderTime"
       }
-    ],
-    "viewConfig": [{
+    }
+  ],
+  "viewConfig": [
+    {
       "label": "精灵名称",
       "field": "name",
       "type": "plain",
@@ -211,6 +277,6 @@
       "field": "photoUrl",
       "type": "image",
       "span": 24
-    }]
-  }
-  
+    }
+  ]
+}

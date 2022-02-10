@@ -4,9 +4,16 @@ module.exports = {
     items: [
       {
         layout: 'Empty',
+        component: 'AutoReportSearch',
+        config: {
+          share: 'userCountInfo',
+        },
+      },
+      {
+        layout: 'Empty',
         component: 'AutoReport',
         config: {
-          share: 'agentReport',
+          share: 'userCountInfo',
           pageSize: 20,
           API: {
             listAPI: '/api/adm/stat/meta/gangProfit',

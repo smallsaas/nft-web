@@ -340,40 +340,6 @@
       "props": {
         "placeholder": "请输入卖家账号"
       }
-    },
-    {
-      "label": "订单状态",
-      "field": "status",
-      "type": "select",
-      "props": {
-        "placeholder": "请选择"
-      },
-      "options": [
-        {
-          "label": "系统给予",
-          "value": "SYSTEM_GIVEN"
-        },
-        {
-          "label": "能量晶石",
-          "value": "COMPANION_WISP"
-        },
-        {
-          "label": "店小二给予",
-          "value": "MANAGER_GIVEN"
-        },
-        {
-          "label": "购买能量晶石",
-          "value": "BUY_COMPANION_WISP"
-        },
-        {
-          "label": "等待付款",
-          "value": "WAITING_PAYMENT"
-        },
-        {
-          "label": "v5",
-          "value": "5"
-        }
-      ]
     }
   ],
   "tableFields": [

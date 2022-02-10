@@ -188,7 +188,7 @@
   "searchFields": [
     {
       "label": "账号",
-      "field": "name",
+      "field": "phone",
       "type": "search",
       "props": {
         "placeholder": "请输入账号"
@@ -196,22 +196,41 @@
     },
     {
       "label": "申述状态",
-      "field": "description",
+      "field": "status",
       "type": "select",
       "options": [
         {
-          "label": "已处理"
+          "label": "待回复",
+          "value": "PENDING_REPLY"
         },
         {
-          "label": "未处理"
+          "label": "已回复",
+          "value": "REPLIED"
         },
         {
-          "label": "处理中"
+          "label": "已完成",
+          "value": "COMPLETED"
         }
       ],
       "props": {
         "placeholder": "请选择"
       }
+    },
+    {
+      "label": "申诉类型",
+      "type": "select",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "options":[
+        {"label":"对方没付款","value":"teamBenefits"},
+        {"label":"情况不符","value":"recommend"},
+        {"label":"其他","value":"marketPoints"}
+      ],
+      "field": "title"
     }
   ],
   "tableFields": [

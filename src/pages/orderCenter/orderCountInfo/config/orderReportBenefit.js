@@ -4,9 +4,16 @@ module.exports = {
     items: [
       {
         layout: 'Empty',
+        component: 'AutoReportSearch',
+        config: {
+          share: 'orderCountInfo',
+        },
+      },
+      {
+        layout: 'Empty',
         component: 'AutoReport',
         config: {
-          share: 'agentReport',
+          share: 'orderCountInfo',
           pageSize: 20,
           API: {
             listAPI: '/api/adm/stat/meta/orderSettlement',

@@ -295,8 +295,8 @@
         ]
       },
       "expect": {
-        "field": "stage",
-        "value": "GROWING"
+        "field": "",
+        "value": ""
       }
     },
     {
