@@ -61,7 +61,10 @@
       "field": "playerName",
       "valueType": "path",
       "options": {
-        "path": "/usermanage/newaccount/newaccount-view"
+        "path": "/usermanage/newaccount/newaccount-view",
+        "query":{
+          "id": "playerId"
+        }
       },
       "align":"center"
     },

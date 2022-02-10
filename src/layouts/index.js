@@ -8,11 +8,16 @@ import router from '@/config/router.config';
 import profileMenuData from '@/config/profile.config';
 import router403Data from '@/config/403.config';
 import router401Data from '@/config/401.config';
+import devMenuData from '@/config/dev.config';
 import { useDocumentVisibility } from 'ahooks';
 import { useModel, getModel } from 'zero-element/lib/Model';
 // import { LS } from 'zero-element/lib/utils/storage';
 
 let menuData = [...router];
+
+if (process.env.NODE_ENV === 'development') {
+  menuData.push(...devMenuData);
+}
 
 function reducer(state, { type, payload }) {
   const method = {
