@@ -227,9 +227,9 @@
       },
       "rules": [],
       "options": {
-        "API": "/api/crud/oms/complainType/complainTypes",
+        "API": "/api/crud/oms/complainType/complainTypes?requestType=ORDER_DISPUTES",
         "label": "title",
-        "value": "id"
+        "value": "title"
       },
       "field": "title"
     }

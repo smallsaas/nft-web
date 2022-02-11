@@ -188,18 +188,19 @@
     },
     {
       "label": "投诉类型",
-      "type": "select",
+      "type": "select-fetch",
       "props": {
         "placeholder": "请选择",
         "style": {
           "width": 240
         }
       },
-      "options":[
-        {"label":"对方没付款","value":"teamBenefits"},
-        {"label":"情况不符","value":"recommend"},
-        {"label":"其他","value":"marketPoints"}
-      ],
+      "rules": [],
+      "options": {
+        "API": "/api/crud/oms/complainType/complainTypes?requestType=FEEDBACK",
+        "label": "title",
+        "value": "title"
+      },
       "field": "title"
     }
   ],
