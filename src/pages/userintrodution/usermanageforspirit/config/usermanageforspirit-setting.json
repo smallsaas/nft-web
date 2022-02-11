@@ -444,7 +444,7 @@
     },
     {
       "label": "当前价格",
-      "field": "currentPrice",
+      "field": "realtimePrice",
       "align": "center"
     },
     {
