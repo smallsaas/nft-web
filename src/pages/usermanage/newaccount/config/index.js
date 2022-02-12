@@ -41,7 +41,8 @@ module.exports = {
       },
     },
     {
-      component: 'Table',
+      layout: 'Empty',
+      component: 'TreeTable',
       config: {
         API: {
           listAPI: setting.listAPI,

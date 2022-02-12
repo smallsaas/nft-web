@@ -6,7 +6,7 @@
     "view": "查看详情"
   },
   "listAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains?requestType=ORDER_DISPUTES",
-  "createAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains",
+  "createAPI": "/api/crud/oms/complainType/complainTypes",
   "getAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/[id]",
   "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
   "deleteAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/(id)",
@@ -23,7 +23,13 @@
         "placeholder": "请输入申述类型"
       },
       "type": "input",
-      "field": "representationType"
+      "field": "title"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "requestType",
+      "value": "ORDER_DISPUTES"
     }
   ],
   "updateFields": [

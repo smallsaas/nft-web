@@ -6,16 +6,19 @@
     "view": "查看详情"
   },
   "listAPI": "/api/crud/oms/player/players",
-  "createAPI": "/api/crud/oms/player/players",
+  "createAPI": "/api/crud/oms/complainType/complainTypes",
   "getAPI": "/api/crud/oms/player/players/[id]",
   "updateAPI": "/api/crud/oms/player/players/[id]",
   "deleteAPI": "/api/crud/oms/player/players/(id)",
   "columns": 1,
-  "createFields": [{
+  "createFields": [
+    {
       "label": "申述类型",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入申述类型"
       },
@@ -23,7 +26,8 @@
       "field": "name"
     }
   ],
-  "updateFields": [{
+  "updateFields": [
+    {
       "label": "卖方账号",
       "field": "name",
       "type": "plain",
@@ -59,15 +63,18 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [{
-    "title": "添加类型",
-    "type": "path",
-    "options": {
-      "style": "primary",
-      "path": "/representation/representation-add"
+  "tableActions": [
+    {
+      "title": "添加类型",
+      "type": "path",
+      "options": {
+        "style": "primary",
+        "path": "/representation/representation-add"
+      }
     }
-  }],
-  "tableOperation": [{
+  ],
+  "tableOperation": [
+    {
       "title": "查看详情",
       "type": "path",
       "options": {
@@ -92,7 +99,8 @@
       }
     }
   ],
-  "searchFields": [{
+  "searchFields": [
+    {
       "label": "账号",
       "field": "name",
       "type": "search",
@@ -104,7 +112,8 @@
       "label": "申述状态",
       "field": "description",
       "type": "select",
-      "options": [{
+      "options": [
+        {
           "label": "已处理"
         },
         {
@@ -119,7 +128,8 @@
       }
     }
   ],
-  "tableFields": [{
+  "tableFields": [
+    {
       "label": "序号",
       "field": "id"
     },
@@ -148,7 +158,8 @@
       "field": "status"
     }
   ],
-  "viewConfig": [{
+  "viewConfig": [
+    {
       "label": "卖方账号",
       "field": "name",
       "type": "plain",

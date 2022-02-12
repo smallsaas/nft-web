@@ -6,24 +6,30 @@
     "view": "查看详情"
   },
   "listAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complains?requestType=FEEDBACK",
-  "createAPI": "/api/adm/feedback",
+  "createAPI": "/api/crud/oms/complainType/complainTypes",
   "getAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/[id]",
   "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
   "deleteAPI": "/api/adm/feedback/(id)",
   "columns": 1,
   "createFields": [
     {
-      "label": "申述类型",
+      "label": "投诉类型",
       "rules": [
         {
           "type": "required"
         }
       ],
       "props": {
-        "placeholder": "请输入申述类型"
+        "placeholder": "请输入投诉类型"
       },
       "type": "input",
-      "field": "representationType"
+      "field": "title"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "requestType",
+      "value": "FEEDBACK"
     }
   ],
   "updateFields": [
@@ -115,7 +121,7 @@
       "type": "path",
       "options": {
         "style": "primary",
-        "path": "/toushumanage/toushumanage-add"
+        "path": "toushumanage/toushumanage-add"
       }
     }
   ],
