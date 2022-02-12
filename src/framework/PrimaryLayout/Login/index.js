@@ -11,7 +11,7 @@ import {
   SwapOutlined,
 } from '@ant-design/icons';
 
-import { TestUserSelection } from 'zero-element-plugins';
+// import { TestUserSelection } from 'zero-element-plugins';
 
 import { LS } from 'zero-element/lib/utils/storage';
 
