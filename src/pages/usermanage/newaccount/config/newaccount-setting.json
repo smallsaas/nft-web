@@ -855,13 +855,13 @@
         "map": {
           "NORMAL": "正常",
           "FROZEN": "冻结",
-          "UNREVIEWED": "审核不通过",
+          "REFUSED": "审核不通过",
           "PENDING": "待审核"
         },
         "chy": {
           "NORMAL": "blue",
           "FROZEN": "gray",
-          "UNREVIEWED": "orange",
+          "REFUSED": "orange",
           "PENDING": "pink"
         }
       },
@@ -920,7 +920,7 @@
         "map": {
           "NORMAL": "正常",
           "FROZEN": "冻结",
-          "UNREVIEWED": "审核不通过",
+          "REFUSED": "审核不通过",
           "PENDING": "待审核"
         }
       },
@@ -1005,14 +1005,44 @@
       "span": 8
     },
     {
-      "label": "团队当前领养",
+      "label": "GUGU精灵总数",
       "field": "teamCurrentAdoptWisp",
       "type": "plain",
       "span": 8
     },
     {
-      "label": "团队总领养",
+      "label": "GUGU能力总值",
       "field": "teamAdoptWispCount",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "精灵总收益",
+      "field": "marketPoints",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "签到收益",
+      "field": "signInCoinCredit",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "推荐收益",
+      "field": "recommendCoinCredit",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "帮会收益",
+      "field": "teamCoinCredit",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "转存收益",
+      "field": "transferCoinCredit",
       "type": "plain",
       "span": 8
     },
