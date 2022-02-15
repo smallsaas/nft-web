@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Typography, Table, Modal, Popconfirm, Select, Form, Button, message } from 'antd';
 import promiseAjax from '@/utils/promiseAjax';
+import { useDidMount, useWillUnmount, useForceUpdate } from 'zero-element/lib/utils/hooks/lifeCycle';
+import { get as getEndpoint } from 'zero-element/lib/utils/request/endpoint';
 
 const { Title } = Typography;
 const { Option } = Select;
@@ -21,33 +23,137 @@ export default function (props) {
   const [form] = Form.useForm();
 
   const [showModal, setShowModal] = useState(false);
+  const [marketingSessionData, setMarketingSessions] = useState([]);
+  const [currentKey, setCurrentKey] = useState('');
 
-  function upgradeAction() {
-    const apiUrl = '/api/crud/oms/marketingSession/marketingSessions';
+  useDidMount(_ => {
+      getListAction()
+  });
+
+  useWillUnmount(_ => {
+    setMarketingSessions([])
+    setShowModal(false)
+    setCurrentKey('')
+  });
+
+  function getListAction() {
+    const apiUrl = `${getEndpoint()}/api/crud/oms/marketingSession/marketingSessions`;
     const queryData = {}
     promiseAjax(apiUrl, queryData)
     .then(resp => {
-      console.log(resp , '升级精灵操作')
-      if (resp.status===1) {
+      console.log(resp , '获取场次信息')
+      if (resp.code===200) {
         const data = resp.data;
+        if(data.records){
+          setMarketingSessions(data.records)
+        }
       } else {
-        console.error('升级失败')
+        console.error('获取场次信息失败')
       }
     })
   }
 
-  function showModalAction(record) {
+  //升级精灵
+  function upgradeAction() {
+    const apiUrl = `${getEndpoint()}/api/crud/oms/wispInstance/wispInstances/upgrade`;
+    const queryData = {}
+    promiseAjax( apiUrl, queryData, { method:'POST'})
+    .then(resp => {
+      // console.log(resp , '升级精灵操作')
+      if (resp.code===200) {
+        // const data = resp.data;
+        message.success('升级成功')
+      } else {
+        message.success('升级失败')
+        console.error(resp, ' 升级失败 ')
+      }
+    })
+  }
+
+  //匹配场次
+  function marketingSessionsExecute(sessionId) {
+    const apiUrl = `${getEndpoint()}/api/crud/oms/marketingSession/marketingSessions/execute/${sessionId}`
+    const queryData = {}
+    promiseAjax(apiUrl, queryData, { method:'POST'})
+    .then(resp => {
+      // console.log(resp , '匹配操作')
+      if (resp.code===200) {
+        // const data = resp.data;
+        message.success('匹配成功')
+        setShowModal(false)
+        onReset();
+      } else {
+        message.error('匹配失败')
+        console.error(resp, '匹配操作失败')
+      }
+    })
+  }
+
+  //超时订单
+  function paymentTimeout(sessionId) {
+    const apiUrl = `${getEndpoint()}/api/crud/oms/marketingSession/marketingSessions/paymentTimeout/${sessionId}`;
+    const queryData = {}
+    promiseAjax(apiUrl, queryData, { method:'POST'})
+    .then(resp => {
+      // console.log(resp , '超时订单操作')
+      if (resp.code===200) {
+        // const data = resp.data;
+        message.success('操作成功')
+        setShowModal(false)
+        onReset();
+      } else {
+        message.error('操作失败')
+        console.error(resp, '操作失败')
+      }
+    })
+  }
+
+  //自动确认收款
+  function autoReceive(sessionId) {
+    const apiUrl = `${getEndpoint()}/api/crud/oms/marketingSession/marketingSessions/autoReceive/${sessionId}`;
+    const queryData = {}
+    promiseAjax(apiUrl, queryData, { method:'POST'})
+    .then(resp => {
+      // console.log(resp , '自动确认收款操作')
+      if (resp.code===200) {
+        // const data = resp.data;
+        message.success('操作成功')
+        setShowModal(false)
+        onReset();
+      } else {
+        message.error('操作失败')
+        console.error(resp, '操作失败')
+      }
+    })
+  }
+
+  function showModalAction(key) {
     setShowModal(true)
+    setCurrentKey(key)
   }
 
   function handleCancel() {
+    onReset()
     setShowModal(false)
   }
 
   function onFinish(e) {
     console.log(e, ' 执行 ')
-    setShowModal(false)
-    onReset();
+    switch(currentKey){
+      case "1":
+        break;
+      case "2":
+        marketingSessionsExecute(e.sessionId)
+        break;
+      case "3":
+        paymentTimeout(e.sessionId)
+        break;
+      case "4":
+        autoReceive(e.sessionId)
+        break;
+      default:
+        break;
+    }
   }
 
   const onReset = () => {
@@ -71,7 +177,7 @@ export default function (props) {
             </Popconfirm>
           )
         } else {
-          return <a href="#" onClick={showModalAction}>执行</a>
+          return <a href="#" onClick={() =>showModalAction(record.key)}>执行</a>
         }
       }
     },
@@ -105,6 +211,7 @@ export default function (props) {
     console.log(value, ' 选择 ')
   };
 
+  // console.log(marketingSessionData, ' 场次 ')
   return (
     <div>
       <Title level={4}>{title}</Title>
@@ -118,15 +225,14 @@ export default function (props) {
       <Modal title="选择场次" visible={showModal} footer={null} onCancel={handleCancel} >
         <Form {...layout} form={form} name="control-hooks" onFinish={onFinish}>
 
-          <Form.Item name="gender111" label="场次" rules={[{ required: true }]}>
+          <Form.Item name="sessionId" label="场次" rules={[{ required: true }]}>
             <Select
               placeholder="请选择"
               onChange={onGenderChange}
               allowClear
             >
-              <Option value="male">male</Option>
-              <Option value="female">female</Option>
-              <Option value="other">other</Option>
+              {marketingSessionData.length > 0 && marketingSessionData.map((item, index) => <Option key={`${index}_key`} value={item.id}>{item.title}</Option>)}
+              
             </Select>
           </Form.Item>
           <Form.Item {...tailLayout} style={{marginTop: '70px'}}>
