@@ -418,6 +418,31 @@
           "width": 240
         }
       }
+    },
+    {
+      "label": "日期",
+      "options": {
+        "format": "YYYY-MM-DD",
+        "startDate": "startDate",
+        "endDate": "endDate"
+      },
+      "type": "range",
+      "field": "releaseTimes",
+      "props": {
+        "style": {
+          "width": 240
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "startDate"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "endDate"
     }
   ],
   "tableFields": [
