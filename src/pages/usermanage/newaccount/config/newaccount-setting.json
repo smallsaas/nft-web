@@ -622,12 +622,12 @@
       "options": {
         "tips": "确定对该玩家开启匹配必中吗?",
         "outside": true,
-        "API": "/api/crud/oms/player/players/succeedButton/(id)",
+        "API": "/api/crud/oms/player/players/nextSuccessMatch/(id)",
         "method": "put"
       },
       "expect": {
-        "field": "consecutiveMatchFailTimes",
-        "value": "1"
+        "field": "nextSuccessMatch",
+        "value": 1
       }
     },
     
@@ -637,12 +637,12 @@
       "options": {
         "tips": "确定对该玩家关闭匹配必中吗?",
         "outside": true,
-        "API": "/api/crud/oms/player/players/succeedButton/(id)",
+        "API": "/api/crud/oms/player/players/nextSuccessMatch/(id)",
         "method": "put"
       },
       "expect": {
-        "field": "consecutiveMatchFailTimes",
-        "value": "0"
+        "field": "nextSuccessMatch",
+        "value": 0
       }
     },
     {
