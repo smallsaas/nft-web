@@ -617,6 +617,35 @@
   ],
   "tableOperation": [
     {
+      "title": "开启必中",
+      "type": "request",
+      "options": {
+        "tips": "确定对该玩家开启匹配必中吗?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/succeedButton/(id)",
+        "method": "put"
+      },
+      "expect": {
+        "field": "consecutiveMatchFailTimes",
+        "value": "1"
+      }
+    },
+    
+    {
+      "title": "关闭必中",
+      "type": "request",
+      "options": {
+        "tips": "确定对该玩家关闭匹配必中吗?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/succeedButton/(id)",
+        "method": "put"
+      },
+      "expect": {
+        "field": "consecutiveMatchFailTimes",
+        "value": "0"
+      }
+    },
+    {
       "title": "审核通过",
       "type": "request",
       "options": {
@@ -740,7 +769,7 @@
     },
     {
       "label": "状态",
-      "field": "playerStatus",
+      "field": "status",
       "type": "select",
       "options": [
         {
@@ -1139,6 +1168,12 @@
     {
       "label": "银行卡号",
       "field": "bankAccountNumber2",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "冻结次数",
+      "field": "frozenCount",
       "type": "plain",
       "span": 8
     }
