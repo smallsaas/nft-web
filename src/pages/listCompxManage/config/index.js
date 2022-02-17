@@ -1,22 +1,26 @@
 const setting = require('./listCompxManage-setting.json');
 
 module.exports = {
-  layout: setting.layout.form,
-  title: setting.pageName.new,
+  layout: setting.layout.table,
+  title: setting.pageName.table,
   items: [
     {
-      component: 'custom_form',
+      component: 'Search',
+      config: {
+        fields: setting.searchFields,
+      },
+    },
+    {
+      component: 'Table',
       config: {
         API: {
+          listAPI: setting.listAPI,
+          appendAPI: '',
+          deleteAPI: setting.deleteAPI,
         },
-        layout: 'Grid',
-        layoutConfig: {
-          value: Array(setting.columns).fill(~~(24 / setting.columns)),
-        },
-        fields: setting.createFields || setting.formFields,
-        otherProps:{
-          footerButton: false
-        }
+        actions: setting.tableActions,
+        fields: setting.tableFields,
+        operation: setting.tableOperation,
       },
     },
   ],

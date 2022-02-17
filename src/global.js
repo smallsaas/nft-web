@@ -101,6 +101,9 @@ import GetValue from '@/components/SchemaGeneratorPage/components/getvalue/getva
 import CSet_Table_test from '@/container/List/Table';
 
 
+import VTSet_PlainPopover from '@/components/ValueType/PlainPopover';
+
+
 
 
 
@@ -272,6 +275,7 @@ VTSet({
   'valueinput':ValueInput,
   'valueinputtwo':ValueInputTwo,
   'valueinputthree':ValueInputThree,
-  'valueinputfour':ValueInputFour
+  'valueinputfour':ValueInputFour,
+  'plain_popover': VTSet_PlainPopover
 
 });

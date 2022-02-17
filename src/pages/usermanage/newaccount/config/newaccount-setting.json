@@ -782,7 +782,7 @@
         },
         {
           "label": "待审核",
-          "value": "UNINSPECTED"
+          "value": "PENDING"
         }
       ],
       "props": {
