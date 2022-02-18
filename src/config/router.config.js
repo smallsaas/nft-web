@@ -152,6 +152,10 @@ module.exports = [
     path: '/orderCenter',
     items: [
       {
+        path: '/orderCenter/orderList',
+        name: '订单',
+      },
+      {
         path: '/orderCenter/order',
         name: '订单收益结算',
       },

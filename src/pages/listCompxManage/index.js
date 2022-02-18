@@ -8,45 +8,6 @@ require('./index.less')
 
 export default function (){
 
-    // const listCompxData = [
-    //     { 
-    //         id: 1, 
-    //         label: 'index', 
-    //         type: Index, 
-    //         value: { 
-    //             model: { 
-    //                 listData:{ 
-    //                     current: 1, 
-    //                     pageSize: 10
-    //                 }
-    //             }, 
-    //             data: { 
-    //                 index: 1
-    //             } 
-    //         } 
-    //     },
-    //     { 
-    //         id: 2, 
-    //         label: 'video', 
-    //         type: Video, 
-    //         value: { 
-    //             data: { 
-    //                 text: 'plain' 
-    //             } 
-    //         } 
-    //     },
-    //     { 
-    //         id: 2, 
-    //         label: 'plain', 
-    //         type: Plain, 
-    //         value: { 
-    //             data: { 
-    //                 text: 'plain' 
-    //             } 
-    //         } 
-    //     },
-    // ]
-
     function listItem (item, index){
         const CompxValue = item.compx;
         return (
@@ -60,9 +21,9 @@ export default function (){
                 <Col flex="150px" align='center' justify='center'>
                     <div className='padding-t-b-10 padding-l-r-20' style={{width: '100%', height: '100%'}}>{item.type}</div>
                 </Col>
-                <Col flex="200px">
+                <Col flex="300px">
                     <div className='padding-t-b-10' style={{width: '100%', height: '100%',paddingLeft: '5px',}}>
-                        <textarea rows="8" cols="20" style={{resize:'none'}} disabled >{item.jsonFormat}</textarea>
+                        <textarea rows="8" cols="40" style={{resize:'none'}} disabled >{item.jsonFormat}</textarea>
                     </div>
                 </Col>
             </Row>
@@ -74,8 +35,8 @@ export default function (){
             <Row align='left' justify='left' style={{marginBottom: '10px'}}>
                 <Col flex="100px" align='center'>组件名</Col>
                 <Col flex="100px" align='center'>组件效果</Col>
-                <Col flex="150px" align='center'>参数类型</Col>
-                <Col flex="200px" align='center'>代码块</Col>
+                <Col flex="150px" align='center'>支持参数类型</Col>
+                <Col flex="300px" align='center'>代码块</Col>
             </Row>
             {listData.records.map((item, index) => {
                 return listItem(item ,index)

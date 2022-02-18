@@ -37,7 +37,7 @@ export default {
                     index: 1
                 }
             },
-            jsonFormat: '{ \n "label": "index",  \n "field": "Code",  \n "align": "center", \n "valueType": "index" \n }',
+            jsonFormat: '{ \n "label": "index",  \n "field": "Code",  \n "valueType": "index" \n }',
             describe: '索引'
         },
         { 
@@ -50,7 +50,7 @@ export default {
                     text: 'plain' 
                 } 
             },
-            jsonFormat: '{ \n "label": "plain",  \n "field": "Code",  \n "align": "center", \n "valueType": "plain" \n }',
+            jsonFormat: '{ \n "label": "plain",  \n "field": "Code",  \n "valueType": "plain" \n }',
             describe: ''
         },
         // { 
@@ -74,7 +74,7 @@ export default {
                     text: ['join-1', 'join-2'] 
                 } 
             },
-            jsonFormat: '{ \n "label": "join",  \n "field": "Code",  \n "align": "center", \n "valueType": "join" \n }',
+            jsonFormat: '{ \n "label": "join",  \n "field": "Code",  \n "valueType": "join" \n }',
             describe: ''
         },
 
@@ -94,7 +94,7 @@ export default {
                     text: '-'
                 }
             },
-            jsonFormat: '{ \n "label": "map",  \n "field": "Code",  \n "align": "center", \n "valueType": "map", \n "options": { "0":"否", "1":"是"  } }',
+            jsonFormat: '{ \n "label": "map",  \n "field": "Code",  \n "valueType": "map", \n "options": { "0":"否", "1":"是" }\n }',
             describe: ''
         },
     ]

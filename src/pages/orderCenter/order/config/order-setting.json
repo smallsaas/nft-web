@@ -184,7 +184,7 @@
             }
           },
           {
-            "field": "profitPeoplePhone",
+            "field": "playerPhone",
             "type": "plain"
           }
         ]
