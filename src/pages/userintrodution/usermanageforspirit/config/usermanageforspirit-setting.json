@@ -375,7 +375,11 @@
       "type": "select",
       "options": [
         {
-          "label": "领养中",
+          "label": "匹配中",
+          "value": "MATCHING"
+        },
+        {
+          "label": "成长中",
           "value": "GROWING"
         },
         {
@@ -383,12 +387,28 @@
           "value": "SELLING"
         },
         {
-          "label": "冻结中",
-          "value": "FROZEN"
+          "label": "已过期",
+          "value": "EXPIRED"
         },
         {
-          "label": "销毁",
+          "label": "交易中",
+          "value": "TRADING"
+        },
+        {
+          "label": "交易失败",
+          "value": "TRADE_FAILED"
+        },
+        {
+          "label": "已销毁",
           "value": "DESTROYED"
+        },
+        {
+          "label": "已拆分",
+          "value": "SPLIT"
+        },
+        {
+          "label": "已冻结",
+          "value": "FROZEN"
         },
         {
           "label": "锁定",
@@ -519,6 +539,7 @@
           "TRADING": "交易中",
           "DESTROYED": "已销毁",
           "SPLIT": "已拆分",
+          "FORZEN": "已冻结",
           "LOCKED": "已锁定"
         }
       },
