@@ -7,6 +7,7 @@
   "listAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList",
   "createAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList",
   "getAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList/[id]",
+  "getOrderAPI": "/api/crud/oms/wispOrder/wispOrders/[id]",
   "updateAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList/[id]",
   "deleteAPI": "/api/crud/oms/wispOrder/wispOrders/waitingPaymentList/(id)",
   "columns": 1,
@@ -352,7 +353,14 @@
     {
       "label": "订单号",
       "field": "orderNumber",
-      "align": "center"
+      "valueType": "path",
+      "options": {
+        "path": "/userintrodution/nopay/nopay-order-view",
+        "query":{
+          "id": "id"
+        }
+      },
+      "align":"center"
     },
     {
       "label": "精灵名称",
@@ -461,6 +469,78 @@
       "options": {
         "value": "orderCountDown"
       }
+    }
+  ],
+  "orderViewConfig": [
+    {
+      "label": "订单号",
+      "field": "orderNumber",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "精灵名称",
+      "field": "wispName",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "价格",
+      "field": "transactionCoins",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "买家",
+      "field": "buyerName",
+      "type": "plain",
+      "span": 12
+    },
+    {
+      "label": "买家手机号",
+      "field": "buyerPhone",
+      "type": "plain",
+      "span": 12
+    },
+    {
+      "label": "卖家",
+      "field": "sellerName",
+      "type": "plain",
+      "span": 12
+    },
+    {
+      "label": "买家手机号",
+      "field": "sellerPhone",
+      "type": "plain",
+      "span": 12
+    },
+    {
+      "label": "订单状态",
+      "field": "status",
+      "type": "plain",
+      "options": {
+        "map": {
+          "WAITING_PAYMENT": "等待付款",
+          "PAID": "已付款",
+          "PAYMENT_TIMEOUT": "交易超时",
+          "RECEIVED": "已收款",
+          "CANCEL": "取消交易",
+          "COMPLAINING": "申诉中"
+        }
+      },
+      "span": 24
+    },
+    {
+      "label": "预约时间",
+      "field": "createTime",
+      "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "付款倒计时(分钟)",
+      "field": "remainingMinutes",
+      "type": "plain",
+      "span": 24
     }
   ]
 }

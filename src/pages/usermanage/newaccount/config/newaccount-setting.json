@@ -617,7 +617,7 @@
   ],
   "tableOperation": [
     {
-      "title": "开启必中",
+      "title": "关闭必中",
       "type": "request",
       "options": {
         "tips": "确定对该玩家开启匹配必中吗?",
@@ -632,7 +632,7 @@
     },
     
     {
-      "title": "关闭必中",
+      "title": "开启必中",
       "type": "request",
       "options": {
         "tips": "确定对该玩家关闭匹配必中吗?",

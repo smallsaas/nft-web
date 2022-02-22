@@ -61,7 +61,7 @@
       },
       "options":[
         {"label":"等待付款","value":"WAITING_PAYMENT"},
-        {"label":"已付款","value":"PAID,"},
+        {"label":"已付款","value":"PAID"},
         {"label":"交易超时","value":"PAYMENT_TIMEOUT"},
         {"label":"已收款","value":"RECEIVED"},
         {"label":"取消交易","value":"CANCEL"},
