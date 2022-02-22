@@ -440,7 +440,7 @@
       "field": "holdPlayerId"
     },
     {
-      "label": "玩家号码",
+      "label": "玩家手机号",
       "field": "playerHint",
       "type": "search",
       "props": {
@@ -514,6 +514,11 @@
       "align": "center"
     },
     {
+      "label": "解锁时间",
+      "field": "unlockTime",
+      "align": "center"
+    },
+    {
       "label": "状态更新时间",
       "field": "stageChangeTime",
       "align": "center"
@@ -539,7 +544,7 @@
           "TRADING": "交易中",
           "DESTROYED": "已销毁",
           "SPLIT": "已拆分",
-          "FORZEN": "已冻结",
+          "FROZEN": "已冻结",
           "LOCKED": "已锁定"
         }
       },
