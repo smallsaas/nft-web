@@ -10,6 +10,52 @@ module.exports = {
           share: 'sysUserReport',
         },
       },
+      
+      // {
+      //   component: 'Search',
+      //   config: {
+      //     fields: [
+      //       {
+      //         label: '店小二',
+      //         type: 'select-fetch',
+      //         props: {
+      //           placeholder: '请选择',
+      //           style: {
+      //             width: 240
+      //           }
+      //         },
+      //         rules: [],
+      //         options: {
+      //           API: '/api/adm/users?roleid=server',
+      //           label: 'name',
+      //           value: 'id'
+      //         },
+      //         field: '店小二'
+      //       },
+      //       {
+      //         label: '创建时间',
+      //         options: {
+      //           format: 'YYYY-MM-DD',
+      //           startDate: 'startDate',
+      //           endDate: 'endDate'
+      //         },
+      //         type: 'range',
+      //         field: 'releaseTimes'
+      //       },
+        
+      //       {
+      //         label: '',
+      //         type: 'hidden',
+      //         field: 'startDate'
+      //       },
+      //       {
+      //         label: '',
+      //         type: 'hidden',
+      //         field: 'endDate'
+      //       }
+      //     ]
+      //   },
+      // },
       {
         layout: 'Empty',
         component: 'AutoReport',

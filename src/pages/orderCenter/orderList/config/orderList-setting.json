@@ -171,11 +171,7 @@
     {
       "label": "订单时间",
       "field": "createTime",
-      "align": "center",
-      "valueType": "valueinput",
-      "options": {
-        "value": "createTime"
-      }
+      "align": "center"
     }
   ],
   "viewConfig": [

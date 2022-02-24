@@ -345,11 +345,7 @@
     {
       "label": "投诉时间",
       "field": "createTime",
-      "align": "center",
-      "valueType": "valueinputthree",
-      "options": {
-        "value": "createTime"
-      }
+      "align": "center"
     }
   ],
   "viewConfig": [
@@ -369,6 +365,12 @@
       "label": "投诉标题",
       "field": "title",
       "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "投诉图片",
+      "field": "credentialLink",
+      "type": "image",
       "span": 24
     },
     {
@@ -440,6 +442,12 @@
       "label": "订单号",
       "field": "orderNumber",
       "type": "plain",
+      "span": 24
+    },
+    {
+      "label": "付款凭证",
+      "field": "pictureUrl",
+      "type": "image",
       "span": 24
     },
     {

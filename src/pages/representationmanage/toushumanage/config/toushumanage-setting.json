@@ -282,11 +282,7 @@
     {
       "label": "投诉时间",
       "field": "createTime",
-      "align": "center",
-      "valueType": "valueinputthree",
-      "options": {
-        "value": "createTime"
-      }
+      "align": "center"
     }
   ],
   "viewConfig": [
