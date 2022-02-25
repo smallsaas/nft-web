@@ -7,7 +7,6 @@ import config from './config/settingConfig.js';
 import dConfig from './config/dictionaryConfig.js';
 import ContentConfig from './contentConfig';
 import SysNotice from './sysNotice';
-import TimingServer from './config/timingConf';
 
 const { TabPane } = Tabs;
 
@@ -37,9 +36,6 @@ export default function Term(props) {
       </TabPane>
       <TabPane tab="系统公告" key="sys_notice">
         <SysNotice />
-      </TabPane>
-      <TabPane tab="定时任务" key="timing_service">
-        <TimingServer/>
       </TabPane>
     </Tabs>
   </Content>

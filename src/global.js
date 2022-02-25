@@ -202,8 +202,10 @@ CSet({
   'Table_test': CSet_Table_test,
 });
 
+//添加列表操作按钮
 LASet({
   // 'onPath': onPath,
+  'onExportFile': AITSet_export_file
 });
 
 //表单组件
@@ -256,8 +258,7 @@ FITSet({
 
 AITSet({
   path,
-  tabs,
-  'exportFile': AITSet_export_file
+  tabs
 });
 
 //列表 & 详情

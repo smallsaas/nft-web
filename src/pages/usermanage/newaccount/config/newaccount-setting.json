@@ -617,35 +617,6 @@
   ],
   "tableOperation": [
     {
-      "title": "关闭必中",
-      "type": "request",
-      "options": {
-        "tips": "确定对该玩家开启匹配必中吗?",
-        "outside": true,
-        "API": "/api/crud/oms/player/players/nextSuccessMatch/(id)",
-        "method": "put"
-      },
-      "expect": {
-        "field": "nextSuccessMatch",
-        "value": 1
-      }
-    },
-    
-    {
-      "title": "开启必中",
-      "type": "request",
-      "options": {
-        "tips": "确定对该玩家关闭匹配必中吗?",
-        "outside": true,
-        "API": "/api/crud/oms/player/players/nextSuccessMatch/(id)",
-        "method": "put"
-      },
-      "expect": {
-        "field": "nextSuccessMatch",
-        "value": 0
-      }
-    },
-    {
       "title": "审核通过",
       "type": "request",
       "options": {

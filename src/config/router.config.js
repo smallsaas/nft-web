@@ -252,6 +252,11 @@ module.exports = [
         permissions: ''
       },
       {
+        name: '定时服务',
+        path: '/sys/timingConf',
+        permissions: ''
+      },
+      {
         name: '操作日志',
         path: '/sys/logs',
         permissions: ''

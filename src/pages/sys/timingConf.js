@@ -213,7 +213,7 @@ export default function (props) {
 
   // console.log(marketingSessionData, ' 场次 ')
   return (
-    <div>
+    <div style={{background: '#fff', padding: '20px'}}>
       <Title level={4}>{title}</Title>
       <Table
         rowKey="id"
