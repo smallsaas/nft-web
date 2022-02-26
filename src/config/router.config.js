@@ -252,7 +252,7 @@ module.exports = [
         permissions: ''
       },
       {
-        name: '定时服务',
+        name: '定时任务',
         path: '/sys/timingConf',
         permissions: ''
       },
