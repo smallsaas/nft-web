@@ -245,18 +245,14 @@
       "type": "default"
     },
     {
-      "label": "订单价值",
-      "field": "orderPrice",
+      "label": "订单收益",
+      "field": "sellerProfitMoney",
       "align": "center"
     },
     {
       "label": "订单时间",
       "field": "orderTime",
-      "align": "center",
-      "valueType": "valueinput",
-      "options": {
-        "value": "orderTime"
-      }
+      "align": "center"
     }
   ],
   "viewConfig": [

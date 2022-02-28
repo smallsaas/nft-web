@@ -632,12 +632,51 @@
     },
     {
       "title": "审核不通过",
-      "type": "request",
+      "type": "modal",
       "options": {
-        "tips": "确定要审核不通过麽?",
         "outside": false,
-        "API": "/api/crud/oms/player/reject/(id)",
-        "method": "post"
+        "style": "primary",
+        "modalTitle": "审核不通过",
+        "modalWidth": 600,
+        "items": [
+          {
+            "component": "Form",
+            "config": {
+              "layout": "Grid",
+              "layoutConfig": {
+                "value": [
+                  24
+                ]
+              },
+              "API": {
+                "createAPI": "/api/crud/oms/player/reject/(id)"
+              },
+              "fields": [
+                {
+                  "label": "填写内容:",
+                  "rules": [
+                    {
+                      "type": "required",
+                      "message": "请輸入内容"
+                    }
+                  ],
+                  "props": {
+                    "placeholder": "请输入",
+                    "min":0,
+                    "style": {
+                      "width": 300
+                    }
+                  },
+                  "autoSize":{
+                      "minRows":4
+                  },
+                  "type":"text-area",
+                  "field": "note"
+                }
+              ]
+            }
+          }
+        ]
       },
       "expect": {
         "field": "status",

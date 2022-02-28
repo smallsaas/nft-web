@@ -6,7 +6,16 @@ export default function formatTime(props){
             text="-"
         },
     }=props
+
+    function handleFormatDate(){
+        if(typeof text === 'number'){
+            return moment(text).format("YYYY-MM-DD hh:mm:ss")
+        }else{
+            return text
+        }
+    }
+
     return <div>
-        {moment(text).format("YYYY-MM-DD hh:mm:ss")}
+        {handleFormatDate(text)}
     </div>
 }

@@ -127,6 +127,25 @@ export default function (props) {
     })
   }
 
+  //系统号统计
+  function sysNumberStatistics() {
+    const apiUrl = `${getEndpoint()}/api/crud/oms/manager/managers/autoRecord`;
+    const queryData = {}
+    promiseAjax(apiUrl, queryData, {})
+    .then(resp => {
+      // console.log(resp , '自动确认收款操作')
+      if (resp.code===200) {
+        // const data = resp.data;
+        message.success('操作成功')
+        setShowModal(false)
+        onReset();
+      } else {
+        message.error('操作失败')
+        console.error(resp, '操作失败')
+      }
+    })
+  }
+
   function showModalAction(key) {
     setShowModal(true)
     setCurrentKey(key)
@@ -138,7 +157,7 @@ export default function (props) {
   }
 
   function onFinish(e) {
-    console.log(e, ' 执行 ')
+    // console.log(e, ' 执行 ')
     switch(currentKey){
       case "1":
         break;
@@ -150,6 +169,8 @@ export default function (props) {
         break;
       case "4":
         autoReceive(e.sessionId)
+        break;
+      case "5":
         break;
       default:
         break;
@@ -173,6 +194,12 @@ export default function (props) {
         if (record.key === '1') {
           return (
             <Popconfirm title="确定立即执行精灵升级吗？" okText="确认" cancelText="取消" onConfirm={upgradeAction}>
+              <a href="#">执行</a>
+            </Popconfirm>
+          )
+        }if (record.key === '5') {
+          return (
+            <Popconfirm title="确定立即执行系统号统计吗？" okText="确认" cancelText="取消" onConfirm={sysNumberStatistics}>
               <a href="#">执行</a>
             </Popconfirm>
           )
@@ -203,6 +230,11 @@ export default function (props) {
       key: '4',
       title: '自动确认收款',
       description: "自动确认收款线程立即执行"
+    },
+    {
+      key: '5',
+      title: '系统号统计',
+      description: "系统号统计线程立即执行"
     }
   ];
 

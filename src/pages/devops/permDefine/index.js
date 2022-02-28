@@ -109,6 +109,10 @@ export default function (props) {
       render: (text, record) => text || record.key
     },
     {
+      dataIndex: 'permName', title: '权限名',
+      render: (text, record) => text || record.permName
+    },
+    {
       dataIndex: 'permission', title: '识别字符',
       render: (text, record) => text || record.permission
     },
