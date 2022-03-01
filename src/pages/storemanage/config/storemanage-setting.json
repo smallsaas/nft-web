@@ -81,7 +81,11 @@
         "placeholder": "请输入"
       },
       "type": "upload-image",
-      "field": "photoUrl"
+      "field": "photoUrl",
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     }
   ],
   "map": {},

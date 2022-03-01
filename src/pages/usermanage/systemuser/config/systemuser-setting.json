@@ -231,7 +231,11 @@
       },
       "type": "upload-image",
       "field": "alipayQrCodePhotoUrl",
-      "span": 16
+      "span": 16,
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     },
     {
       "label": "微信账号",
@@ -254,7 +258,11 @@
       },
       "type": "upload-image",
       "field": "wechatQrCodePhotoUrl",
-      "span": 16
+      "span": 16,
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     },
     {
       "label": "身份证正面图片",
@@ -263,7 +271,11 @@
       },
       "type": "upload-image",
       "field": "frontIdCardPhotoUrl",
-      "span": 8
+      "span": 8,
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     },
     {
       "label": "身份证反面图片",
@@ -272,7 +284,11 @@
       },
       "type": "upload-image",
       "field": "reverseSideIdCardPhotoUrl",
-      "span": 16
+      "span": 16,
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     },
     {
       "label": "户名",

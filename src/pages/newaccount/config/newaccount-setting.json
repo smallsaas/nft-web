@@ -227,7 +227,11 @@
       },
       "type": "upload-image",
       "field": "alipayQrCodePhotoUrl",
-      "span": 16
+      "span": 16,
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     },
     {
       "label": "微信账号",
@@ -250,7 +254,11 @@
       },
       "type": "upload-image",
       "field": "wechatQrCodePhotoUrl",
-      "span": 16
+      "span": 16,
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     },
     {
       "label": "户名",

@@ -83,7 +83,11 @@
         }
       ],
       "type": "upload-image",
-      "field": "previewPhotoUrl"
+      "field": "previewPhotoUrl",
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     },
     {
       "label": "级别",
@@ -332,7 +336,11 @@
         "placeholder": "请输入"
       },
       "type": "upload-image",
-      "field": "previewPhotoUrl"
+      "field": "previewPhotoUrl",
+      "options":{
+        "type": "string",
+        "hasKey": false
+      }
     },
     {
       "label": "级别",

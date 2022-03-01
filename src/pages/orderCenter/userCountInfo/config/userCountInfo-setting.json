@@ -39,7 +39,11 @@
       {
         "label": "精灵图片",
         "type": "upload-image",
-        "field": "photoUrl"
+        "field": "photoUrl",
+        "options":{
+          "type": "string",
+          "hasKey": false
+        }
       }
     ],
     "updateFields": [{
@@ -70,7 +74,11 @@
       {
         "label": "精灵图片",
         "type": "upload-image",
-        "field": "photoUrl"
+        "field": "photoUrl",
+        "options":{
+          "type": "string",
+          "hasKey": false
+        }
       }
     ],
     "map": {},
