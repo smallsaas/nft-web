@@ -663,7 +663,7 @@
       },
       "expect": {
         "field": "status",
-        "value": "PENDING"
+        "value": [["PENDING","REFUSED"]]
       }
     },
     {
@@ -829,6 +829,10 @@
         {
           "label": "待审核",
           "value": "PENDING"
+        },
+        {
+          "label": "审核不通过",
+          "value": "REFUSED"
         }
       ],
       "props": {

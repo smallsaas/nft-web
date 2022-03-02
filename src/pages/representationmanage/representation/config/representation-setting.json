@@ -79,7 +79,7 @@
       "isGoBack": true
     },
     {
-      "label": "申述",
+      "label": "支持",
       "type": "fetch_commit",
       "field": "id",
       "options": {

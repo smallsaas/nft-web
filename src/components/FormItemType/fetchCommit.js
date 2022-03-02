@@ -103,7 +103,8 @@ export default function FetchCommit(props){
             method:method,
             body:JSON.stringify(theData),
             headers:{
-                Authorization:`Bearer ${token}`
+                Authorization:`Bearer ${token}`,
+                'content-type': 'application/json'
             }
         })
         fetch(requestData).then(res=>{
