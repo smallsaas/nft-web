@@ -107,7 +107,7 @@
     },
     {
       "label": "",
-      "field": "replyRecordList",
+      "field": "complainReplyRecord",
       "type": "one-mary",
       "span": 24,
       "options": {
