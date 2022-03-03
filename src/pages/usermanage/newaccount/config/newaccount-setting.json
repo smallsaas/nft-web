@@ -1085,13 +1085,13 @@
     },
     {
       "label": "GUGU精灵总数",
-      "field": "teamCurrentAdoptWisp",
+      "field": "wispCount",
       "type": "plain",
       "span": 8
     },
     {
       "label": "GUGU能力总值",
-      "field": "teamAdoptWispCount",
+      "field": "wispValueAmount",
       "type": "plain",
       "span": 8
     },
