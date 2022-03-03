@@ -16,7 +16,6 @@ export default function CheckboxGroup({ value, data, onChange }) {
       indeterminate={!checked && indeterminate}
       checked={checked}
       onChange={handleChange}
-    />
-    {value}
+    >{value}</Checkbox>
   </>;
 }

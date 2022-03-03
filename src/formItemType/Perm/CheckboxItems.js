@@ -13,8 +13,7 @@ export default function CheckboxGroup({ value, data, onChange }) {
         <Checkbox
           checked={data.selected[item.id]}
           onChange={handleChange.bind(null, item)}
-        />
-        {item.name}
+        >{item.name}</Checkbox>
       </Fragment>
     })
 

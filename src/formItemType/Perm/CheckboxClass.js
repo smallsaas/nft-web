@@ -23,7 +23,7 @@ export default function CheckboxClass({ value, data, onChange }) {
       indeterminate={!checked && indeterminate}
       checked={checked}
       onChange={handleChange}
-    />
-    {value}
+    >{value}</Checkbox>
+    
   </>;
 }
