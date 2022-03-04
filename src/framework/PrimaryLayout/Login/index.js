@@ -43,7 +43,7 @@ export default (props) => {
   }
 
   function handleRouteToProfile() {
-    history.push('/admin');
+    history.push('/profile/baseInfo');
     useVisible(false);
   }
 

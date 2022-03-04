@@ -37,6 +37,35 @@ const config = {
         ]
       }
     },
+    
+    {
+      layout: 'Content',
+      component: 'Form',
+      config: {
+        goBack: false,
+        API: {
+          createAPI: '/api/crud/oms/player/players/paymentPassword/change',
+        },
+        fields: [
+          { field: 'group', label: '', type: 'group', value: '修改支付密码' },
+          {
+            field: 'newPaymentPassword', label: '新支付密码', type: 'password',
+            rules: ['required'],
+          },
+          {
+            field: 'repeatPaymentPassword', label: '重复新支付密码', type: 'password',
+            rules: ['required', {
+              type: 'password',
+              field: 'newPaymentPassword',
+            }],
+            expect: {
+              field: 'newPaymentPassword',
+              value: 'IS_RESOLVE'
+            }
+          },
+        ]
+      }
+    },
     // {
     //   layout: 'Content',
     //   component: 'Form',
