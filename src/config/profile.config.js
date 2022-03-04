@@ -20,7 +20,7 @@ module.exports = [
     path: '/profile/baseInfo'
   },
   {
-    name: '个人信息',
+    name: '账号安全',
     path: '/profile/security'
   }
 ]
