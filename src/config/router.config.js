@@ -3,19 +3,19 @@ module.exports = [
     name: '精灵管理',
     path: '/spirits',
     permissions: [
-      'wispMain.management',
-      'wispMeta.management',
-      'wisp.management'
+      // 'menus.wispMain.management',
+      'menu.wispMeta.management',
+      'menu.wisp.management'
     ],
     items: [{
       path: '/spirits/metaspirit',
       name: '元精灵管理',
-      permissions: 'wispMeta.management'
+      permissions: 'menu.wispMeta.management'
     },
     {
       path: '/spirits/spirit',
       name: '精灵管理',
-      permissions: 'wisp.management'
+      permissions: 'menu.wisp.management'
     }
       // {
       //   path: '/spirits/spiritconfig',
@@ -27,37 +27,37 @@ module.exports = [
     name: '玩家攻略',
     path: '/userintrodution',
     permissions: [
-      'playerStartegy.management',
-      'booking.management',
-      'session.menagement',
-      'unpaid.menagement',
-      'playerWisp.menagement',
-      'sysPlayer.menagement'
+      // 'menus.playerStartegy.management',
+      'menu.booking.management',
+      'menu.session.menagement',
+      'menu.unpaid.menagement',
+      'menu.playerWisp.menagement',
+      'menu.sysPlayer.menagement'
     ],
     items: [{
       path: '/userintrodution/bookingmanagement',
       name: '预约',
-      permissions: 'booking.management'
+      permissions: 'menu.booking.management'
     },
     {
       path: '/userintrodution/spiritprocessnumber',
       name: '场次',
-      permissions: 'session.menagement'
+      permissions: 'menu.session.menagement'
     },
     {
       path: '/userintrodution/nopay',
       name: '未付款列表',
-      permissions: 'unpaid.menagement'
+      permissions: 'menu.unpaid.menagement'
     },
     {
       path: '/userintrodution/usermanageforspirit',
       name: '玩家精灵',
-      permissions: 'playerWisp.menagement'
+      permissions: 'menu.playerWisp.menagement'
     },
     {
       path: '/userintrodution/systemuser',
       name: '系统号',
-      permissions: 'sysPlayer.menagement'
+      permissions: 'menu.sysPlayer.menagement'
     },
     ]
   },
@@ -65,26 +65,26 @@ module.exports = [
     name: '玩家管理',
     path: '/usermanage',
     permissions:[
-      'playerWisp.menagement',
-      'playerSys.menagement',
-      'playerPlayers.menagement',
-      'sign.menagement',
+      // 'menus.playerPlayers.menagement',
+      'menu.playerSys.menagement',
+      'menu.playerPlayers.menagement',
+      'menu.sign.menagement',
     ],
     items: [
       {
         path: '/usermanage/systemuser',
         name: '系统号',
-        permissions: 'playerSys.menagement'
+        permissions: 'menu.playerSys.menagement'
       },
       {
         path: '/usermanage/newaccount',
         name: '玩家',
-        permissions: 'playerPlayers.menagement'
+        permissions: 'menu.playerPlayers.menagement'
       },
       {
         path: '/usermanage/signCenter/signManage',
         name: '签到',
-        permissions: 'sign.menagement'
+        permissions: 'menu.sign.menagement'
       }
       // {
       //   path: '/usermanage/newteammanage',
@@ -100,41 +100,41 @@ module.exports = [
     name: '申述管理',
     path: '/representationmanage',
     permissions:[
-      'complain.menagement',
-      'complains.menagement',
-      'complaint.menagement',
+      // 'menus.complain.menagement',
+      'menu.complains.menagement',
+      'menu.complaint.menagement',
     ],
     items: [{
       path: '/representationmanage/representation',
       name: '申述管理',
-      permissions: 'complains.menagement'
+      permissions: 'menu.complains.menagement'
     },
     {
       path: '/representationmanage/toushumanage',
       name: '投诉管理',
-      permissions: 'complaint.menagement'
+      permissions: 'menu.complaint.menagement'
     }]
   },
   {
     name: '结算中心',
     path: '/orderCenter',
     permissions:[
-      'account.menagement',
-      'order.menagement',
-      'earnings.management',
-      'recommend.management',
-      'tong.management'
+      // 'menus.account.menagement',
+      'menu.order.menagement',
+      'menu.earnings.management',
+      'menu.recommend.management',
+      'menu.tong.management'
     ],
     items: [
       {
         path: '/orderCenter/orderList',
         name: '订单',
-        permissions:'order.menagement'
+        permissions:'menu.order.menagement'
       },
       {
         path: '/orderCenter/order',
         name: '订单收益结算',
-        permissions:'earnings.management'
+        permissions:'menu.earnings.management'
       },
       //   {
       //   path: '/orderCenter/orderCount',
@@ -143,22 +143,22 @@ module.exports = [
       {
         path: '/orderCenter/orderCountInfo',
         name: '推荐收益',
-        permissions:'recommend.management'
+        permissions:'menu.recommend.management'
       }, {
         path: '/orderCenter/userCountInfo',
         name: '帮会收益',
-        permissions:'tong.management'
+        permissions:'menu.tong.management'
       }]
   },
   {
     name: '配置中心',
     path: '/configcenter',
     permissions:[
-      'configuration.management',
-      'session.menagement',
-      'gugu.management',
-      'companion.management',
-      'land.management'
+      // 'menus.configuration.management',
+      'menu.session.menagement',
+      'menu.gugu.management',
+      'menu.companion.management',
+      'menu.land.management'
     ],
     items: [
       // {
@@ -168,22 +168,22 @@ module.exports = [
       {
         path: '/configcenter/spiritprocessnumbermanage',
         name: '场次管理',
-        permissions: 'session.menagement'
+        permissions: 'menu.session.menagement'
       },
       {
         path: '/configcenter/guguManage',
         name: 'GuGu令管理',
-        permissions: 'gugu.management'
+        permissions: 'menu.gugu.management'
       },
       {
         path: '/configcenter/sparManage',
         name: '晶石管理',
-        permissions: 'companion.management'
+        permissions: 'menu.companion.management'
       },
       {
         path: '/configcenter/landManage',
         name: '土地管理',
-        permissions: 'land.management'
+        permissions: 'menu.land.management'
       }
       // ,
       // {
@@ -200,12 +200,13 @@ module.exports = [
     name: '系统管理',
     path: '/sys',
     permissions: [
-      'sys.management',
-      'organization',
-      'user.management',
-      'role.management',
-      'sysconfiguration.management',
-      'timing.management'
+      // 'menus.sys.management',
+      'menu.organization',
+      'menu.user.management',
+      'menu.role.management',
+      'menu.sysconfiguration.management',
+      'menu.timing.management',
+      'menu.operation.management'
     ],
     items: [
       // {
@@ -215,32 +216,32 @@ module.exports = [
       {
         name: '组织管理',
         path: '/sys/org',
-        permissions: 'organization'
+        permissions: 'menu.organization'
       },
       {
         name: '用户管理',
         path: '/sys/user',
-        permissions: 'user.management'
+        permissions: 'menu.user.management'
       },
       {
         name: '角色管理',
         path: '/sys/role',
-        permissions: 'role.management'
+        permissions: 'menu.role.management'
       },
       {
         name: '系统配置',
         path: '/sys/setting',
-        permissions: 'sysconfiguration.management'
+        permissions: 'menu.sysconfiguration.management'
       },
       {
         name: '定时任务',
         path: '/sys/timingConf',
-        permissions: 'timing.management'
+        permissions: 'menu.timing.management'
       },
       {
         name: '操作日志',
         path: '/sys/logs',
-        permissions: 'operation.management'
+        permissions: 'menu.operation.management'
       }
     ]
   },
@@ -248,10 +249,10 @@ module.exports = [
     name: '运维管理',
     path: '/devops',
     permissions:[
-      'devops.manage',
-      'devconfig.manage',
-      'devperm.manage',
-      'devdeveloper.manage',
+      // 'menus.devops.manage',
+      'menu.devconfig.manage',
+      'menu.devperm.manage',
+      'menu.devdeveloper.manage',
     ],
     items: [
       // {
@@ -273,17 +274,17 @@ module.exports = [
       {
         path: '/devops/configManage',
         name: '配置管理',
-        permissions: 'devconfig.manage'
+        permissions: 'menu.devconfig.manage'
       },
       {
         path: '/devops/permManage',
         name: '权限管理',
-        permissions: 'devperm.manage'
+        permissions: 'menu.devperm.manage'
       },
       {
         path: '/devops/developerManege',
         name: '开发用户',
-        permissions: 'devdeveloper.manage'
+        permissions: 'menu.devdeveloper.manage'
       }
     ]
   },
