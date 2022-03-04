@@ -40,7 +40,7 @@ const config = {
             ],
             span: 24  
           },
-          { field: 'birthday', label: '生日', type: 'date' },
+          { field: 'birthday', label: '生日', type: 'date', },
           
           { field: 'email', label: '邮箱', type: 'input', span: 24 },
         ]

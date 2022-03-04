@@ -9,6 +9,7 @@ import './index.less';
 import GlobalContext from '@/framework/GlobalContext';
 
 import selectNavStyle from './utils/selectNavStyle';
+const appLogo = require( '../../../public/applogo.png');
 
 const { Header, Content } = Layout;
 
@@ -49,9 +50,14 @@ export default function PrimaryLayout({
     {aloneView ? null : (
       <Header className="header topNav">
         <div className="logo">
-          <a href="/">
-            星+智能营销云平台
-          </a>
+        <div  style={{height:"64px",position:"relative"}}>
+        <a href="/"  style={{position:"absolute",top:"45%",left:"5%",transform:"translate(-50%,-50%)"}}>
+          <div>
+            <img width={40} src={appLogo} style={LeftNavData&&LeftNavData.length>1?{}:{display:"none"}}></img>
+          </div>
+      {/* SmallSaaS低代码开发平台 */}
+      </a>
+    </div>
         </div>
         <TopNav
           path={location.pathname}
