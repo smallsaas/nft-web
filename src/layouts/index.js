@@ -100,7 +100,7 @@ function BasicLayout(props) {
       <PrimaryLayout
         {...props}
         breadcrumb={state.breadcrumb}
-        menuData={switchMenuData(pathname, menuData)}
+        menuData={switchMenuData(pathname)}
       >
       </PrimaryLayout>
     </GlobalContext.Provider>
@@ -109,7 +109,7 @@ function BasicLayout(props) {
 
 const reg = /^\/profile\//;
 const reg3 = /^\/401\//;
-function switchMenuData(pathname, menuData) {
+function switchMenuData(pathname) {
   if (reg.test(pathname)) {
     return profileMenuData;
   }

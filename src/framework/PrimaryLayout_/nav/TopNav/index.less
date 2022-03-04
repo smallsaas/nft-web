@@ -13,7 +13,7 @@
   }
 
   .nav-item+.nav-item {
-    margin-left: 8px;
+    //margin-left: 8px;
   }
 
   .nav-item,
@@ -22,10 +22,17 @@
     transition : all .3s;
     overflow   : hidden;
   }
+  .nav-item:hover{
+    border-bottom: 2px solid white;
+  }
+  .nav-item.selected{
+    border-bottom: 2px solid white;
+  }
 
   .nav-item.selected .nav-title {
     font-weight     : @ZEle-menu-top-weight;
     background-color: @ZEle-menu-top-active-bgColor;
+
   }
 
   .nav-item.selected .nav-title:hover {
@@ -47,6 +54,7 @@
 
     &:hover {
       background-color: @ZEle-menu-top-bgColor-light;
+      border-bottom: 10px solid black;
     }
 
     .nav-icon {
