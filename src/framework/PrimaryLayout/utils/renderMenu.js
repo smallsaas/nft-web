@@ -39,6 +39,7 @@ export default function renderMenu({
       if (Array.isArray(items)) {
         rst.push(<SubMenu key={path}
           collaps={collaps}
+          path={path}
           selected={selectedKeys.includes(path)}
           title={
             renderItem(icon, name, collaps)

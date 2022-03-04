@@ -61,6 +61,7 @@ function LoginForm(props) {
         remember: values.remember,
         extra: values.account,
       });
+      model.clearPerm()
       model.queryPerm(true);
 
       // if (data.status === 'PASS') {

@@ -30,10 +30,12 @@ export default function LeftNav({ path, navType, menuData }) {
 
   return <Sider
     width={menuData && menuData.length ? 200 : 0}
+    className="LeftSider"
     style={{
       background: '#fff',
       overflow: 'hidden auto',
-    }}>
+    }}
+    >
     <div className="LeftNav">
       {renderMenu({
         menuData,

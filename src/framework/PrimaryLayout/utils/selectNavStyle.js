@@ -53,12 +53,9 @@ function filterMenu(menuData) {
   const stack = [menuData];
   const rst = [];
 
-  console.log('stack === ', stack)
-
   while (stack.length) {
     const shift = stack.shift();
 
-    console.log('shift 1111 === ', shift)
     if (!shift) {
       break;
     };
