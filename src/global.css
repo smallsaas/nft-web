@@ -61,6 +61,11 @@ header.ant-layout-header {
   color:#FFF8!important;
 }
 
+.ant-checkbox-wrapper + .ant-checkbox-wrapper {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
 .ant-checkbox-wrapper {
   /* box-sizing: border-box; */
   width: 240px;
