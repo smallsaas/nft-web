@@ -1,222 +1,244 @@
 {
-    "pageName": {
-      "table": "土地管理",
-      "new": "添加元精灵",
-      "edit": "编辑土地",
-      "view": "查看详情"
+  "pageName": {
+    "table": "土地管理",
+    "new": "添加元精灵",
+    "edit": "编辑土地",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/land/lands",
+  "createAPI": "/api/crud/oms/land/lands",
+  "getAPI": "/api/crud/oms/land/lands/[id]",
+  "updateAPI": "/api/crud/oms/land/lands/[id]",
+  "deleteAPI": "/api/crud/oms/land/lands/(id)",
+  "columns": 1,
+  "createFields": [
+    {
+      "label": "精灵名称",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
     },
-    "listAPI": "/api/crud/oms/land/lands",
-    "createAPI": "/api/crud/oms/land/lands",
-    "getAPI": "/api/crud/oms/land/lands/[id]",
-    "updateAPI": "/api/crud/oms/land/lands/[id]",
-    "deleteAPI": "/api/crud/oms/land/lands/(id)",
-    "columns": 1,
-    "createFields": [{
-        "label": "精灵名称",
-        "rules": [{
+    {
+      "label": "精灵描述",
+      "rules": [
+        {
           "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name"
-      },
-      {
-        "label": "精灵描述",
-        "rules": [{
-          "type": "required"
-        }],
-        "type": "text-area",
-        "field": "description",
-        "props": {
-          "placeholder": "请输入精灵描述",
-          "style": {
-            "width": 240
-          }
         }
-      },
-      {
-        "label": "精灵图片",
-        "type": "upload-image",
-        "field": "photoUrl",
-        "options":{
-          "type": "string",
-          "hasKey": false
+      ],
+      "type": "text-area",
+      "field": "description",
+      "props": {
+        "placeholder": "请输入精灵描述",
+        "style": {
+          "width": 240
         }
       }
-    ],
-    "updateFields": [{
-        "label": "土地名称",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name"
-      },
-      {
-        "label": "土地等级",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "level"
-      },
-      {
-        "label": "土地描述",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "text-area",
-        "field": "description"
-      },
-      {
-        "label": "土地价值/天",
-        "type": "number",
-        "props": {
-          "placeholder": "请输入精灵描述",
-          "style": {
-            "width": 240
-          }
-        },
-        "field": "coinCostPerDay"
-      },
-      {
-        "label": "土地图片",
-        "type": "upload-image",
-        "field": "previewPhotoUrl",
-        "options":{
-          "type": "string",
-          "hasKey": false
-        }
-      }
-    ],
-    "map": {},
-    "layout": {
-      "table": "Content",
-      "form": "TitleContent"
     },
-    "tableActions": [],
-    "tableOperation": [{
-        "title": "编辑",
-        "type": "path",
-        "options": {
-          "style": "path",
-          "path": "landManage/land-edit",
-          "outside": true
+    {
+      "label": "精灵图片",
+      "type": "upload-image",
+      "field": "photoUrl",
+      "options": {
+        "type": "string",
+        "hasKey": false
+      }
+    }
+  ],
+  "updateFields": [
+    {
+      "label": "土地名称",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "name"
+    },
+    {
+      "label": "土地等级",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "level"
+    },
+    {
+      "label": "土地描述",
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
         }
       },
-      {
-        "title": "详情",
-        "type": "path",
-        "options": {
-          "style": "path",
-          "path": "landManage/land-view",
-          "outside": true
+      "type": "text-area",
+      "field": "description"
+    },
+    {
+      "label": "土地价值/天",
+      "type": "number",
+      "props": {
+        "placeholder": "请输入精灵描述",
+        "style": {
+          "width": 240
         }
+      },
+      "field": "coinCostPerDay"
+    },
+    {
+      "label": "土地图片",
+      "type": "upload-image",
+      "field": "previewPhotoUrl",
+      "options": {
+        "type": "string",
+        "hasKey": false
       }
-    ],
-    "searchFields": [{
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [],
+  "tableOperation": [
+    {
+      "title": "编辑",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "landManage/land-edit",
+        "outside": true
+      },
+      "expect": {
+        "permission": "land.edit"
+      }
+    },
+    {
+      "title": "详情",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "landManage/land-view",
+        "outside": true
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
+  "searchFields": [
+    {
       "label": "土地名称",
       "field": "name",
       "type": "search",
       "props": {
         "placeholder": "请输入土地名称"
       }
-    }],
-    "tableFields": [
-      {
-        "label": "序号",
-        "field": "Code",
-        "align": "center",
-        "valueType":"index"
-      },
-      {
-        "label": "土地名称",
-        "field": "name",
-        "align": "center"
-      },
-      {
-        "label": "土地级别",
-        "field": "level",
-        "align": "center",
-        "valueType": "tag",
-        "options": {
-          "map": {
-            "1": "v1",
-            "2": "v2",
-            "3": "v3",
-            "4": "v4",
-            "5": "v5",
-            "6": "v6",
-            "7": "v7",
-            "8": "v8"
-          },
-          "chy": {
-            "1": "lv1",
-            "2": "lv2",
-            "3": "lv3",
-            "4": "lv4",
-            "5": "lv5",
-            "6": "lv6",
-            "7": "lv7",
-            "8": "lv8"
-          },
-          "colorMap":{
-            "1":"#D5D8E0",
-            "2":"#26A1FF",
-            "3":"#31E4B9",
-            "4":"#A64CFF",
-            "5":"#FF4CA6",
-            "6":"#FFAD33",
-            "7":"#FF3344",
-            "8":"linear-gradient(to left,#E7B7FF,#81C2FE)"
-          },
-          "weight":"bolder",
-          "fontColor":"#fff"
+    }
+  ],
+  "tableFields": [
+    {
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType": "index"
+    },
+    {
+      "label": "土地名称",
+      "field": "name",
+      "align": "center"
+    },
+    {
+      "label": "土地级别",
+      "field": "level",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "1": "v1",
+          "2": "v2",
+          "3": "v3",
+          "4": "v4",
+          "5": "v5",
+          "6": "v6",
+          "7": "v7",
+          "8": "v8"
         },
-        "theme": "option",
-        "type": "default"
+        "chy": {
+          "1": "lv1",
+          "2": "lv2",
+          "3": "lv3",
+          "4": "lv4",
+          "5": "lv5",
+          "6": "lv6",
+          "7": "lv7",
+          "8": "lv8"
+        },
+        "colorMap": {
+          "1": "#D5D8E0",
+          "2": "#26A1FF",
+          "3": "#31E4B9",
+          "4": "#A64CFF",
+          "5": "#FF4CA6",
+          "6": "#FFAD33",
+          "7": "#FF3344",
+          "8": "linear-gradient(to left,#E7B7FF,#81C2FE)"
+        },
+        "weight": "bolder",
+        "fontColor": "#fff"
       },
-      {
-        "label": "土地图片",
-        "valueType": "image",
-        "field": "previewPhotoUrl",
-        "align": "center"
-      },
-      {
-        "label": "土地描述",
-        "field": "description",
-        "align": "center"
-      },
-      {
-        "label": "土地价值/天",
-        "field": "coinCostPerDay",
-        "align": "center"
-      },
-      {
-        "label": "创建时间",
-        "field": "createTime",
-        "align":"center",
-        "valueType":"valueinputthree",
-        "options":{
-          "value":"createTime"
-        }
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "土地图片",
+      "valueType": "image",
+      "field": "previewPhotoUrl",
+      "align": "center"
+    },
+    {
+      "label": "土地描述",
+      "field": "description",
+      "align": "center"
+    },
+    {
+      "label": "土地价值/天",
+      "field": "coinCostPerDay",
+      "align": "center"
+    },
+    {
+      "label": "创建时间",
+      "field": "createTime",
+      "align": "center",
+      "valueType": "valueinputthree",
+      "options": {
+        "value": "createTime"
       }
-    ],
-    "viewConfig": [{
+    }
+  ],
+  "viewConfig": [
+    {
       "label": "土地名称",
       "field": "name",
       "type": "plain",
@@ -245,6 +267,6 @@
       "field": "previewPhotoUrl",
       "type": "image",
       "span": 24
-    }]
-  }
-  
+    }
+  ]
+}

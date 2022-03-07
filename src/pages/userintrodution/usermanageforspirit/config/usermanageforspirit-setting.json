@@ -255,6 +255,9 @@
             }
           }
         ]
+      },
+      "expect":{
+        "permission": "wispInstance.spilt"
       }
     },
     {
@@ -303,8 +306,7 @@
         ]
       },
       "expect": {
-        "field": "",
-        "value": ""
+        "permission": "wispInstance.locked"
       }
     },
     {
@@ -317,6 +319,7 @@
         "method": "post"
       },
       "expect": {
+        "permission": "wispInstance.unlock"
       }
     }
   ],
@@ -441,7 +444,7 @@
       },
       "rules": [],
       "options": {
-        "API": "/api/crud/oms/player/players?isManager=1",
+        "API": "/api/crud/oms/manager/managers/basicInfo",
         "label": "managerName",
         "value": "id"
       },

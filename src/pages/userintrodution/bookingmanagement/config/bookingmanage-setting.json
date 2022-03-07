@@ -88,7 +88,7 @@
       },
       "rules": [],
       "options": {
-        "API": "/api/crud/oms/marketingSession/marketingSessions",
+        "API": "/api/crud/oms/marketingSession/marketingSessions/basicInfo",
         "label": "title",
         "value": "id"
       },

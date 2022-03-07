@@ -122,6 +122,9 @@
       "options": {
         "style": "primary",
         "path": "toushumanage/toushumanage-add"
+      },
+      "expect": {
+        "permission": "appeal.new"
       }
     }
   ],
@@ -135,7 +138,7 @@
         "path": "representation/representation-view"
       },
       "expect": {
-        "permission": ""
+        "permission": "complaintInfo.view"
       }
     },
     {
@@ -147,8 +150,7 @@
         "path": "toushumanage/toushumanage-edit"
       },
       "expect": {
-        "field": "",
-        "value": ""
+        "permission": "complaint.do"
       }
     },
     {
@@ -160,7 +162,7 @@
         "method": "delete"
       },
       "expect": {
-        "permission": ""
+        "permission": "complaint.delete"
       }
     }
   ],

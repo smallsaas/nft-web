@@ -32,7 +32,7 @@
         "outside": true
       },
       "expect": {
-        "permission": ""
+        "permission": "orderInfo.view"
       }
     },
     {
@@ -47,7 +47,7 @@
         "outside": false
       },
       "expect": {
-        "permission": ""
+        "permission": "playerInfo.view"
       }
     },
     {
@@ -62,7 +62,7 @@
         "outside": false
       },
       "expect": {
-        "permission": ""
+        "permission": "playerInfo.view"
       }
     }
   ],

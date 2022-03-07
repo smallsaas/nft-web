@@ -648,6 +648,9 @@
       "options": {
         "style": "primary",
         "path": "/usermanage/newaccount/newaccount-add"
+      },
+      "expect": {
+        "permission": "player.add"
       }
     }
   ],
@@ -663,7 +666,8 @@
       },
       "expect": {
         "field": "status",
-        "value": [["PENDING","REFUSED"]]
+        "value": [["PENDING","REFUSED"]],
+        "permission": ""
       }
     },
     {
@@ -716,7 +720,8 @@
       },
       "expect": {
         "field": "status",
-        "value": "PENDING"
+        "value": "PENDING",
+        "permission": ""
       }
     },
     {
@@ -730,7 +735,8 @@
       },
       "expect": {
         "field": "status",
-        "value": "FROZEN"
+        "value": "FROZEN",
+        "permission": "player.unfrozen"
       }
     },
     {
@@ -744,7 +750,8 @@
       },
       "expect": {
         "field": "status",
-        "value": "NORMAL"
+        "value": "NORMAL",
+        "permission": "player.frozen"
       }
     },
     {
@@ -756,7 +763,7 @@
         "path": "newaccount/newaccount-view"
       },
       "expect": {
-        "permission": ""
+        "permission": "playerInfo.view"
       }
     },
     {
@@ -768,7 +775,7 @@
         "path": "newaccount/newaccount-edit"
       },
       "expect": {
-        "permission": ""
+        "permission": "player.edit"
       }
     },
     {
@@ -780,7 +787,7 @@
         "method": "delete"
       },
       "expect": {
-        "permission": ""
+        "permission": "player.delete"
       }
     }
   ],
@@ -796,7 +803,7 @@
       },
       "rules": [],
       "options": {
-        "API": "/api/crud/oms/player/players?isManager=1",
+        "API": "/api/crud/oms/manager/managers/basicInfo",
         "label": "mobilePhone",
         "value": "id"
       },

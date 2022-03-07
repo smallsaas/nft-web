@@ -648,6 +648,9 @@
             }
           }
         ]
+      },
+      "expect": {
+        "permission": "sysTransferGUGU"
       }
     },
     {
@@ -655,6 +658,9 @@
       "type": "path",
       "options": {
         "path": "/usermanage/systemuser/systemuser-distributionRecord"
+      },
+      "expect": {
+        "permission": "sysTransferRecord"
       }
     }
   ],

@@ -151,6 +151,9 @@
       "options": {
         "style": "primary",
         "path": "representation/representation-add"
+      },
+      "expect": {
+        "permission": "appeal.new"
       }
     }
   ],
@@ -167,7 +170,7 @@
         }
       },
       "expect": {
-        "permission": ""
+        "permission": "orderInfo.view"
       }
     },
     {
@@ -179,7 +182,7 @@
         "path": "representation/representation-view"
       },
       "expect": {
-        "permission": ""
+        "permission": "appealInfo.view"
       }
     },
     {
@@ -191,7 +194,7 @@
         "path": "representation/representation-edit"
       },
       "expect": {
-        "permission": ""
+        "permission": "appeal.do"
       }
     },
     {
@@ -203,7 +206,7 @@
         "method": "delete"
       },
       "expect": {
-        "permission": ""
+        "permission": "appeal.delete"
       }
     }
   ],
