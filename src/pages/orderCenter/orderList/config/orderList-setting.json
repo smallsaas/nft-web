@@ -19,7 +19,53 @@
     "form": "TitleContent"
   },
   "tableActions": [],
-  "tableOperation": [],
+  "tableOperation": [
+    {
+      "title": "订单详情",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "/orderCenter/orderList/orderList-view",
+        "query":{
+          "id": "id"
+        },
+        "outside": true
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "买家详情",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "/usermanage/newaccount/newaccount-view",
+        "query":{
+          "id": "buyerPlayId"
+        },
+        "outside": false
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "卖家详情",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "/usermanage/newaccount/newaccount-view",
+        "query":{
+          "id": "sellerPlayId"
+        },
+        "outside": false
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
   "searchFields": [
     {
       "label": "订单编号",
@@ -101,13 +147,6 @@
     {
       "label": "订单编号",
       "field": "orderNumber",
-      "valueType": "path",
-      "options": {
-        "path": "/orderCenter/orderList/orderList-view",
-        "query":{
-          "id": "id"
-        }
-      },
       "align":"center"
     },
     {
@@ -128,25 +167,11 @@
     {
       "label": "买家",
       "field": "buyerName",
-      "valueType": "path",
-      "options": {
-        "path": "/usermanage/newaccount/newaccount-view",
-        "query":{
-          "id": "buyerPlayId"
-        }
-      },
       "align":"center"
     },
     {
       "label": "卖家",
       "field": "sellerName",
-      "valueType": "path",
-      "options": {
-        "path": "/usermanage/newaccount/newaccount-view",
-        "query":{
-          "id": "sellerPlayId"
-        }
-      },
       "align":"center"
     },
     {

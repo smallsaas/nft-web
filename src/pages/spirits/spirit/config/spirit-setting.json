@@ -542,6 +542,9 @@
       "options": {
         "style": "primary",
         "path": "/spirits/spirit/spirit-add"
+      },
+      "expect": {
+        "permission": "wisp.new"
       }
     }
   ],
@@ -553,6 +556,9 @@
         "style": "path",
         "path": "spirit/spirit-edit",
         "outside": true
+      },
+      "expect": {
+        "permission": "wisp.edit"
       }
     },
     {
@@ -562,6 +568,9 @@
         "style": "path",
         "path": "spirit/spirit-view",
         "outside": true
+      },
+      "expect": {
+        "permission": "wisp.view"
       }
     },
     {
@@ -573,7 +582,7 @@
         "method": "delete"
       },
       "expect": {
-        "permission": ""
+        "permission": "wisp.delete"
       }
     }
   ],

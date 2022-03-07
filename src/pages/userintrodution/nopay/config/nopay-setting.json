@@ -324,7 +324,23 @@
     "form": "TitleContent"
   },
   "tableActions": [],
-  "tableOperation": [],
+  "tableOperation": [
+    {
+      "title": "订单详情",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "/usermanage/newaccount/newaccount-view",
+        "query":{
+          "id": "id"
+        },
+        "outside": true
+      },
+      "expect": {
+        "permission": "orderInfo.view"
+      }
+    }
+  ],
   "searchFields": [
     {
       "label": "买家账号",
@@ -353,13 +369,6 @@
     {
       "label": "订单号",
       "field": "orderNumber",
-      "valueType": "path",
-      "options": {
-        "path": "/userintrodution/nopay/nopay-order-view",
-        "query":{
-          "id": "id"
-        }
-      },
       "align":"center"
     },
     {
