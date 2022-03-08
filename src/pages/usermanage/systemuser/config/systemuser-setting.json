@@ -677,7 +677,7 @@
       },
       "rules": [],
       "options": {
-        "API": "/api/adm/users?roleid=server",
+        "API": "/api/crud/oms/manager/managers/getManagerList",
         "label": "name",
         "value": "id"
       },
