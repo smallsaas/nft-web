@@ -36,12 +36,18 @@ const config = {
             options: [
               { label: '男', value: 0 },
               { label: '女', value: 1 },
-              { label:"保密",value:2 }
+              { label: "保密", value: 2 }
             ],
-            span: 24  
+            span: 24
           },
-          { field: 'birthday', label: '生日', type: 'date', },
-          
+          {
+            field: 'birthday', label: '生日', type: 'date',
+            options: {
+              nowTime: false,
+              format: 'YYYY-MM-DD'
+            },
+          },
+
           { field: 'email', label: '邮箱', type: 'input', span: 24 },
         ]
       }
