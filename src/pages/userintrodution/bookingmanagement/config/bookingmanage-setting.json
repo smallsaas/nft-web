@@ -34,7 +34,7 @@
       "expect": {
         "field": "nextSuccessMatch",
         "value": 1,
-        "permission": "mustWin.close"
+        "permission": "mustWin.open"
       }
     },
     

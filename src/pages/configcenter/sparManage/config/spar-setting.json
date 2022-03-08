@@ -117,7 +117,7 @@
         "outside": true
       },
       "expect": {
-        "permission": ""
+        "permission": "companionwisp.view"
       }
     }
   ],

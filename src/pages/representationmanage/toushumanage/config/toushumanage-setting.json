@@ -205,7 +205,7 @@
       },
       "rules": [],
       "options": {
-        "API": "/api/crud/oms/complainType/complainTypes?requestType=FEEDBACK",
+        "API": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/type/FEEDBACK",
         "label": "title",
         "value": "title"
       },

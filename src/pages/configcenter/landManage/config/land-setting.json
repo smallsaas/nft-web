@@ -143,7 +143,7 @@
         "outside": true
       },
       "expect": {
-        "permission": ""
+        "permission": "land.view"
       }
     }
   ],

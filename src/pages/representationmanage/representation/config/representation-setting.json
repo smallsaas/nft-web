@@ -252,7 +252,7 @@
       },
       "rules": [],
       "options": {
-        "API": "/api/crud/oms/complainType/complainTypes?requestType=ORDER_DISPUTES",
+        "API": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/type/ORDER_DISPUTES",
         "label": "title",
         "value": "title"
       },
