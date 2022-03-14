@@ -10,7 +10,7 @@ import {
   SwapOutlined,
 } from '@ant-design/icons';
 
-import { TestUserSelection } from 'zero-element-plugins';
+// import { TestUserSelection } from 'zero-element-plugins';
 
 const { SubMenu } = Menu;
 
@@ -68,7 +68,7 @@ export default (props) => {
   const userMenu = (
     <Menu>
       <Menu.Item style={{ padding: 0 }} key="userMenu">
-        <TestUserSelection onItemClickHandle={handleOnItemClickHandle} />
+        {/* <TestUserSelection onItemClickHandle={handleOnItemClickHandle} /> */}
       </Menu.Item>
     </Menu>
   )
