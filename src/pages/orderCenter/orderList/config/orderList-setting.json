@@ -88,7 +88,7 @@
       "field": "buyerName",
       "type": "search",
       "props": {
-        "placeholder": "请输入"
+        "placeholder": "买家名称、手机号"
       }
     },
     {
@@ -96,7 +96,7 @@
       "field": "sellerName",
       "type": "search",
       "props": {
-        "placeholder": "请输入"
+        "placeholder": "卖家名称、手机号"
       }
     },
     {
@@ -118,7 +118,7 @@
     {
       "label": "日期",
       "options": {
-        "format": "YYYY-MM-DD hh:mm:ss",
+        "format": "YYYY-MM-DD",
         "startDate": "startTime",
         "endDate": "endTime"
       },

@@ -175,7 +175,7 @@ if (process.env.NODE_ENV === 'development') {
   setEndpoint(Config.endpoint);
   // setEndpoint('http://localhost:8080');
   // saveToken({
-  //   token: '',
+  //   token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJvcmdJZCI6IjEiLCJ1c2VySWQiOiIxIiwidGVuYW50T3JnSWQiOjEsImFjY291bnQiOiJhZG1pbiIsInVzZXJUeXBlIjoxMDAsImRldlVzZXJUeXBlIjowLCJiVXNlclR5cGUiOiJTWVNURU0iLCJpYXQiOjE2NDcyMjc2OTAsImp0aSI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTY0NzQ4Njg5MH0.gSCT8CaFIDZeuzFwPYuoNAJfLnAX4kwdarO6uj-jN8MSFydvkLae4vLunJgTqGIR6z2HdPhuuHxsM_9cSJkiFQ',
   // });
 }else {
   // setEndpoint('http://localhost:8080');
