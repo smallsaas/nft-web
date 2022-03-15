@@ -15,6 +15,7 @@
     "form-render": "^0.9.12",
     "fr-generator": "^1.0.1",
     "jparticles": "^2.0.1",
+    "layout-flex": "^0.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-simple-verify": "^1.0.8",
