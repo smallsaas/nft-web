@@ -428,7 +428,8 @@
           "MANAGER_GIVEN": "店小二给予",
           "BUY_COMPANION_WISP": "购买能量晶石",
           "WAITING_PAYMENT": "等待付款",
-          "5": "v5"
+          "5": "v5",
+          "PLAYER_TRANSFER_ACCOUNTS": "玩家转账"
         },
         "chy": {
           "SYSTEM_GIVEN": "blue",

@@ -61,7 +61,12 @@ module.exports = {
             field: 'status', label: '状态',
             valueType: 'tag',
             options: {
-              map: {}
+              map: {
+                FROZEN: '已冻结',
+              },
+              colorMap: {
+                FROZEN: '#757575',
+              }
             }
           },
           // { field: 'fullName', label: '完整名称' },

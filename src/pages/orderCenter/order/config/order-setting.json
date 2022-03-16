@@ -222,13 +222,15 @@
           "levelOneShare": "一级收益",
           "levelTwoShare": "二级收益",
           "teamBenefits": "团队收益",
-          "signINProfit": "签到收益"
+          "signINProfit": "签到收益",
+          "marketPoints": "市场收益"
         },
         "chy": {
           "levelOneShare": "blue",
           "levelTwoShare": "grey",
           "teamBenefits": "cyan",
-          "signINProfit": "orange"
+          "signINProfit": "orange",
+          "marketPoints": "purple-dark"
         }
       },
       "theme": "option",
