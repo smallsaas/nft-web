@@ -26,7 +26,7 @@
       "title": "关闭必中",
       "type": "request",
       "options": {
-        "tips": "确定对该玩家开启匹配必中吗?",
+        "tips": "确定对该玩家关闭匹配必中吗?",
         "outside": true,
         "API": "/api/crud/oms/wispBookingRecord/wispBookingRecords/nextSuccessMatch/(id)",
         "method": "put"
@@ -42,7 +42,7 @@
       "title": "开启必中",
       "type": "request",
       "options": {
-        "tips": "确定对该玩家关闭匹配必中吗?",
+        "tips": "确定对该玩家开启匹配必中吗?",
         "outside": true,
         "API": "/api/crud/oms/wispBookingRecord/wispBookingRecords/nextSuccessMatch/(id)",
         "method": "put"
