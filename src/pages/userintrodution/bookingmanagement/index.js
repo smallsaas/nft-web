@@ -1,19 +1,33 @@
-import useBreadcrumb from '@/framework/useBreadcrumb';
 import React from 'react';
-import ZEle from 'zero-element';
-import config from './config/index';
+import { Tabs } from 'antd';
+import Content from '@/layouts/Content';
+import useBreadcrumb from '@/framework/useBreadcrumb';
+import CurrentBooking from './currentBooking';
+import BookingHistory from './bookingHistoryList';
 
-export default function () {
+const { TabPane } = Tabs;
 
-  useBreadcrumb([
-    { title: '首页'},
-    { title: '查看预约' },
+export default function BookingTab(props) {
+
+  useBreadcrumb(props, [
+    { title: '首页', path: '/' },
+    { title: '预约' },
   ]);
 
-  return <div>
-    <ZEle
-      namespace="bookingmanagement"
-      config={config}
-    />
-  </div>
+  function handleChangeTabPane(key) {
+  }
+
+  return <Content>
+    <Tabs
+      destroyInactiveTabPane
+      onChange={handleChangeTabPane}
+    >
+      <TabPane tab="查看预约" key="booking_list">
+        <CurrentBooking />
+      </TabPane>
+      <TabPane tab="预约历史" key="booking_history">
+        <BookingHistory />
+      </TabPane>
+    </Tabs>
+  </Content>
 }

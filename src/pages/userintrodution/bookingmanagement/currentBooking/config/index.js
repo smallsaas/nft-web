@@ -1,5 +1,5 @@
 
-const setting = require('./bookingmanage-setting.json');
+const setting = require('./currentBooking-setting.json');
 
 module.exports = {
   layout: setting.layout.table,

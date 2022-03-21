@@ -1,0 +1,167 @@
+{
+  "pageName": {
+    "table": "查看预约",
+    "new": "添加账号",
+    "edit": "编辑账号"
+  },
+  "listAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords",
+  "createAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords",
+  "getAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/[id]",
+  "updateAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/[id]",
+  "deleteAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/(id)",
+  "columns": 1,
+  "createFields": [
+  ],
+  "updateFields": [
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [
+  ],
+  "tableOperation": [
+    {
+      "title": "关闭必中",
+      "type": "request",
+      "options": {
+        "tips": "确定对该玩家关闭匹配必中吗?",
+        "outside": true,
+        "API": "/api/crud/oms/wispBookingRecord/wispBookingRecords/nextSuccessMatch/(id)",
+        "method": "put"
+      },
+      "expect": {
+        "field": "nextSuccessMatch",
+        "value": 1,
+        "permission": "mustWin.open"
+      }
+    },
+    
+    {
+      "title": "开启必中",
+      "type": "request",
+      "options": {
+        "tips": "确定对该玩家开启匹配必中吗?",
+        "outside": true,
+        "API": "/api/crud/oms/wispBookingRecord/wispBookingRecords/nextSuccessMatch/(id)",
+        "method": "put"
+      },
+      "expect": {
+        "field": "nextSuccessMatch",
+        "value": 0,
+        "permission": "mustWin.open"
+      }
+    },
+    {
+      "title": "玩家详情",
+      "type": "path",
+      "options": {
+        "style": "path",
+        "path": "/usermanage/newaccount/newaccount-view",
+        "query":{
+          "id": "playerId"
+        },
+        "outside": true
+      },
+      "expect": {
+        "permission": "playerInfo.view"
+      }
+    }
+  ],
+  "searchFields": [
+    {
+      "label": "玩家名称",
+      "field": "playerName",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入"
+      }
+    },
+    {
+      "label": "场次",
+      "type": "select-fetch",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "rules": [],
+      "options": {
+        "API": "/api/crud/oms/marketingSession/marketingSessions/basicInfo",
+        "label": "title",
+        "value": "id"
+      },
+      "field": "account"
+    },
+    {
+      "label": "必中状态",
+      "field": "description",
+      "type": "select",
+      "props": {
+        "placeholder": "请选择",
+        "style": {
+          "width": 240
+        }
+      },
+      "options": [{
+          "label": "非必中",
+          "value": "1"
+        },
+        {
+          "label": "必中",
+          "value": "2"
+        }
+      ]
+    }
+  ],
+  "tableFields": [
+    {
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType":"index"
+    },
+    {
+      "label": "玩家",
+      "field": "playerName",
+      "align":"center"
+    },
+    {
+      "label": "预约精灵",
+      "field": "wispName",
+      "align":"center"
+    },
+    {
+      "label": "预约场次",
+      "field": "marketSessionTitle",
+      "align":"center"
+    },
+    {
+      "label": "消耗的能量晶石数量",
+      "field": "consumeCompanionWisps",
+      "align":"center"
+    },
+    {
+      "label": "消耗的GuGu令",
+      "field": "consumeCoins",
+      "align":"center"
+    },
+    {
+      "label": "所需土地租期",
+      "field": "requireLandDays",
+      "align":"center"
+    },
+    {
+      "label": "预约时间",
+      "field": "appointmentTime",
+      "align":"center",
+      "valueType":"valueinputthree",
+      "options":{
+        "value":"appointmentTime"
+      }
+    }
+  ],
+  "viewConfig": []
+}

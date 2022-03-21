@@ -1,6 +1,6 @@
 {
   "pageName": {
-    "table": "查看预约",
+    "table": "预约历史",
     "new": "添加账号",
     "edit": "编辑账号"
   },
@@ -22,66 +22,24 @@
   "tableActions": [
   ],
   "tableOperation": [
-    {
-      "title": "关闭必中",
-      "type": "request",
-      "options": {
-        "tips": "确定对该玩家关闭匹配必中吗?",
-        "outside": true,
-        "API": "/api/crud/oms/wispBookingRecord/wispBookingRecords/nextSuccessMatch/(id)",
-        "method": "put"
-      },
-      "expect": {
-        "field": "nextSuccessMatch",
-        "value": 1,
-        "permission": "mustWin.open"
-      }
-    },
-    
-    {
-      "title": "开启必中",
-      "type": "request",
-      "options": {
-        "tips": "确定对该玩家开启匹配必中吗?",
-        "outside": true,
-        "API": "/api/crud/oms/wispBookingRecord/wispBookingRecords/nextSuccessMatch/(id)",
-        "method": "put"
-      },
-      "expect": {
-        "field": "nextSuccessMatch",
-        "value": 0,
-        "permission": "mustWin.open"
-      }
-    },
-    {
-      "title": "玩家详情",
-      "type": "path",
-      "options": {
-        "style": "path",
-        "path": "/usermanage/newaccount/newaccount-view",
-        "query":{
-          "id": "playerId"
-        },
-        "outside": true
-      },
-      "expect": {
-        "permission": "playerInfo.view"
-      }
-    }
   ],
   "searchFields": [
     {
-      "label": "玩家名称",
+      "label": "玩家手机号",
       "field": "playerName",
       "type": "search",
       "props": {
-        "placeholder": "请输入玩家名称"
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
       }
     },
     {
-      "label": "场次",
+      "label": "预约状态",
       "type": "select-fetch",
       "props": {
+        "placeholder": "请选择",
         "style": {
           "width": 240
         }
@@ -93,6 +51,32 @@
         "value": "id"
       },
       "field": "account"
+    },
+    {
+      "label": "日期",
+      "options": {
+        "format": "YYYY-MM-DD",
+        "startDate": "startDate",
+        "endDate": "endDate"
+      },
+      "props": {
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "range",
+      "field": "releaseTimes"
+    },
+
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "startDate"
+    },
+    {
+      "label": "",
+      "type": "hidden",
+      "field": "endDate"
     }
   ],
   "tableFields": [

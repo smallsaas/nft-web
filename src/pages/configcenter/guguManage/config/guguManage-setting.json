@@ -332,6 +332,14 @@
       }
     },
     {
+      "label": "被发放玩家",
+      "field": "givenPlayer",
+      "type": "search",
+      "props": {
+        "placeholder": "请输入接收人/手机"
+      }
+    },
+    {
       "label": "日期",
       "options": {
         "format": "YYYY-MM-DD",
