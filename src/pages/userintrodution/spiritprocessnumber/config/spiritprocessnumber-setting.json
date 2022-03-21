@@ -180,6 +180,11 @@
       "label": "已付款总金额",
       "field": "transactionCoins",
       "align": "center"
+    },
+    {
+      "label": "必中玩家的统计",
+      "field": "successCount",
+      "align": "center"
     }
   ]
 }

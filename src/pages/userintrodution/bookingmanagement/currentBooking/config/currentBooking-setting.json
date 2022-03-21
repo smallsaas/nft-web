@@ -97,7 +97,7 @@
     },
     {
       "label": "必中状态",
-      "field": "description",
+      "field": "successPlayer",
       "type": "select",
       "props": {
         "placeholder": "请选择",
@@ -107,11 +107,11 @@
       },
       "options": [{
           "label": "非必中",
-          "value": "1"
+          "value": 0
         },
         {
           "label": "必中",
-          "value": "2"
+          "value": 1
         }
       ]
     }

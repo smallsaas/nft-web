@@ -324,19 +324,19 @@
       "field": "sysPlayerId"
     },
     {
-      "label": "账号",
+      "label": "接收者",
       "field": "recipientHint",
       "type": "search",
       "props": {
-        "placeholder": "请输入接收人/手机"
+        "placeholder": "请输入名字/手机"
       }
     },
     {
-      "label": "被发放玩家",
+      "label": "发放者",
       "field": "givenPlayer",
       "type": "search",
       "props": {
-        "placeholder": "请输入接收人/手机"
+        "placeholder": "请输入名字/手机"
       }
     },
     {

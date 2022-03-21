@@ -4,11 +4,11 @@
     "new": "添加账号",
     "edit": "编辑账号"
   },
-  "listAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords",
-  "createAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords",
-  "getAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/[id]",
-  "updateAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/[id]",
-  "deleteAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords/(id)",
+  "listAPI": "/api/crud/oms/wispBookingRecord/wispBookingRecords?onlyCurrentDay=0",
+  "createAPI": "/api",
+  "getAPI": "/api/[id]",
+  "updateAPI": "/api/[id]",
+  "deleteAPI": "/api/(id)",
   "columns": 1,
   "createFields": [
   ],
@@ -25,11 +25,11 @@
   ],
   "searchFields": [
     {
-      "label": "玩家手机号",
+      "label": "玩家",
       "field": "playerName",
       "type": "search",
       "props": {
-        "placeholder": "请输入",
+        "placeholder": "请输入名字/手机号",
         "style": {
           "width": 240
         }
@@ -37,20 +37,19 @@
     },
     {
       "label": "预约状态",
-      "type": "select-fetch",
+      "type": "select",
       "props": {
         "placeholder": "请选择",
         "style": {
           "width": 240
         }
       },
-      "rules": [],
-      "options": {
-        "API": "/api/crud/oms/marketingSession/marketingSessions/basicInfo",
-        "label": "title",
-        "value": "id"
-      },
-      "field": "account"
+      "options":[
+        {"label":"等待匹配","value":"WAITING_MATCH"},
+        {"label":"匹配成功","value":"MATCH_SUCCESS"},
+        {"label":"匹配失败","value":"MATCH_FAIL"}
+      ],
+      "field": "status"
     },
     {
       "label": "日期",
