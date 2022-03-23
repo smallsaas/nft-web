@@ -29,6 +29,7 @@ export default function (props) {
 
   useDidMount(_ => {
       getListAction()
+      // getAllJobAndRecord()
   });
 
   useWillUnmount(_ => {
@@ -37,6 +38,25 @@ export default function (props) {
     setCurrentKey('')
   });
 
+  //获取任务列表
+  function getAllJobAndRecord() {
+    const apiUrl = `${getEndpoint()}/api/crud/schedule/allJobAndRecord`;
+    const queryData = {}
+    promiseAjax(apiUrl, queryData)
+    .then(resp => {
+      console.log(resp , '获取任务列表信息')
+      if (resp.code===200) {
+        const data = resp.data;
+        if(data.records){
+          setMarketingSessions(data.records)
+        }
+      } else {
+        console.error('获取任务列表失败')
+      }
+    })
+  }
+
+  //获取场次信息
   function getListAction() {
     const apiUrl = `${getEndpoint()}/api/crud/oms/marketingSession/marketingSessions`;
     const queryData = {}

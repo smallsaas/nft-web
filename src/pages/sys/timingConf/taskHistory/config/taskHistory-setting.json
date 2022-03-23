@@ -17,8 +17,10 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [],
-  "tableOperation": [],
+  "tableActions": [
+  ],
+  "tableOperation": [
+  ],
   "searchFields": [
   ],
   "tableFields": [
