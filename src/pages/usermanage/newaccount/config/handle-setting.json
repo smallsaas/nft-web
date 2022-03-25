@@ -1,495 +1,491 @@
 {
-    "pageName": {
-      "table": "玩家管理",
-      "new": "添加账号",
-      "edit": "编辑账号",
-      "editPassword":"密码管理",
-      "view": "查看详情"
+  "pageName": {
+    "table": "玩家管理",
+    "new": "添加账号",
+    "edit": "编辑账号",
+    "editPassword": "密码管理",
+    "view": "查看详情"
+  },
+  "listAPI": "/api/crud/oms/player/players",
+  "getAPI": "/api/crud/oms/player/players/[id]",
+  "createAPI": "/api/crud/oms/player/players/[id]/password/change",
+  "deleteAPI": "/api/crud/oms/player/players/(id)",
+  "columns": 1,
+  "createFields": [{
+      "defaultValue": "个人信息",
+      "type": "group",
+      "span": 24
     },
-    "listAPI": "/api/crud/oms/player/players",
-    "getAPI": "/api/crud/oms/player/players/[id]",
-    "createAPI": "/api/crud/oms/player/players/[id]/password/change",
-    "deleteAPI": "/api/crud/oms/player/players/(id)",
-    "columns": 1,
-    "createFields": [
-      {
-        "defaultValue": "个人信息",
-        "type": "group",
-        "span": 24
+    {
+      "label": "昵称",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入"
       },
-      {
-        "label": "昵称",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "name",
-        "span": 8
-      },
-      {
-        "label": "手机号码",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "number",
-        "field": "mobilePhone",
-        "span": 8
-  
-      },
-      {
-        "label": "验证码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "invitationCodeCompx",
-        "field": "firstMobilePhoneCode",
-        "span": 16
-      },
-      {
-        "label": "备用手机号码",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "number",
-        "field": "backupMobilePhone",
-        "span": 8
-      },
-      {
-        "label": "验证码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "invitationCodeCompx",
-        "field": "secondMobilePhoneCode",
-        "span": 16
-      },
-      {
-        "label": "交易密码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "password",
-        "field": "paymentPassword",
-        "span": 8
-      },
-      {
-        "label": "确认交易密码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "password",
-        "field": "checkPaymentPassword",
-        "span": 16
-      },
-      {
-        "label": "登录密码",
-        "props": {
-          "placeholder": "以字母开头的6-20个字母、数字、下划线",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "password",
-        "field": "loginPassword",
-        "span": 8
-      },
-      {
-        "label": "确认登陆密码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "password",
-        "field": "checkLoginPassword",
-        "span": 16
-      },
-      {
-        "label": "所属角色",
-        "rules": [{
-          "type": "required"
-        }],
-        "props": {
-          "placeholder": "请选择用户角色",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "select",
-        "options": [{
-            "label": "系统号",
-            "value": 1
-          },
-          {
-            "label": "玩家",
-            "value": 0
-          }
-        ],
-        "field": "isManager",
-        "span": 8
-      },
-      {
-        "label": "邀请人(邀请码)",
-        "type":"input",
-        "props": {
-          "placeholder": "请输入邀请人的邀请码"
-        },
-        "rules": [{
-          "type": "required"
-        }],
-        "field": "invitationCode",
-        "span": 16,
-        "expect":{
-          "field":"isManager",
-          "value":0
+      "type": "input",
+      "field": "name",
+      "span": 8
+    },
+    {
+      "label": "手机号码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
         }
       },
-      {
-        "label": "绑定店小二",
-        "type": "select-fetch",
-        "rules": [{
-          "type": "required",
-          "message": "请选择"
-        }],
-        "props": {
-          "style": {
-            "width": 240
-          },
-          "placeholder": "当用户角色为系统号需要选择绑定店小二"
-        },
-        "options": {
-          "API": "/api/adm/users?roleid=server&pageSize=100",
-          "label": "name",
-          "value": "id"
-        },
-        "field": "sysUserId",
-        "span":16,
-        "expect": {
-          "field": "isManager",
+      "type": "number",
+      "field": "mobilePhone",
+      "span": 8
+
+    },
+    {
+      "label": "验证码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "invitationCodeCompx",
+      "field": "firstMobilePhoneCode",
+      "span": 16
+    },
+    {
+      "label": "备用手机号码",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "number",
+      "field": "backupMobilePhone",
+      "span": 8
+    },
+    {
+      "label": "验证码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "invitationCodeCompx",
+      "field": "secondMobilePhoneCode",
+      "span": 16
+    },
+    {
+      "label": "交易密码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "password",
+      "field": "paymentPassword",
+      "span": 8
+    },
+    {
+      "label": "确认交易密码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "password",
+      "field": "checkPaymentPassword",
+      "span": 16
+    },
+    {
+      "label": "登录密码",
+      "props": {
+        "placeholder": "以字母开头的6-20个字母、数字、下划线",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "password",
+      "field": "loginPassword",
+      "span": 8
+    },
+    {
+      "label": "确认登陆密码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "password",
+      "field": "checkLoginPassword",
+      "span": 16
+    },
+    {
+      "label": "所属角色",
+      "rules": [{
+        "type": "required"
+      }],
+      "props": {
+        "placeholder": "请选择用户角色",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "select",
+      "options": [{
+          "label": "系统号",
           "value": 1
-        }
-      },
-      {
-        "label": "邮箱",
-        "props": {
-          "placeholder": "请输入邮箱"
         },
-        "type": "input",
-        "field": "email",
-        "span": 24
-      },
-      {
-        "defaultValue": "支付信息",
-        "type": "group",
-        "span": 24
-      },
-      {
-        "label": "支付宝账号",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "alipayAccount",
-        "span": 8
-      },
-      {
-        "label": "支付宝二维码",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "upload-image",
-        "field": "alipayQrCodePhotoUrl",
-        "span": 16,
-        "options":{
-          "type": "string",
-          "hasKey": false
-        }
-      },
-      {
-        "label": "微信账号",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "wechatAccount",
-        "span": 8
-      },
-      {
-        "label": "微信二维码",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "upload-image",
-        "field": "wechatQrCodePhotoUrl",
-        "span": 16,
-        "options":{
-          "type": "string",
-          "hasKey": false
-        }
-      },
-      {
-        "defaultValue": "身份证信息",
-        "type": "group",
-        "span": 24
-      },
-      {
-        "label": "身份证正面图片",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "upload-image",
-        "field": "frontIdCardPhotoUrl",
-        "span": 8,
-        "options":{
-          "type": "string",
-          "hasKey": false
-        }
-      },
-      {
-        "label": "身份证反面图片",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "upload-image",
-        "field": "reverseSideIdCardPhotoUrl",
-        "span": 16,
-        "options":{
-          "type": "string",
-          "hasKey": false
-        }
-      },
-      {
-        "defaultValue": "银行卡信息",
-        "type": "group",
-        "span": 24
-      },
-      {
-        "label": "开户行",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "bankName",
-        "span": 8
-      },
-      {
-        "label": "户名",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "bankAccountName",
-        "span": 8
-      },
-      {
-        "label": "银行卡号",
-        "props": {
-          "placeholder": "请输入",
-          "style":{
-            "width":240
-          },
-          "min":0
-        },
-        "type": "number",
-        "field": "bankAccountNumber",
-        "span": 8
-      },
-      {
-        "label": "开户行",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "bankName2",
-        "span": 8
-      },
-      {
-        "label": "户名",
-        "props": {
-          "placeholder": "请输入"
-        },
-        "type": "input",
-        "field": "bankAccountName2",
-        "span": 8
-      },
-      {
-        "label": "银行卡号",
-        "props": {
-          "placeholder": "请输入",
-          "style":{
-            "width":240
-          },
-          "min":0
-        },
-        "type": "number",
-        "field": "bankAccountNumber2",
-        "span": 8
-      }
-    ],
-    "updateFields": [
         {
-            "defaultValue": "设置密码",
-            "type": "group",
-            "span": 24
-          },
-      {
-        "label": "交易密码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "password",
-        "field": "paymentPassword",
-        "span": 8
-      },
-      {
-        "label": "确认交易密码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "password",
-        "field": "paymentPassword",
-        "span": 16
-      },
-      {
-        "label": "登录密码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "password",
-        "field": "loginPassword",
-        "span": 8
-      },
-      {
-        "label": "确认登陆密码",
-        "props": {
-          "placeholder": "请输入",
-          "style": {
-            "width": 240
-          }
-        },
-        "type": "password",
-        "field": "loginPassword",
-        "span": 16
-      }
-    ],
-    "map": {},
-    "layout": {
-      "table": "Content",
-      "form": "TitleContent"
+          "label": "玩家",
+          "value": 0
+        }
+      ],
+      "field": "isManager",
+      "span": 8
     },
-    "tableActions": [{
-        "title": "添加账号",
-        "type": "path",
-        "options": {
-          "style": "primary",
-          "path": "/usermanage/newaccount/newaccount-add"
-        }
+    {
+      "label": "邀请人(邀请码)",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入邀请人的邀请码"
+      },
+      "rules": [{
+        "type": "required"
+      }],
+      "field": "invitationCode",
+      "span": 16,
+      "expect": {
+        "field": "isManager",
+        "value": 0
       }
-    ],
-    "tableOperation": [  
-      {
-        "title": "解封账号",
-        "type": "request",
-        "options": {
-          "tips": "确定要解封账号麽?",
-          "outside": true,
-          "API": "/api/crud/oms/player/players/unlock/(id)",
-          "method": "post"
+    },
+    {
+      "label": "绑定店小二",
+      "type": "select-fetch",
+      "rules": [{
+        "type": "required",
+        "message": "请选择"
+      }],
+      "props": {
+        "style": {
+          "width": 240
         },
-        "expect": {
-         "field":"status",
-         "value":"FROZEN"
-        }
+        "placeholder": "当用户角色为系统号需要选择绑定店小二"
       },
-      {
-        "title": "冻结账号",
-        "type": "request",
-        "options": {
-          "tips": "确定要冻结账号麽?",
-          "outside": true,
-          "API": "/api/crud/oms/player/players/lock/(id)",
-          "method": "post"
-        },
-        "expect": {
-         "field":"status",
-         "value":"NORMAL"
-        }
+      "options": {
+        "API": "/api/adm/users?roleid=server&pageSize=100",
+        "label": "name",
+        "value": "id"
       },
-      {
-        "title": "查看详情",
-        "type": "path",
-        "options": {
-          "outside": true,
-          "style": "path",
-          "path": "newaccount/newaccount-view"
-        },
-        "expect": {
-          "permission": ""
-        }
-      },
-      {
-        "title": "修改信息",
-        "type": "path",
-        "options": {
-          "outside": true,
-          "style": "path",
-          "path": "newaccount/newaccount-edit"
-        },
-        "expect": {
-          "permission": ""
-        }
-      },
-      {
-        "title": "删除",
-        "type": "delete",
-        "options": {
-          "outside": false,
-          "API": "/api/crud/oms/player/players/(id)",
-          "method": "delete"
-        },
-        "expect": {
-          "permission": ""
-        }
+      "field": "sysUserId",
+      "span": 16,
+      "expect": {
+        "field": "isManager",
+        "value": 1
       }
-    ],
-    "searchFields": [{
+    },
+    {
+      "label": "邮箱",
+      "props": {
+        "placeholder": "请输入邮箱"
+      },
+      "type": "input",
+      "field": "email",
+      "span": 24
+    },
+    {
+      "defaultValue": "支付信息",
+      "type": "group",
+      "span": 24
+    },
+    {
+      "label": "支付宝账号",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "alipayAccount",
+      "span": 8
+    },
+    {
+      "label": "支付宝二维码",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "alipayQrCodePhotoUrl",
+      "span": 16,
+      "options": {
+        "type": "string",
+        "hasKey": false
+      }
+    },
+    {
+      "label": "微信账号",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "wechatAccount",
+      "span": 8
+    },
+    {
+      "label": "微信二维码",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "wechatQrCodePhotoUrl",
+      "span": 16,
+      "options": {
+        "type": "string",
+        "hasKey": false
+      }
+    },
+    {
+      "defaultValue": "身份证信息",
+      "type": "group",
+      "span": 24
+    },
+    {
+      "label": "身份证正面图片",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "frontIdCardPhotoUrl",
+      "span": 8,
+      "options": {
+        "type": "string",
+        "hasKey": false
+      }
+    },
+    {
+      "label": "身份证反面图片",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "upload-image",
+      "field": "reverseSideIdCardPhotoUrl",
+      "span": 16,
+      "options": {
+        "type": "string",
+        "hasKey": false
+      }
+    },
+    {
+      "defaultValue": "银行卡信息",
+      "type": "group",
+      "span": 24
+    },
+    {
+      "label": "开户行",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankName",
+      "span": 8
+    },
+    {
+      "label": "户名",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankAccountName",
+      "span": 8
+    },
+    {
+      "label": "银行卡号",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "type": "number",
+      "field": "bankAccountNumber",
+      "span": 8
+    },
+    {
+      "label": "开户行",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankName2",
+      "span": 8
+    },
+    {
+      "label": "户名",
+      "props": {
+        "placeholder": "请输入"
+      },
+      "type": "input",
+      "field": "bankAccountName2",
+      "span": 8
+    },
+    {
+      "label": "银行卡号",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        },
+        "min": 0
+      },
+      "type": "number",
+      "field": "bankAccountNumber2",
+      "span": 8
+    }
+  ],
+  "updateFields": [{
+      "defaultValue": "设置密码",
+      "type": "group",
+      "span": 24
+    },
+    {
+      "label": "交易密码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "password",
+      "field": "paymentPassword",
+      "span": 8
+    },
+    {
+      "label": "确认交易密码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "password",
+      "field": "paymentPassword",
+      "span": 16
+    },
+    {
+      "label": "登录密码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "password",
+      "field": "loginPassword",
+      "span": 8
+    },
+    {
+      "label": "确认登陆密码",
+      "props": {
+        "placeholder": "请输入",
+        "style": {
+          "width": 240
+        }
+      },
+      "type": "password",
+      "field": "loginPassword",
+      "span": 16
+    }
+  ],
+  "map": {},
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [{
+    "title": "添加账号",
+    "type": "path",
+    "options": {
+      "style": "primary",
+      "path": "/usermanage/newaccount/newaccount-add"
+    }
+  }],
+  "tableOperation": [{
+      "title": "解封账号",
+      "type": "request",
+      "options": {
+        "tips": "确定要解封账号麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/lock/(id)",
+        "method": "post"
+      },
+      "expect": {
+        "field": "status",
+        "value": "unlockable"
+      }
+    },
+    {
+      "title": "冻结账号",
+      "type": "request",
+      "options": {
+        "tips": "确定要冻结账号麽?",
+        "outside": true,
+        "API": "/api/crud/oms/player/players/lock/(id)",
+        "method": "post"
+      },
+      "expect": {
+        "field": "status",
+        "value": "NORMAL"
+      }
+    },
+    {
+      "title": "查看详情",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "newaccount/newaccount-view"
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "修改信息",
+      "type": "path",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "newaccount/newaccount-edit"
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "删除",
+      "type": "delete",
+      "options": {
+        "outside": false,
+        "API": "/api/crud/oms/player/players/(id)",
+        "method": "delete"
+      },
+      "expect": {
+        "permission": ""
+      }
+    }
+  ],
+  "searchFields": [{
       "label": "名称",
       "field": "search",
       "type": "search",
@@ -514,254 +510,251 @@
         "placeholder": "请选择"
       }
     }
-    ],
-    "tableFields": [
-      {
-        "label": "序号",
-        "field": "Code",
-         "align": "center",
-        "valueType":"index"
-       },
-      {
-        "label": "玩家",
-        "options":{
-          "direction":"vertical",
-          "size":0,
-          "fields":[
-            {
-              "field":"name",
-              "type":"plain",
-              "options":{
-                "style":{
-                  "font-weight":"bolder",
-                  "color":"blue",
-                  "margin-right":10
-                }
+  ],
+  "tableFields": [{
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType": "index"
+    },
+    {
+      "label": "玩家",
+      "options": {
+        "direction": "vertical",
+        "size": 0,
+        "fields": [{
+            "field": "name",
+            "type": "plain",
+            "options": {
+              "style": {
+                "font-weight": "bolder",
+                "color": "blue",
+                "margin-right": 10
               }
-            },
-            {
-              "field": "mobilePhone",
-              "type":"plain"
             }
-          ]
-        },
-        "field": "names",
-        "align": "left",
-        "valueType":"complex"
-      },
-      {
-        "label": "会员级别",
-        "field": "grade",
-        "align": "center"
-      },
-      {
-        "label": "直推人数",
-        "field": "recommendCount",
-        "align": "center"
-      },
-      {
-        "label": "当前领养",
-        "field": "adoptNumber",
-        "align": "center"
-      },
-      {
-        "label": "总领养",
-        "field": "adoptCount",
-        "align": "center"
-      },
-      {
-        "label": "团队人数",
-        "field": "teamSize",
-        "align": "center"
-      },
-      {
-        "label": "状态",
-        "field": "status",
-        "align": "center",
-        "valueType": "tag",
-        "options": {
-          "map": {
-            "NORMAL": "正常",
-            "FROZEN":"冻结"
           },
-          "chy": {
-            "NORMAL": "blue",
-            "FROZEN": "gray"
+          {
+            "field": "mobilePhone",
+            "type": "plain"
           }
+        ]
+      },
+      "field": "names",
+      "align": "left",
+      "valueType": "complex"
+    },
+    {
+      "label": "会员级别",
+      "field": "grade",
+      "align": "center"
+    },
+    {
+      "label": "直推人数",
+      "field": "recommendCount",
+      "align": "center"
+    },
+    {
+      "label": "当前领养",
+      "field": "adoptNumber",
+      "align": "center"
+    },
+    {
+      "label": "总领养",
+      "field": "adoptCount",
+      "align": "center"
+    },
+    {
+      "label": "团队人数",
+      "field": "teamSize",
+      "align": "center"
+    },
+    {
+      "label": "状态",
+      "field": "status",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "NORMAL": "正常",
+          "FROZEN": "冻结"
         },
-        "theme": "option",
-        "type": "default"
-      },
-      {
-        "label": "邀请人",
-        "field": "inviterName",
-        "align": "center"
-      },
-      {
-        "label": "邀请码",
-        "field": "invitationCode",
-        "align": "center"
-      }
-    ],
-    "viewConfig": [{
-        "label": "昵称",
-        "field": "name",
-        "type": "plain",
-        "span": 8
-      }, {
-        "label": "状态",
-        "field": "status",
-        "type": "plain",
-        "options":{
-          "map":{
-            "NORMAL":"正常",
-            "FROZEN":"冻结"
-          }
-        },
-        "span": 8
-      },
-      {
-        "label": "会员等级",
-        "field": "grade",
-        "type": "plain",
-        "span": 8,
-        "options":{
-          "map":{
-            "0":"Lv0",
-            "1":"Lv1"
-          }
+        "chy": {
+          "NORMAL": "blue",
+          "FROZEN": "gray"
         }
       },
-      {
-        "label": "直推人数",
-        "field": "recommendCount",
-        "type": "plain",
-        "span": 8
-      }, {
-        "label": "当前领养",
-        "field": "currentAdoptWisp",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "总领养",
-        "field": "adoptCount",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "团队人数",
-        "field": "teamSize",
-        "type": "plain",
-        "span": 8
-      }, {
-        "label": "团队当前领养",
-        "field": "teamCurrentAdoptWisp",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "团队总领养",
-        "field": "teamAdoptWispCount",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "角色",
-        "field": "isManager",
-        "type": "plain",
-        "span": 8,
-        "options":{
-          "map":{
-            "0":"玩家",
-            "1":"系统号"
-          }
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "邀请人",
+      "field": "inviterName",
+      "align": "center"
+    },
+    {
+      "label": "邀请码",
+      "field": "invitationCode",
+      "align": "center"
+    }
+  ],
+  "viewConfig": [{
+      "label": "昵称",
+      "field": "name",
+      "type": "plain",
+      "span": 8
+    }, {
+      "label": "状态",
+      "field": "status",
+      "type": "plain",
+      "options": {
+        "map": {
+          "NORMAL": "正常",
+          "FROZEN": "冻结"
         }
       },
-      {
-        "label": "邀请人",
-        "field": "inviterName",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "邮箱",
-        "field": "email",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "支付宝账号",
-        "field": "alipayAccount",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "支付宝二维码",
-        "field": "alipayQrCodePhotoUrl",
-        "type": "image",
-        "span": 16
-      },
-      {
-        "label": "微信账号",
-        "field": "wechatAccount",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "微信二维码",
-        "field": "wechatQrCodePhotoUrl",
-        "type": "image",
-        "span": 16
-      },
-      {
-        "label": "身份证正面照片",
-        "field": "frontIdCardPhotoUrl",
-        "type": "image",
-        "span": 8
-      },
-      {
-        "label": "身份证反面照片",
-        "field": "reverseSideIdCardPhotoUrl",
-        "type": "image",
-        "span": 16
-      },
-      {
-        "label": "开户行",
-        "field": "bankName",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "户名",
-        "field": "bankAccountName",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "银行卡号",
-        "field": "bankAccountNumber",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "开户行",
-        "field": "bankName2",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "户名",
-        "field": "bankAccountName2",
-        "type": "plain",
-        "span": 8
-      },
-      {
-        "label": "银行卡号",
-        "field": "bankAccountNumber2",
-        "type": "plain",
-        "span": 8
+      "span": 8
+    },
+    {
+      "label": "会员等级",
+      "field": "grade",
+      "type": "plain",
+      "span": 8,
+      "options": {
+        "map": {
+          "0": "Lv0",
+          "1": "Lv1"
+        }
       }
-    ]
-  }
-  
+    },
+    {
+      "label": "直推人数",
+      "field": "recommendCount",
+      "type": "plain",
+      "span": 8
+    }, {
+      "label": "当前领养",
+      "field": "currentAdoptWisp",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "总领养",
+      "field": "adoptCount",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "团队人数",
+      "field": "teamSize",
+      "type": "plain",
+      "span": 8
+    }, {
+      "label": "团队当前领养",
+      "field": "teamCurrentAdoptWisp",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "团队总领养",
+      "field": "teamAdoptWispCount",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "角色",
+      "field": "isManager",
+      "type": "plain",
+      "span": 8,
+      "options": {
+        "map": {
+          "0": "玩家",
+          "1": "系统号"
+        }
+      }
+    },
+    {
+      "label": "邀请人",
+      "field": "inviterName",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "邮箱",
+      "field": "email",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "支付宝账号",
+      "field": "alipayAccount",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "支付宝二维码",
+      "field": "alipayQrCodePhotoUrl",
+      "type": "image",
+      "span": 16
+    },
+    {
+      "label": "微信账号",
+      "field": "wechatAccount",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "微信二维码",
+      "field": "wechatQrCodePhotoUrl",
+      "type": "image",
+      "span": 16
+    },
+    {
+      "label": "身份证正面照片",
+      "field": "frontIdCardPhotoUrl",
+      "type": "image",
+      "span": 8
+    },
+    {
+      "label": "身份证反面照片",
+      "field": "reverseSideIdCardPhotoUrl",
+      "type": "image",
+      "span": 16
+    },
+    {
+      "label": "开户行",
+      "field": "bankName",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "户名",
+      "field": "bankAccountName",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "银行卡号",
+      "field": "bankAccountNumber",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "开户行",
+      "field": "bankName2",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "户名",
+      "field": "bankAccountName2",
+      "type": "plain",
+      "span": 8
+    },
+    {
+      "label": "银行卡号",
+      "field": "bankAccountNumber2",
+      "type": "plain",
+      "span": 8
+    }
+  ]
+}

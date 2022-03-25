@@ -19,14 +19,13 @@
     "form": "TitleContent"
   },
   "tableActions": [],
-  "tableOperation": [
-    {
+  "tableOperation": [{
       "title": "订单详情",
       "type": "path",
       "options": {
         "style": "path",
         "path": "/orderCenter/orderList/orderList-view",
-        "query":{
+        "query": {
           "id": "id"
         },
         "outside": true
@@ -41,7 +40,7 @@
       "options": {
         "style": "path",
         "path": "/usermanage/newaccount/newaccount-view",
-        "query":{
+        "query": {
           "id": "buyerPlayId"
         },
         "outside": false
@@ -56,7 +55,7 @@
       "options": {
         "style": "path",
         "path": "/usermanage/newaccount/newaccount-view",
-        "query":{
+        "query": {
           "id": "sellerPlayId"
         },
         "outside": false
@@ -66,8 +65,7 @@
       }
     }
   ],
-  "searchFields": [
-    {
+  "searchFields": [{
       "label": "订单编号",
       "field": "orderNumber",
       "type": "search",
@@ -105,13 +103,30 @@
       "props": {
         "placeholder": "请选择"
       },
-      "options":[
-        {"label":"等待付款","value":"WAITING_PAYMENT"},
-        {"label":"已付款","value":"PAID"},
-        {"label":"交易超时","value":"PAYMENT_TIMEOUT"},
-        {"label":"已收款","value":"RECEIVED"},
-        {"label":"取消交易","value":"CANCEL"},
-        {"label":"申诉中","value":"COMPLAINING"}
+      "options": [{
+          "label": "等待付款",
+          "value": "WAITING_PAYMENT"
+        },
+        {
+          "label": "已付款",
+          "value": "PAID"
+        },
+        {
+          "label": "交易超时",
+          "value": "PAYMENT_TIMEOUT"
+        },
+        {
+          "label": "已收款",
+          "value": "RECEIVED"
+        },
+        {
+          "label": "取消交易",
+          "value": "CANCEL"
+        },
+        {
+          "label": "申诉中",
+          "value": "COMPLAINING"
+        }
       ],
       "field": "status"
     },
@@ -137,8 +152,7 @@
       "field": "endTime"
     }
   ],
-  "tableFields": [
-    {
+  "tableFields": [{
       "label": "序号",
       "field": "Code",
       "align": "center",
@@ -147,7 +161,7 @@
     {
       "label": "订单编号",
       "field": "orderNumber",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "精灵编号",
@@ -167,12 +181,12 @@
     {
       "label": "买家",
       "field": "buyerName",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "卖家",
       "field": "sellerName",
-      "align":"center"
+      "align": "center"
     },
     {
       "label": "订单状态",
@@ -206,8 +220,7 @@
       "align": "center"
     }
   ],
-  "viewConfig": [
-    {
+  "viewConfig": [{
       "label": "订单号",
       "field": "orderNumber",
       "type": "plain",

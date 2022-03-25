@@ -17,14 +17,10 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [
-  ],
-  "tableOperation": [
-  ],
-  "searchFields": [
-  ],
-  "tableFields": [
-    {
+  "tableActions": [],
+  "tableOperation": [],
+  "searchFields": [],
+  "tableFields": [{
       "label": "序号",
       "field": "Code",
       "align": "center",

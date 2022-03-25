@@ -2,12 +2,12 @@ import React from 'react';
 import { Tabs } from 'antd';
 import Content from '@/layouts/Content';
 import useBreadcrumb from '@/framework/useBreadcrumb';
-import TimingConf from './timingConf';
+import TimingConf from './timingConf_copy';
 import TaskHistory from './taskHistory';
 
 const { TabPane } = Tabs;
 
-export default function Term(props) {
+export default function Term (props) {
 
   useBreadcrumb(props, [
     { title: '首页', path: '/' },
@@ -15,7 +15,7 @@ export default function Term(props) {
     { title: '定时任务' },
   ]);
 
-  function handleChangeTabPane(key) {
+  function handleChangeTabPane (key) {
   }
 
   return <Content>

@@ -64,7 +64,7 @@ module.exports = [
   {
     name: '玩家管理',
     path: '/usermanage',
-    permissions:[
+    permissions: [
       // 'menus.playerPlayers.menagement',
       'menu.playerSys.menagement',
       'menu.playerPlayers.menagement',
@@ -99,7 +99,7 @@ module.exports = [
   {
     name: '申述管理',
     path: '/representationmanage',
-    permissions:[
+    permissions: [
       // 'menus.complain.menagement',
       'menu.complains.menagement',
       'menu.complaint.menagement',
@@ -118,7 +118,7 @@ module.exports = [
   {
     name: '结算中心',
     path: '/orderCenter',
-    permissions:[
+    permissions: [
       // 'menus.account.menagement',
       'menu.order.menagement',
       'menu.earnings.management',
@@ -129,12 +129,12 @@ module.exports = [
       {
         path: '/orderCenter/orderList',
         name: '订单',
-        permissions:'menu.order.menagement'
+        permissions: 'menu.order.menagement'
       },
       {
         path: '/orderCenter/order',
         name: '订单收益结算',
-        permissions:'menu.earnings.management'
+        permissions: 'menu.earnings.management'
       },
       //   {
       //   path: '/orderCenter/orderCount',
@@ -143,17 +143,17 @@ module.exports = [
       {
         path: '/orderCenter/orderCountInfo',
         name: '推荐收益',
-        permissions:'menu.recommend.management'
+        permissions: 'menu.recommend.management'
       }, {
         path: '/orderCenter/userCountInfo',
         name: '帮会收益',
-        permissions:'menu.tong.management'
+        permissions: 'menu.tong.management'
       }]
   },
   {
     name: '配置中心',
     path: '/configcenter',
-    permissions:[
+    permissions: [
       // 'menus.configuration.management',
       'menu.session.menagement',
       'menu.gugu.management',
@@ -235,9 +235,10 @@ module.exports = [
       },
       {
         name: '定时任务',
-        path: '/sys/timingConf',
+        path: '/sys/timingConf/timingConf',
         permissions: 'menu.timing.management'
       },
+
       {
         name: '操作日志',
         path: '/sys/logs',
@@ -248,7 +249,7 @@ module.exports = [
   {
     name: '运维管理',
     path: '/devops',
-    permissions:[
+    permissions: [
       // 'menus.devops.manage',
       'menu.devconfig.manage',
       'menu.devperm.manage',
