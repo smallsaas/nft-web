@@ -87,10 +87,8 @@
       "method": "get"
     },
     "expect": {
-      "field": "",
-      "value": "",
-      "permission": ""
-
+      "field": "status",
+      "value": "notrun"
     }
   }]
 

@@ -19,8 +19,7 @@
   },
   "tableActions": [],
   "tableOperation": [],
-  "searchFields": [
-    {
+  "searchFields": [{
       "label": "场次",
       "type": "select-fetch",
       "props": {
@@ -75,8 +74,7 @@
       "field": "endDate"
     }
   ],
-  "tableFields": [
-    {
+  "tableFields": [{
       "label": "序号",
       "field": "Code",
       "align": "center",
