@@ -6,21 +6,18 @@
     "view": "查看详情",
     "distributionRecordView": "发放记录"
   },
-  "listAPI": "/api/crud/oms/player/players?isManager=1",
+  "listAPI": "/api/crud/oms/player/players/allManager",
   "createAPI": "/api/crud/oms/player/players",
   "getAPI": "/api/crud/oms/player/players/[id]",
   "updateAPI": "/api/crud/oms/player/players/[id]",
   "deleteAPI": "/api/crud/oms/player/players/(id)",
   "getDistributionRecordAPI": "/api/wf/histories",
   "columns": 1,
-  "createFields": [
-    {
+  "createFields": [{
       "label": "昵称",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -30,11 +27,9 @@
     },
     {
       "label": "邀请码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -47,11 +42,9 @@
     },
     {
       "label": "手机号码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -64,11 +57,9 @@
     },
     {
       "label": "验证码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -81,11 +72,9 @@
     },
     {
       "label": "备用手机号码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -98,11 +87,9 @@
     },
     {
       "label": "验证码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -115,11 +102,9 @@
     },
     {
       "label": "交易密码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -151,11 +136,9 @@
     },
     {
       "label": "登录密码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -168,11 +151,9 @@
     },
     {
       "label": "确认登陆密码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -185,11 +166,9 @@
     },
     {
       "label": "所属角色",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请选择用户角色",
         "style": {
@@ -197,8 +176,7 @@
         }
       },
       "type": "select",
-      "options": [
-        {
+      "options": [{
           "label": "系统号",
           "value": 1
         },
@@ -212,11 +190,9 @@
     },
     {
       "label": "支付宝账号",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -232,18 +208,16 @@
       "type": "upload-image",
       "field": "alipayQrCodePhotoUrl",
       "span": 16,
-      "options":{
+      "options": {
         "type": "string",
         "hasKey": false
       }
     },
     {
       "label": "微信账号",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -259,7 +233,7 @@
       "type": "upload-image",
       "field": "wechatQrCodePhotoUrl",
       "span": 16,
-      "options":{
+      "options": {
         "type": "string",
         "hasKey": false
       }
@@ -272,7 +246,7 @@
       "type": "upload-image",
       "field": "frontIdCardPhotoUrl",
       "span": 8,
-      "options":{
+      "options": {
         "type": "string",
         "hasKey": false
       }
@@ -285,18 +259,16 @@
       "type": "upload-image",
       "field": "reverseSideIdCardPhotoUrl",
       "span": 16,
-      "options":{
+      "options": {
         "type": "string",
         "hasKey": false
       }
     },
     {
       "label": "户名",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -306,11 +278,9 @@
     },
     {
       "label": "银行卡号",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -319,14 +289,11 @@
       "span": 16
     }
   ],
-  "updateFields": [
-    {
+  "updateFields": [{
       "label": "昵称",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -336,11 +303,9 @@
     },
     {
       "label": "邀请码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -353,11 +318,9 @@
     },
     {
       "label": "手机号码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -370,11 +333,9 @@
     },
     {
       "label": "验证码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -387,11 +348,9 @@
     },
     {
       "label": "交易密码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -404,11 +363,9 @@
     },
     {
       "label": "确认交易密码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -421,11 +378,9 @@
     },
     {
       "label": "登录密码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -438,11 +393,9 @@
     },
     {
       "label": "确认登陆密码",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -455,11 +408,9 @@
     },
     {
       "label": "所属角色",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请选择用户角色",
         "style": {
@@ -467,8 +418,7 @@
         }
       },
       "type": "select",
-      "options": [
-        {
+      "options": [{
           "label": "系统号",
           "value": 1
         },
@@ -482,11 +432,9 @@
     },
     {
       "label": "支付宝账号",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -505,11 +453,9 @@
     },
     {
       "label": "微信账号",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -528,11 +474,9 @@
     },
     {
       "label": "户名",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -542,11 +486,9 @@
     },
     {
       "label": "银行卡号",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -560,94 +502,84 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [
-    {
+  "tableActions": [{
       "title": "发放GuGu令",
       "type": "modal",
       "options": {
         "style": "primary",
         "modalTitle": "发放GuGu令",
         "modalWidth": 600,
-        "items": [
-          {
-            "component": "Form",
-            "config": {
-              "layout": "Grid",
-              "layoutConfig": {
-                "value": [
-                  24
-                ]
-              },
-              "API": {
-                "getAPI": "/api/crud/oms/playerWallet/playerWallets/self",
-                "createAPI": "/api/crud/oms/manager/managers/sendCoins"
-              },
-              "fields": [
-                {
-                  "label": "当前GuGu令:",
-                  "props": {
-                    "style":{
-                      "font-size": "24px"
-                    }
-                  },
-                  "type": "plain",
-                  "field": "coinsAmount"
-                },
-                {
-                  "label": "玩家账号",
-                  "rules": [
-                    {
-                      "type": "required",
-                      "message": "请设置发放数量"
-                    }
-                  ],
-                  "props": {
-                    "placeholder": "玩家账号",
-                    "style": {
-                      "width": 240
-                    }
-                  },
-                  "type": "number",
-                  "field": "targetPlayerMobilePhone"
-                },
-                {
-                  "label": "发放数量:",
-                  "rules": [
-                    {
-                      "type": "required",
-                      "message": "请设置发放数量"
-                    }
-                  ],
-                  "props": {
-                    "placeholder": "请输入数量",
-                    "style": {
-                      "width": 240
-                    }
-                  },
-                  "type": "number",
-                  "field": "number"
-                },
-                {
-                  "label": "支付密码:",
-                  "rules": [
-                    {
-                      "type": "required",
-                      "message": "支付密码不能为空"
-                    }
-                  ],
-                  "props": {
-                    "placeholder": "请输入支付密码",
-                    "style": {
-                      "width": 240
-                    }
-                  },
-                  "type": "password",
-                  "field": "paymentPassword"
-                }
+        "items": [{
+          "component": "Form",
+          "config": {
+            "layout": "Grid",
+            "layoutConfig": {
+              "value": [
+                24
               ]
-            }
+            },
+            "API": {
+              "getAPI": "/api/crud/oms/playerWallet/playerWallets/self",
+              "createAPI": "/api/crud/oms/manager/managers/sendCoins"
+            },
+            "fields": [{
+                "label": "当前GuGu令:",
+                "props": {
+                  "style": {
+                    "font-size": "24px"
+                  }
+                },
+                "type": "plain",
+                "field": "coinsAmount"
+              },
+              {
+                "label": "玩家账号",
+                "rules": [{
+                  "type": "required",
+                  "message": "请设置发放数量"
+                }],
+                "props": {
+                  "placeholder": "玩家账号",
+                  "style": {
+                    "width": 240
+                  }
+                },
+                "type": "number",
+                "field": "targetPlayerMobilePhone"
+              },
+              {
+                "label": "发放数量:",
+                "rules": [{
+                  "type": "required",
+                  "message": "请设置发放数量"
+                }],
+                "props": {
+                  "placeholder": "请输入数量",
+                  "style": {
+                    "width": 240
+                  }
+                },
+                "type": "number",
+                "field": "number"
+              },
+              {
+                "label": "支付密码:",
+                "rules": [{
+                  "type": "required",
+                  "message": "支付密码不能为空"
+                }],
+                "props": {
+                  "placeholder": "请输入支付密码",
+                  "style": {
+                    "width": 240
+                  }
+                },
+                "type": "password",
+                "field": "paymentPassword"
+              }
+            ]
           }
-        ]
+        }]
       },
       "expect": {
         "permission": "sysTransferGUGU"
@@ -665,8 +597,7 @@
     }
   ],
   "tableOperation": [],
-  "searchFields": [
-    {
+  "searchFields": [{
       "label": "店小二",
       "type": "select-fetch",
       "props": {
@@ -703,8 +634,7 @@
       "label": "状态",
       "field": "playerStatus",
       "type": "select",
-      "options": [
-        {
+      "options": [{
           "label": "正常",
           "value": "NORMAL"
         },
@@ -718,8 +648,7 @@
       }
     }
   ],
-  "tableFields": [
-    {
+  "tableFields": [{
       "label": "序号",
       "field": "Code",
       "align": "center",
@@ -730,8 +659,7 @@
       "options": {
         "direction": "vertical",
         "size": 0,
-        "fields": [
-          {
+        "fields": [{
             "field": "name",
             "type": "plain",
             "options": {
@@ -805,8 +733,7 @@
       "type": "default"
     }
   ],
-  "viewConfig": [
-    {
+  "viewConfig": [{
       "label": "昵称",
       "field": "name",
       "type": "plain",
