@@ -102,10 +102,7 @@ import CSet_Table_test from '@/container/List/Table';
 
 
 import VTSet_PlainPopover from '@/components/ValueType/PlainPopover';
-
-
-
-
+import VTSet_Timeformat from '@/components/SchemaGeneratorPage/components/TimeFormat/timeformat'
 
 //Test
 import CSet_new_tree_list from '@/components/TList';
@@ -142,7 +139,7 @@ golbalSet({
     removeToken();
     history.push('/401');
   },
-  getPerm() {
+  getPerm () {
     return globalModel.getPerm();
   },
   RequestError: ({ data = {} }) => {
@@ -152,9 +149,9 @@ golbalSet({
         message.error(JSON.stringify(msg));
       })
     } else {
-      if(data.status === 403){
+      if (data.status === 403) {
         history.push('/403');
-      }else{
+      } else {
         message.error(data.message || '无法连接服务器');
       }
     }
@@ -177,7 +174,7 @@ if (process.env.NODE_ENV === 'development') {
   // saveToken({
   //   token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJvcmdJZCI6IjEiLCJ1c2VySWQiOiIxIiwidGVuYW50T3JnSWQiOjEsImFjY291bnQiOiJhZG1pbiIsInVzZXJUeXBlIjoxMDAsImRldlVzZXJUeXBlIjowLCJiVXNlclR5cGUiOiJTWVNURU0iLCJpYXQiOjE2NDcyMjc2OTAsImp0aSI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTY0NzQ4Njg5MH0.gSCT8CaFIDZeuzFwPYuoNAJfLnAX4kwdarO6uj-jN8MSFydvkLae4vLunJgTqGIR6z2HdPhuuHxsM_9cSJkiFQ',
   // });
-}else {
+} else {
   // setEndpoint('http://localhost:8080');
   // setEndpoint(Config.endpoint);  //取消注释后为devConfig.js中值
 }
@@ -191,8 +188,8 @@ CSet({
   'Setting': Setting,
   'custom_form_fr': CSet_CustomFormFR,
   'Dictionary': Dictionary,
-  'data_manage_form_add' : CSet_DataManageFormAdd,
-  'activity_fields_form' : CSet_activity_fields_form,
+  'data_manage_form_add': CSet_DataManageFormAdd,
+  'activity_fields_form': CSet_activity_fields_form,
   'print_config_form': CSet_print_config_form,
   'data_report_tree_list': CSet_DataReportTreeList,
   'LoadHtmlPage': CSet_load_html_page,
@@ -210,15 +207,15 @@ LASet({
 
 //表单组件
 FITSet({
-  'upload-image-card':FITSet_UploadImageCard,
-  'agree-agreement':FITSet_Agree_Agreement,
+  'upload-image-card': FITSet_UploadImageCard,
+  'agree-agreement': FITSet_Agree_Agreement,
   'perm': FITSet_Perm,
   'FieldListAdd': FieldListAdd,
   'FieldModalCheckbox': FieldModalCheckbox,
   'tree-select-fetch': TreeSelectFetch,
-  'group-title' : FITSet_group_title,
-  'dynamic_radio' : FITSet_dynamic_radio,
-  'local_radio' : FITSet_local_radio,
+  'group-title': FITSet_group_title,
+  'dynamic_radio': FITSet_dynamic_radio,
+  'local_radio': FITSet_local_radio,
   'local_modal_radio': FITSet_modal_radio,
   'upload_file_single': FITSet_upload_file_single,
   'field_table': FITSet_field_table,
@@ -237,23 +234,23 @@ FITSet({
   'time_selection_and_disaible': FITSet_TimeSelectionAndDisaible,
   'custom_one_mary': FITSet_CustomOneMary,
   //nft
-  'codebtn':CodeBtn,
+  'codebtn': CodeBtn,
   // 'select':Select,
-  'imgupload':ImgUpload,
-  'text':Text,
-  'img':Img,
-  'valueinput':ValueInput,
-  'approved':Approved,
-  'unseal':Unseal,
-  'automaticdelivery':AutomaticDelivery,
-  'timeinput':TimeInput,
-  'Radio':Radio,
-  'selecttwo':SelectTwo,
-  'handapply':HandApply,
-  'getvalue':GetValue,
-  'valueinputtwo':ValueInputTwo,
+  'imgupload': ImgUpload,
+  'text': Text,
+  'img': Img,
+  'valueinput': ValueInput,
+  'approved': Approved,
+  'unseal': Unseal,
+  'automaticdelivery': AutomaticDelivery,
+  'timeinput': TimeInput,
+  'Radio': Radio,
+  'selecttwo': SelectTwo,
+  'handapply': HandApply,
+  'getvalue': GetValue,
+  'valueinputtwo': ValueInputTwo,
   'config_items_checkbox_fetch': FITSet_ConfigItemsCheckboxFetch,
-  "fetch_commit":FITSet_Fetch_Commit
+  "fetch_commit": FITSet_Fetch_Commit
 });
 
 AITSet({
@@ -264,7 +261,7 @@ AITSet({
 //列表 & 详情
 VTSet({
   'path': vPath,
-  'input-switch' : VTSet_InputSwitch,
+  'input-switch': VTSet_InputSwitch,
   'time-convert': VTSet_TimeConvert,
   'secound_to_hms': VTSet_SecoundToHms,
   'time_selection': FITSet_TimeSelection,
@@ -272,11 +269,11 @@ VTSet({
   'plain_num_and_unit': FITSet_PlainNumAndUnit,
   'time_selection_and_disaible': FITSet_TimeSelectionAndDisaible,
   'prescription_item_status': FITSet_PrescriptionItemStatus,
-  'getvalue':GetValue,
-  'valueinput':ValueInput,
-  'valueinputtwo':ValueInputTwo,
-  'valueinputthree':ValueInputThree,
-  'valueinputfour':ValueInputFour,
-  'plain_popover': VTSet_PlainPopover
-
+  'getvalue': GetValue,
+  'valueinput': ValueInput,
+  'valueinputtwo': ValueInputTwo,
+  'valueinputthree': ValueInputThree,
+  'valueinputfour': ValueInputFour,
+  'plain_popover': VTSet_PlainPopover,
+  'Time_format': VTSet_Timeformat
 });

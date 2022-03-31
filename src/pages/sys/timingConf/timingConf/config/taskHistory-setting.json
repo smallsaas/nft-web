@@ -62,17 +62,10 @@
     },
     {
       "label": "运行时间",
-      "options": {
-        "direction": "vertical",
-        "size": 0,
-        "fields": [{
-          "field": "scheduleRecord.useTime",
-          "type": "plain"
-        }]
-      },
-      "field": "names",
+      "options": {},
+      "field": "scheduleRecord.useTime",
       "align": "left",
-      "valueType": "complex"
+      "valueType": "Time_format"
     }
 
 
@@ -87,8 +80,8 @@
       "method": "get"
     },
     "expect": {
-      "field": "status",
-      "value": "notrun"
+      "field": "",
+      "value": ""
     }
   }]
 
