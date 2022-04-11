@@ -11,7 +11,8 @@
   "updateAPI": "/api/crud/oms/player/players/[id]",
   "deleteAPI": "/api/crud/oms/player/players/(id)",
   "columns": 1,
-  "createFields": [{
+  "createFields": [
+    {
       "defaultValue": "个人信息",
       "type": "group",
       "span": 24
@@ -32,9 +33,11 @@
     },
     {
       "label": "昵称",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入"
       },
@@ -44,9 +47,11 @@
     },
     {
       "label": "手机号码",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -71,9 +76,11 @@
     },
     {
       "label": "备用手机号码",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -146,9 +153,11 @@
     },
     {
       "label": "所属角色",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请选择用户角色",
         "style": {
@@ -156,7 +165,8 @@
         }
       },
       "type": "select",
-      "options": [{
+      "options": [
+        {
           "label": "系统号",
           "value": 1
         },
@@ -174,9 +184,11 @@
       "props": {
         "placeholder": "请输入邀请人的邀请码"
       },
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "field": "invitationCode",
       "span": 16,
       "expect": {
@@ -194,10 +206,12 @@
         },
         "placeholder": "当用户角色为系统号需要绑定店小二"
       },
-      "rules": [{
-        "type": "required",
-        "message": "请选择店小二"
-      }],
+      "rules": [
+        {
+          "type": "required",
+          "message": "请选择店小二"
+        }
+      ],
       "options": {
         "title": "绑定店小二",
         "value": "id",
@@ -205,10 +219,12 @@
         "label": "name",
         "editLabel": "name",
         "pagination": true,
-        "fields": [{
-          "label": "店小二名字",
-          "field": "name"
-        }]
+        "fields": [
+          {
+            "label": "店小二名字",
+            "field": "name"
+          }
+        ]
       },
       "span": 16,
       "expect": {
@@ -373,7 +389,8 @@
       "span": 8
     }
   ],
-  "updateFields": [{
+  "updateFields": [
+    {
       "defaultValue": "个人信息",
       "type": "group",
       "span": 24
@@ -394,9 +411,11 @@
     },
     {
       "label": "昵称",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入"
       },
@@ -418,9 +437,11 @@
     },
     {
       "label": "手机号码",
-      "rules": [{
-        "type": "required"
-      }],
+      "rules": [
+        {
+          "type": "required"
+        }
+      ],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -620,18 +641,21 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [{
-    "title": "添加账号",
-    "type": "path",
-    "options": {
-      "style": "primary",
-      "path": "/usermanage/newaccount/newaccount-add"
-    },
-    "expect": {
-      "permission": "player.add"
+  "tableActions": [
+    {
+      "title": "添加账号",
+      "type": "path",
+      "options": {
+        "style": "primary",
+        "path": "/usermanage/newaccount/newaccount-add"
+      },
+      "expect": {
+        "permission": "player.add"
+      }
     }
-  }],
-  "tableOperation": [{
+  ],
+  "tableOperation": [
+    {
       "title": "审核通过",
       "type": "request",
       "options": {
@@ -643,7 +667,10 @@
       "expect": {
         "field": "status",
         "value": [
-          ["PENDING", "REFUSED"]
+          [
+            "PENDING",
+            "REFUSED"
+          ]
         ],
         "permission": ""
       }
@@ -656,39 +683,45 @@
         "style": "primary",
         "modalTitle": "审核不通过",
         "modalWidth": 600,
-        "items": [{
-          "component": "Form",
-          "config": {
-            "layout": "Grid",
-            "layoutConfig": {
-              "value": [
-                24
-              ]
-            },
-            "API": {
-              "createAPI": "/api/crud/oms/player/reject/(id)"
-            },
-            "fields": [{
-              "label": "填写内容:",
-              "rules": [{
-                "type": "required",
-                "message": "请輸入内容"
-              }],
-              "props": {
-                "placeholder": "请输入",
-                "min": 0,
-                "style": {
-                  "width": 300
+        "items": [
+          {
+            "component": "Form",
+            "config": {
+              "layout": "Grid",
+              "layoutConfig": {
+                "value": [
+                  24
+                ]
+              },
+              "API": {
+                "createAPI": "/api/crud/oms/player/reject/(id)"
+              },
+              "fields": [
+                {
+                  "label": "填写内容:",
+                  "rules": [
+                    {
+                      "type": "required",
+                      "message": "请輸入内容"
+                    }
+                  ],
+                  "props": {
+                    "placeholder": "请输入",
+                    "min": 0,
+                    "style": {
+                      "width": 300
+                    }
+                  },
+                  "autoSize": {
+                    "minRows": 4
+                  },
+                  "type": "text-area",
+                  "field": "note"
                 }
-              },
-              "autoSize": {
-                "minRows": 4
-              },
-              "type": "text-area",
-              "field": "note"
-            }]
+              ]
+            }
           }
-        }]
+        ]
       },
       "expect": {
         "field": "status",
@@ -763,7 +796,8 @@
       }
     }
   ],
-  "searchFields": [{
+  "searchFields": [
+    {
       "label": "系统号",
       "type": "select-fetch",
       "props": {
@@ -795,7 +829,8 @@
       "label": "状态",
       "field": "status",
       "type": "select",
-      "options": [{
+      "options": [
+        {
           "label": "正常",
           "value": "NORMAL"
         },
@@ -840,7 +875,8 @@
       "field": "endDate"
     }
   ],
-  "tableFields": [{
+  "tableFields": [
+    {
       "label": "序号",
       "field": "Code",
       "align": "center",
@@ -851,7 +887,8 @@
       "options": {
         "direction": "vertical",
         "size": 0,
-        "fields": [{
+        "fields": [
+          {
             "field": "name",
             "type": "plain",
             "options": {
@@ -958,7 +995,8 @@
       "align": "center"
     }
   ],
-  "viewConfig": [{
+  "viewConfig": [
+    {
       "label": "头像",
       "field": "avatar",
       "type": "image",
