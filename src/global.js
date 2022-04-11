@@ -171,9 +171,9 @@ if (process.env.NODE_ENV === 'development') {
   // setEndpoint('http://cn1.utools.club:58116');
   setEndpoint(Config.endpoint);
   // setEndpoint('http://localhost:8080');
-  // saveToken({
-  //   token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJvcmdJZCI6IjEiLCJ1c2VySWQiOiIxIiwidGVuYW50T3JnSWQiOjEsImFjY291bnQiOiJhZG1pbiIsInVzZXJUeXBlIjoxMDAsImRldlVzZXJUeXBlIjowLCJiVXNlclR5cGUiOiJTWVNURU0iLCJpYXQiOjE2NDcyMjc2OTAsImp0aSI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTY0NzQ4Njg5MH0.gSCT8CaFIDZeuzFwPYuoNAJfLnAX4kwdarO6uj-jN8MSFydvkLae4vLunJgTqGIR6z2HdPhuuHxsM_9cSJkiFQ',
-  // });
+  saveToken({
+    token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJvcmdJZCI6IjEiLCJ1c2VySWQiOiIxIiwidGVuYW50T3JnSWQiOjAsImFjY291bnQiOiJhZG1pbiIsInVzZXJUeXBlIjoxMDAsImRldlVzZXJUeXBlIjowLCJiVXNlclR5cGUiOiJTWVNURU0iLCJpYXQiOjE2NDk2Mzk5NTIsImp0aSI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTY0OTg5OTE1Mn0.3dH9_BTl38YRcxGtXaWwv8siRdf0Bs4pw3C8LTjKlyX-ILVj4LjVbMUmUNUZuE0TJj31eKkgz3CQ4gsuiu1MNA',
+  });
 } else {
   // setEndpoint('http://localhost:8080');
   // setEndpoint(Config.endpoint);  //取消注释后为devConfig.js中值
