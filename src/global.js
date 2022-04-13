@@ -166,13 +166,13 @@ golbalSet({
 */
 
 if (process.env.NODE_ENV === 'development') {
-  //# $ cat /c/Windows/System32/drivers/etc/hosts
-  //# 192.168.3.239:8090 demo.smallsaas.cn:8080
+  // # $ cat /c/Windows/System32/drivers/etc/hosts
+  // # 192.168.3.239:8090 demo.smallsaas.cn:8080
   // setEndpoint('http://cn1.utools.club:58116');
   setEndpoint(Config.endpoint);
   // setEndpoint('http://localhost:8080');
   // saveToken({
-  //   token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJvcmdJZCI6IjEiLCJ1c2VySWQiOiIxIiwidGVuYW50T3JnSWQiOjEsImFjY291bnQiOiJhZG1pbiIsInVzZXJUeXBlIjoxMDAsImRldlVzZXJUeXBlIjowLCJiVXNlclR5cGUiOiJTWVNURU0iLCJpYXQiOjE2NDcyMjc2OTAsImp0aSI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTY0NzQ4Njg5MH0.gSCT8CaFIDZeuzFwPYuoNAJfLnAX4kwdarO6uj-jN8MSFydvkLae4vLunJgTqGIR6z2HdPhuuHxsM_9cSJkiFQ',
+  //   token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJvcmdJZCI6IjE4IiwidXNlcklkIjoiNiIsInRlbmFudE9yZ0lkIjoxOCwiYWNjb3VudCI6ImFkbWluIiwidXNlclR5cGUiOjAsImRldlVzZXJUeXBlIjowLCJiVXNlclR5cGUiOiJTWVNURU0iLCJpYXQiOjE2NDk4MjAwOTgsImp0aSI6IjYiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTY1MDA3OTI5OH0.oX7TMmjFRFL1GFyhY3-2j-Y9QND1i9AWKwfUcRW9Gs6OsLpQJ24pjha0QpMjGDr9AHubyX0ViJ1Se2eDg_BoOA',
   // });
 } else {
   // setEndpoint('http://localhost:8080');

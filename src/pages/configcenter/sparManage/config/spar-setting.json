@@ -11,14 +11,11 @@
   "updateAPI": "/api/crud/oms/companionWisp/companionWisps/[id]",
   "deleteAPI": "/api/crud/oms/companionWisp/companionWisps/(id)",
   "columns": 1,
-  "createFields": [
-    {
+  "createFields": [{
       "label": "精灵名称",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入"
       },
@@ -27,11 +24,9 @@
     },
     {
       "label": "精灵描述",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "type": "text-area",
       "field": "description",
       "props": {
@@ -51,8 +46,7 @@
       }
     }
   ],
-  "updateFields": [
-    {
+  "updateFields": [{
       "label": "晶石图片",
       "type": "upload-image",
       "field": "previewPhotoUrl",
@@ -63,11 +57,9 @@
     },
     {
       "label": "晶石描述",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入",
         "style": {
@@ -95,8 +87,7 @@
     "form": "TitleContent"
   },
   "tableActions": [],
-  "tableOperation": [
-    {
+  "tableOperation": [{
       "title": "编辑",
       "type": "path",
       "options": {
@@ -121,18 +112,15 @@
       }
     }
   ],
-  "searchFields": [
-    {
-      "label": "晶石",
-      "field": "wispCoin",
-      "type": "search",
-      "props": {
-        "placeholder": "请输入晶石价值"
-      }
+  "searchFields": [{
+    "label": "晶石",
+    "field": "wispCoin",
+    "type": "search",
+    "props": {
+      "placeholder": "请输入晶石价值"
     }
-  ],
-  "tableFields": [
-    {
+  }],
+  "tableFields": [{
       "label": "序号",
       "field": "Code",
       "align": "center",
@@ -157,15 +145,11 @@
     {
       "label": "创建时间",
       "field": "createTime",
-      "align": "center",
-      "valueType": "valueinputthree",
-      "options": {
-        "value": "createTime"
-      }
+      "align": "center"
+
     }
   ],
-  "viewConfig": [
-    {
+  "viewConfig": [{
       "label": "晶石描述",
       "field": "description",
       "type": "plain",
