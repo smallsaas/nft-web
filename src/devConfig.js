@@ -6,18 +6,13 @@
 */
 export const Config = {
   // endpoint: 'http://api.dev.smallsaas.cn:8083',//学文
-  // endpoint:'http://repo.dev.smallsaas.cn:8086',//开发环境
-  endpoint: 'https://www.metagugu.me',//生产环境
-  // endpoint: 'http://49.119.119.7:8082',//开发环境
   // endpoint: 'http://192.168.3.170:8080',//浩贤
 
   // endpoint: 'https://www.metagugu.me',//me
-  // endpoint: 'https://www.metagugu.net',//生产环境
+  endpoint: 'https://www.metagugu.net',//生产环境
 
-  // endpoint: 'https://api.dev.smallsaas.cn:8083/',//测试环境
-  // endpoint:'http://192.168.3.239:8484/',
+  // endpoint: 'http://api.dev.smallsaas.cn:8001',//测试环境
   // endpoint:'http://repo.dev.smallsaas.cn:8088/',
-  // endpoint: 'http://192.168.3.121:8000',
   breadcrumbType: "header", //header,top
   theme: "LeftCover",//TopCover,LeftCover
   aloneWindow: []  // 使用方法:在这里增加页面路径即可，如 /login

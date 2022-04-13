@@ -165,7 +165,7 @@
         "outside": true,
         "style": "path",
         "path": "representation/representation-order-view",
-        "query":{
+        "query": {
           "id": "relationOrderId"
         }
       },
@@ -374,7 +374,10 @@
       "label": "投诉图片",
       "field": "credentialLink",
       "type": "image",
-      "span": 24
+      "span": 24,
+      "options":{
+        "margin": "0px 0px 0px 8px"
+      }
     },
     {
       "label": "投诉内容",
