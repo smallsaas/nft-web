@@ -18,7 +18,18 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [],
+  "tableActions": [{
+    "title": "一键全收款按钮",
+    "type": "request",
+    "options": {
+      "API": "/api/crud/oms/wispOrder/wispOrders/profit",
+      "method": "get"
+    },
+    "expect": {
+      "field": "",
+      "value": ""
+    }
+  }],
   "tableOperation": [{
       "label": "状态",
       "field": "status",
@@ -79,12 +90,12 @@
       }
     },
     {
-      "title": "执行收款按钮",
+      "title": "收款按钮",
       "type": "request",
       "options": {
         "tips": "确定执行吗?",
         "outside": true,
-        "API": "/api/crud/oms/wispOrder/wispOrders/profit",
+        "API": "/api/crud/oms/wispOrder/wispOrders/profit/{id}",
         "method": "get"
       },
       "expect": {
@@ -180,6 +191,7 @@
       "type": "hidden",
       "field": "endTime"
     }
+
   ],
   "tableFields": [{
       "label": "序号",
@@ -268,6 +280,8 @@
       "theme": "option",
       "type": "default"
     }
+
+
   ],
   "viewConfig": [{
       "label": "订单号",
