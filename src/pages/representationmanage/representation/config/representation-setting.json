@@ -12,14 +12,11 @@
   "updateAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/reply",
   "deleteAPI": "/api/crud/oms/wispOrder/wispOrders/wisp/complain/(id)",
   "columns": 1,
-  "createFields": [
-    {
+  "createFields": [{
       "label": "申述类型",
-      "rules": [
-        {
-          "type": "required"
-        }
-      ],
+      "rules": [{
+        "type": "required"
+      }],
       "props": {
         "placeholder": "请输入申述类型"
       },
@@ -33,8 +30,7 @@
       "value": "ORDER_DISPUTES"
     }
   ],
-  "updateFields": [
-    {
+  "updateFields": [{
       "label": "申述状态",
       "field": "status",
       "type": "plain",
@@ -112,8 +108,7 @@
       "span": 24,
       "options": {
         "actions": [],
-        "fields": [
-          {
+        "fields": [{
             "label": "回复人",
             "field": "isManagerReply",
             "valueType": "map",
@@ -144,28 +139,25 @@
     "table": "Content",
     "form": "TitleContent"
   },
-  "tableActions": [
-    {
-      "title": "添加类型",
-      "type": "path",
-      "options": {
-        "style": "primary",
-        "path": "representation/representation-add"
-      },
-      "expect": {
-        "permission": "appeal.new"
-      }
+  "tableActions": [{
+    "title": "添加类型",
+    "type": "path",
+    "options": {
+      "style": "primary",
+      "path": "representation/representation-add"
+    },
+    "expect": {
+      "permission": "appeal.new"
     }
-  ],
-  "tableOperation": [
-    {
+  }],
+  "tableOperation": [{
       "title": "订单详情",
       "type": "path",
       "options": {
         "outside": true,
         "style": "path",
         "path": "representation/representation-order-view",
-        "query":{
+        "query": {
           "id": "relationOrderId"
         }
       },
@@ -210,8 +202,7 @@
       }
     }
   ],
-  "searchFields": [
-    {
+  "searchFields": [{
       "label": "账号",
       "field": "phone",
       "type": "search",
@@ -223,8 +214,7 @@
       "label": "申述状态",
       "field": "status",
       "type": "select",
-      "options": [
-        {
+      "options": [{
           "label": "待回复",
           "value": "PENDING_REPLY"
         },
@@ -259,8 +249,7 @@
       "field": "title"
     }
   ],
-  "tableFields": [
-    {
+  "tableFields": [{
       "label": "序号",
       "field": "Code",
       "align": "center",
@@ -289,12 +278,10 @@
       "options": {
         "direction": "vertical",
         "size": 0,
-        "fields": [
-          {
-            "field": "player.name",
-            "type": "plain"
-          }
-        ]
+        "fields": [{
+          "field": "player.name",
+          "type": "plain"
+        }]
       },
       "field": "names",
       "align": "center",
@@ -305,12 +292,10 @@
       "options": {
         "direction": "vertical",
         "size": 0,
-        "fields": [
-          {
-            "field": "player.mobilePhone",
-            "type": "plain"
-          }
-        ]
+        "fields": [{
+          "field": "player.mobilePhone",
+          "type": "plain"
+        }]
       },
       "field": "phones",
       "align": "center",
@@ -351,8 +336,7 @@
       "align": "center"
     }
   ],
-  "viewConfig": [
-    {
+  "viewConfig": [{
       "label": "投诉方",
       "field": "complainantRole",
       "type": "plain",
@@ -374,7 +358,10 @@
       "label": "投诉图片",
       "field": "credentialLink",
       "type": "image",
-      "span": 24
+      "span": 24,
+      "options": {
+        "margin": "0px 0px 0px 8px"
+      }
     },
     {
       "label": "投诉内容",
@@ -413,8 +400,7 @@
       "span": 24,
       "options": {
         "actions": [],
-        "fields": [
-          {
+        "fields": [{
             "label": "回复人",
             "field": "isManagerReply",
             "valueType": "map",
@@ -440,8 +426,7 @@
       }
     }
   ],
-  "orderViewConfig": [
-    {
+  "orderViewConfig": [{
       "label": "订单号",
       "field": "orderNumber",
       "type": "plain",

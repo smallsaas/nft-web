@@ -5,7 +5,8 @@
     "edit": "编辑账号",
     "view": "查看详情"
   },
-  "listAPI": "/api/crud/oms/player/profit/queryTeamReturnTree",
+  "listAPI": "/api/crud/oms/player/players",
+  "listAPI_oldapi": "/api/crud/oms/player/profit/queryTeamReturnTree",
   "createAPI": "/api/crud/oms/player/players",
   "getAPI": "/api/crud/oms/player/players/[id]",
   "updateAPI": "/api/crud/oms/player/players/[id]",
@@ -643,7 +644,10 @@
       "expect": {
         "field": "status",
         "value": [
-          ["PENDING", "REFUSED"]
+          [
+            "PENDING",
+            "REFUSED"
+          ]
         ],
         "permission": ""
       }
@@ -793,7 +797,7 @@
     },
     {
       "label": "状态",
-      "field": "status",
+      "field": "playerStatus",
       "type": "select",
       "options": [{
           "label": "正常",

@@ -42,7 +42,7 @@ module.exports = {
     },
     {
       layout: 'Empty',
-      component: 'TreeTable',
+      component: 'Table',
       config: {
         API: {
           listAPI: setting.listAPI,
