@@ -13,7 +13,7 @@ export const Config = {
 
   endpoint: 'https://www.metagugu.me',//me
 
-  // endpoint: 'http://api.dev.smallsaas.cn:8001',//测试环境
+  // endpoint: 'http://49.119.119.7:8082',//测试环境
   // endpoint:'http://repo.dev.smallsaas.cn:8088/',
   breadcrumbType: "header", //header,top
   theme: "LeftCover",//TopCover,LeftCover

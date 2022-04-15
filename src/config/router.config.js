@@ -85,6 +85,11 @@ module.exports = [
         path: '/usermanage/signCenter/signManage',
         name: '签到',
         permissions: 'menu.sign.menagement'
+      },
+      {
+        path: '/usermanage/blacklist',
+        name: '黑名单',
+        permissions: ''
       }
       // {
       //   path: '/usermanage/newteammanage',
