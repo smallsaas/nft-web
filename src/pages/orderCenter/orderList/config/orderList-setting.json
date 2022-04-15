@@ -20,6 +20,20 @@
   },
   "tableActions": [],
   "tableOperation": [{
+      "label": "状态",
+      "field": "status",
+      "type": "plain",
+      "options": {
+        "map": {
+          "NORMAL": "正常",
+          "FROZEN": "冻结",
+          "REFUSED": "审核不通过",
+          "PENDING": "待审核"
+        }
+      },
+      "span": 8
+    },
+    {
       "title": "订单详情",
       "type": "path",
       "options": {
@@ -63,7 +77,22 @@
       "expect": {
         "permission": "playerInfo.view"
       }
+    },
+    {
+      "title": "执行收款按钮",
+      "type": "request",
+      "options": {
+        "tips": "确定执行吗?",
+        "outside": true,
+        "API": "/api/crud/oms/wispOrder/wispOrders/profit",
+        "method": "get"
+      },
+      "expect": {
+        "field": "",
+        "value": ""
+      }
     }
+
   ],
   "searchFields": [{
       "label": "订单编号",
@@ -218,6 +247,26 @@
       "label": "订单时间",
       "field": "createTime",
       "align": "center"
+    },
+    {
+      "label": "收益状态",
+      "field": "profitReceived",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "0": "未产生收益",
+          "1": "已产生收益"
+
+        },
+        "chy": {
+          "1": "blue",
+          "0": "blue"
+
+        }
+      },
+      "theme": "option",
+      "type": "default"
     }
   ],
   "viewConfig": [{

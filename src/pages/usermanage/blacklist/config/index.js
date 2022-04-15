@@ -4,12 +4,12 @@ module.exports = {
   layout: setting.layout.table,
   title: setting.pageName.table,
   items: [
-    {
-      component: 'Search',
-      config: {
-        fields: setting.searchFields,
-      },
-    },
+    // {
+    //   component: 'Search',
+    //   config: {
+    //     fields: setting.searchFields,//黑名单搜索
+    //   },
+    // },
     {
       layout: 'Empty',
       component: 'Table',
