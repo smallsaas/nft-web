@@ -19,7 +19,7 @@
     "form": "TitleContent"
   },
   "tableActions": [{
-    "title": "一键全收款按钮",
+    "title": "一键放发收益",
     "type": "request",
     "options": {
       "API": "/api/crud/oms/wispOrder/wispOrders/profit",
@@ -90,7 +90,7 @@
       }
     },
     {
-      "title": "收款按钮",
+      "title": "发放收益",
       "type": "request",
       "options": {
         "tips": "确定执行吗?",
