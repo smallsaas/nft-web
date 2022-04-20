@@ -738,7 +738,7 @@
         "outside": false,
         "API": "/api/crud/oms/player/players/lock/(id)",
         "method": "post",
-        "query":{
+        "query": {
           "unlockable": false
         }
       },

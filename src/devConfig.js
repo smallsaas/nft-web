@@ -9,9 +9,9 @@ export const Config = {
   // endpoint: 'http://repo.dev.smallsaas.cn:8086',//开发环境
   // endpoint: 'https://www.metagugu.net',//生产环境
   // endpoint: 'http://api.dev.smallsaas.cn:8082',//开发环境
-  // endpoint: 'http://192.168.3.170:8084',//浩贤
+  endpoint: 'http://192.168.3.28:8080',//学文
 
-  endpoint: 'https://www.metagugu.me',//me
+  // endpoint: 'https://www.metagugu.me',//me
   // 
   // endpoint: 'http://49.119.119.7:8082',//测试环境
   // endpoint:'http://repo.dev.smallsaas.cn:8088/',
