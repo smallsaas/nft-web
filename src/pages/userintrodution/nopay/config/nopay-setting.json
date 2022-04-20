@@ -330,7 +330,7 @@
       "type": "path",
       "options": {
         "style": "path",
-        "path": "/usermanage/newaccount/newaccount-view",
+        "path": "/orderCenter/orderList/orderList-view",
         "query":{
           "id": "id"
         },
