@@ -104,6 +104,9 @@ import CSet_Table_test from '@/container/List/Table';
 import VTSet_PlainPopover from '@/components/ValueType/PlainPopover';
 import VTSet_Timeformat from '@/components/SchemaGeneratorPage/components/TimeFormat/timeformat'
 
+//listAction
+import AITSet_RedirectPath from '@/listAction/onRedirectPath'
+
 //Test
 import CSet_new_tree_list from '@/components/TList';
 
@@ -202,7 +205,8 @@ CSet({
 //添加列表操作按钮
 LASet({
   // 'onPath': onPath,
-  'onExportFile': AITSet_export_file
+  'onExportFile': AITSet_export_file,
+  'onRedirectPath': AITSet_RedirectPath
 });
 
 //表单组件

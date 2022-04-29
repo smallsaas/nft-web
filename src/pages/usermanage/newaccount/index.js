@@ -6,8 +6,9 @@ import config from './config/index';
 export default function () {
 
   useBreadcrumb([
-    { title: '首页', path: '/newaccount' },
-    { title: '玩家管理' },
+    { title: '首页', path: '/' },
+    { title: '玩家管理', path: '/newaccount' },
+    { title: '玩家' },
   ]);
 
   return <div>

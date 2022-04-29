@@ -759,6 +759,17 @@
       "expect": {
         "permission": "playerInfo.view"
       }
+    },{
+      "title": "查看直推团队",
+      "type": "path",
+      "options": {
+        "outside": false,
+        "style": "path",
+        "path": "newaccount/playerChildrenTeam"
+      },
+      "expect": {
+        "permission": ""
+      }
     },
     {
       "title": "修改信息",

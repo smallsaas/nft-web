@@ -1,0 +1,182 @@
+{
+  "pageName": {
+    "table": "设计字段"
+  },
+  "columns": 2,
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "map": {},
+  "tableActions": [
+  ],
+  "tableOperation": [
+    {
+      "title": "查看直推团队",
+      "type": "redirectPath",
+      "options": {
+        "outside": true,
+        "style": "path",
+        "path": "/usermanage/newaccount/playerChildrenTeam"
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "删除",
+      "type": "request",
+      "options": {
+        "outside": false,
+        "tips": "确定要删除吗?",
+        "API": "/api/cfg/data/services/attrs/[entityName]/(id)",
+        "method": "delete"
+      }
+    }
+  ],
+  "createFields": [
+    {}
+  ],
+  "updateFields": [
+    {}
+  ],
+  "viewFields": [
+    {}
+  ],
+  "listAPI": "/api/crud/oms/player/profit/queryTeamReturnTreeChildren/[id]",
+  "createAPI": "/api/[id]",
+  "getAPI": "/api/crud/oms/player/profit/queryTeamReturnTreeChildren/(id)",
+  "updateAPI": "/api/(id)",
+  "deleteAPI": "/api/crud/oms/player/profit/queryTeamReturnTreeChildren/(id)",
+  "searchFields": [
+    {
+      "field": "search",
+      "label": "搜索",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入..."
+      }
+    }
+  ],
+  "tableFields": [
+    {
+      "label": "序号",
+      "field": "Code",
+      "align": "center",
+      "valueType": "index"
+    },
+    {
+      "label": "玩家",
+      "options": {
+        "direction": "vertical",
+        "size": 0,
+        "fields": [{
+            "field": "name",
+            "type": "plain",
+            "options": {
+              "style": {
+                "font-weight": "bolder",
+                "color": "blue",
+                "margin-right": 10
+              }
+            }
+          },
+          {
+            "field": "mobilePhone",
+            "type": "plain"
+          }
+        ]
+      },
+      "field": "names",
+      "align": "left",
+      "valueType": "complex"
+    },
+    {
+      "label": "会员级别",
+      "field": "level",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "-1": "注册会员",
+          "0": "激活",
+          "10": "有效会员",
+          "20": "普通会员",
+          "1": "青铜有效会员",
+          "2": "白银有效会员",
+          "3": "黄金有效会员",
+          "4": "钻石有效会员"
+        }
+      }
+    },
+    {
+      "label": "直推人数",
+      "field": "recommendCount",
+      "align": "center"
+    },
+    {
+      "label": "团队人数",
+      "field": "teamSize",
+      "align": "center"
+    },
+    {
+      "label": "状态",
+      "field": "status",
+      "align": "center",
+      "valueType": "tag",
+      "options": {
+        "map": {
+          "NORMAL": "正常",
+          "FROZEN": "冻结",
+          "REFUSED": "审核不通过",
+          "PENDING": "待审核"
+        },
+        "chy": {
+          "NORMAL": "blue",
+          "FROZEN": "gray",
+          "REFUSED": "orange",
+          "PENDING": "pink"
+        }
+      },
+      "theme": "option",
+      "type": "default"
+    },
+    {
+      "label": "邀请人",
+      "field": "inviterName",
+      "align": "center"
+    },
+    {
+      "label": "邀请码",
+      "field": "invitationCode",
+      "align": "center"
+    },
+    {
+      "label": "系统号",
+      "field": "managerName",
+      "align": "center"
+    },
+    {
+      "label": "店小二",
+      "field": "sysName",
+      "align": "center"
+    },
+    {
+      "label": "注册时间",
+      "field": "createTime",
+      "align": "center"
+    },
+    {
+      "label": "总领养",
+      "field": "adoptCount",
+      "align": "center"
+    },
+    {
+      "label": "总预约",
+      "field": "appointmentCount",
+      "align": "center"
+    }
+  ],
+  "viewConfig": [
+  ]
+}
