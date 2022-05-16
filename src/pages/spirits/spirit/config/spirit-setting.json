@@ -85,8 +85,7 @@
       "type": "upload-image",
       "field": "previewPhotoUrl",
       "options":{
-        "type": "string",
-        "hasKey": false
+        "type": "string"
       }
     },
     {
@@ -338,8 +337,7 @@
       "type": "upload-image",
       "field": "previewPhotoUrl",
       "options":{
-        "type": "string",
-        "hasKey": false
+        "type": "string"
       }
     },
     {
